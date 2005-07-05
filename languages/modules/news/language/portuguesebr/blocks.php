@@ -1,0 +1,41 @@
+<?php
+// $Id: blocks.php,v 1.1 2005/07/05 12:59:50 mauriciodelima Exp $
+define("_MB_NEWS_NOTYET","Não há historia interessante, até agora...");
+define("_MB_NEWS_TMRSI","Notícia do dia:");
+define("_MB_NEWS_ORDER","Organizar por");
+define("_MB_NEWS_DATE","Publicado em");
+define("_MB_NEWS_HITS","Acessos");
+define("_MB_NEWS_DISP","Exibir");
+define("_MB_NEWS_ARTCLS","notícias");
+define("_MB_NEWS_CHARS","Comprimento do título");
+define("_MB_NEWS_LENGTH"," caracteres");
+define("_MB_TITLE", "Título");
+define("_MB_POSTED", "Publicado");
+define("_MB_POSTER", "Autor");
+define("_MB_ACTION", "Ação");
+define("_MB_TOPIC", "Assunto");
+define("_MB_DELETE", "Remover");
+define("_MB_NEWS_RESTRICTTOPICS", "Restringir os assuntos que poderão ser vistos por visitante?");
+define("_MB_NEWS_TEASER", "Mostrar teaser de tamanho (0 para nenhum teaser)");
+define("_MB_NEWS_SPOTLIGHT", "Habilitar a opção de spotlight");
+define("_MB_NEWS_FIRST", "--Primeiro item--");
+define("_MB_NEWS_IMAGE", "Imagem para spotlight");
+define("_MB_SPOTLIGHT_TOPIC", "Selecione topicos para usar");
+define("_MB_SPOTLIGHT_ALL_TOPICS", "Todos topicos");
+define("_MB_NEWS_SPOTLIGHT_ARTICLE", "Selecione um artigo");
+define("_MB_READMORE","leia mais...");
+define("_MB_NEWS_RATE","avaliação");
+define("_MB_NEWS_SHOW_NEWS_COUNT","Mostrar contador?");
+define("_MB_NEWS_SPOTLIGHT_TITLE", "Spotlight");
+define("_MB_NEWS_VIEW_TYPE1", "Classico");
+define("_MB_NEWS_VIEW_TYPE2", "Com tabs");
+define("_MB_NEWS_TAB_COLOR1", "Cor para a linha de sumario (esta é a linha logo abaixo do nome da aba)");
+define("_MB_NEWS_TAB_COLOR2", "Cor para o background do conteúdo da aba");
+define("_MB_NEWS_TAB_COLOR3", "Cor do cabeçario da aba");
+define("_MB_NEWS_TAB_COLOR4", "Cor do cabeçario das abas não selecionadas");
+define("_MB_NEWS_TAB_COLOR5", "Cor do cabeçario flutuante");
+define("_MB_NEWS_WHAT_PUBLISH", "O que você quer publicar<br />no spotlight?");
+define("_MB_NEWS_RECENT_NEWS", "Notícias recentes");
+define("_MB_NEWS_RECENT_SPECIFIC", "Uma notícia específica (veja abaixo)");
+define("_MB_NEWS_DEFAULT_COLORS", "Deixe vazio para usar as cores padrão");
+?>
