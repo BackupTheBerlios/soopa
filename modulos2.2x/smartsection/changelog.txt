@@ -1,0 +1,70 @@
+/**
+* $Id: changelog.txt,v 1.1 2005/07/05 05:34:13 mauriciodelima Exp $
+* Module: SmartSection
+* Author: The SmartFactory <www.smartfactory.ca>
+* Licence: GNU
+*/
+
+=>Version 1.0 Beta 1 (2005-06-13)
+===================================
+
+- Addition of check database table functionnality, including  a new dbUpdater class that performs the db upgrade
+- Keyword highlighting added in the search function
+- A lot of errors were fixed in the Spotlight block
+- The Preferences page now has naviation tabs, just like the other admin pages. Thanks to Xavier from Wiwimod :-)
+- A bug prevented the creation of a category with an id greater than 128. This has been fixed, thanks to tommyz
+- Blocks were not displaying items by hits of weight
+- Files deletion bug is fixed
+- Displaying multiple nested categories bug is fixed
+- Bug fix related to the date when submitting an item from the user side
+- Implementation of a template in the Submit an item form
+- Implementation of a preview function
+- Add some item links in the admin side
+
+=> Version 0.93 Beta 1 (2005-02-18)
+===================================
+
+- Improvments in the folder creation script
+- Corrections in the french language files for the Article plugin
+- Add a config option to display or not the sub-categories under the top categories
+- Add a config option to display or not a list of last articles in the index page
+
+=> Version 0.92 Beta 1 (2005-01-30)
+===================================
+
+- Plugins are now better implemented as they are complete sentences and not only words (feature #1943)
+- The About page is now managed by a class
+- Navigation throught previous and next items within a category is now possible
+- An item now has an image field (feature #1942)
+- Bug fixed when uploading category image (the category is still not used in user side thought...) (bug #1565)
+- All uploaded images and files are now uploaded in xoops_root/uploads/smartsection. This fixes a couple of reported bugs... (bug #1620)
+- Bug fixed in collapse javascript functions (#bug 1859)
+- Block editing was causin some fatal errors. This has been fixed (bug #1717)
+- The module was causing Fatal errors in the user profile and the search results page. This has been fixed (bug #1718)
+- The icon to edit a category had a wrong link. This has been fixed. (bug #1719)
+- Missing/trunked object in sent email has been fixed (bug #1791)
+- Anonymous blank page has been fixed (bug # 1777)
+- Problem with article title in multilanguage has been fixed (bug #1830)
+- "Published By" missing has been fixed (bug #1696)
+- Datetime error on the Datesub field has been fixed (bug #1621)
+
+=> Version 0.81 Beta 1
+======================
+
+- Adding the [pagebreak] functionnality
+- Adding Koivi WYSIWYG support (feature #1932)
+
+=> Version 0.8 Beta 2
+=====================
+
+- Add a function to create the upload and images folder in the admin section
+- Uploading files linked to articles is now working
+- Fix the bug of anonymous access
+- Fix the bug of Fatal error in the user profile
+- Fix the bug of Fatal error in the global search
+- Other bug fixing
+
+=> Version 0.8 Beta 1
+=====================
+
+- First public release of the module.

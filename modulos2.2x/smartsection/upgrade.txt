@@ -1,0 +1,23 @@
+/**
+* $Id: upgrade.txt,v 1.1 2005/07/05 05:34:13 mauriciodelima Exp $
+* Module: SmartSection
+* Author: The SmartFactory <www.smartfactory.ca>
+* Licence: GNU
+*/
+
+How to uprade from SmartSection 0.9.3
+=====================================
+
+In order to upgrade the module, you will need to :
+
+- Upload the new version in the modules/ folder of your site
+
+- Copy the complete /smartsection folder into the /modules directory of your website
+
+- Then, log in to your site as administrator, go to System Admin > Modules, look for the Smartsection icon in the list of installed modules and click in the update icon
+
+- Click on 'Check Tables' from the SmartMedia top menu
+
+That's it !
+
+Enjoy !

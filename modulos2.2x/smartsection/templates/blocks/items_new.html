@@ -1,0 +1,5 @@
+<ul>
+	<{foreach item=newitems from=$block.newitems}>
+    <li><a href="<{$xoops_url}>/modules/smartsection/item.php?itemid=<{$newitems.id}>"><{$newitems.linktext}></a> [<{$newitems.new}>]</li>
+  <{/foreach}>
+</ul>

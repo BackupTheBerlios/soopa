@@ -1,0 +1,28 @@
+<{if $block.display_type=='block'}>
+
+<{foreach item=item from=$block.items}>
+	<{include file="db:smartsection_singleitem_block.html" item=$item}>
+<{/foreach}>
+ 
+<{else}>
+<{foreach item=item from=$block.items}>
+<{if $item.summary != ''}>
+<div style="padding-top: 5px; padding-left: 3px; clear: both">
+	<div class="itemText">
+	<div style=""><img style="vertical-align: middle;" src="<{$xoops_url}>/modules/smartsection/images/icon/doc.png" alt="" />&nbsp;<{$item.titlelink}></div>
+	<{if $item.image_path}>
+	  <a href="<{$item.itemurl}>"><img style="margin-left: 10px; display: block; padding: 5px;" src="<{$item.image_path}>"  align="right" alt="<{$item.title}>" title="<{$item.title}>" /></a>
+	<{/if}>
+	<div style="padding-left: 3px;"><{$item.summary}></div>
+	<{if $item.showline}>
+		<div style="clear: both; font-size: 10px; text-align: right; border-bottom: 1px dotted #000000;"><a href="<{$xoops_url}>/modules/smartsection/item.php?itemid=<{$item.id}>"><{$block.lang_readmore}></a></div>
+	<{else}>
+		<div style="clear: both; font-size: 10px; text-align: right;"><a href="<{$xoops_url}>/modules/smartsection/item.php?itemid=<{$item.id}>"><{$block.lang_readmore}></a></div>
+	<{/if}>
+	</div>
+</div>
+<{/if}>
+  <{/foreach}>
+
+<{/if}>
+

@@ -1,0 +1,300 @@
+<{include file='db:smartsection_header.html'}>
+
+
+	<script type="text/javascript"><!--
+	function goto_URL(object)
+	{
+		window.location.href = object.options[object.selectedIndex].value;
+	}
+	
+	function toggle(id)
+	{
+		if (document.getElementById) { obj = document.getElementById(id); }
+		if (document.all) { obj = document.all[id]; }
+		if (document.layers) { obj = document.layers[id]; }
+		if (obj) {
+			if (obj.style.display == "none") {
+				obj.style.display = "";
+			} else {
+				obj.style.display = "none";
+			}
+		}
+		return false;
+	}
+	
+	var iconClose = new Image();
+	iconClose.src = 'images/icon/close12.gif';
+	var iconOpen = new Image();
+	iconOpen.src = 'images/icon/open12.gif';
+	
+	function toggleIcon ( iconName )
+	{
+		if ( document.images[iconName].src == window.iconOpen.src ) {
+			document.images[iconName].src = window.iconClose.src;
+		} else if ( document.images[iconName].src == window.iconClose.src ) {
+			document.images[iconName].src = window.iconOpen.src;
+		}
+		return;
+	}
+	
+	//-->
+	</script>
+
+   <!-- <{if $category.image_path}>
+     <span> <img class="smartsection_item_image" src="<{$category.image_path}>"  align="right" alt="<{$item.title}>" title="<{$item.title}>" /></span>
+    <{/if}>	-->
+	<{if $displayList == 1}>
+		
+			<div class="smartsection_infotitle" ><{$lang_category_summary}></div>
+		
+		<span class="smartsection_collaps_info"><{$category.description}><br><br></span>	
+		<table>
+		 	
+	 		<{if $displaylastitem == 1 && $items}>
+	 			<tr>
+    				<td  class="smartsection_collaps_title" align="left"><b><{$lang_last_smartsection}>:
+    				<{$category.last_title_link}></td>
+    			</tr>
+    		<!--	<tr>
+  					<td><br></td>
+  				</tr>-->
+    		<{/if}>
+  		</table>
+
+
+	<br><br>
+		<{if $subcats}>
+			<{if $collapsable_heading == 1}>
+				 <div class="smartsection_collaps_title"><a href='javascript:;' onclick="toggle('toptable'); toggleIcon('toptableicon')"><img id='toptableicon' src='<{$smartsection_url}>images/icon/close12.gif' alt='' /></a>&nbsp;<b><{$lang_category_summary_info}></b></div>
+				 <div id='toptable'>
+			<!-- Content under the collapsable bar //-->
+	
+			<{else}>
+			<{if $items}>
+				 	<div class="smartsection_collaps_title"> <b><{$lang_category_summary_info}></b></div>
+				<{/if}>
+			<{/if}>
+			<!-- Start sub categories loop -->
+			<table border="0" width="90%" cellspacing="0" cellpadding="0" align="center" class = "outer">
+  				<tr> 
+    				<td align="left" class="itemHead"><b>&nbsp;&nbsp;<{$lang_name_column}></b></td>
+    				<td align="center" width="50px" class="itemHead"><b><{$lang_items}></b></td>
+    				
+    				<{if $displaylastitem == 1}>
+    					<td align="right" width="40%" class="itemHead"><b><{$lang_last_smartsection}></b></td>
+    				<{/if}>
+  				</tr>
+  	
+
+  			<!-- BEGIN DYNAMIC BLOCK -->
+  		
+  				<{foreach item=subcat from=$subcats}>
+  					<tr> 
+  						<td valign="middle" class="odd" align="left">
+  							<div class = "smartsection_list">
+  								<{if $isAdmin == 1}>
+	  								<a href="<{$smartsection_url}>admin/category.php?op=mod&categoryid=<{$subcat.categoryid}>"><img src="<{$smartsection_url}>images/icon/subcat.gif" title="<{$lang_editcategory}>" alt="<{$lang_editcategory}>"/></a>&nbsp;<{$subcat.categorylink}>
+  								<{else}>
+	  								<img src="<{$smartsection_url}>images/icon/subcat.gif" title="<{$lang_editcategory}>" alt="<{$lang_editcategory}>"/>&nbsp;<{$subcat.categorylink}></li>
+    							<{/if}>
+   								<{if $displaysubcatdsc == 1}>
+   									<span class="smartsection_category_dsc"><{$subcat.description}></span>
+   								<{/if}>
+    						</div>
+    					</td>
+  						<td valign="middle" class="odd" align="center"><{$subcat.total}></td>
+    					<{if $displaylastitem == 1}>
+  							<td valign="middle" class="odd" align="right"><{$subcat.last_title_link}></td>
+  						<{/if}>
+  					</tr>
+
+   				<{/foreach}>
+   		
+			<!-- END DYNAMIC BLOCK -->
+  				<tr> 
+  				</tr>
+			</table>
+			<!-- End sub categories loop -->
+			<{if $collapsable_heading == 1}>
+				</div>
+			<{/if}>
+		<{/if}>
+<br><br>
+		<{if $items}>
+			<{if $collapsable_heading == 1}>
+				<div class="smartsection_collaps_title"><a href='javascript:;' onclick="toggle('bottomtable'); toggleIcon('bottomtableicon')";><img id='bottomtableicon' src='<{$smartsection_url}>images/icon/close12.gif' alt='' /></a>&nbsp;<{$lang_items_title}></div>
+				<div id='bottomtable'>
+			<{else}>
+			<{if $subcats}>		
+						<div class="smartsection_collaps_title" ><b><{$lang_items_title}></b></div>
+					<{/if}>	
+			<!-- Content under the collapsable bar //-->
+			<{/if}>
+			
+			
+
+			<table border="0" width="90%" cellspacing="0" cellpadding="0" align="center" class = "outer">
+		  		<tr> 
+	    			<td align="left" class="itemHead" width='65%'><b>&nbsp;&nbsp;<{$lang_title}></b></td>
+					<{if $display_date_col == 1}>
+	    				<td align="center" class="itemHead" width="25%"><b><{$lang_datesub}></b></td>
+	    			<{/if}>
+					<{if $display_hits_col == 1}>
+	    				<td align="center" class="itemHead" width="10%"><b><{$lang_hits}></b></td>
+	    			<{/if}>
+		  		</tr>
+  			<!-- Start item loop -->
+  				<ul valign="top">
+  					<{foreach item=item from=$items}> 
+  						<tr valign="top"> 
+	    					<td class ="odd"><div class ="smartsection_list" align="left"><li><{$item.titlelink}></li></div></td>
+							
+	    					<{if $display_date_col == 1}>
+	    						<td class="odd" align="left"><div class ="smartsection_list" align="center"><{$item.datesub}></div></td>
+	    					<{/if}>
+	    					
+	    					<{if $display_hits_col == 1}>
+								<td class="odd" align="left"><div class ="smartsection_list" align="center"><{$item.counter}></div></td>
+							<{/if}>
+				
+						</tr>			
+  					<{/foreach}>
+  				</ul> 
+			<!-- End item loop -->
+  				<tr> 
+				</tr>
+			</table>
+			<div align="right"><{$category.navbar}></div>
+			<{if $collapsable_heading == 1}>
+				</div>
+			<{/if}>
+		<{/if}>
+		
+		<{if !$subcats && !$items}>
+  			<div class="smartsection_infotext"><{$lang_empty}></div>
+		<{/if}>
+	<!--end of display type Puce-->	
+	<{else}>
+	<{if $collapsable_heading == 1}>
+		<div class="smartsection_collaps_title"><a href='javascript:;' onclick="toggle('toptable'); toggleIcon('toptableicon')"><img id='toptableicon' src='<{$smartsection_url}>images/icon/close12.gif' alt='' /></a>&nbsp;<{$lang_category_summary}></div>
+		<div id='toptable'>
+		<span class="smartsection_collaps_info""><{$lang_category_summary_info}></span>
+		<!-- Content under the collapsable bar //-->
+	<{else}>
+	
+	<{/if}>
+		<!-- Start sub categories loop -->
+		<table border="0" width="90%" cellspacing="1" cellpadding="0" align="center" class = "outer">
+  		<tr> 
+    		<td align="left" class="itemHead"><b><{$lang_category_column}></b></td>
+    		<td align="center" width="50px" class="itemHead"><b><{$lang_items}></b></td>
+    		<{if $displaylastitem == 1}>
+    			<td align="right" width="40%" class="itemHead"><b><{$lang_last_smartsection}></b></td>
+    		<{/if}>
+  		</tr>
+  		<tr> 
+    		<td valign="middle" class="even" align="left">
+    		<{if $isAdmin == 1}>
+    			<a href="<{$smartsection_url}>admin/category.php?op=mod&categoryid=<{$category.categoryid}>"><img src="<{$smartsection_url}>images/icon/cat.gif" title="<{$lang_editcategory}>" alt="<{$lang_editcategory}>"/></a>&nbsp;<b><{$category.name}></b>
+    		<{else}>
+				<img src="<{$smartsection_url}>images/icon/cat.gif" alt="" />&nbsp;<b><{$category.name}></b>    		
+    		<{/if}>
+    		 <br />
+    		<span style="margin: 3px 0 10px 0; font-size: small; display: block; "><{$category.description}></span>
+    		</td>
+    		<td valign="middle" class="even" align="center"><{$category.total}></td>
+    		<{if $displaylastitem == 1}>
+    			<td valign="middle" class="even" align="right"><{$category.last_title_link}></td>
+    		<{/if}>
+  		</tr>
+
+  		<!-- BEGIN DYNAMIC BLOCK -->
+  		<{foreach item=subcat from=$subcats}>
+  		<tr> 
+  			<td valign="middle" class="odd" align="left">
+  			<div style="padding-left: 10px;">
+  				<{if $isAdmin == 1}>
+	  				<a href="<{$smartsection_url}>admin/category.php?op=mod&categoryid=<{$subcat.categoryid}>"><img src="<{$smartsection_url}>images/icon/subcat.gif" title="<{$lang_editcategory}>" alt="<{$lang_editcategory}>"/></a>&nbsp;<{$subcat.categorylink}>
+  				<{else}>
+	  				<img src="<{$smartsection_url}>images/icon/subcat.gif" title="<{$lang_editcategory}>" alt="<{$lang_editcategory}>"/>&nbsp;<{$subcat.categorylink}>
+    			<{/if}>
+   				<{if $displaysubcatdsc == 1}>
+   					<span class="smartsection_category_dsc"><{$subcat.description}></span>
+   				<{/if}>
+    		</div>
+    		</td>
+  			<td valign="middle" class="odd" align="center"><{$subcat.total}></td>
+    		<{if $displaylastitem == 1}>
+  				<td valign="middle" class="odd" align="right"><{$subcat.last_title_link}></td>
+  			<{/if}>
+  		</tr>
+   		<{/foreach}>
+		<!-- END DYNAMIC BLOCK -->
+  		<tr> 
+  		</tr>
+		</table>
+		<!-- End sub categories loop -->
+	<{if $collapsable_heading == 1}>
+		</div>
+	<{/if}>
+<br />
+	<{if $items}>
+	<{if $collapsable_heading == 1}>
+		<div class="smartsection_collaps_title"><a href='javascript:;' onclick="toggle('bottomtable'); toggleIcon('bottomtableicon')";><img id='bottomtableicon' src='<{$smartsection_url}>images/icon/close12.gif' alt='' /></a>&nbsp;<{$lang_items_title}></div>
+		<div id='bottomtable'>
+		<span class="smartsection_collaps_info"><{$lang_items_info}></span>
+
+		<!-- Content under the collapsable bar //-->
+	<{/if}>
+		<div align="right"><{$category.navbar}></div>
+
+		<{if displayList == 1}>
+			<!-- Start item loop -->
+			<{foreach item=item from=$items}> 
+              <{include file="db:smartsection_singleitem.html" item=$item}>
+			<{/foreach}> 
+			<!-- End item loop -->
+		<div align="right"><{$category.navbar}></div>
+		<{else}>
+			<table border="0" width="90%" cellspacing="1" cellpadding="3" align="center" class= "outer">
+		  	<tr> 
+	    		<td align="left" class="itemHead" width='65%'><b><{$lang_title}></b></td>
+				<{if $display_date_col == 1}>
+	    			<td align="center" class="itemHead" width="25%"><b><{$lang_datesub}></b></td>
+	    		<{/if}>
+				<{if $display_hits_col == 1}>
+	    			<td align="center" class="itemHead" width="10%"><b><{$lang_hits}></b></td>
+	    		<{/if}>
+		  	</tr>
+  			<!-- Start item loop -->
+  			<{foreach item=item from=$items}> 
+  			<tr valign="top"> 
+	    		<td class="even" align="left"><{$item.titlelink}></b></td>
+				<{if $display_date_col == 1}>
+	    			<td class="odd" align="left"><div align="center" valign="middle"><{$item.datesub}></div></td>
+	    		<{/if}>
+	    		<{if $display_hits_col == 1}>
+					<td class="odd" align="left"><div align="center"><{$item.counter}></div></td>
+				<{/if}>
+			</tr>
+  			<{/foreach}> 
+			<!-- End item loop -->
+  			<tr> 
+			</tr>
+			</table>
+		<{/if}>		
+	<{if $collapsable_heading == 1}>
+		</div>
+	<{/if}>
+	<{/if}>
+	<{/if}>
+	<{if $isAdmin == 1}>
+  		<div class="smartsection_adminlinks"><{$smartsection_adminpage}></div>
+	<{/if}>
+	
+
+
+<{if $smarttie==1}>
+	<{include file='db:smarttie_links.html'}>
+<{/if}>
+<{include file='db:system_notification_select.html'}>

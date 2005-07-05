@@ -1,0 +1,46 @@
+/**
+* $Id: smartsection.css,v 1.1 2005/07/05 05:34:13 mauriciodelima Exp $
+* Module: SmartFAQ
+* Author: marcan <marcan@notrevie.ca>
+* Licence: GNU
+*/
+
+.smartsection_headertable {padding: 0; margin: 0; border-bottom: 1px solid; margin-bottom: 10px;}
+.smartsection_modulename {font-size: 10px; text-align: left; font-weight: bold; padding-right: 0.3em;	line-height: 18px;}
+.smartsection_breadcrumb {font-size: 10px; line-height: 18px;}
+
+.smartsection_infotitle {margin-top: 8px; margin-bottom: 8px; font-size: 18px; line-height: 18px; font-weight: bold; display: block;}
+.smartsection_infotext  {margin-bottom: 8px; line-height: 130%; display: block;}
+
+.smartsection_categoryname {vertical-align: middle; font-size: 18px; text-align: right; font-weight: bold; margin: 0; line-height: 23px;}
+
+.smartsection_collaps_title {margin-bottom: 2px; margin-top: 5px; font-size: 16px; line-height: 16px; font-weight: bold; display: block;}
+.smartsection_collaps_info {margin: 3px 0 12px 0; font-size: small; display: block;}
+
+.smartsection_item_head_cat {padding-top: 0px; text-align: right; font-style:normal; vertical-align: middle; display: block;}
+.smartsection_item_head_who {padding-top: 5px; text-align: right; font-style:normal; vertical-align: middle; display: block;}
+
+.smartsection_item_image {display: block; padding: 5px;}
+.smartsection_items_link {width: 50%; vertical-align: middle;}
+
+.smartsection_list {padding: 8px;  font-size: 16px;}
+
+.smartsection_category_dsc {margin: 3px 0 10px 0; font-size: small; display: block;}
+.smartsection_adminlinks {padding: 15px; font-size: 10px; text-align: center; line-height: 18px;}
+
+.ss_indexfooter {font-size: 10px; font-weight: bold; text-align: center;  padding: 10px;}
+.ss_itemfooter {font-size: 10px; font-weight: bold; text-align: center;  padding: 10px;}
+
+.itemFoot {text-align: right; padding:3px; border:1px solid #808080;}
+.itemFoot {text-align: right; padding:3px; border:1px solid #808080; }
+
+.pre_itemInfo {padding-top: 5px; clear: both;}
+
+.modfooter{text-align: center; padding-top: 6px; font-size: 9px; border-top: 0px solid #ccc; }
+
+.spotlight_readmore{font-size: 10px; text-align: right; border-bottom: 1px solid #000000;}
+
+.smartsection_pagenav_top{padding-top: 5px; font-size: 10px; text-align: left; }
+.smartsection_pagenav_bottom{padding-top: 5px; padding-bottom: 5px; font-size: 10px; text-align: center; }
+
+
