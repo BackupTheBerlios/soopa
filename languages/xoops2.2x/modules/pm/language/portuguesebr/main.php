@@ -1,57 +1,57 @@
 <?php
-// $Id: main.php,v 1.1 2005/07/05 05:10:35 mauriciodelima Exp $
+// $Id: main.php,v 1.2 2005/07/05 20:24:45 mauriciodelima Exp $
 //%%%%%%	File Name readpmsg.php 	%%%%%
-define("_PM_DELETED","Your message(s) has been deleted");
-define("_PM_PRIVATEMESSAGE","Private Messages");
-define("_PM_INBOX","Inbox");
-define("_PM_FROM","From");
-define("_PM_YOUDONTHAVE","You don't have any private messages");
-define("_PM_FROMC","From: ");
+define("_PM_DELETED","Mensages excluidas com sucesso!");
+define("_PM_PRIVATEMESSAGE","Mensagens Particulares");
+define("_PM_INBOX","Caixa de Entrada");
+define("_PM_FROM","Remetente");
+define("_PM_YOUDONTHAVE","Nenhuma mensagem particular");
+define("_PM_FROMC","Perfil: ");
 define("_PM_SENTC","Sent: "); // The date of message sent
-define("_PM_PROFILE","Profile");
+define("_PM_PROFILE","Perfil");
 
 // %s is a username
-define("_PM_PREVIOUS","Previous Message");
-define("_PM_NEXT","Next Message");
+define("_PM_PREVIOUS","Anterior");
+define("_PM_NEXT","Próxima");
 
 //%%%%%%	File Name pmlite.php 	%%%%%
-define("_PM_SORRY","Sorry! You are not a registered user.");
-define("_PM_REGISTERNOW","Register Now!");
-define("_PM_GOBACK","Go Back");
-define("_PM_USERNOEXIST","The selected user doesn't exist in the database.");
-define("_PM_PLZTRYAGAIN","Please check the name and try again.");
-define("_PM_MESSAGEPOSTED","Your message has been posted");
+define("_PM_SORRY","Desculpe! Você não é um usuário registrado.");
+define("_PM_REGISTERNOW","Registre-se agora!");
+define("_PM_GOBACK","Voltar");
+define("_PM_USERNOEXIST","O usuário selecionado não existe.");
+define("_PM_PLZTRYAGAIN","Verifique o nome e tente novamente");
+define("_PM_MESSAGEPOSTED","Mensagens enviadas com sucesso");
 define("_PM_CLICKHERE","You can click here to view your private messages");
 define("_PM_ORCLOSEWINDOW","Or click here to close this window.");
 define("_PM_USERWROTE","%s wrote:");
 define("_PM_TO","To: ");
-define("_PM_SUBJECTC","Subject: ");
-define("_PM_MESSAGEC","Message: ");
-define("_PM_CLEAR","Clear");
-define("_PM_CANCELSEND","Cancel Send");
-define("_PM_SUBMIT","Submit");
+define("_PM_SUBJECTC","Assunto: ");
+define("_PM_MESSAGEC","Lensagem: ");
+define("_PM_CLEAR","Limpar");
+define("_PM_CANCELSEND","Cancelar");
+define("_PM_SUBMIT","Enviar");
 
 //%%%%%%	File Name viewpmsg.php 	%%%%%
-define("_PM_SUBJECT","Subject");
-define("_PM_DATE","Date");
-define("_PM_NOTREAD","Not Read");
-define("_PM_SEND","Send");
-define("_PM_DELETE","Delete");
-define("_PM_REPLY", "Reply");
-define("_PM_PLZREG","Please register first to send private messages!");
+define("_PM_SUBJECT","Assunto");
+define("_PM_DATE","data");
+define("_PM_NOTREAD","Não lida");
+define("_PM_SEND","Escrever nova mensagem");
+define("_PM_DELETE","Excluir");
+define("_PM_REPLY", "Responder");
+define("_PM_PLZREG","Você deve se registrar primeiro para poder enviar mensagens particulares!");
 
 define("_PM_ONLINE", "Online");
 
-define("_PM_RECEIVE","RECEIVE");
+define("_PM_RECEIVE","RECEBIDAS");
 define("_PM_POST","POST");
 define("_PM_READBOX","READBOX");
 define("_PM_RSAVEBOX","Receive_SAVEBOX");
-define("_PM_OUTBOX","OUTBOX");
+define("_PM_OUTBOX","CAIXA DE SAÍDA");
 define("_PM_SENTBOX","SENTBOX");
 define("_PM_PSAVEBOX","Post_SAVEBOX");
-define("_PM_SAVE","SAVE");
-define("_PM_SAVED","Saved Successfully");
-define("_PM_TOC","From: ");
+define("_PM_SAVE","SALVAS");
+define("_PM_SAVED","Mensagem foi salva com sucesso");
+define("_PM_TOC","Remetente: ");
 
 //WANISYS.NET PM HACK1.5
 define("_PM_SORT","SORT");
@@ -69,8 +69,8 @@ define("_PM_NEXTP","Next");
 //WANISYS.NET PM HACK2.0
 define("_PM_UNDELETE","undelete");
 define("_PM_UNDELETED","Your message(s) has been undeleted");
-define("_PM_RTRASHBOX","TRASHBOX");
-define("_PM_PTRASHBOX","TRASHBOX");
+define("_PM_RTRASHBOX","LIXEIRA");
+define("_PM_PTRASHBOX","LIXEIRA");
 
 //WANISYS.NET PM HACK2.5
 define("_PM_INBOXTOTAL","Total : %d PM(s) found in INBOX");

@@ -5,8 +5,8 @@ Agradecemos seu registro no site {SITENAME}.
 Como usuário registrado do site {SITENAME}, você poderá
 - Enviar mensagens particulares (MP) a outros usuários do portal
 - Participar das discussões dos fóruns
-- Receber as últimas notícias
-- Comentar os assuntos
+- Receber as últimas notícias publicadas
+- Comentar os tópicos
 - E muito mais....
 
 

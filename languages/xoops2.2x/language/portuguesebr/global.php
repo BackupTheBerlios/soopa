@@ -1,11 +1,11 @@
 <?php
-// $Id: global.php,v 1.1 2005/07/05 04:56:36 mauriciodelima Exp $
+// $Id: global.php,v 1.2 2005/07/05 20:24:45 mauriciodelima Exp $
 //%%%%%%	File Name mainfile.php 	%%%%%
 define("_PLEASEWAIT","Aguarde...");
 define("_FETCHING","Carregando...");
 define("_TAKINGBACK","Retornando...");
 define("_LOGOUT","Sair do site");
-define("_SUBJECT","Assunto");
+define("_SUBJECT","Tópico");
 define("_MESSAGEICON","Ícone da mensagem");
 define("_COMMENTS","Comentários");
 define("_POSTANON","Enviar anonimamente");
@@ -133,7 +133,7 @@ define("_EXAMPLE","EXEMPLO");
 define("_ENTERURL","Digite o endereço do link que você deseja incluir:");
 define("_ENTERWEBTITLE","Digite o título do link:");
 define("_ENTERIMGURL","Digite o endereço da imagem que você deseja incluir:");
-define("_ENTERIMGPOS","Agora, digite a posição da figura.");
+define("_ENTERIMGPOS","Digite o alinhamento da figura.");
 define("_IMGPOSRORL","'R' ou 'r' para direita (right), 'L' ou 'l' para esquerda (left), ou deixe vazio.");
 define("_ERRORIMGPOS","ERRO: Digite a posição da imagem.");
 define("_ENTEREMAIL","Digite o e-mail que você deseja incluir.");
@@ -142,7 +142,7 @@ define("_ENTERQUOTE","Digite o texto para citação.");
 define("_ENTERTEXTBOX","Digite o texto na caixa de texto.");
 define("_ALLOWEDCHAR","Número máximo de caracteres permitido: ");
 define("_CURRCHAR","Número de caracteres digitados: ");
-define("_PLZCOMPLETE","Complete os campos 'assunto' e 'mensagem'.");
+define("_PLZCOMPLETE","Complete os campos 'tópico' e 'mensagem'.");
 define("_MESSAGETOOLONG","A sua mensagem é muito extensa.");
 
 //%%%%%		TIME FORMAT SETTINGS   %%%%%

@@ -87,22 +87,22 @@ define('_PROFILE_MA_SHOWALL','Exibir tudo');
 define('_PROFILE_MA_PROFILE','Perfil');
 define('_PROFILE_MA_REALNAME','Nome Real');
 define('_PROFILE_MA_SHOWSIG','Sempre incluir a minha assinatura');
-define('_PROFILE_MA_CDISPLAYMODE','Modo de exibição dos comentários');
+define('_PROFILE_MA_CDISPLAYMODE','Exibição dos comentários');
 define('_PROFILE_MA_CSORTORDER','Ordem dos comentário');
 define('_PROFILE_MA_PASSWORD','Senha');
-define('_PROFILE_MA_TYPEPASSTWICE','(type a new password twice to change it)');
-define('_PROFILE_MA_SAVECHANGES','Save Changes');
+define('_PROFILE_MA_TYPEPASSTWICE','(digite a senha duas vezes)');
+define('_PROFILE_MA_SAVECHANGES','Salvar');
 define('_PROFILE_MA_NOEDITRIGHT',"Sorry, you don't have the right to edit this user's info.");
-define('_PROFILE_MA_PASSNOTSAME','Both passwords are different. They must be identical.');
+define('_PROFILE_MA_PASSNOTSAME','Senha não conicide. Os campos devem ser iguais.');
 define('_PROFILE_MA_PWDTOOSHORT','Sorry, your password must be at least <b>%s</b> characters long.');
-define('_PROFILE_MA_PROFUPDATED','Your Profile Updated!');
-define('_PROFILE_MA_USECOOKIE','Store my user name in a cookie for 1 year');
+define('_PROFILE_MA_PROFUPDATED','Perfil de Usuário atualizado com sucesso!');
+define('_PROFILE_MA_USECOOKIE','Salvar meu cookie de usuário por 1 ano');
 define('_PROFILE_MA_NO','Não');
 define('_PROFILE_MA_DELACCOUNT','Excluir Perfil');
 define('_PROFILE_MA_MYAVATAR', 'Meu Avatar');
 define('_PROFILE_MA_UPLOADMYAVATAR', 'Incluir Avatar');
-define('_PROFILE_MA_MAXPIXEL','Max Pixels');
-define('_PROFILE_MA_MAXIMGSZ','Max Image Size (Bytes)');
+define('_PROFILE_MA_MAXPIXEL','Resolução máx Pixels');
+define('_PROFILE_MA_MAXIMGSZ','Tamanho máx. (Bytes)');
 define('_PROFILE_MA_SELFILE','Selecionar arquivo');
 define('_PROFILE_MA_OLDDELETED','Seu outro avatar será deletado!');
 define('_PROFILE_MA_CHOOSEAVT', 'Escolha um avatar na lista.');
@@ -110,11 +110,11 @@ define('_PROFILE_MA_CHOOSEAVT', 'Escolha um avatar na lista.');
 define('_PROFILE_MA_PRESSLOGIN', 'Press the button below to login');
 
 define('_PROFILE_MA_ADMINNO', 'User in the webmasters group cannot be removed');
-define('_PROFILE_MA_GROUPS', 'User\'s Groups');
+define('_PROFILE_MA_GROUPS', 'Grupo de Usuários');
 
 //changepass.php
-define("_PROFILE_MA_CHANGEPASSWORD", "Change Password");
-define("_PROFILE_MA_PASSWORDCHANGED", "Password Changed Successfully");
-define("_PROFILE_MA_OLDPASSWORD", "Current Password");
-define("_PROFILE_MA_NEWPASSWORD", "New Password");
+define("_PROFILE_MA_CHANGEPASSWORD", "Alterar Senha");
+define("_PROFILE_MA_PASSWORDCHANGED", "Senha alterada com sucesso!");
+define("_PROFILE_MA_OLDPASSWORD", "Senha atual");
+define("_PROFILE_MA_NEWPASSWORD", "Nova senha");
 ?>

@@ -1,5 +1,5 @@
 <?php
-// $Id: users.php,v 1.1 2005/07/05 05:10:36 mauriciodelima Exp $
+// $Id: users.php,v 1.2 2005/07/05 20:24:45 mauriciodelima Exp $
 //%%%%%%	Admin Module Name  Users 	%%%%%
 
 define("_AM_AYSYWTDU","Deseja excluir o usuário %s?");
@@ -40,7 +40,7 @@ define("_AM_UPDATEUSER","Atualizar usuário");
 define("_AM_USERINFO","Informações-usuário");
 define("_AM_USERID","Id");
 define("_AM_RETYPEPD","Digite a senha novamente");
-define("_AM_CHANGEONLY","(apenas para alterações)");
+define("_AM_CHANGEONLY","(somente para alterações)");
 define("_AM_USERPOST","Postagens deste usuário:");
 define("_AM_STORIES","Notícias");
 define("_AM_COMMENTS","Número de textos enviados (sem contar as notícias):");
@@ -49,9 +49,9 @@ define("_AM_SYNCHRONIZE","SINCRONIZAR");
 define("_AM_USERDONEXIT","Usuário inexistente.");
 define("_AM_STNPDNM","As novas senhas não conferem. Clique em retornar e tente de novo");
 define("_AM_CNGTCOM","Não foi possível obter o número total de comentários");
-define("_AM_CNGTST","Não foi possível obter o número total de artigos");
-define("_AM_CNUUSER","Não foi possível editar o usuário");
-define("_AM_CNGUSERID","Não foi possível obter o número identificador do usuário");
+define("_AM_CNGTST","Não é possível obter o número total de notícias");
+define("_AM_CNUUSER","Não é possível editar o usuário");
+define("_AM_CNGUSERID","Não é possível obter a ID do usuário");
 define("_AM_LIST","Listar");
 define("_AM_NOUSERS", "Nenhum usuário selecionado");
 ?>

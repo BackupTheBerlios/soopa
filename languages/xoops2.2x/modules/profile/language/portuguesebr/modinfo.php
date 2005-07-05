@@ -1,5 +1,5 @@
 <?php
-// $Id: modinfo.php,v 1.1 2005/07/05 05:10:35 mauriciodelima Exp $
+// $Id: modinfo.php,v 1.2 2005/07/05 20:24:45 mauriciodelima Exp $
 define("_PROFILE_MI_NAME", "Perfil Extendido");
 define("_PROFILE_MI_DESC", "Módulo para gerenciamento do perfil do usuário.");
 
@@ -11,12 +11,12 @@ define("_PROFILE_MI_CHANGEMAIL", "Change Email");
 //Admin links
 define("_PROFILE_MI_INDEX", "Início");
 define("_PROFILE_MI_CATEGORIES", "Categorias");
-define("_PROFILE_MI_FIELDS", "Fields");
+define("_PROFILE_MI_FIELDS", "Campos");
 define("_PROFILE_MI_USERS", "Usuários");
 define("_PROFILE_MI_PERMISSIONS", "Permissões");
 
 //User Profile Category
-define("_PROFILE_MI_CATEGORY_TITLE", "User Profile");
+define("_PROFILE_MI_CATEGORY_TITLE", "Perfil do Usuário");
 define("_PROFILE_MI_CATEGORY_DESC", "For those user fields");
 
 //User Profile Fields
@@ -28,71 +28,71 @@ define("_PROFILE_MI_YIM_TITLE", "YIM");
 define("_PROFILE_MI_YIM_DESCRIPTION", "Yahoo! Instant Messenger ID");
 define("_PROFILE_MI_MSN_TITLE", "MSN");
 define("_PROFILE_MI_MSN_DESCRIPTION", "Microsoft Messenger ID");
-define("_PROFILE_MI_FROM_TITLE", "Location");
-define("_PROFILE_MI_FROM_DESCRIPTION", "");
-define("_PROFILE_MI_SIG_TITLE", "Signature");
-define("_PROFILE_MI_SIG_DESCRIPTION", "Here, you can write a signature that can be displayed in your forum posts, comments etc.");
-define("_PROFILE_MI_VIEWEMAIL_TITLE", "Allow other users to view my email address");
-define("_PROFILE_MI_BIO_TITLE", "Extra Info");
-define("_PROFILE_MI_BIO_DESCRIPTION", "");
-define("_PROFILE_MI_INTEREST_TITLE", "Interests");
-define("_PROFILE_MI_INTEREST_DESCRIPTION", "");
-define("_PROFILE_MI_OCCUPATION_TITLE", "Occupation");
-define("_PROFILE_MI_OCCUPATION_DESCRIPTION", "");
-define("_PROFILE_MI_URL_TITLE", "Website");
-define("_PROFILE_MI_URL_DESCRIPTION", "");
-define("_PROFILE_MI_NEWEMAIL_TITLE", "New Email");
-define("_PROFILE_MI_NEWEMAIL_DESCRIPTION", "Variable for storing a proposed new email address until confirmation comes from a mail sent to the old one. See modules/profile/changemail.php");
+define("_PROFILE_MI_FROM_TITLE", "Cidade/UF");
+define("_PROFILE_MI_FROM_DESCRIPTION", "Cidade / Estado onde reside");
+define("_PROFILE_MI_SIG_TITLE", "Assinatura");
+define("_PROFILE_MI_SIG_DESCRIPTION", "Digite a assinatura que será usada para as mensagens nos fóruns, comentários, etc..");
+define("_PROFILE_MI_VIEWEMAIL_TITLE", "Exibir meu e-mail");
+define("_PROFILE_MI_BIO_TITLE", "Outras Informações");
+define("_PROFILE_MI_BIO_DESCRIPTION", "Digite outras informações que achar interessante para os outros usuários deste portal");
+define("_PROFILE_MI_INTEREST_TITLE", "Interesses");
+define("_PROFILE_MI_INTEREST_DESCRIPTION", "Seus interesses, suas atividades...");
+define("_PROFILE_MI_OCCUPATION_TITLE", "Ocupação");
+define("_PROFILE_MI_OCCUPATION_DESCRIPTION", "Sua profissão");
+define("_PROFILE_MI_URL_TITLE", "Home Page");
+define("_PROFILE_MI_URL_DESCRIPTION", "Sua página pessoal");
+define("_PROFILE_MI_NEWEMAIL_TITLE", "Novo E-mai");
+define("_PROFILE_MI_NEWEMAIL_DESCRIPTION", "Antes de efetuar a mudança de e-mail do cadastro, deverá ser confirmado o novo e-mail. Veja modules/profile/changemail.php");
 
 //Configuration categories
-define("_PROFILE_MI_CAT_SETTINGS", "General Settings");
-define("_PROFILE_MI_CAT_SETTINGS_DSC", "");
-define("_PROFILE_MI_CAT_USER", "User Settings");
+define("_PROFILE_MI_CAT_SETTINGS", "Configurações Gerais");
+define("_PROFILE_MI_CAT_SETTINGS_DSC", "...");
+define("_PROFILE_MI_CAT_USER", "Configuração de Usuários");
 define("_PROFILE_MI_CAT_USER_DSC", "");
 
 //Configuration items
-define("_PROFILE_MI_PROFILE_SEARCH", "Show latest submissals by user on user profile");
-define("_PROFILE_MI_MAX_UNAME", "Maximum Username Length");
-define("_PROFILE_MI_MAX_UNAME_DESC", "This indicates the maximum number of characters, a username may have");
-define("_PROFILE_MI_MIN_UNAME", "Minimum Username Length");
-define("_PROFILE_MI_MIN_UNAME_DESC", "This indicates the minimum number of characters, a username must have");
-define("_PROFILE_MI_DISPLAY_DISCLAIMER", "Display Disclaimer");
-define("_PROFILE_MI_DISPLAY_DISCLAIMER_DESC", "If enabled, a disclaimer will be shown on the registration form");
-define("_PROFILE_MI_DISCLAIMER", "Disclaimer Text");
-define("_PROFILE_MI_DISCLAIMER_DESC", "This text will be shown on the registration form, if enabled above");
-define("_PROFILE_MI_BAD_UNAMES", "Enter names that should not be selected as username");
-define("_PROFILE_MI_BAD_UNAMES_DESC", "Separate each with a <b>|</b>, case insensitive, regex enabled.");
-define("_PROFILE_MI_BAD_EMAILS", "Enter emails that should not be selected as username");
-define("_PROFILE_MI_BAD_EMAILS_DESC", "Separate each with a <b>|</b>, case insensitive, regex enabled.");
-define("_PROFILE_MI_MINPASS", "Minimum password length");
-define("_PROFILE_MI_NEWUNOTIFY", "Notify by mail when a new user is registered?");
-define("_PROFILE_MI_NOTIFYTO", "Select group to which new user notification mail will be sent");
-define("_PROFILE_MI_ACTVTYPE", "Select activation type of newly registered users");
-define("_PROFILE_MI_USERACTV","Requires activation by user (recommended)");
-define("_PROFILE_MI_AUTOACTV","Activate automatically");
-define("_PROFILE_MI_ADMINACTV","Activation by administrators");
-define("_PROFILE_MI_ACTVGROUP", "Select group to which activation mail will be sent");
-define("_PROFILE_MI_ACTVGROUP_DESC", "Valid only when 'Activation by administrators' is selected");
-define("_PROFILE_MI_UNAMELVL","Select the level of strictness for username filtering");
-define("_PROFILE_MI_STRICT","Strict (only alphabets and numbers)");
-define("_PROFILE_MI_MEDIUM","Medium");
-define("_PROFILE_MI_LIGHT","Light (recommended for multi-byte chars)");
-define("_PROFILE_MI_ALLOWREG", "Allow new user registration?");
-define("_PROFILE_MI_ALLOWREG_DESC", "Select yes to accept new user registration");
-define("_PROFILE_MI_AVATARALLOW", "Allow custom avatar upload?");
-define("_PROFILE_MI_AVATARALLOW_DESC", "");
-define("_PROFILE_MI_AVATARWIDTH", "Avatar image max width (pixel)");
-define("_PROFILE_MI_AVATARWIDTH_DESC", "");
-define("_PROFILE_MI_AVATARHEIGHT", "Avatar image max height (pixel)");
-define("_PROFILE_MI_AVATARHEIGHT_DESC", "");
-define("_PROFILE_MI_AVATARMAX", "Avatar image max filesize (bytes)");
-define("_PROFILE_MI_AVATARMAX_DESC", "");
-define("_PROFILE_MI_SELFDELETE", "Allow users to delete own account?");
-define("_PROFILE_MI_SELFDELETE_DESC", "");
-define("_PROFILE_MI_AVATARMINPOSTS", "Minimum posts required");
-define("_PROFILE_MI_AVATARMINPOSTS_DESC", "Enter the minimum number of posts required to upload a custom avatar");
-define("_PROFILE_MI_ALLOWCHGMAIL", "Allow users to change email address?");
-define("_PROFILE_MI_ALLOWCHGMAIL_DESC", "");
+define("_PROFILE_MI_PROFILE_SEARCH", "Exibir as últimas participações do usuário em seu perfil?");
+define("_PROFILE_MI_MAX_UNAME", "Tamanho máximo do nome de usuário");
+define("_PROFILE_MI_MAX_UNAME_DESC", "Indica o tamanho mínimo de caracteres que o usuário deverá fornecer no formulário de registro");
+define("_PROFILE_MI_MIN_UNAME", "Tamanho mínimo do nome de usuário");
+define("_PROFILE_MI_MIN_UNAME_DESC", "Indica o tamanho mínimo de caracteres que o usuário deverá fornecer no formulário de registro.");
+define("_PROFILE_MI_DISPLAY_DISCLAIMER", "Exibir o termo de responsabilidade?");
+define("_PROFILE_MI_DISPLAY_DISCLAIMER_DESC", "Selecione sim para exibir o termo de responsabilidade no formulário de registro");
+define("_PROFILE_MI_DISCLAIMER", "Termo de responsabilidade");
+define("_PROFILE_MI_DISCLAIMER_DESC", "Digite o texto do termo de responsabilidade que será exibido formulário de registro se a opção acima estiver selecionada.");
+define("_PROFILE_MI_BAD_UNAMES", "Digite os nomes que não devem ser usados para nome de usuário");
+define("_PROFILE_MI_BAD_UNAMES_DESC", "Separar cada um por um <b>|</b>, é indiferente o uso de maiúsculas ou minúsculas, regex ligadas.");
+define("_PROFILE_MI_BAD_EMAILS", "Digite os endereços de e-mail que não devem ser usados pelos usuários");
+define("_PROFILE_MI_BAD_EMAILS_DESC", "Separar cada um por um <b>|</b>, é indiferente o uso de maiúsculas ou minúsculas, regex ligadas..");
+define("_PROFILE_MI_MINPASS", "Tamanho mínimo para as senhas");
+define("_PROFILE_MI_NEWUNOTIFY", "Avisar por e-mail quando novo usuário se redistrar?");
+define("_PROFILE_MI_NOTIFYTO", "Selecione qual o grupo que receberá os avisos acima");
+define("_PROFILE_MI_ACTVTYPE", "Como serão ativados os novos usuários?");
+define("_PROFILE_MI_USERACTV","Ativação pelo usuário (recomendado)");
+define("_PROFILE_MI_AUTOACTV","Ativação automática");
+define("_PROFILE_MI_ADMINACTV","Ativação pelo administrador");
+define("_PROFILE_MI_ACTVGROUP", "Selecione o grupo que ativará os novos usuários");
+define("_PROFILE_MI_ACTVGROUP_DESC", "Somente quando 'Ativação pelo administrador' está selecionado");
+define("_PROFILE_MI_UNAMELVL","Qual deve ser a restrição dos caracteres permitidos ao usuário?");
+define("_PROFILE_MI_STRICT","Máximo (somente letras e números)");
+define("_PROFILE_MI_MEDIUM","Médio");
+define("_PROFILE_MI_LIGHT","Mínimo (recomendado para caracteres de múltiplos bytes)");
+define("_PROFILE_MI_ALLOWREG", "Permitir o registro de novos usuários?");
+define("_PROFILE_MI_ALLOWREG_DESC", "Selecione 'sim' para permitir registro de novos usuários");
+define("_PROFILE_MI_AVATARALLOW", "Permitir o envio de avatares?");
+define("_PROFILE_MI_AVATARALLOW_DESC", "Selecionando 'sim' os usuário poderão enviar avatares personalizados.");
+define("_PROFILE_MI_AVATARWIDTH", "Largura máxima da imagem do avatar (px)");
+define("_PROFILE_MI_AVATARWIDTH_DESC", "Avatares com largura maior que a permitida serão recusados.");
+define("_PROFILE_MI_AVATARHEIGHT", "Altura máxima da imagem do avatar (px)");
+define("_PROFILE_MI_AVATARHEIGHT_DESC", "Avatares com altura maior que a permitida serão recusados.");
+define("_PROFILE_MI_AVATARMAX", "Tamanho máximo da imagem do avatar (em bytes)");
+define("_PROFILE_MI_AVATARMAX_DESC", "Avatares com tamanho de arquivo da imagem maior que o permitido serão recusados");
+define("_PROFILE_MI_SELFDELETE", "Permitir aos usuários escluírem suas próprias contas?");
+define("_PROFILE_MI_SELFDELETE_DESC", "Os usuários poderão excluir sua própria contas se estiver selecionado 'sim'");
+define("_PROFILE_MI_AVATARMINPOSTS", "Número mínimo de mensagens");
+define("_PROFILE_MI_AVATARMINPOSTS_DESC", "Digite o número mínimo de mensagens para permitir o envio de avatares");
+define("_PROFILE_MI_ALLOWCHGMAIL", "Permitir que os usuários mudem de e-mail?");
+define("_PROFILE_MI_ALLOWCHGMAIL_DESC", "Permite que usuários mudarem o endereço de e-mail que usaram quando se cadastraram no portal.");
 define("_PROFILE_MI_ALLOWVIEWACC", "Allow to view account");
 define("_PROFILE_MI_ALLOWVIEWACC_DESC", "Individual fields can be set visible or invisible to users in fields administration,<br />but if you want to allow access to other users' accounts for certain groups only,<br /> while still allowing anonymous users to register,<br /> select the groups here");
 

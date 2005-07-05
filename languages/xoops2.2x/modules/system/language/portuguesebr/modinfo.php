@@ -1,5 +1,5 @@
 <?php
-// $Id: modinfo.php,v 1.1 2005/07/05 05:10:35 mauriciodelima Exp $
+// $Id: modinfo.php,v 1.2 2005/07/05 20:24:45 mauriciodelima Exp $
 // Module Info
 
 // The name of this module
@@ -40,19 +40,20 @@ define("_MI_SYSTEM_ADMENU14", "Avatares");
 define("_MI_SYSTEM_ADMENU15", "Modelos");
 define("_MI_SYSTEM_ADMENU16", "Comentários");
  
-define("_MI_SYSTEM_UMODE_TITLE", "Modo de Exibição dos Comentários");
-define("_MI_SYSTEM_UORDER_TITLE", "Ordem de classificação dos comentários");
+define("_MI_SYSTEM_UMODE_TITLE", "Exibição dos Comentários");
+define("_MI_SYSTEM_UORDER_TITLE", "Classificação dos comentários");
 define("_MI_SYSTEM_REALNAME", "Nome Real");
-define("_MI_SYSTEM_USERREGDATE", "Member Since");
+define("_MI_SYSTEM_USERREGDATE", "Usuário desde");
 define("_MI_SYSTEM_USERPOSTS", "Postagens");
-define("_MI_SYSTEM_ATTACHSIG", "Always attach my signature"); 
-define("_MI_SYSTEM_TIMEZONEOFFSET", "Time Zone");
-define("_MI_SYSTEM_MAILOK", "Receive occasional email notices <br />from administrators and moderators?");
-define("_MI_SYSTEM_USERTHEME", "Theme");
-define("_MI_SYSTEM_ACTKEY", "User activation key");
-define("_MI_SYSTEM_LASTLOGIN", "Last Login");
+define("_MI_SYSTEM_ATTACHSIG", "Anexar a assinatura"); 
+define("_MI_SYSTEM_TIMEZONEOFFSET", "Fuso Horário");
+define("_MI_SYSTEM_MAILOK", "Receber e-mails do portal?");
+define("_MI_SYSTEM_USERTHEME", "Tema");
+define("_MI_SYSTEM_ACTKEY", "Chave de ativação");
+define("_MI_SYSTEM_LASTLOGIN", "Último acesso");
+define("_MI_SYSTEM_MAILOK_DESC", "Habilita os administradores a entrarem em contato por e-mail.");
  
 //configurations
-define("_MI_SYSTEM_ANONYMOUS","Anonymous");
-define("_MI_SYSTEM_SITECLOSEDMSG","The site is currently closed for maintainance. Please come back later.");
+define("_MI_SYSTEM_ANONYMOUS","Anônimo");
+define("_MI_SYSTEM_SITECLOSEDMSG","Este site está fechado para manutenção. Por favor, volte outra hora.");
 ?>

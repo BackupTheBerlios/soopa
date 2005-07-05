@@ -1,12 +1,12 @@
 <?php
 
-define("_PM_AM_PRUNE", "Prune");
-define("_PM_AM_PRUNEAFTER", "Prune messages posted after this date (leave blank for no start date)");
-define("_PM_AM_PRUNEBEFORE", "Prune messages posted before this date (leave blank for no end date)");
-define("_PM_AM_ONLYREADMESSAGES", "Prune only read messages");
-define("_PM_AM_INCLUDESAVE", "Include messages in users' \"save\" folders");
-define("_PM_AM_NOTIFYUSERS", "Notify affected users about the prune?");
+define("_PM_AM_PRUNE", "Exclusões de Mensagens Particulares");
+define("_PM_AM_PRUNEAFTER", "MP com data posterior a: (em branco não usa inicial )");
+define("_PM_AM_PRUNEBEFORE", "MP com data anterior a: (em branco não usa data final)");
+define("_PM_AM_ONLYREADMESSAGES", "Somente mensagens lidas");
+define("_PM_AM_INCLUDESAVE", "Incluir mensagem da pasta \"salvas\"");
+define("_PM_AM_NOTIFYUSERS", "Avisar usuários afetados com a exclusão?");
 
-define("_PM_AM_MESSAGESPRUNED", "%u Messages Pruned");
-define("_PM_AM_ERRORWHILEPRUNING", "An error occurred during prune");
+define("_PM_AM_MESSAGESPRUNED", "%u MP Excluídas");
+define("_PM_AM_ERRORWHILEPRUNING", "Ocorreram erros durante a exclusão de MP");
 ?>

@@ -1,5 +1,5 @@
 <?php
-// $Id: blocksadmin.php,v 1.1 2005/07/05 05:10:35 mauriciodelima Exp $
+// $Id: blocksadmin.php,v 1.2 2005/07/05 20:24:45 mauriciodelima Exp $
 
 //%%%%%%	blocks.php 	%%%%%
 define("_AM_BADMIN","Gerenciamento de blocos");
@@ -8,14 +8,14 @@ define("_AM_LISTBLOCK","Listar todos os blocos");
 define("_AM_SIDE","Tipo");
 define("_AM_BLKDESC","Descrição do bloco");
 define("_AM_TITLE","Título");
-define("_AM_WEIGHT","Posição");
+define("_AM_WEIGHT","Ordem");
 define("_AM_ACTION","Ação");
 define("_AM_BLKTYPE","Tipo de bloco");
 define("_AM_LEFT","Esquerda");
 define("_AM_RIGHT","Direita");
 define("_AM_CENTER","Central");
 define("_AM_VISIBLE","Visível");
-define("_AM_POSCONTT","Posição do conteúdo adicional");
+define("_AM_POSCONTT","ordem do conteúdo adicional");
 define("_AM_ABOVEORG","Antes do conteúdo original");
 define("_AM_AFTERORG","Após o conteúdo original");
 define("_AM_EDIT","Editar");
@@ -28,7 +28,7 @@ define("_AM_CBCENTER","Bloco central - centro");
 define("_AM_OPTIONS","Opções");
 define("_AM_CONTENT","Conteúdo");
 define("_AM_SUBMIT","Prosseguir");
-define("_AM_DISPRIGHT","Mostrar apenas os blocos da direita");
+define("_AM_DISPRIGHT","Exibir somente os blocos da direita");
 define("_AM_SAVECHANGES","Salvar as alterações");
 define("_AM_EDITBLOCK","Editar um bloco");
 define("_AM_SYSTEMCANT","Blocos do sistema não podem ser excluidos.");
@@ -53,9 +53,12 @@ define('_AM_EDITTPL', 'Editar modelo');
 define('_AM_MODULE', 'Módulo');
 define('_AM_GROUP', 'Grupo');
 define('_AM_UNASSIGNED', 'Não atribuído');
-define('_AM_ADMINBLOCK', 'Admin Frontpage');
-define("_AM_NOTVISIBLE", "Not Visible");
-define("_AM_VISIBLETOGROUPS", "Visible to groups");
+define('_AM_ADMINBLOCK', 'Administração');
+define("_AM_NOTVISIBLE", "Oculto");
+define("_AM_VISIBLETOGROUPS", "Exibir aos grupos");
 
-define("_AM_ERRORDURINGSAVE", "Error during saves, please enable PHP and MySQL Debug and try again");
+define("_AM_ERRORDURINGSAVE", "Erro ao tentar salvar no banco de dados. Ligue o Debug MySQL");
+
+define("_AM_ALLMODULEPAGES", "Todas as Páginas");
+define("_AM_SYSTEMLEVEL", "Nível de Exibição");
 ?>

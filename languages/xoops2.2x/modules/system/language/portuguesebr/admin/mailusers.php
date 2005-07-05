@@ -1,5 +1,5 @@
 <?php
-// $Id: mailusers.php,v 1.1 2005/07/05 05:10:36 mauriciodelima Exp $
+// $Id: mailusers.php,v 1.2 2005/07/05 20:24:45 mauriciodelima Exp $
 //%%%%%%	Admin Module Name  MailUsers	%%%%%
 
 //%%%%%%	mailusers.php 	%%%%%
@@ -18,7 +18,7 @@ define("_AM_INACTIVE","Somente para usuários inativos *");
 define("_AMIFCHECKD", "Se este for selecionado, não será enviada mensagem particular.");
 define("_AM_MAILFNAME","Nome do remetente");
 define("_AM_MAILFMAIL","e-mail do remetente");
-define("_AM_MAILSUBJECT","Assunto");
+define("_AM_MAILSUBJECT","Tópico");
 define("_AM_MAILBODY","Mensagem");
 define("_AM_MAILTAGS","Códigos úteis:");
 define("_AM_MAILTAGS1","{X_UID} - ID do usuário");

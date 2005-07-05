@@ -1,12 +1,12 @@
 <?php
-// $Id: notification.php,v 1.1 2005/07/05 04:56:36 mauriciodelima Exp $
+// $Id: notification.php,v 1.2 2005/07/05 20:24:45 mauriciodelima Exp $
 
 // RMV-NOTIFY
 
 // Text for various templates...
 
-define ('_NOT_NOTIFICATIONOPTIONS', 'Opções de aviso');
-define ('_NOT_UPDATENOW', 'Atualizar');
+define ('_NOT_NOTIFICATIONOPTIONS', 'OPÇÕES DE AVISOS');
+define ('_NOT_UPDATENOW', 'Salvar');
 define ('_NOT_UPDATEOPTIONS', 'Opções de avisos sobre atualizações');
 
 define ('_NOT_CLEAR', 'Limpar');
@@ -26,7 +26,7 @@ define ('_NOT_ITEMURLNOTAVAILABLE', 'URL do item não disponível');
 define ('_NOT_DELETINGNOTIFICATIONS', 'Excluindo avisos');
 define ('_NOT_DELETESUCCESS', 'Avisos excluídos corretamente');
 define ('_NOT_UPDATEOK', 'Opções de aviso atualizadas');
-define ('_NOT_NOTIFICATIONMETHODIS', 'Modo de aviso');
+define ('_NOT_NOTIFICATIONMETHODIS', 'Método de recebimento de avisos');
 define ('_NOT_EMAIL', 'e-mail');
 define ('_NOT_PM', 'Mensagem particular');
 define ('_NOT_DISABLE', 'Desativado');
@@ -74,15 +74,15 @@ define ('_NOT_BOOKMARK_NOTIFYDSC', 'Acompanhe este item sem receber avisos de qu
 // For user profile
 // FIXME: These should be reworded a little...
 
-define ('_NOT_NOTIFYMETHOD', 'Modo de aviso<br/>Ao monitorar um módulo, como você gostaria de ser avisado?');
+define ('_NOT_NOTIFYMETHOD', 'Método de aviso');
 define ('_NOT_METHOD_EMAIL', 'e-mail cadastrado no perfil');
 define ('_NOT_METHOD_PM', 'Mensagem particular');
 define ('_NOT_METHOD_DISABLE', 'Desativar');
 
-define ('_NOT_NOTIFYMODE', 'Modo de aviso padrão');
+define ('_NOT_NOTIFYMODE', 'Método de aviso padrão');
 define ('_NOT_MODE_SENDALWAYS', 'Avise-me de todas as atualizações selecionadas');
 define ('_NOT_MODE_SENDONCE', 'Avise-me apenas uma vez');
 define ('_NOT_MODE_SENDONCEPERLOGIN', 'Avise-me uma vez e suspenda até minha próxima visita.');
 
-define ('_NOT_NOTIFYMETHOD_DESC', "When you monitor e.g. a forum, how would you like to receive notifications of updates?");
+define ('_NOT_NOTIFYMETHOD_DESC', "Ao monitorar um módulo, como você gostaria de ser avisado?");
 ?>

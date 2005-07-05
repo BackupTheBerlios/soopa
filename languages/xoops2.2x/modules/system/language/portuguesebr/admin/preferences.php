@@ -1,5 +1,5 @@
 <?php
-// $Id: preferences.php,v 1.1 2005/07/05 05:10:36 mauriciodelima Exp $
+// $Id: preferences.php,v 1.2 2005/07/05 20:24:45 mauriciodelima Exp $
 //%%%%%%	Admin Module Name  AdminGroup 	%%%%%
 // dont change
 
@@ -18,7 +18,7 @@ define("_MD_AM_ANONNAME","Denominação para visitantes anônimos");
 define("_MD_AM_LOADINGIMG","Exibir a imagem de 'Carregando...'?");
 define("_MD_AM_USEGZIP","Utilizar compressão gzip? Recomendado para versões do PHP a partir da 4.0.5");
 define("_MD_AM_USERCOOKIE","Nome do cookie dos usuários. Este cookie contém o nome do usuário e é salvo no computador do visitante durante um ano. Se o usuário possuir este cookie, o nome de usuário será inserido no campo da entrada do site.");
-define("_MD_AM_USERCOOKIEDSC","Este cookie apenas tem o usuário e é gravada por um ano no pc do usuário (Se selecionado). Com esta cookie o usuário é logo inserido na caixa da entrada do site.");
+define("_MD_AM_USERCOOKIEDSC","Este cookie somente tem o usuário e é gravado por um ano no pc do usuário (Se selecionado). Com esta cookie o usuário é logo inserido na caixa da entrada do site.");
 define("_MD_AM_USEMYSESS","Usar sessão personalizada");
 define("_MD_AM_USEMYSESSDSC","Selecione 'Sim' para ajustar os valores para sessões.");
 define("_MD_AM_SESSNAME","Nome da sessão");
@@ -152,5 +152,5 @@ define("_MD_AM_THEMEOKDSC","Escolha os temas que os usuários podem selecionar co
 define("_MD_AM_ADMINTHEME", "Tema da Administração");
 define("_MD_AM_FRONTSIDE_THEME", "Tema padrão do usuário");
 
-define('_MD_AM_MODULEPREF', 'Preferência de Módulos');
+define('_MD_AM_MODULEPREF', 'Configurações Gerais');
 ?>
