@@ -1,5 +1,5 @@
 <?php
-// $Id: admin.php,v 1.1 2005/07/05 04:56:36 mauriciodelima Exp $
+// $Id: admin.php,v 1.2 2005/07/05 05:19:39 mauriciodelima Exp $
 //%%%%%%	File Name  admin.php 	%%%%%
 define("_AD_NORIGHT","Você não possui permissão de acesso a esta área.");
 define("_AD_ACTION","Ação");
@@ -9,7 +9,7 @@ define("_AD_LASTTENUSERS","Últimos usuários cadastrados");
 define("_AD_NICKNAME","Nome de usuário");
 define("_AD_EMAIL","e-mail");
 define("_AD_AVATAR","Avatar");
-define("_AD_REGISTERED","Usuário desde");  //Registered Date
+define("_AD_REGISTERED","Usuário desde");  //Data do registro
 define('_AD_PRESSGEN', 'Esta é a primeira vez que você entra na seção de Administração.<br/>Pressione o botão abaixo para continuar.');
 define('_AD_LOGINADMIN', 'Entrando na área administrativa...');
 define('_AD_NAVIGATION', "Navegação");
