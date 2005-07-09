@@ -1,12 +1,12 @@
 <?php
-// $Id: modinfo.php,v 1.2 2005/07/05 20:24:45 mauriciodelima Exp $
+// $Id: modinfo.php,v 1.3 2005/07/09 18:09:26 mauriciodelima Exp $
 define("_PROFILE_MI_NAME", "Perfil Extendido");
 define("_PROFILE_MI_DESC", "Módulo para gerenciamento do perfil do usuário.");
 
 //Main menu links
-define("_PROFILE_MI_EDITACCOUNT", "Edit Account");
-define("_PROFILE_MI_CHANGEPASS", "Change Password");
-define("_PROFILE_MI_CHANGEMAIL", "Change Email");
+define("_PROFILE_MI_EDITACCOUNT", "Editar perfil");
+define("_PROFILE_MI_CHANGEPASS", "Mudar senha");
+define("_PROFILE_MI_CHANGEMAIL", "Mudar e-mail");
 
 //Admin links
 define("_PROFILE_MI_INDEX", "Início");
@@ -21,7 +21,7 @@ define("_PROFILE_MI_CATEGORY_DESC", "For those user fields");
 
 //User Profile Fields
 define("_PROFILE_MI_AIM_TITLE", "AIM");
-define("_PROFILE_MI_AIM_DESCRIPTION", "America Online Instant Messenger Client ID");
+define("_PROFILE_MI_AIM_DESCRIPTION", "America Online Instant Messenger ID");
 define("_PROFILE_MI_ICQ_TITLE", "ICQ");
 define("_PROFILE_MI_ICQ_DESCRIPTION", "ICQ Instant Messenger ID");
 define("_PROFILE_MI_YIM_TITLE", "YIM");

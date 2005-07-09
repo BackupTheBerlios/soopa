@@ -1,4 +1,5 @@
 <?php
+// $Id: main.php,v 1.3 2005/07/09 18:09:26 mauriciodelima Exp $
 define("_PROFILE_MA_ERRORDURINGSAVE", "Error during save");
 define('_PROFILE_MA_USERREG','Cadastro de Usuários');
 define('_PROFILE_MA_NICKNAME','Nome do usuário');
@@ -44,18 +45,13 @@ define("_PROFILE_MA_WRONGPASSWORD", "ERROR: Wrong Password");
 define("_PROFILE_MA_USERALREADYACTIVE", "User with email %s is already activated");
 
 // %s is your site name
-define('_PROFILE_MA_NEWPWDREQ','New Password Request at %s');
 define('_PROFILE_MA_YOURACCOUNT', 'Your account at %s');
 
-define('_PROFILE_MA_MAILPWDNG','mail_password: could not update user entry. Contact the Administrator');
-
 // %s is a username
-define('_PROFILE_MA_PWDMAILED','Password for %s mailed.');
-define('_PROFILE_MA_CONFMAIL','Confirmation Mail for %s mailed.');
 define('_PROFILE_MA_ACTVMAILNG', 'Failed sending notification mail to %s');
 define('_PROFILE_MA_ACTVMAILOK', 'Notification mail to %s sent.');
 
-define("_PROFILE_MA_DEFAULT", "Configuração Padrão");
+define("_PROFILE_MA_DEFAULT", "Default Settings");
 
 //%%%%%%		File Name userinfo.php 		%%%%%
 define('_PROFILE_MA_SELECTNG','Você deve selecionar um usuários.');
@@ -106,6 +102,7 @@ define('_PROFILE_MA_MAXIMGSZ','Tamanho máx. (Bytes)');
 define('_PROFILE_MA_SELFILE','Selecionar arquivo');
 define('_PROFILE_MA_OLDDELETED','Seu outro avatar será deletado!');
 define('_PROFILE_MA_CHOOSEAVT', 'Escolha um avatar na lista.');
+define('_PROFILE_MA_CHOOSEAVT', 'Choose avatar from the available list');
 
 define('_PROFILE_MA_PRESSLOGIN', 'Press the button below to login');
 
@@ -117,4 +114,26 @@ define("_PROFILE_MA_CHANGEPASSWORD", "Alterar Senha");
 define("_PROFILE_MA_PASSWORDCHANGED", "Senha alterada com sucesso!");
 define("_PROFILE_MA_OLDPASSWORD", "Senha atual");
 define("_PROFILE_MA_NEWPASSWORD", "Nova senha");
+
+//search.php
+define("_PROFILE_MA_SORTBY", "Sort By");
+define("_PROFILE_MA_ORDER", "Order");
+define("_PROFILE_MA_PERPAGE", "Items per page");
+define("_PROFILE_MA_LATERTHAN", "%s is later than");
+define("_PROFILE_MA_EARLIERTHAN", "%s is earlier than");
+define("_PROFILE_MA_LARGERTHAN", "%s is larger than");
+define("_PROFILE_MA_SMALLERTHAN", "%s is smaller than");
+
+define("_PROFILE_MA_NOUSERSFOUND", "No users found");
+define("_PROFILE_MA_RESULTS", "Search Results");
+
+//changemail.php
+define("_PROFILE_MA_CHANGEMAIL", "Change Email");
+define("_PROFILE_MA_NEWMAIL", "New Email Address");
+
+define("_PROFILE_MA_NEWEMAILREQ", "New Email Address Request");
+define("_PROFILE_MA_NEWMAILMSGSENT", "An email with an activation link has been sent to the specified email address. Responding to the link will complete the email change procedure");
+define("_PROFILE_MA_EMAILCHANGED", "Your Email Address Has Been Changed");
+
+define("_PROFILE_MA_CONFCODEMISSING", "Confirmation Code Missing");
 ?>
