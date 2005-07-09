@@ -1,6 +1,6 @@
 Olá {X_UNAME},
 
-A nova notícia "{STORY_NAME}" Foi adicionada em {X_SITENAME} no assunto {TOPIC_NAME}.
+A nova notícia "{STORY_NAME}" Foi adicionada em {X_SITENAME} no tópico {TOPIC_NAME}.
 
 Veja esta notícia clicando abaixo:
 {STORY_URL}
