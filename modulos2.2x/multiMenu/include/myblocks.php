@@ -1,7 +1,7 @@
 <?php
 
 /**
-* $Id: myblocks.php,v 1.1 2005/07/10 02:32:17 mauriciodelima Exp $
+* $Id: myblocks.php,v 1.2 2005/07/10 03:37:10 mauriciodelima Exp $
 * Module: MultiMenu
 * Author: The WolFactory <www.wolfpackclan.com/wolfactory>
 * Licence: GNU

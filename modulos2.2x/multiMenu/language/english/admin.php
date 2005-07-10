@@ -10,7 +10,6 @@
 //                  multiMenu v1.4								//
 //  ------------------------------------------------------------------------	//
 
-
 define("_AD_MULTIMENU_ADMIN", 	"Administration : ");
 define("_AD_MULTIMENU_EDITIMENU", 	"Edit");
 define("_AD_MULTIMENU_NEWIMENU", 	"New Link");
@@ -20,7 +19,7 @@ define("_AD_MULTIMENU_STATUS",	"Status");
 define("_AD_MULTIMENU_ONLINE",	"Online");
 define("_AD_MULTIMENU_OFFLINE",	"Offline");
 define("_AD_MULTIMENU_SUBMENU",	"Type");
-define("_AD_MULTIMENU_SUBMENUEXP",	"<br /><i><font color='red'>The sublink <u>must have</u><br />the same directory<br />as the main link</font></i>");
+define("_AD_MULTIMENU_SUBMENUEXP",	"");
 define("_AD_MULTIMENU_SUBYES",	"Yes");
 define("_AD_MULTIMENU_SUBNO",		"No");
 define("_AD_MULTIMENU_MAINLINK",	"Mainlink");
@@ -84,8 +83,6 @@ define("_AD_MULTIMENU_GUIDE_GENERAL",	"
 <br /><strong><u>CREDITS</u></strong>
 <br />With respect to the design and creation of this module, credits and thanks go to several well-known xoopers: <br />Herv&eacute;, Marcan and Solo for their help and collaboration on this project.
 ");
-
-
 
 define("_AD_MULTIMENU_GUIDE_PREF",	"
 <p align='center'><strong><font size='5'>How to use multiMenu ?</font></strong>

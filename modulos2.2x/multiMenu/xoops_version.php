@@ -11,7 +11,7 @@
 //  ------------------------------------------------------------------------	//
 
 $modversion['name'] = _MI_MULTIMENU_MODULE;
-$modversion['version'] = "1.7";
+$modversion['version'] = "1.74";
 $modversion['description'] = _MI_MULTIMENU_DESC;
 $modversion['credits'] = "luinithil<br /><a href='http://www.luinithil.com'>luinithil</a>";
 $modversion['author'] = "Solo (<a href='http://www.wolfpackclan.com'>Wolf Pack Clan</a>)<br />Hervé (<a href='http://www.herve-thouzard.com'>Hervé Thouzard</a>)";
@@ -331,7 +331,10 @@ $modversion['blocks'][7]['description'] = "admin link menu";
 $modversion['blocks'][7]['show_func'] = "multimenu_show";
 $modversion['blocks'][7]['edit_func'] = "multimenu_edit";
 $modversion['blocks'][7]['options'] = "ul|all|1|weight ASC|1|255|1||160|160|1|0|3|05";
+// UPDATE : Reverse below lines to update from 1.6 to 1.7
 $modversion['blocks'][7]['template'] = 'multimenu_block_05.html';
+//$modversion['blocks'][7]['template'] = 'multimenu_block_admin.html';
+// UPDATE
 
 $modversion['blocks'][8]['file'] = "multimenu.php";
 $modversion['blocks'][8]['name'] = _MI_MULTIMENU_NAME_06;

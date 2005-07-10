@@ -13,8 +13,8 @@
 	global $xoopsDB, $xoopsUser, $xoopsConfig, $xoopsModule; 
 	$myts =& MyTextSanitizer::getInstance();
 	$group = is_object($xoopsUser) ? $xoopsUser->getGroups() : array(XOOPS_GROUP_ANONYMOUS);
-    	$block = array();
 	$mainid = '';
+    	$block = array();
 
 // Check user agent. If Spider, display list
 if (
@@ -115,22 +115,26 @@ if ($myrow['link']) {
 
 // Sub link Display
 $imenu['showsub'] = 0;
-	if (	!empty($xoopsModule) && 
-		eregi( "/".$xoopsModule->getVar('dirname')."/", $link) && 
-		( $myrow['submenu'] != 1 || $myrow['submenu'] != 2 )
+	if ( !empty($xoopsModule) 
+		&& eregi( "/".$xoopsModule->getVar('dirname')."/", $link) 
+		&& ( $myrow['submenu'] < 1 || $myrow['submenu'] > 2 )
 	   ) 	{ 
 	$mainid = $myrow['id']; 
 		}
+
 // Test 1 : link is sub of an active module with same directory
-if ( !empty($xoopsModule) && eregi("/".$xoopsModule->getVar('dirname')."/", $link) || $myrow['submenu'] == 1) {
+// if ( !empty($xoopsModule) && eregi("/".$xoopsModule->getVar('dirname')."/", $link) || // $myrow['submenu'] == 1) {
+//  $imenu['showsub'] = 1;
+//  }
+
+// Test : link is sub of a main link
+if ( 	!empty($xoopsModule) 
+	&& $myrow['pid'] == $mainid 
+//	&& eregi( "/".$xoopsModule->getVar('dirname')."/", $link)
+	&& ( $myrow['submenu'] == 1 || $myrow['submenu'] == 2 )
+    ) {
   $imenu['showsub'] = 1;
   }
-
-// Test 2 : link is sub of a main link
-if ( !empty($xoopsModule) && $myrow['pid'] == $mainid ) {
-  $imenu['showsub'] = 1;
-  }
-
 
 // Target function
 if ($myrow['target'] != '_self') { $target = 'target="'.$myrow['target'].'" '; } else { $target = ''; }

@@ -1,0 +1,16 @@
+In order to upgrade your multiMenu 1.5 to 1.6 version, please enter in your browser the following url :
+http://YOUR_SITE_URL/modules/multiMenu/ugrade/multimenu_1.5_to_1.6.php
+
+------------------------------
+
+In order to upgrade your multiMenu 1.6 to 1.7 version, please enter in your browser the following url :
+http://YOUR_SITE_URL/modules/multiMenu/ugrade/multimenu_1.6_to_1.7.php
+
+------------------------------
+
+
+Remplace the "YOUR_SITE_URL" by the url of your site.
+
+
+Solo
+www.wolfpackclan.com/wolfactory

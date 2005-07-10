@@ -24,7 +24,7 @@ $eh = new ErrorHandler;
 
 if ( is_object($xoopsUser))
 	{
-	$xoopsModule = XoopsModule::getByDirname("multimenu");
+	$xoopsModule = XoopsModule::getByDirname("multiMenu");
 	if ( !$xoopsUser->isAdmin($xoopsModule->mid()) )
 		{
 		redirect_header(XOOPS_URL."/",1,_NOPERM);

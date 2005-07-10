@@ -10,8 +10,6 @@
 //                  multiMenu v1.7								//
 //  ------------------------------------------------------------------------	//
 
-
-
 define("_MB_MULTIMENU_MENU",		"Target Menu: ");
 define("_MB_MULTIMENU_CHARS",		"Max. length: ");
 define("_MB_MULTIMENU_LENGTH",	" characters");
@@ -38,10 +36,6 @@ define("_MB_MULTIMENU_DISPLAYPIC",		"Display picture : ");
 define("_MB_MULTIMENU_ORDER_TITLE_ASC",	"Ascending title");
 define("_MB_MULTIMENU_ORDER_TITLE_DESC",	"Descending title");
 define("_MB_MULTIMENU_ORDER_WEIGHT_ASC",	"Weight");
-define("_MB_MULTIMENU_SHOWTITLE",		"Mostrar título do link: ");
-define("_MB_MULTIMENU_ORDER_TITLE_ASC",	"Título ascendente");
-define("_MB_MULTIMENU_ORDER_TITLE_DESC",	"Título descendente");
-define("_MB_MULTIMENU_ORDER_WEIGHT_ASC",	"Peso");
 
 define("_MB_MULTIMENU_MARQUEE",		"Scroll list");
 define("_MB_MULTIMENU_MARQUEE_TYPE",	"Type: ");
@@ -74,4 +68,5 @@ define("_MB_MULTIMENU_CAT_IMAGE",		"Images");
 define("_MB_MULTIMENU_CAT_SCROLL",		"Scroll settings");
 define("_MB_MULTIMENU_CAT_RANDOM",		"Random links");
 define("_MB_MULTIMENU_CAT_MENU",		"multiMenu");
+
 ?>
