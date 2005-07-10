@@ -1,0 +1,44 @@
+multiMenu : how to use it?
+
+Author : Solo
+
+1) What is multiMenu?
+
+multiMenu is a multipurpose block link editor. This module allows you to create upt to 4 custom blocs with custom links and pictures.
+
+
+2) 4 custom menus + 2
+
+You have the possibility to edit up to 4 different menus, with their own links. Added to those 4 blocks, you have now 2 "free" blocks wich you can use to select any category links.
+
+
+3) Menu forms.
+
+This version allows you to selected amongst a wide range of menu appearance :
+
+- Main menu like
+- Droplist
+- Selectlist
+- Picture fixed
+- Picture slide
+- Unordered list
+- Numbered list
+- Slide list
+- Scroll list
+
+To select the kind of list you want to use, edit the concerned block (in the blocks preferences).
+
+
+4) Pictures
+
+For each link, you can select an illustration. You have to know the url of the picture. In later version, an image uploader should be added. Remember that some menu forms would discard pictures (all the lists) while other would focus on them (pictures'ones).
+
+
+5) Group access
+
+For each and every links you can select which group has access or not.
+
+
+6) Cache features.
+
+It a module which have only block (no index page), which means that you can have any widespread cache feature. Cache feature is only available through each and every block settings.

@@ -1,0 +1,31 @@
+<script type='text/javascript'>
+<!--
+function Go(x) {
+
+   location.href = x;
+   document.forms[0].reset();
+   document.forms[0].elements[0].blur();
+
+}
+//-->
+</script>
+	<{if $block.format == "droplist"}>
+		<form action="" >
+		<select size="1" name="multimenu" onChange="Go(multimenu.options[multimenu.options.selectedIndex].value)">
+		<option value="" selected="selected">- - - - - - - - - - - - - - -</option>
+        <{else}>
+		<form action="" method="post">
+		<select size="3" name="multimenu" onChange="Go(multimenu.options[multimenu.options.selectedIndex].value)">
+      <{/if}>
+	<{foreach item=imenu from=$block.contents}>
+		<{if $imenu.submenu == 0}>
+			<option value="<{$imenu.linkurl}>"><{$imenu.title}></option>
+		<{elseif $imenu.submenu == 1 OR $imenu.submenu == 2 AND $imenu.showsub == 1}>
+			<option value="<{$imenu.linkurl}>"> - <{$imenu.title}></option>
+		<{elseif $imenu.submenu == 3}>
+			<option value="<{$imenu.linkurl}>"><i>- <{$imenu.title}> -</i></option>
+		<{elseif $imenu.submenu == 4}>
+			<option value="<{$imenu.linkurl}>">[<{$imenu.title}>]</option>
+		<{/if}>
+      <{/foreach}>
+	</select>

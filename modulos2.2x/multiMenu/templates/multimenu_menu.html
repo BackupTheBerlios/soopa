@@ -1,0 +1,44 @@
+<table cellspacing="0" cellspading="0">
+<tr>
+<td id="mainmenu">
+	<{counter start=0 print=false}>
+      <{foreach item=imenu from=$block.contents}>
+<{if $count >= $block.columns_limit}>
+</td>
+<td id="mainmenu">
+<{counter start=0 print=false}>
+<{/if}>
+<{if $imenu.submenu == 0}>
+<{if $count == 0 or $top == 1}>
+<{if $imenu.link}><a class="menuTop" href="<{$imenu.linkurl}>" <{$imenu.target}>><{else}><a class="menuTop"><{/if}>
+<{$imenu.image}><{$imenu.title}></a>
+<{assign var="top" value="0"}><{counter print=false assign=count}>
+<{else}> 
+<{if $imenu.link}><a class="menuMain" href="<{$imenu.linkurl}>" <{$imenu.target}>><{else}><a class="menuMain"><{/if}>
+<{$imenu.image}><{$imenu.title}></a><{counter print=false assign=count}>
+<{/if}>
+<{elseif $imenu.submenu == 1 OR $imenu.submenu == 2 AND $imenu.showsub == 1}>
+<{if $count == 0 or $top == 1}>
+<{if $imenu.link}><a class="menuSubTop" href="<{$imenu.linkurl}>" <{$imenu.target}>><{else}><a class="menuSubTop"><{/if}>
+<{$imenu.image}><{$imenu.title}></a>
+<{assign var="top" value="0"}><{counter print=false assign=count}>
+<{else}>
+<{if $imenu.link}><a class="menuSub" href="<{$imenu.linkurl}>" <{$imenu.target}>><{else}><a class="menuSub"><{/if}>
+<{$imenu.image}><{$imenu.title}></a>
+<{/if}>
+<{counter print=false assign=count}>
+<{elseif $imenu.submenu == 3}>
+<{if $imenu.link}><a class="menuNote" href="<{$imenu.linkurl}>" <{$imenu.target}>><{/if}>
+<{$imenu.image}><{$imenu.title}><{if $imenu.link}></a><{/if}>
+<{counter print=false assign=count}>
+<{assign var="top" value="1"}>
+<{elseif $imenu.submenu == 4}>
+<{$imenu.image}>
+<h3><{$imenu.title}></h3>
+<{counter print=false assign=count}>
+<{assign var="top" value="1"}>
+<{/if}>
+<{/foreach}>
+</td>
+</tr>
+</table>

@@ -1,0 +1,147 @@
+
+<table cellspacing="0">
+  <tr>
+	<{if $block.format == "picslide"}>
+      <!-- picslide style -->
+    	<td>
+
+<script src="<{$xoops_url}>/modules/multiMenu/script/dw_core.js" type="text/javascript"></script>
+<script src="<{$xoops_url}>/modules/multiMenu/script/dw_scroller.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+		<!--
+		function initScrollerObjs() {
+ 		scroller1 = new scrollerObj(0,0,<{$block.block_size}>,<{$block.marquee_height}>,"center","holder");
+
+      <{foreach item=imenu from=$block.contents}>
+		scroller1.addItem('<{$imenu.link}><{$imenu.image}><br /><{$imenu.title}></a>');
+ 	<{/foreach}>
+ 		scroller1.create();
+
+  		setMouseEvents();
+		}
+
+		window.onload = initScrollerObjs;
+		//-->
+		</script>
+<div style="height: <{$block.marquee_height}>px; width: 100%;">
+<div id="holder"></div>
+</div>
+
+
+	<{elseif $block.format == "pic"}>
+      <!-- picture style -->
+    		<td>
+      <!-- start counter -->
+	<{counter start=0 print=false}>
+	<table><tr>
+      <{foreach item=imenu from=$block.contents}>
+	<td align="center" valign="bottom">
+          		<{$imenu.link}>
+			<{$imenu.image}><br />
+			<{$imenu.title}>
+			</a><br />
+	</td>
+	<{counter print=false assign=count}>
+	<{if $count is div by $block.columns}>
+	</tr><tr>
+      <{/if}>
+
+      <{/foreach}></tr></table>
+      <!-- end module menu loop - picture style  -->
+
+
+
+	<{elseif $block.format == "menu"}>
+      <!-- menu style -->
+    		<td id="mainmenu">
+      <!-- start counter -->
+	<{counter start=0 print=false}>
+      <{foreach item=imenu from=$block.contents}>
+		<{counter print=false assign=count}>
+	<{if $imenu.link}>
+        		<{if $count == 1}>
+          	<a class="menuTop" href="<{$imenu.linkurl}>" target="<{$imenu.target}>"><{$imenu.image}><{$imenu.title}></a>
+      		<{else}> 
+          	<a class="menuMain" href="<{$imenu.linkurl}>" target="<{$imenu.target}>"><{$imenu.image}><{$imenu.title}></a>
+        		<{/if}>
+      <{else}>
+        		<{if $count == 1}>
+         	<a class="menuTop"><{$imenu.image}><{$imenu.title}></a>
+      		<{else}> 
+         	<a class="menuMain"><{$imenu.image}><{$imenu.title}></a>
+        		<{/if}>
+      <{/if}>
+      <{/foreach}>
+      <!-- end module menu loop - menu style  -->
+
+
+
+
+
+
+	<{elseif $block.format == "droplist" or $block.format == "selectlist" }>
+      <!-- droplist or selectlist style -->
+    		<td>
+<script type='text/javascript'>
+<!--
+function Go(x) {
+
+   location.href = x;
+   document.forms[0].reset();
+   document.forms[0].elements[0].blur();
+
+}
+//-->
+</script>
+	<{if $block.format == "droplist"}>
+		<form action="" >
+		<select size="1" name="multimenu" onChange="Go(multimenu.options[multimenu.options.selectedIndex].value)">
+		<option value="" selected="selected">- - - - - - - - - - - - - - -</option>
+        <{else}>
+		<form action="" method="post">
+		<select size="3" name="multimenu" onChange="Go(multimenu.options[multimenu.options.selectedIndex].value)">
+      <{/if}>
+
+      <{foreach item=imenu from=$block.contents}>
+<option value="<{$imenu.linkurl}>"><{$imenu.title}></option>
+      <{/foreach}>
+	</select>
+      <!-- end - droplist style  -->
+
+
+
+
+	<{else}>
+      <!-- list style -->
+    		<td>
+	<{if $block.marquee}>
+	<marquee <{$block.marquee}> scrollamount="<{$block.marquee_delay}>" scrolldelay="60" height="<{$block.marquee_height}>" onmouseover="this.stop()" onmouseout="this.start()">
+      <{/if}>
+      <!-- start counter -->
+		<{if $block.format == ul}>
+		<<{$block.format}>>
+      <{foreach item=imenu from=$block.contents}>
+		<li>
+          		<{$imenu.link}>
+			<{$imenu.title}>
+			</a>
+		</li>
+      <{/foreach}>
+	</<{$block.format}>>
+		<{else}>
+		<{counter start=0 print=false}>
+      <{foreach item=imenu from=$block.contents}>
+          		<i><{counter}>.</i> <{$imenu.link}>
+			<{$imenu.title}>
+			</a><br />
+      <{/foreach}>
+		<{/if}>
+	<{if $block.marquee}>
+	</marquee>
+      <{/if}>
+      <!-- end module menu loop - list style  -->
+	<{/if}>
+    </td>
+  </tr>
+</table>

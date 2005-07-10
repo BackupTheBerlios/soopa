@@ -1,0 +1,63 @@
+<table width="100%"  border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+  <tr>
+    <td height="40" align="left" style="font-size: 16px; font-weight: bold;" class="odd"><img src="images/logo.gif" width="32" height="32" align="absbottom"> <{$lib_name}></td>
+    <td align="right" valign="middle" class='odd'>
+	<{if $link_back<>"" }>
+	<a href="<{$link_back}>"><img src="images/back.gif" border="0" align="absmiddle"></a><{/if}>&nbsp;&nbsp;<a href="<{$link_book}>"><img src="images/chapter.gif" width="24" height="24" align="absmiddle" border="0"></a>&nbsp;&nbsp;<{if $link_next <> "" }><a href="<{$link_next}>"><img src="images/next.gif" border="0" align="absmiddle"></a><{/if}>
+	</td>
+  </tr>
+  <tr>
+    <td height="20" colspan="2" align="left" class="info"><{$back_sections}> &nbsp;| &nbsp;<{$back_books}> &nbsp;|&nbsp; <{$back_content}></td>
+  </tr>
+  <tr>
+    <td colspan="2"><table width="100%"  border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="26">&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="head"><img src="images/contenthead.png" width="24" height="24" align="absmiddle"> <{$indice}></td>
+        </tr>
+      <tr>
+        <td class="even"><{$contenido}></td>
+        </tr>
+      <tr align="center">
+        <td><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="45%" align="right" class="foot"><a href="<{$link_back}>"><{$prev_index}></a></td>
+            <td width="10%" align="center" class="foot"><a href="<{$link_book}>"><img src="images/chapter.gif" width="24" height="24" align="absmiddle" border="0"></a></td>
+            <td width="45%" class="foot"><a href="<{$link_next}>"><{$next_index}></a></td>
+          </tr>
+		  <{if $is_author==1 }>
+          <tr>
+            <td colspan="3" align="center" class="info"><a href="editcontent.php?index=<{$index_id}>">Editar Contenido</a> </td>
+            </tr>
+		<{/if}>
+        </table>
+		
+		</td>
+      </tr>
+      <tr align="right">
+        <td class="info"><{$lang_comments}>: <strong><{$comment_num}></strong>&nbsp;&nbsp;<{$lang_published}> (<{$autor}>) &nbsp;&nbsp;|&nbsp;&nbsp;<{$lang_lecturas}> <strong><{$lecturas}> <a href="print.php?index=<{$index_id}>"><img src="images/print.png" alt="Imprimir Documento" width="20" height="20" border="0" align="absmiddle"></a></strong></td>
+      </tr>
+
+    </table></td>
+  </tr>
+  <tr>
+    <td height="20" colspan="2" align="right" style="font-size: 10px;">Copyright &copy; 2005. Red M&eacute;xico Soft. <a href="http://www.redmexico.com.mx">www.redmexico.com.mx</a> </td>
+  </tr>
+</table>
+<div style="text-align: center; padding: 3px; margin:3px;">
+  <{$commentsnav}>
+  <{$lang_notice}>
+</div>
+<div style="margin:3px; padding: 3px;">
+<!-- start comments loop -->
+<{if $comment_mode == "flat"}>
+  <{include file="db:system_comments_flat.html"}>
+<{elseif $comment_mode == "thread"}>
+  <{include file="db:system_comments_thread.html"}>
+<{elseif $comment_mode == "nest"}>
+  <{include file="db:system_comments_nest.html"}>
+<{/if}>
+<!-- end comments loop -->
+</div>

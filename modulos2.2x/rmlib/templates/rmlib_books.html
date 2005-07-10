@@ -1,0 +1,48 @@
+<table width="100%"  border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="40" colspan="2" align="left" style="font-size: 16px; font-weight: bold;" class="head"><img src="images/logo.gif" width="32" height="32" align="absmiddle"> <{$lib_title}> </td>
+  </tr>
+  <tr>
+    <td height="20" align="left"  class="info"><{$back_sections}> &nbsp;| &nbsp;<{$back_books}></td>
+    <td align="right" class="info"><{$lang_thereare}></td>
+  </tr>
+  <tr>
+    <td colspan="2"><table width="99%"  border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td colspan="2">&nbsp;</td>
+      </tr>
+      <tr>
+        <td class='head' align="left" colspan="2"><img src="images/chapter.gif" width="24" height="24" align="absmiddle"> <strong><{$libro}></strong></td>
+        </tr>
+      <tr>
+        <td colspan="2">
+		  <table width="100%"  border="0" cellspacing="0" cellpadding="2" class="odd">
+		<{foreach item=index from=$indices}>
+            <tr>
+              <td height="22" align="left" style="padding-left:<{$index.tabs}>px;">
+			<{if $index.imagen == 0 }>
+				  <img src="images/cap.png" align="absmiddle">
+			<{else}>
+				  <img src="images/content.png" align="absmiddle">
+			<{/if}>
+			  <a href="<{$index.link}>"><{$index.titulo}></a></td>
+            </tr>
+		  <{/foreach}>
+		    <tr>
+		      <td>&nbsp;</td>
+		    </tr>
+		    <tr>
+		      <td align="right" class="info">			  <img src="images/cap.png" align="absmiddle"> <{$lang_withsub}> &nbsp;&nbsp;<img src="images/content.png" align="absmiddle"> <{$lang_withoutsub}> </td>
+		      </tr>
+          </table></td>
+        </tr>
+
+    </table></td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" bgcolor="#000000"></td>
+  </tr>
+  <tr>
+    <td height="20" colspan="2" align="right" style="font-family: Arial, Helvetica, sans-serif; font-size: 10px; color: #000000; ">Copyright &copy; 2005. Red M&eacute;xico Soft. <a href="http://www.redmexico.com.mx">www.redmexico.com.mx</a> </td>
+  </tr>
+</table>

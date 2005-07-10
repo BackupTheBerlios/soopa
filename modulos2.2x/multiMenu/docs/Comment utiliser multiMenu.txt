@@ -1,0 +1,45 @@
+Comment utiliser multiMenu ?
+
+Auteur : Solo
+
+1) Qu'est-ce que multiMenu?
+
+multiMenu est un module multifonction qui permet d'editer des liens dans des blocs.Il permet de créer jusqu'à 4 blocs contenant des liens et images  personnalisés.
+
+
+2) 4 menus personnalisés + 2
+
+Vous avezla posibilité d'éditer jusqu'à 4 menus différents avec leurs propres liens. A ceux-là s'ajoutent vous avez aussi 2 blocks indépendants pour lesquels vous pouvez sélectionner le contenu, parmi les 4 menus de base.
+
+
+3) Aparence des Menus.
+
+Cette version permet de selectionner un large pannel de menu.
+
+- Menu Principal
+- Liste déroulante
+- Liste à sélection
+- Images fixes
+- Images défilantes
+- Listes à puce
+- Liste numérotée
+- Liste défilante
+- Liste diaporama
+
+Pour choisir le type de menu que vous voulez utiliser, editez le block du menu concerné et sélectionnez la bonne option.
+
+
+4) Images
+
+Pour chaque lien, vous pouvez sélectionner une image. Il vous faudra cependant connaître l'url de l'image à afficher. Dans une version à venir, il est prévu d'inclure un gestionnaire d'image. 
+Rappelez vous que certains types de menu n'afficheront pas les images (toutes les listes) alors que d'autres sont spécifiquement créées pour ça.
+
+
+5) Accès par groupe
+
+L'accès à chaque lien créé peut être déterminé en fonction des groupes.
+
+
+6) Le système de cache
+
+Comme il s'agit d'un module ne contenant que des block (pas de page d'index), il n'y a pas de cache étendu sur le module. Par contre, le système de cache est disponible pour chaque bloc existant.

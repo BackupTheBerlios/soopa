@@ -1,0 +1,15 @@
+<{if $block.format == "menu"}>
+	<{include file="db:multimenu_menu.html"}>
+
+<{elseif $block.format == "picslide"}>
+	<{include file="db:multimenu_picslide.html"}>
+
+<{elseif $block.format == "pic" or $block.format == "picscroll"}>
+	<{include file="db:multimenu_pic.html"}>
+
+<{elseif $block.format == "droplist" or $block.format == "selectlist"}>
+	<{include file="db:multimenu_droplist.html"}>
+
+<{elseif $block.format == "ul" or $block.format == "ol"}>
+	<{include file="db:multimenu_list.html"}>
+<{/if}>

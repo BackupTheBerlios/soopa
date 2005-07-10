@@ -1,0 +1,59 @@
+<{counter start=0 print=false}>
+<{if $block.marquee}>
+	<marquee <{$block.marquee}> scrollamount="<{$block.marquee_delay}>" scrolldelay="60" height="<{$block.marquee_height}>" onmouseover="this.stop()" onmouseout="this.start()">
+      <{/if}>
+<table>
+<tr>
+<td>
+	<{if $block.format == ul OR $block.format == ol}>
+		<<{$block.format}>>
+      <{foreach item=imenu from=$block.contents}>
+<{if $count >= $block.columns_limit}>
+</td><td>
+<{counter start=0 print=false}>
+<{/if}>
+		<{if $imenu.submenu == 0}>
+			<li>
+          		<{$imenu.link}>
+			<{$imenu.title}>
+				<{if $imenu.link}>
+				</a>
+				<{/if}>
+			</li>
+		<{elseif $imenu.submenu == 1 OR $imenu.submenu == 2 AND $imenu.showsub == 1}>
+			<ul>
+				<li>
+          			<{$imenu.link}>
+				<i><{$imenu.title}></i>
+					<{if $imenu.link}>
+					</a>
+					<{/if}>
+				</li>
+			</ul>
+		<{elseif $imenu.submenu == 3}>
+          		</<{$block.format}>>
+				<{$imenu.link}>
+				<i><{$imenu.title}></i>
+					<{if $imenu.link}>
+					</a>
+					<{/if}>
+			<<{$block.format}>>
+		<{elseif $imenu.submenu == 4}>
+				</<{$block.format}>>
+          				<{$imenu.link}>
+					<h3><{$imenu.title}></h3>
+					</a>
+				<<{$block.format}>>
+		<{/if}>
+
+<{counter assign=count print=false}>
+     <{/foreach}>
+	</<{$block.format}>>
+		<{/if}>
+
+</td>
+<tr>
+</table>
+<{if $block.marquee}>
+	</marquee>
+<{/if}>

@@ -1,0 +1,81 @@
+
+<{if $banner}><div align="center"><p><{$banner}></p></div><{/if}>
+<{if $nav}><{$nav}><{/if}>
+<div class="item">
+<div class="itemHead"><div class="itemTitle"><{$mm_module_name}><{if $mm_edit}><{$mm_edit}><{/if}></div></div>
+<{if $mm_read}><div class="itemInfo"><{$mm_read}></div><{/if}>
+<div class="itemText"><{$mm_textindex}></div>
+<div class="itemBody">
+<table><tbody>
+<{if $mm01_title}><th><div class="itemTitle"><{$mm01_title}><{$mm01_edit}></div></th><{/if}>
+<{if $mm02_title}><th><div class="itemTitle"><{$mm02_title}><{$mm02_edit}></div></th><{/if}>
+<{if $mm03_title}><th><div class="itemTitle"><{$mm03_title}><{$mm03_edit}></div></th><{/if}>
+<{if $mm04_title}><th><div class="itemTitle"><{$mm04_title}><{$mm04_edit}></div></th><{/if}>
+<{if $mm05_title}><th><div class="itemTitle"><{$mm05_title}><{$mm05_edit}></div></th><{/if}>
+<{if $mm06_title}><th><div class="itemTitle"><{$mm06_title}><{$mm06_edit}></div></th><{/if}>
+<{if $mm07_title}><th><div class="itemTitle"><{$mm07_title}><{$mm07_edit}></div></th><{/if}>
+<{if $mm08_title}><th><div class="itemTitle"><{$mm08_title}><{$mm08_edit}></div></th><{/if}>
+<tr>
+<{if $mm01_display}>
+<td><ul>
+	<{foreach item=menu from=$mm_content01}>
+	<{$menu.link}>
+	<{/foreach}>
+</ul></td>
+<{/if}>
+<{if $mm02_display}>
+<td><ul>
+	<{foreach item=menu from=$mm_content02}>
+	<{$menu.link}>
+	<{/foreach}>
+</ul></td>
+<{/if}>
+<{if $mm03_display}>
+<td><ul>
+	<{foreach item=menu from=$mm_content03}>
+	<{$menu.link}>
+	<{/foreach}>
+</ul></td>
+<{/if}>
+<{if $mm04_display}>
+<td><ul>
+	<{foreach item=menu from=$mm_content04}>
+	<{$menu.link}>
+	<{/foreach}>
+</ul></td>
+<{/if}>
+<{if $mm05_display}>
+<td><ul>
+	<{foreach item=menu from=$mm_content05}>
+	<{$menu.link}>
+	<{/foreach}>
+</ul></td>
+<{/if}>
+<{if $mm06_display}>
+<td><ul>
+	<{foreach item=menu from=$mm_content06}>
+	<{$menu.link}>
+	<{/foreach}>
+</ul></td>
+<{/if}>
+<{if $mm07_display}>
+<td><ul>
+	<{foreach item=menu from=$mm_content07}>
+	<{$menu.link}>
+	<{/foreach}>
+</ul></td>
+<{/if}>
+<{if $mm08_display}>
+<td><ul>
+	<{foreach item=menu from=$mm_content08}>
+	<{$menu.link}>
+	<{/foreach}>
+</ul></td>
+<{/if}>
+</tr></tbody>
+</table>
+</div>
+<{if $mm_admin}><div class="itemFoot"><{$mm_admin}></div><{/if}>
+</div>
+<div style="display: none;">multiMenu is developed by The WolFactory (http://www.wolfpackclan.com/wolfactory), a Xoops division of the Wolf Pack Clan (http://www.wolfpackclan.com)</div>
+

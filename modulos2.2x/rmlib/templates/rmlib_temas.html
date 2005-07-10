@@ -1,0 +1,72 @@
+<table width="100%"  border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="40" colspan="2" align="left" style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: bold; color:#000000;"><img src="images/logo.gif" width="32" height="32" align="absmiddle"> <{$lib_name}></td>
+  </tr>
+  <tr class="info">
+    <td height="20" align="left" style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #000000; "><{$back_sections}></td>
+    <td align="right" style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #000000; "><{$lang_thereare}></td>
+  </tr>
+  <tr>
+    <td colspan="2"><table width="98%"  border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td colspan="2">&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="head" width="26"><img src="images/library.gif" width="24" height="24"></td>
+        <td class="head"><{$categoria}></td>
+      </tr>
+      <tr>
+        <td colspan="2"> <{foreach item=book from=$books}>
+          <br>		
+            <table width="100%"  border="0" cellspacing="0" cellpadding="0" class="outer">
+            <tr>
+              <td width="26" colspan="2" class="odd">
+			<{if $book.tipo==0 }>
+				  <img src="images/chapter.gif" width="24" height="24">
+			<{/if}>
+			<{if $book.tipo==1 }>
+				  <img src="images/manual.gif" width="24" height="24">
+			<{/if}>
+			<{if $book.tipo==2 }>
+				  <img src="images/tutorial.gif" width="24" height="24">
+			<{/if}>
+			<{if $book.tipo==3 }>
+				  <img src="images/faq.gif" width="24" height="24">
+			<{/if}>
+			<{if $book.tipo==4 }>
+				  <img src="images/book.gif" width="24" height="24">
+			<{/if}>
+			  </td>
+              <td align="left" class="odd"><{$book.titulo}></td>
+            </tr>
+            <tr>
+              <td width="26" colspan="2" class="even">&nbsp;</td>
+              <td align="left" class="even"><{$book.desc}></td>
+            </tr>
+			<tr>
+			<td class="info" align="left" colspan="2">&nbsp;</td>
+			<td class="info" align="left"><{$lang_author}> <{$book.autores}></td>
+			</tr>
+            <tr>
+              <td width="26" colspan="2" class="foot">&nbsp;</td>
+              <td align="left" class="foot"><{$book.fecha}> &nbsp;&nbsp;| &nbsp;&nbsp;<{$lang_pubas}>
+			<{if $book.tipo==0}><{$lang_help}><{/if}>
+			<{if $book.tipo==1}><{$lang_manual}><{/if}>
+			<{if $book.tipo==2}><{$lang_tutorial}><{/if}>
+			<{if $book.tipo==3}><{$lang_faq}><{/if}>
+			<{if $book.tipo==4}><{$lang_book}><{/if}>&nbsp;&nbsp;|&nbsp;&nbsp;<{$book.lecturas}>
+			  </td>
+            </tr>
+          </table>  
+          <{/foreach}></td>
+        </tr>
+
+    </table></td>
+  </tr>
+  <tr>
+    <td height="1" colspan="2" bgcolor="#000000"></td>
+  </tr>
+  <tr>
+    <td height="20" colspan="2" align="right" style="font-family: Arial, Helvetica, sans-serif; font-size: 10px; color: #000000; ">Copyright &copy; 2005. Red M&eacute;xico Soft. <a href="http://www.redmexico.com.mx">www.redmexico.com.mx</a> </td>
+  </tr>
+</table>
