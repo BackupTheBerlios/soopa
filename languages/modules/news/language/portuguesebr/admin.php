@@ -1,5 +1,5 @@
 <?php
-// $Id: admin.php,v 1.2 2005/07/09 18:19:21 mauriciodelima Exp $
+// $Id: admin.php,v 1.3 2005/07/11 01:15:31 valcilon Exp $
 //%%%%%%	Admin Module Name  Articles 	%%%%%
 define("_AM_DBUPDATED","As informações foram gravadas corretamente.");
 define("_AM_CONFIG","ADMINISTRAÇÃO DO MÓDULO DE NOTÍCIAS");
@@ -29,8 +29,8 @@ define("_AM_NO","Não");
 define("_AM_INTROTEXT","Texto introdutório");
 define("_AM_EXTEXT","Continuação");
 define("_AM_ALLOWEDHTML","Códigos html permitidos:");
-define("_AM_DISAMILEY","Desabilitar emoticons");
-define("_AM_DISHTML","Desabilitar HTML");
+define("_AM_DISAMILEY","Desativar emoticons");
+define("_AM_DISHTML","Desativar HTML");
 define("_AM_APPROVE","Aprovar");
 define("_AM_MOVETOTOP","Mover esta notícia ao topo");
 define("_AM_CHANGEDATETIME","Modificar a data/hora de publicação");
