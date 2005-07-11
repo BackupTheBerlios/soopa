@@ -1,5 +1,5 @@
 <?php
-// $Id: main.php,v 1.2 2005/07/05 20:24:45 mauriciodelima Exp $
+// $Id: main.php,v 1.3 2005/07/11 01:32:04 valcilon Exp $
 //%%%%%%	File Name readpmsg.php 	%%%%%
 define("_PM_DELETED","Mensages excluidas com sucesso!");
 define("_PM_PRIVATEMESSAGE","Mensagens Particulares");
@@ -23,17 +23,17 @@ define("_PM_PLZTRYAGAIN","Verifique o nome e tente novamente");
 define("_PM_MESSAGEPOSTED","Mensagens enviadas com sucesso");
 define("_PM_CLICKHERE","You can click here to view your private messages");
 define("_PM_ORCLOSEWINDOW","Or click here to close this window.");
-define("_PM_USERWROTE","%s wrote:");
-define("_PM_TO","To: ");
+define("_PM_USERWROTE","%s escreveu:");
+define("_PM_TO","Para: ");
 define("_PM_SUBJECTC","Assunto: ");
-define("_PM_MESSAGEC","Lensagem: ");
+define("_PM_MESSAGEC","Mensagem: ");
 define("_PM_CLEAR","Limpar");
 define("_PM_CANCELSEND","Cancelar");
 define("_PM_SUBMIT","Enviar");
 
 //%%%%%%	File Name viewpmsg.php 	%%%%%
 define("_PM_SUBJECT","Assunto");
-define("_PM_DATE","data");
+define("_PM_DATE","Data");
 define("_PM_NOTREAD","Não lida");
 define("_PM_SEND","Escrever nova mensagem");
 define("_PM_DELETE","Excluir");
