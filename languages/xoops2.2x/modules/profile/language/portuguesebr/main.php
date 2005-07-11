@@ -1,5 +1,5 @@
 <?php
-// $Id: main.php,v 1.3 2005/07/09 18:09:26 mauriciodelima Exp $
+// $Id: main.php,v 1.4 2005/07/11 04:05:43 mauriciodelima Exp $
 define("_PROFILE_MA_ERRORDURINGSAVE", "Error during save");
 define('_PROFILE_MA_USERREG','Cadastro de Usuários');
 define('_PROFILE_MA_NICKNAME','Nome do usuário');
@@ -33,11 +33,17 @@ define('_PROFILE_MA_HASJUSTREG','%s has just registered!');
 define('_PROFILE_MA_INVALIDMAIL','ERROR: Invalid email');
 define('_PROFILE_MA_EMAILNOSPACES','ERROR: Email addresses do not contain spaces.');
 define('_PROFILE_MA_INVALIDNICKNAME','ERROR: Invalid Username');
+define("_PROFILE_MA_INVALIDDISPLAYNAME", "Nome para exibição inálivo");
 define('_PROFILE_MA_NICKNAMETOOLONG','Username is too long. It must be less than %s characters.');
+define('_PROFILE_MA_DISPLAYNAMETOOLONG','O Nome para exibição muito longo. Deve conter no máximo %s caracteres.');
 define('_PROFILE_MA_NICKNAMETOOSHORT','O Nome de Usuário deve conter mais de  %s caracteres.');
+define('_PROFILE_MA_DISPLAYNAMETOOSHORT','O Nome para exibição é muito curto. Deve conter mais de %s caracteres.');
 define('_PROFILE_MA_NAMERESERVED','Desculpe, este é um nome reservado.');
+define('_PROFILE_MA_DISPLAYNAMERESERVED','O Nome para Exibição é reservado.');
 define('_PROFILE_MA_NICKNAMENOSPACES','O Nome de Usuário não pode conter espaços.');
+define('_PROFILE_MA_DISPLAYNAMENOSPACES','Não podem haver espaços no nome de exibição.');
 define('_PROFILE_MA_NICKNAMETAKEN','ERROR: Username taken.');
+define('_PROFILE_MA_DISPLAYNAMETAKEN','ERROR: Displayname taken.');
 define('_PROFILE_MA_EMAILTAKEN','Desculpe o Nome de Usuário já existe.');
 define('_PROFILE_MA_ENTERPWD','ERROR: You must provide a password.');
 define('_PROFILE_MA_SORRYNOTFOUND','Sorry, no corresponding user info was found.');
@@ -51,7 +57,7 @@ define('_PROFILE_MA_YOURACCOUNT', 'Your account at %s');
 define('_PROFILE_MA_ACTVMAILNG', 'Failed sending notification mail to %s');
 define('_PROFILE_MA_ACTVMAILOK', 'Notification mail to %s sent.');
 
-define("_PROFILE_MA_DEFAULT", "Default Settings");
+define("_PROFILE_MA_DEFAULT", "Configurações Padrão");
 
 //%%%%%%		File Name userinfo.php 		%%%%%
 define('_PROFILE_MA_SELECTNG','Você deve selecionar um usuários.');
@@ -81,7 +87,7 @@ define('_PROFILE_MA_SHOWALL','Exibir tudo');
 
 //%%%%%%		File Name edituser.php 		%%%%%
 define('_PROFILE_MA_PROFILE','Perfil');
-define('_PROFILE_MA_REALNAME','Nome Real');
+define('_PROFILE_MA_DISPLAYNAME','Nome para exibição');
 define('_PROFILE_MA_SHOWSIG','Sempre incluir a minha assinatura');
 define('_PROFILE_MA_CDISPLAYMODE','Exibição dos comentários');
 define('_PROFILE_MA_CSORTORDER','Ordem dos comentário');
