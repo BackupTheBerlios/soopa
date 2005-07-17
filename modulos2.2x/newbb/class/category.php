@@ -1,5 +1,5 @@
 <?php
-// $Id: category.php,v 1.1 2005/07/13 03:55:48 mauriciodelima Exp $
+// $Id: category.php,v 1.2 2005/07/17 17:02:33 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //
@@ -138,7 +138,13 @@ class NewbbCategoryHandler extends XoopsObjectHandler
             return false;
         }
 
-        if (!($category->getVar('cat_id'))) $category->setVar('cat_id', $this->db->getInsertId());
+        if (!($category->getVar('cat_id'))){
+	        $category->setVar('cat_id', $this->db->getInsertId());
+        }
+        
+        if ($category->isNew()) {
+	        $this->applyPermissionTemplate($category);
+        }
         /*
         $perm = &xoops_getmodulehandler('permission', 'newbb');
         $perm->saveCategory_Permissions($category->groups_cat_access, $category->getVar('cat_id'), 'forum_cat_access');
@@ -158,11 +164,14 @@ class NewbbCategoryHandler extends XoopsObjectHandler
         $sql = "DELETE FROM " . $category->table . " WHERE cat_id=" . $category->getVar('cat_id') . "";
         if ($result = $this->db->query($sql)) {
             // Delete group permissions
+            return $this->deletePermission($category);
+            /*
             $gperm_handler = &xoops_gethandler('groupperm');
             $criteria = new CriteriaCompo(new Criteria('gperm_modid', intval($xoopsModule->getVar('mid'))));
             $criteria->add(new Criteria('gperm_name', 'forum_cat_access'));
             $criteria->add(new Criteria('gperm_itemid', $category->getVar('cat_id')));
             return $gperm_handler->deleteAll($criteria);
+            */
         } else {
 	        newbb_message("delete category error: ".$sql);
             return false;
@@ -211,6 +220,18 @@ class NewbbCategoryHandler extends XoopsObjectHandler
 
         return $permission;
     }
+        
+    function deletePermission(&$category)
+    {
+		$perm_handler =& xoops_getmodulehandler('permission', 'newbb');
+		return $perm_handler->deleteByCategory($category->getVar("cat_id"));
+	}
+    
+    function applyPermissionTemplate(&$category)
+    {
+		$perm_handler =& xoops_getmodulehandler('permission', 'newbb');
+		return $perm_handler->setCategoryPermission($category->getVar("cat_id"));
+	}
 }
 
 ?>

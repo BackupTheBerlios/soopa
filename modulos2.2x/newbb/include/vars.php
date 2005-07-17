@@ -1,5 +1,5 @@
 <?php
-// $Id: vars.php,v 1.1 2005/07/13 03:55:49 mauriciodelima Exp $
+// $Id: vars.php,v 1.2 2005/07/17 17:02:33 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //
@@ -36,7 +36,7 @@ define('NEWBB_UNREPLIED', 3);
 define('NEWBB_DIGEST', 4);
 define('NEWBB_DELETEONE', 1);
 define('NEWBB_DELETEALL', 2);
-if (!defined('FORUM_PERM_ITEMS')) define('FORUM_PERM_ITEMS', 'access,post,view,reply,edit,delete,addpoll,vote,attach,noapprove');
+if (!defined('FORUM_PERM_ITEMS')) define('FORUM_PERM_ITEMS', 'access,view,post,reply,edit,delete,addpoll,vote,attach,noapprove');
 require_once(XOOPS_ROOT_PATH.'/modules/newbb/include/functions.php');
 
 // You shouldn't have to change any of these

@@ -1,5 +1,5 @@
 <?php
-// $Id: forum.php,v 1.1 2005/07/13 03:55:48 mauriciodelima Exp $
+// $Id: forum.php,v 1.2 2005/07/17 17:02:33 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //
@@ -297,7 +297,13 @@ class NewbbForumHandler extends XoopsObjectHandler
             return false;
         }
 
-        if (!($forum->getVar('forum_id'))) $forum->setVar('forum_id', $this->db->getInsertId());
+        if (!($forum->getVar('forum_id'))) {
+	        $forum->setVar('forum_id', $this->db->getInsertId());
+        }
+        
+        if ($forum->isNew()) {
+        	$this->applyPermissionTemplate($forum);
+    	}
 
         return true;
     }
@@ -354,6 +360,8 @@ class NewbbForumHandler extends XoopsObjectHandler
             return false;
         }
 
+        return $this->deletePermission($forum);
+        /*
         // Delete group permissions
         $gperm_handler = &xoops_gethandler('groupperm');
         $gperm_names = "('forum_access', 'forum_post', 'forum_view', 'forum_reply', 'forum_edit', 'forum_delete', 'forum_addpoll', 'forum_vote', 'forum_attach', 'category_access')";
@@ -362,6 +370,7 @@ class NewbbForumHandler extends XoopsObjectHandler
         $criteria->add(new Criteria('gperm_name', $gperm_names, 'IN'));
         $criteria->add(new Criteria('gperm_itemid', $forum->getVar('forum_id')));
         return $gperm_handler->deleteAll($criteria);
+        */
     }
 
     function &getForums($cat = 0, $permission = "")
@@ -796,6 +805,18 @@ class NewbbForumHandler extends XoopsObjectHandler
             }
             return $permission;
         }
+        
+        function deletePermission(&$forum)
+        {
+			$perm_handler =& xoops_getmodulehandler('permission', 'newbb');
+			return $perm_handler->deleteByForum($forum->getVar("forum_id"));
+		}
+        
+        function applyPermissionTemplate(&$forum)
+        {
+			$perm_handler =& xoops_getmodulehandler('permission', 'newbb');
+			return $perm_handler->applyTemplate($forum->getVar("forum_id"));
+		}        
     }
 
 ?>

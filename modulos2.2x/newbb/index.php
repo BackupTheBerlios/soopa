@@ -1,5 +1,5 @@
 <?php
-// $Id: index.php,v 1.1 2005/07/13 03:55:48 mauriciodelima Exp $
+// $Id: index.php,v 1.2 2005/07/17 17:02:32 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //
@@ -56,8 +56,9 @@ $xoopsOption['template_main']= 'newbb_index.html';
 include XOOPS_ROOT_PATH."/header.php";
 
 if(!empty($xoopsModuleConfig['rss_enable'])){
-	$xoopsTpl->assign('xoops_module_header', '<link rel="alternate" type="application/xml+rss" title="'.$xoopsModule->getVar('name').'" href="'.XOOPS_URL.'/modules/'.$xoopsModule->getVar('dirname').'/rss.php" />');
+	$xoops_module_header .= '<link rel="alternate" type="application/xml+rss" title="'.$xoopsModule->getVar('name').'" href="'.XOOPS_URL.'/modules/'.$xoopsModule->getVar('dirname').'/rss.php" />';
 }
+$xoopsTpl->assign('xoops_module_header', $xoops_module_header);
 if ($xoopsModuleConfig['wol_enabled']){
 	$online_handler =& xoops_getmodulehandler('online', 'newbb');
 	$online_handler->init();

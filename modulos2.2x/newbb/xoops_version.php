@@ -1,5 +1,5 @@
 <?php
-// $Id: xoops_version.php,v 1.1 2005/07/13 03:55:48 mauriciodelima Exp $
+// $Id: xoops_version.php,v 1.2 2005/07/17 17:02:33 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //
@@ -40,7 +40,7 @@ $modversion['author_realname'] = "XOOPS CHINA Dev Group";
 $modversion['author_website_url'] = "http://xoops.org.cn";
 $modversion['author_website_name'] = "XOOPS CHINA";
 $modversion['author_email'] = "php_pp@hotmail.com";
-$modversion['status_version'] = "2.2 alpha 1.1";
+$modversion['status_version'] = "2.2 beta";
 $modversion['status'] = "alpha";
 
 $modversion['warning'] = "Temporary release for the purpose of XOOPS 2.2 debug ONLY!";
@@ -83,7 +83,7 @@ $modversion['hasMain'] = 1;
 $modversion['onUpdate'] = 'include/update.php';
 
 //module css
-$modversion['css'] = 'templates/newbb.css';
+//$modversion['css'] = 'templates/newbb.css';
 
 // Templates
 $modversion['templates'][0]['file'] = 'newbb_poll_results.html';

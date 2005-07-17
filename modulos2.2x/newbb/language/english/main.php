@@ -1,5 +1,5 @@
 <?php
-// $Id: main.php,v 1.1 2005/07/13 03:55:49 mauriciodelima Exp $
+// $Id: main.php,v 1.2 2005/07/17 17:02:33 mauriciodelima Exp $
 if(defined('MAIN_DEFINED')) return;
 define('MAIN_DEFINED',true);
 

@@ -1,5 +1,5 @@
 <?php
-// $Id: header.php,v 1.1 2005/07/13 03:55:47 mauriciodelima Exp $
+// $Id: header.php,v 1.2 2005/07/17 17:02:32 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //
@@ -54,7 +54,6 @@ foreach($valid_menumodes as $key=>$val){
 if(!empty($xoopsModuleConfig['pngforie_enabled'])){
 	$xTheme->addCSS(null,null,'img {behavior:url("include/pngbehavior.htc");}');
 }
-//$xTheme->addCSS(XOOPS_URL."/modules/".$xoopsModule->getVar("dirname")."/templates/newbb.css");
 $xTheme->addJS(XOOPS_URL."/modules/".$xoopsModule->getVar("dirname")."/include/js/newbb_toggle.js");
 $xTheme->addJS(null, null, 'var toggle_cookie="'.$forumCookie['prefix'].'G'.'";');
 if($menumode==2){
@@ -65,10 +64,8 @@ if($menumode==1){
 	$xTheme->addCSS(XOOPS_URL."/modules/".$xoopsModule->getVar("dirname")."/templates/newbb_menu_click.css");
 	$xTheme->addJS(XOOPS_URL."/modules/".$xoopsModule->getVar("dirname")."/include/js/newbb_menu_click.js");
 }
-//$xoops_module_header = $newbb_module_header; // for cache hack
-//$xoopsOption['xoops_module_header'] = $xoops_module_header;
-$xoopsOption['xoops_showrblock'] = 0;
-$xoopsOption['xoops_showlblock'] = 0;
+
+$xoops_module_header = '<link rel="stylesheet" type="text/css" media="screen" href="'.XOOPS_URL."/modules/".$xoopsModule->getVar("dirname").'/templates/newbb.css" />';
 
 newbb_welcome();
 ?>

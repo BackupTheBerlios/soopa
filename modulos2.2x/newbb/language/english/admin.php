@@ -1,5 +1,5 @@
 <?php
-// $Id: admin.php,v 1.1 2005/07/13 03:55:49 mauriciodelima Exp $
+// $Id: admin.php,v 1.2 2005/07/17 17:02:33 mauriciodelima Exp $
 //%%%%%%	File Name  index.php   	%%%%%
 define("_AM_NEWBB_FORUMCONF","Forum Configuration");
 define("_AM_NEWBB_ADDAFORUM","Add a Forum");
@@ -167,7 +167,7 @@ define("_AM_NEWBB_REORDERWEIGHT","Position");
 define("_AM_NEWBB_SETFORUMORDER","Set Board Ordering");
 define("_AM_NEWBB_BOARDREORDER","The Board has reordered to your specification");
 
-// forum_access.php
+// admin_permission.php
 define("_AM_NEWBB_PERMISSIONS_TO_THIS_FORUM","Topic permissions for this Forum");
 define("_AM_NEWBB_CAT_ACCESS","Category access");
 define("_AM_NEWBB_CAN_ACCESS","Can access");
@@ -181,6 +181,15 @@ define("_AM_NEWBB_CAN_VOTE","Can Vote");
 define("_AM_NEWBB_CAN_ATTACH","Can Attach");
 define("_AM_NEWBB_CAN_NOAPPROVE","Can Post without Approval");
 define("_AM_NEWBB_ACTION","Action");
+
+define("_AM_NEWBB_PERM_TEMPLATE","Permission Template");
+define("_AM_NEWBB_PERM_TEMPLATE_DESC","To be applied to new forum");
+define("_AM_NEWBB_PERM_FORUMS","Select forums");
+define("_AM_NEWBB_PERM_TEMPLATE_CREATED","Permission template has been created");
+define("_AM_NEWBB_PERM_TEMPLATE_ERROR","Error occurs during permission template creation");
+define("_AM_NEWBB_PERM_TEMPLATEAPP","Apply default permission");
+define("_AM_NEWBB_PERM_TEMPLATE_APPLIED","Default permissions have been applied to forums");
+define("_AM_NEWBB_PERM_ACTION","Permission actions");
 
 // admin_forum_prune.php
 

@@ -1,5 +1,5 @@
 <?php
-// $Id: viewtopic.php,v 1.1 2005/07/13 03:55:48 mauriciodelima Exp $
+// $Id: viewtopic.php,v 1.2 2005/07/17 17:02:33 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //
@@ -154,6 +154,11 @@ $xoops_pagetitle = $xoopsModule->getVar('name'). ' - ' .$myts->htmlSpecialChars(
 
 include XOOPS_ROOT_PATH."/header.php";
 $xoopsTpl->assign('xoops_pagetitle', $xoops_pagetitle);
+
+if(!empty($xoopsModuleConfig['rss_enable'])){
+	$xoops_module_header .= '<link rel="alternate" type="application/xml+rss" title="'.$xoopsModule->getVar('name').'-'.$viewtopic_forum->getVar('forum_name').'" href="'.XOOPS_URL.'/modules/'.$xoopsModule->getVar('dirname').'/rss.php?f='.$viewtopic_forum->getVar("forum_id").'" />';
+}
+$xoopsTpl->assign('xoops_module_header', $xoops_module_header);
 
 if ($xoopsModuleConfig['wol_enabled']){
 	$online_handler =& xoops_getmodulehandler('online', 'newbb');
@@ -522,8 +527,7 @@ if( $isadmin ||
 		$config_handler =& xoops_gethandler('config');
 		$xoopsConfigUser =& $config_handler->getConfigsByCat(XOOPS_CONF_USER);
 		$user_tray = new XoopsFormElementTray(_MD_ACCOUNT);
-		$uname_size = $xoopsConfigUser['maxuname'] < 25 ? $xoopsConfigUser['maxuname'] : 25;
-		$user_tray->addElement(new XoopsFormText(_MD_NAME, "uname", $uname_size, $uname_size));
+		$user_tray->addElement(new XoopsFormText(_MD_NAME, "uname", 26, 255));
 		$user_tray->addElement(new XoopsFormPassword(_MD_PASSWORD, "pass", 10, 32));
 		$login_checkbox = new XoopsFormCheckBox('', 'login', 1);
 		$login_checkbox->addOption(1, _MD_LOGIN);

@@ -1,5 +1,5 @@
 <?php
-// $Id: report.php,v 1.1 2005/07/13 03:55:48 mauriciodelima Exp $
+// $Id: report.php,v 1.2 2005/07/17 17:02:33 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //

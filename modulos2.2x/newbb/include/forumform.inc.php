@@ -1,5 +1,5 @@
 <?php
-// $Id: forumform.inc.php,v 1.1 2005/07/13 03:55:49 mauriciodelima Exp $
+// $Id: forumform.inc.php,v 1.2 2005/07/17 17:02:33 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //
@@ -117,17 +117,13 @@ if(!empty($editor)){
 }
 $forum_form->addElement(new XoopsFormSelectEditor($forum_form,"editor",$editor,$nohtml));
 
-$editor_configs["caption"] = _MD_MESSAGEC;
 $editor_configs["name"] ="message";
 $editor_configs["value"] = $message;
 $editor_configs["rows"] = 35;
 $editor_configs["cols"] = 60;
 $editor_configs["width"] = "100%";
 $editor_configs["height"] = "400px";
-
-$editor_handler =& xoops_gethandler("editor");
-$editor_object = & $editor_handler->get($editor, $editor_configs,"",$nohtml);
-$forum_form->addElement($editor_object, true);
+$forum_form->addElement(new XoopsFormEditor(_MD_MESSAGEC, $editor, $editor_configs, $nohtml, $onfailure=null), true);
 
 $options_tray = new XoopsFormElementTray(_MD_OPTIONS, '<br />');
 if (is_object($xoopsUser) && $xoopsModuleConfig['allow_user_anonymous'] == 1) {

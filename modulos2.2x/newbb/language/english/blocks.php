@@ -1,5 +1,5 @@
 <?php
-// $Id: blocks.php,v 1.1 2005/07/13 03:55:49 mauriciodelima Exp $
+// $Id: blocks.php,v 1.2 2005/07/17 17:02:33 mauriciodelima Exp $
 // Blocks
 if(defined('_MB_NEWBB_DEFINED')) return;
 else define('_MB_NEWBB_DEFINED',true);

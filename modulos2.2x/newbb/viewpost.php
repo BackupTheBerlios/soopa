@@ -1,5 +1,5 @@
 <?php
-// $Id: viewpost.php,v 1.1 2005/07/13 03:55:48 mauriciodelima Exp $
+// $Id: viewpost.php,v 1.2 2005/07/17 17:02:33 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //
@@ -121,12 +121,12 @@ if(!empty($forum_id)){
 	$xoopsTpl->assign("forum_id", $forum->getVar('forum_id'));
 
 	if(!empty($xoopsModuleConfig['rss_enable'])){
-		$xoopsTpl->assign('xoops_module_header', '<link rel="alternate" type="application/xml+rss" title="'.$xoopsModule->getVar('name').'-'.$forum->getVar('forum_name').'" href="'.XOOPS_URL.'/modules/'.$xoopsModule->getVar('dirname').'/rss.php?f='.$forumid.'" />');
+		$xoops_module_header .= '<link rel="alternate" type="application/xml+rss" title="'.$xoopsModule->getVar('name').'-'.$forum->getVar('forum_name').'" href="'.XOOPS_URL.'/modules/'.$xoopsModule->getVar('dirname').'/rss.php?f='.$forum_id.'" />';
 	}
 }elseif(!empty($xoopsModuleConfig['rss_enable'])){
-	$xoopsTpl->assign('xoops_module_header', '<link rel="alternate" type="application/xml+rss" title="'.$xoopsModule->getVar('name').'" href="'.XOOPS_URL.'/modules/'.$xoopsModule->getVar('dirname').'/rss.php" />');
+	$xoops_module_header .= '<link rel="alternate" type="application/xml+rss" title="'.$xoopsModule->getVar('name').'" href="'.XOOPS_URL.'/modules/'.$xoopsModule->getVar('dirname').'/rss.php" />');
 }
-$xoopsTpl->assign('xoops_module_header', $newbb_module_header);
+$xoopsTpl->assign('xoops_module_header', $xoops_module_header);
 $xoopsTpl->assign('xoops_pagetitle', $xoops_pagetitle);
 
 $userid_array=array();
