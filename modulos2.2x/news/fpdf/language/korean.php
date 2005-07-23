@@ -1,5 +1,5 @@
 <?php
-// $Id: korean.php,v 1.1 2005/07/05 12:55:21 mauriciodelima Exp $
+// $Id: korean.php,v 1.2 2005/07/23 02:51:03 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //
@@ -110,7 +110,7 @@ define('NEWS_PDF_TOPIC', 'Topic');
 define('NEWS_PDF_SUBJECT', 'Subject');
 define('NEWS_PDF_AUTHOR', _POSTEDBY);
 define('NEWS_PDF_DATE', _MD_POSTEDON);
-//define('NEWS_PDF_PAGE', 'Page %s');
+
 
 // For more details, refer to: http://fpdf.org
 class PDF_language extends PDF_Korean

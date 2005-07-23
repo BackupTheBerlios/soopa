@@ -1,5 +1,5 @@
 <?php
-// $Id: makepdf_class.php,v 1.1 2005/07/05 12:55:20 mauriciodelima Exp $
+// $Id: makepdf_class.php,v 1.2 2005/07/23 02:51:03 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //
@@ -338,8 +338,8 @@ class PDF extends PDF_language
 		$this->Cell(0,10,$pdf_config['url'],'T',0,'L',0,$pdf_config['url']);
 		$pn=$this->PageNo();
 		$out=$printpdfdate;
-		$out.=' / ';
-		$out.=sprintf($pdf_config['footerpage'], $pn);
+		$out.=' - ';
+		$out.=$pn;
 		$this->SetFont($pdf_config['font']['footer']['family'],$pdf_config['font']['footer']['style'],$pdf_config['font']['footer']['size']);
 		$this->Cell(0,10,$out,'T',0,'R',0,$pdf_config['mail']);
 	}

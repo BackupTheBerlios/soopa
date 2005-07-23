@@ -1,5 +1,5 @@
 <?php
-// $Id: index.php,v 1.1 2005/07/05 12:55:20 mauriciodelima Exp $
+// $Id: index.php,v 1.2 2005/07/23 02:51:03 mauriciodelima Exp $
 // ------------------------------------------------------------------------ //
 // XOOPS - PHP Content Management System  				                    //
 // Copyright (c) 2000 XOOPS.org                         					//
@@ -857,8 +857,8 @@ function delTopic()
 			xoops_groupperm_deletebymoditem($xoopsModule->getVar('mid'), 'news_approve', $eachtopic -> topic_id);
 			xoops_groupperm_deletebymoditem($xoopsModule->getVar('mid'), 'news_submit', $eachtopic -> topic_id);
 			xoops_groupperm_deletebymoditem($xoopsModule->getVar('mid'), 'news_view', $eachtopic -> topic_id);
-			updateCache();
         }
+        updateCache();
         redirect_header( 'index.php?op=topicsmanager', 1, _AM_DBUPDATED );
         exit();
     }

@@ -1,5 +1,5 @@
 <?php
-// $Id: news_topicsnav.php,v 1.1 2005/07/05 12:55:20 mauriciodelima Exp $
+// $Id: news_topicsnav.php,v 1.2 2005/07/23 02:51:03 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //

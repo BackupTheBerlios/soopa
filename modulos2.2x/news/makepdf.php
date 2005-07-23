@@ -1,5 +1,5 @@
 <?php
-// $Id: makepdf.php,v 1.1 2005/07/05 12:55:20 mauriciodelima Exp $
+// $Id: makepdf.php,v 1.2 2005/07/23 02:51:03 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //
@@ -64,7 +64,7 @@ $dateformat=getmoduleoption('dateformat');
 $article_data = $article->hometext() . $article->bodytext();
 $forumdata['topic_title'] = news_html2text($myts->undoHtmlSpecialChars($article->title()));
 
-$pdf_data['title'] = $article->title();
+$pdf_data['title'] = news_html2text($myts->undoHtmlSpecialChars($article->title()));
 $pdf_data['subtitle'] = $myts->htmlSpecialChars($article->topic_title());
 $pdf_data['subsubtitle'] = '';
 $pdf_data['date'] = formatTimestamp($article->published(),$dateformat);
@@ -82,6 +82,7 @@ $puffer='<br /><br /><br />';
 
 //create the A4-PDF...
 $pdf_config['slogan']=$xoopsConfig['sitename'].' - '.$xoopsConfig['slogan'];
+
 
 $pdf=new PDF();
 if(method_exists($pdf, "encoding")){
