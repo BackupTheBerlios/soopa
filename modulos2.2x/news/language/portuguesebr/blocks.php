@@ -1,5 +1,5 @@
 <?php
-// $Id: blocks.php,v 1.2 2005/07/23 03:00:19 mauriciodelima Exp $
+// $Id: blocks.php,v 1.3 2005/07/23 05:24:05 mauriciodelima Exp $
 define("_MB_NEWS_NOTYET","Não há historia interessante, até agora...");
 define("_MB_NEWS_TMRSI","Notícia do dia:");
 define("_MB_NEWS_ORDER","Organizar por");
@@ -16,7 +16,7 @@ define("_MB_ACTION", "Ação");
 define("_MB_TOPIC", "Tópico");
 define("_MB_DELETE", "Remover");
 define("_MB_NEWS_RESTRICTTOPICS", "Restringir os tópicos que poderão ser vistos por visitante?");
-define("_MB_NEWS_TEASER", "Mostrar teaser de tamanho (0 para nenhum teaser)");
+define("_MB_NEWS_TEASER", "Exibir teaser de tamanho (0 para nenhum teaser)");
 define("_MB_NEWS_SPOTLIGHT", "Habilitar a opção de spotlight");
 define("_MB_NEWS_FIRST", "--Primeiro item--");
 define("_MB_NEWS_IMAGE", "Imagem para spotlight");
@@ -25,7 +25,7 @@ define("_MB_SPOTLIGHT_ALL_TOPICS", "Todos topicos");
 define("_MB_NEWS_SPOTLIGHT_ARTICLE", "Selecione um artigo");
 define("_MB_READMORE","leia mais...");
 define("_MB_NEWS_RATE","avaliação");
-define("_MB_NEWS_SHOW_NEWS_COUNT","Mostrar contador?");
+define("_MB_NEWS_SHOW_NEWS_COUNT","Exibir contador?");
 define("_MB_NEWS_SPOTLIGHT_TITLE", "Spotlight");
 define("_MB_NEWS_VIEW_TYPE1", "Classico");
 define("_MB_NEWS_VIEW_TYPE2", "Com tabs");

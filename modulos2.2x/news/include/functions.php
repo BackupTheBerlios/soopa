@@ -1,5 +1,5 @@
 <?php
-// $Id: functions.php,v 1.3 2005/07/23 03:00:18 mauriciodelima Exp $
+// $Id: functions.php,v 1.4 2005/07/23 05:24:05 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //
@@ -157,23 +157,23 @@ function &news_getWysiwygForm($caption, $name, $value = "", $width = '100%', $he
 	$editor = false;
 	switch(strtolower(getmoduleoption('form_options'))){
 	case "spaw":
-		if (is_readable(XOOPS_ROOT_PATH . "/class/spaw/formspaw.php"))	{
+		if (is_readable(XOOPS_ROOT_PATH . "/class/xoopseditor/spaw/formspaw.php"))	{
 			$myts =& MyTextSanitizer::getInstance();
-			include_once(XOOPS_ROOT_PATH . "/class/spaw/formspaw.php");
+			include_once(XOOPS_ROOT_PATH . "/class/xoopseditor/spaw/formspaw.php");
 			$editor = new XoopsFormSpaw($caption, $name, $value);
 		}
 		break;
 
 	case "fck":
-		if ( is_readable(XOOPS_ROOT_PATH . "/class/fckeditor/formfckeditor.php"))	{
-			include_once(XOOPS_ROOT_PATH . "/class/fckeditor/formfckeditor.php");
+		if ( is_readable(XOOPS_ROOT_PATH . "/class/xoopseditor/fckeditor/formfckeditor.php"))	{
+			include_once(XOOPS_ROOT_PATH . "/class/xoopseditor/fckeditor/formfckeditor.php");
 			$editor = new XoopsFormFckeditor($caption, $name, $value);
 		}
 		break;
 
 	case "htmlarea":
-		if ( is_readable(XOOPS_ROOT_PATH . "/class/htmlarea/formhtmlarea.php"))	{
-			include_once(XOOPS_ROOT_PATH . "/class/htmlarea/formhtmlarea.php");
+		if ( is_readable(XOOPS_ROOT_PATH . "/class/xoopseditor/htmlarea/formhtmlarea.php"))	{
+			include_once(XOOPS_ROOT_PATH . "/class/xoopseditor/htmlarea/formhtmlarea.php");
 			$editor = new XoopsFormHtmlarea($caption, $name, $value);
 		}
 		break;
@@ -187,8 +187,8 @@ function &news_getWysiwygForm($caption, $name, $value = "", $width = '100%', $he
 		break;
 
 	case "koivi":
-		if ( is_readable(XOOPS_ROOT_PATH . "/class/wysiwyg/formwysiwygtextarea.php"))	{
-			include_once(XOOPS_ROOT_PATH . "/class/wysiwyg/formwysiwygtextarea.php");
+		if ( is_readable(XOOPS_ROOT_PATH . "/class/xoopseditor/koivi/formwysiwygtextarea.php"))	{
+			include_once(XOOPS_ROOT_PATH . "/class/xoopseditor/koivi/formwysiwygtextarea.php");
 			$editor = new XoopsFormWysiwygTextArea($caption, $name, $value, '100%', '400px', '');
 		}
 		break;

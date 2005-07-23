@@ -1,5 +1,5 @@
 <?php
-// $Id: admin.php,v 1.2 2005/07/23 03:00:19 mauriciodelima Exp $
+// $Id: admin.php,v 1.3 2005/07/23 05:24:05 mauriciodelima Exp $
 //%%%%%%	Admin Module Name  Articles 	%%%%%
 define("_AM_DBUPDATED","As informações foram gravadas corretamente.");
 define("_AM_CONFIG","ADMINISTRAÇÃO DO MÓDULO DE NOTÍCIAS");
@@ -41,7 +41,7 @@ define("_AM_MONTHC","Mês:");
 define("_AM_DAYC","Dia:");
 define("_AM_YEARC","Ano:");
 define("_AM_TIMEC","Hora:");
-define("_AM_PREVIEW","Mostrar");
+define("_AM_PREVIEW","Exibir");
 define("_AM_SAVE","Gravar");
 define("_AM_PUBINHOME","Publicar na página principal?");
 define("_AM_ADD","Incluir");

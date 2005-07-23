@@ -1,5 +1,5 @@
 <?php
-// $Id: modinfo.php,v 1.2 2005/07/23 03:00:19 mauriciodelima Exp $
+// $Id: modinfo.php,v 1.3 2005/07/23 05:24:05 mauriciodelima Exp $
 // Module Info
 
 // The name of this module
@@ -32,7 +32,7 @@ define('_MI_NEWS_EXPORT', 'Exportar XML');
 // Title of config items
 define('_MI_STORYHOME', 'Selecione o número de notícias a serem mostradas no topo das páginas');
 define('_MI_NOTIFYSUBMIT', 'Notificar por e-mail a cada nova notícia?');
-define('_MI_DISPLAYNAV', 'Mostrar a caixa de navegação?');
+define('_MI_DISPLAYNAV', 'Exibir a caixa de navegação?');
 define('_MI_AUTOAPPROVE','Aprovar automaticamente as novas notícias?');
 define("_MI_ALLOWEDSUBMITGROUPS", "Grupos de usuários que podem enviar notícias");
 define("_MI_ALLOWEDAPPROVEGROUPS", "Grupos com permissão de aprovar notícias");
@@ -62,8 +62,8 @@ define("_MI_UPLOADGROUPS_DESC","Selecione os grupos que poderão anexar arquivos 
 define("_MI_NEWSCLASSIC", "Clássico");
 define("_MI_NEWSBYTOPIC", "Moderno");
 define("_MI_DISPLAYNAME1", "Apelido");
-define("_MI_DISPLAYNAME2", "Nome commpleto");
-define("_MI_DISPLAYNAME3", "Não mostrar o nome do autor");
+define("_MI_DISPLAYNAME2", "Nome Real");
+define("_MI_DISPLAYNAME3", "Não exibir");
 define("_MI_UPLOAD_GROUP1","Editores e redatores");
 define("_MI_UPLOAD_GROUP2","Apenas os editores");
 define("_MI_UPLOAD_GROUP3","O envio de arquivos está desabilitado.");
@@ -96,18 +96,18 @@ define('_MI_NEWS_STORY_APPROVE_NOTIFYCAP', 'Quando esta notícia for aprovada.');
 define('_MI_NEWS_STORY_APPROVE_NOTIFYDSC', 'Receber aviso quando esta notícia for aprovada.');
 define('_MI_NEWS_STORY_APPROVE_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} aviso automático: notícia aprovada.');
 
-define('_MI_RESTRICTINDEX', 'Mostrar os tópicos apenas na página inicial das notícias?');
+define('_MI_RESTRICTINDEX', 'Exibir os tópicos apenas na página inicial das notícias?');
 define('_MI_RESTRICTINDEXDSC', 'Sim, para os usuários ver somente os artigos alistados nos tópicos, ajustados nas permissões das notícia.');
 
 define('_MI_NEWSBYTHISAUTHOR', 'Notícias do mesmo autor');
 define('_MI_NEWSBYTHISAUTHORDSC', 'Se você habilitou essa opção, então um link \'Notícias deste autor\' estará visível');
 
-define('_MI_NEWS_PREVNEX_LINK','Mostrar links de próximo e anterior?');
+define('_MI_NEWS_PREVNEX_LINK','Exibir links de próximo e anterior?');
 define('_MI_NEWS_PREVNEX_LINK_DESC','Quando está opção é habilitada, dois novos links estarão visíveis no fim de cada artigo. Estes links serão usados para ir para o artigo anterior e próximo de acordo com a data publicada.');
-define('_MI_NEWS_SUMMARY_SHOW','Mostrar tabela de resumo?');
+define('_MI_NEWS_SUMMARY_SHOW','Exibir tabela de resumo?');
 define('_MI_NEWS_SUMMARY_SHOW_DESC','Quando você usa esta opção, um resumo contendo links para todos artigos publicados recentementes estará visível no fim de cada artigo.');
-define('_MI_NEWS_AUTHOR_EDIT','Habilitar autores a editar suas publicações?');
-define('_MI_NEWS_AUTHOR_EDIT_DESC','Com esta opção, autores podem editar seus posts.');
+define('_MI_NEWS_AUTHOR_EDIT','Os autores poderão editar suas próprias notícias?');
+define('_MI_NEWS_AUTHOR_EDIT_DESC','Com esta opção, autores podem editar aquelas notícias enviadas por eles..');
 define('_MI_NEWS_RATE_NEWS','Habilitar usuários a avaliar noticias?');
 define('_MI_NEWS_TOPICS_RSS','Habilitar RSS feeds por tópicos?');
 define('_MI_NEWS_TOPICS_RSS_DESC',"Se você habilitar esta opção então o conteúdo dos topicos estarão disponíveis como RSS feeds");
@@ -118,7 +118,7 @@ define('_MI_NEWS_META_DATA_DESC', "Se esta opção é habilitadas então os aprovado
 define('_MI_NEWS_BNAME8','Recent articles in a topic');
 define('_MI_NEWS_NEWSLETTER','Informativo');
 define('_MI_NEWS_STATS','Estatisticas');
-define("_MI_NEWS_FORM_OPTIONS","Opção de formulario");
+define("_MI_NEWS_FORM_OPTIONS","Qual o editor de texto que deseja usar?");
 define("_MI_NEWS_FORM_COMPACT","Compacto");
 define("_MI_NEWS_FORM_DHTML","DHTML");
 define("_MI_NEWS_FORM_SPAW","Editor SPAWN");
