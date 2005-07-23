@@ -1,0 +1,39 @@
+<{include file="$xoops_rootpath/modules/rmservices/templates/rmsrv_navbar.html"}>
+<table width="100%"  border="0" cellspacing="0" cellpadding="4">
+  <tr>
+    <td align="center" valign="top"><img src="<{$servicio.img}>" border="0"><br>
+    <br></td>
+    <td><{$servicio.desc}><br><br>
+	<{$lng_precio}> <strong><{$servicio.precio}> &nbsp;&nbsp; <{$servicio.curconvert}><br>
+	<a href="<{$srvform}>"><img src="images/moreinfo.gif" border="0"></a><br>
+	<a href="<{$link_contact}>"><{$lng_contact}></a>
+	</strong></td>
+  </tr>
+  <tr>
+    <td colspan="2"><table width="100%" cellpadding="4" cellspacing="0" class="item">
+		<tr><th colspan="2"><{$lng_caract}></th></tr>
+		<{foreach item=car from=$caracts}>
+		<tr>
+		<td align="center" valign="top"><img src="<{$car.img}>" border="0"></td>
+		<td align="left" valign="top"><a href="caracts.php?idc=<{$car.id}>&amp;ids=<{$servicio.id}>"><{$car.nombre}></a><br>
+		<{$car.desc}></td>
+		</tr>
+		<{/foreach}>
+	</table></td>
+  </tr>
+  <tr>
+    <td colspan="2" class="itemFoot"><{$buyinfo}></td>
+  </tr>
+  <tr>
+    <td colspan="2" class="itemFoot">
+	<{if $bann.showborder==1}>
+		<{include file="$xoops_rootpath/modules/rmservices/templates/rmsrv_bann_border.html"}>
+	<{else}>
+		<{include file="$xoops_rootpath/modules/rmservices/templates/rmsrv_bann.html"}>
+	<{/if}>
+	</td>
+  </tr>
+  <tr>
+    <td colspan="2"><{include file="$xoops_rootpath/modules/rmservices/templates/rmsrv_promos_all.html"}></td>
+  </tr>
+</table>

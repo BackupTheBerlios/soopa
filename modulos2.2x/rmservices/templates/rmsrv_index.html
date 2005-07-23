@@ -1,0 +1,40 @@
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center">
+	<{if $bann.showborder==1}>
+		<{include file="$xoops_rootpath/modules/rmservices/templates/rmsrv_bann_border.html"}>
+	<{else}>
+		<{include file="$xoops_rootpath/modules/rmservices/templates/rmsrv_bann.html"}>
+	<{/if}>
+	</td>
+  </tr>
+  <tr>
+    <td height="10"><img src="images/pixel.gif" width="1" height="1"></td>
+  </tr>
+  <tr>
+    <td><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td><table width="100%"  border="0" cellspacing="0" cellpadding="3" class="item">
+		<tr><th colspan="4"><{$lng_servicios}></th></tr>
+		<{foreach item=srv from=$servicios}>
+		   <tr>
+			<td align="center" valign="top"><a href="servs.php?op=view&amp;ids=<{$srv.id}>"><img src="<{$srv.img}>" border="0"></a></td>
+            <td align="left" valign="middle">
+			<a href="servs.php?op=view&amp;ids=<{$srv.id}>"><{$srv.nombre}></a><br>
+			<{$srv.desc}><br><strong><{$lng_precio}></strong> <{$srv.precio}> (<{$srv.precio2}>)&nbsp;&nbsp;&nbsp;<{$srv.curconvert}><br /><br />
+			<a href="<{$srv.formbuy}>"><img src="images/moreinfo.gif" border="0"></a></td>
+			</tr>
+		<{/foreach}>
+		<tr><td class="itemSep" colspan="4" height="1"><img src="images/pixel.gif" width="1" height="1"></td></tr>
+		<tr><td align="left" class="itemFoot" colspan="4">&nbsp;</td>
+		</tr>
+        </table></td>
+      </tr>
+	  <tr>
+	  <td>
+	  <{include file="$xoops_rootpath/modules/rmservices/templates/rmsrv_promos_all.html"}>
+	  </td>
+	  </tr>
+    </table></td>
+  </tr>
+</table>

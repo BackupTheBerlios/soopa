@@ -1,0 +1,8 @@
+<table class="item" cellpadding="0" cellspacing="0" width="100%">
+	  	<tr><th colspan="<{$total_promos}>"><{$lng_promos}></th></tr>
+		<tr>
+		<{foreach item=promo from=$promos}>
+		 <td width="<{math equation="x / y" x=100 y=$total_promos}>%" align="center"><a href="promos.php?op=view&amp;idp=<{$promo.id}>"><img src="<{$promo.img}>" border="0"></a></td>
+		<{/foreach}>
+		</tr>
+	  </table>

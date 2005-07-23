@@ -1,0 +1,18 @@
+<{include file="$xoops_rootpath/modules/rmservices/templates/rmsrv_navbar.html"}><br>
+<table width="80%"  style="border: 1px solid #CCCCCC;" border="0" align="center" cellpadding="0" cellspacing="0" class="item">
+  <tr>
+    <th colspan="2"><{$lng_titulo}></th>
+  </tr>
+  <form name="frmOrder" method="post" action="order.php">
+  <{foreach item=frm from=$formelements}>
+  <tr>
+    <td width="40%" class="even"><{$frm.text}></td>
+    <td width="60%" class="odd"><{$frm.element}></td>
+  </tr>
+  <{/foreach}>
+  <tr>
+   <td></td>
+   <td class="itemBody"><input type="submit" value="Ordenar"></td>
+  </tr>
+  </form>
+</table>

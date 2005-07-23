@@ -1,0 +1,65 @@
+<{if $show==0}>
+<table width="100%"  border="0" cellspacing="0" cellpadding="0" class="item">
+  <tr>
+    <td><{include file="$xoops_rootpath/modules/rmservices/templates/rmsrv_navbar.html"}>
+</td>
+  </tr>
+  <tr>
+    <td><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td valign="top" align="center" class="even"><img src="<{$promo.img}>" border="0"><br><br>
+		</td>
+        <td class="even"><{$promo.desc}><br><br>
+		<{$lng_precio}>: <strong><{$promo.precio}></strong><br><{$promo.curconvert}><br /><br /><a href="<{$promo.formbuy}>"><img src="images/moreinfo.gif" border="0"></a></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <th><{$lng_included}></th>
+  </tr>
+  <{foreach item=srv from=$servicios}>
+  <tr>
+    <td class="<{cycle values="even,odd"}>"><a href="servs.php?op=view&amp;ids=<{$srv.id}>"><{$srv.nombre}></a><br>
+	<{$srv.desc}></td>
+  </tr>
+  <{/foreach}>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<{else}>
+<table width="100%"  border="0" cellspacing="0" cellpadding="0" class="item">
+  <tr>
+    <td><{include file="$xoops_rootpath/modules/rmservices/templates/rmsrv_navbar.html"}>
+</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <th colspan="2"><{$lng_list}></th>
+  </tr>
+  <{foreach item=promo from=$promos}>
+  <tr>
+    <td class="even"><a href="promos.php?op=view&amp;idp=<{$promo.id}>"><{$promo.nombre}></a></td>
+  </tr>
+  <tr>
+    <td class="even"><{$promo.desc}><br><{$lng_precio}> <strong><{$promo.precio}></strong><br>
+	<{$promo.curconvert}><br /><br />
+	<a href="<{$promo.formbuy}>"><img src="images/moreinfo.gif" border="0"></a></td>
+  </tr>
+  <tr>
+    <td class="itemSep"><img src="images/pixel.gif" width="1" height="1"></td>
+  </tr>
+  <{/foreach}>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
+<{/if}>
+<span class="itemFoot"><{if $bann.showborder==1}>
+		<{include file="$xoops_rootpath/modules/rmservices/templates/rmsrv_bann_border.html"}>
+	<{else}>
+		<{include file="$xoops_rootpath/modules/rmservices/templates/rmsrv_bann.html"}>
+	<{/if}></span>

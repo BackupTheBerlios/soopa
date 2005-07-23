@@ -1,0 +1,12 @@
+<br><center>
+<{foreach item=promo from=$block.promos}>
+	<a href="<{$xoops_url}>/modules/rmservices/promos.php?op=view&amp;idp=<{$promo.id}>">
+	<img src="<{$promo.img}>" border="0"></a><br>
+	<{if $promo.desc!=''}>
+		<{$promo.desc}><br>
+	<{/if}>
+	<{if $promo.form!=''}>
+		<{$promo.form}>
+	<{/if}>
+<{/foreach}>
+</center><br>

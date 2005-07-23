@@ -1,0 +1,7 @@
+<{foreach item=bann from=$block.bann}>
+	<{if ($bann.border)}>
+		<{include file="$xoops_rootpath/modules/rmservices/templates/rmsrv_bann_border.html"}>
+	<{else}>
+		<{include file="$xoops_rootpath/modules/rmservices/templates/rmsrv_bann.html"}>
+	<{/if}>
+<{/foreach}>

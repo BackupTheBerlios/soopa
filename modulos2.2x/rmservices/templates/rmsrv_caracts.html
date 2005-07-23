@@ -1,0 +1,35 @@
+<table width="100%"  border="0" cellspacing="0" cellpadding="0" class="item">
+  <tr>
+    <td><{include file="$xoops_rootpath/modules/rmservices/templates/rmsrv_navbar.html"}></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="itemHead"><a href="servs.php?op=view&amp;ids=<{$servicio.id}>"><{$servicio.nombre}></a>: <{$caract.nombre}></td>
+  </tr>
+  <tr>
+    <td class="itemSep"><img src="images/pixel.gif" width="1" height="1"></td>
+  </tr>
+  <tr>
+    <td class="itemBody"><{$caract.desc}></td>
+  </tr>
+  <tr>
+    <td class="itemSep"><img src="images/pixel.gif" width="1" height="1"></td>
+  </tr>
+  <tr>
+    <td class="itemBody"><strong><{$lng_youare}></strong><br><br>
+	<a href="servs.php?op=view&amp;ids=<{$servicio.id}>"><{$servicio.nombre}></a><br>
+	<{$servicio.desc}></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><span class="itemFoot"><{if $bann.showborder==1}>
+		<{include file="$xoops_rootpath/modules/rmservices/templates/rmsrv_bann_border.html"}>
+	<{else}>
+		<{include file="$xoops_rootpath/modules/rmservices/templates/rmsrv_bann.html"}>
+	<{/if}></span></td>
+  </tr>
+</table>

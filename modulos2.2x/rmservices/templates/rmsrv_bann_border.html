@@ -1,0 +1,35 @@
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><img src="<{$xoops_url}>/modules/rmservices/images/ban_lt.gif" width="12" height="12"></td>
+    <td style="background: url(<{$xoops_url}>/modules/rmservices/images/ban_t.gif) repeat; height:12px;"><img src="images/pixel.gif" width="1" height="1"></td>
+    <td><img src="<{$xoops_url}>/modules/rmservices/images/ban_rt.gif" width="12" height="12"></td>
+  </tr>
+  <tr>
+    <td style="background: url(<{$xoops_url}>/modules/rmservices/images/ban_l.gif) repeat; width:12px;"><img src="images/pixel.gif" width="1" height="1"></td>
+    <td bgcolor="#FFFFFF"><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+	 <{if $bann.desc==''}>
+      <tr>
+        <td><{$bann.img}></td>
+      </tr>
+	  <{else}>
+      <tr>
+        <td rowspan="2" valign="top"><{$bann.img}></td>
+		<td valign="middle" style="padding: 4px; font-family: Arial, Helvetica, sans-serif; "><{$bann.desc}></td>
+      </tr>
+	  <{/if}>
+	  <tr>
+	   <td align="right" valign="middle">
+	   <{$bann.form}>
+	   </td>
+	  </tr>
+    </table>
+	
+	</td>
+    <td style="background: url(<{$xoops_url}>/modules/rmservices/images/ban_r.gif) repeat; width:12px;"><img src="images/pixel.gif" width="1" height="1"></td>
+  </tr>
+  <tr>
+    <td><img src="<{$xoops_url}>/modules/rmservices/images/ban_lb.gif" width="12" height="12"></td>
+    <td style="background: url(<{$xoops_url}>/modules/rmservices/images/ban_b.gif) repeat; height:12px;"><img src="images/pixel.gif" width="1" height="1"></td>
+    <td><img src="<{$xoops_url}>/modules/rmservices/images/ban_rb.gif" width="12" height="12"></td>
+  </tr>
+</table>

@@ -1,0 +1,17 @@
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+	 <{if $bann.desc==''}>
+      <tr>
+        <td align="center"><{$bann.img}></td>
+      </tr>
+	  <{else}>
+      <tr>
+        <td rowspan="2" valign="top"><{$bann.img}></td>
+		<td valign="middle" style="padding: 4px; font-family: Arial, Helvetica, sans-serif; "><{$bann.desc}></td>
+      </tr>
+	  <{/if}>
+	  <tr>
+	   <td align="right" valign="middle">
+	   <{if $bann.buy}><img src='images/paypal.gif' border='0'>&nbsp;<img src='images/hsbc.gif' border="0"><{/if}>
+	   </td>
+	  </tr>
+</table>

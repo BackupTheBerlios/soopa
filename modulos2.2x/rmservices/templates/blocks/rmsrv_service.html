@@ -1,0 +1,9 @@
+<br><center><{foreach item=srv from=$block.servicios}>
+	<a href="<{$xoops_url}>/modules/rmservices/servs.php?op=view&amp;ids=<{$srv.id}>"><img src="<{$srv.img}>" border="0"></a><br>
+	<{if $srv.desc!='' }>
+		<{$srv.desc}><br>
+	<{/if}>
+	<{if $srv.form!=''}>
+		<{$srv.form}><br>
+	<{/if}>
+<{/foreach}></center><br>
