@@ -1,5 +1,5 @@
 <?php
-// $Id: modinfo.php,v 1.1 2005/07/13 03:55:49 mauriciodelima Exp $
+// $Id: modinfo.php,v 1.2 2005/07/23 05:51:17 mauriciodelima Exp $
 // Thanks Tom (http://www.wf-projects.com), for correcting the Engligh language package
 
 // Module Info
@@ -34,12 +34,12 @@ define("_MI_NEWBB_ADMENU_CATEGORY","Categorias");
 define("_MI_NEWBB_ADMENU_FORUM","Fóruns");
 define("_MI_NEWBB_ADMENU_PERMISSION","Permissões");
 define("_MI_NEWBB_ADMENU_BLOCK","Blocos");
-define("_MI_NEWBB_ADMENU_ORDER","Reorganização");
+define("_MI_NEWBB_ADMENU_ORDER","Reorganizar");
 define("_MI_NEWBB_ADMENU_SYNC","Sincronizar");
 define("_MI_NEWBB_ADMENU_PRUNE","Exclusões");
 define("_MI_NEWBB_ADMENU_REPORT","Relatórios");
-define("_MI_NEWBB_ADMENU_DIGEST","Resumo");
-define("_MI_NEWBB_ADMENU_VOTE","Votações");
+define("_MI_NEWBB_ADMENU_DIGEST","Informativo");
+define("_MI_NEWBB_ADMENU_VOTE","Enquetes");
 
 
 
@@ -135,7 +135,7 @@ define("_MI_JUMPBOXDESC", "Se ativado, um menu drop-down permitirá aos usuários 
 define("_MI_SHOW_PERMISSIONTABLE", "Exibir permissões");
 define("_MI_SHOW_PERMISSIONTABLE_DESC", "Acrescenta uma lista de permissões do usuário");
 
-define("_MI_EMAIL_DIGEST", "Resumo as mensages por e-mail");
+define("_MI_EMAIL_DIGEST", "Informativo as mensages por e-mail");
 define("_MI_EMAIL_DIGEST_DESC", "Configure a periodicidade para envio de envio de resumos do fórum para os usuários");
 define("_MI_NEWBB_EMAIL_NONE", "Nunca");
 define("_MI_NEWBB_EMAIL_DAILY", "Diariamente");
@@ -278,9 +278,9 @@ define ('_MI_NEWBB_GLOBAL_NEWFULLPOST_NOTIFYCAP', 'Avise-me de qualquer nova men
 define ('_MI_NEWBB_GLOBAL_NEWFULLPOST_NOTIFYDSC', 'Receba aviso com o texto completo quando uma nova mensagem for enviada.');
 define ('_MI_NEWBB_GLOBAL_NEWFULLPOST_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} aviso: Nova mensagem (texto completo)');
 
-define ('_MI_NEWBB_GLOBAL_DIGEST_NOTIFY', 'Resumo');
+define ('_MI_NEWBB_GLOBAL_DIGEST_NOTIFY', 'Informativo');
 define ('_MI_NEWBB_GLOBAL_DIGEST_NOTIFYCAP', 'Envie-me resumo do fórum.');
 define ('_MI_NEWBB_GLOBAL_DIGEST_NOTIFYDSC', 'Receba resumos do fórum.');
-define ('_MI_NEWBB_GLOBAL_DIGEST_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} aviso: Resumo do fórum');
+define ('_MI_NEWBB_GLOBAL_DIGEST_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} aviso: Informativo do fórum');
 
 ?>

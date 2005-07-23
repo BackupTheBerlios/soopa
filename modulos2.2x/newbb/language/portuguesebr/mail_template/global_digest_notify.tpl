@@ -1,6 +1,6 @@
 Olá {X_UNAME},
 
-Resumo de {X_MODULE} do site {X_SITENAME}: # {DIGEST_ID} .
+Informativo de {X_MODULE} do site {X_SITENAME}: # {DIGEST_ID} .
 
 Clique nos links abaixo para ver as mensagens:
 {DIGEST_CONTENT}

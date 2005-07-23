@@ -1,5 +1,5 @@
 <?php
-// $Id: admin.php,v 1.1 2005/07/13 03:55:49 mauriciodelima Exp $
+// $Id: admin.php,v 1.2 2005/07/23 05:51:17 mauriciodelima Exp $
 //%%%%%%	File Name  index.php   	%%%%%
 define("_AM_NEWBB_FORUMCONF","Configuração do fórum");
 define("_AM_NEWBB_ADDAFORUM","Criar um fórum");
@@ -18,7 +18,7 @@ define("_AM_NEWBB_POSTID","Id");
 define("_AM_NEWBB_POSTDATE","Data");
 define("_AM_NEWBB_POSTER","Enviado por");
 define("_AM_NEWBB_TOPICS","Tópico");
-define("_AM_NEWBB_SHORTSUMMARY","Resumo");
+define("_AM_NEWBB_SHORTSUMMARY","Informativo");
 define("_AM_NEWBB_TOTALPOSTS","Mensagens");
 define("_AM_NEWBB_TOTALTOPICS","Tópicos");
 define("_AM_NEWBB_TOTALVIEWS","Leituras");
@@ -47,13 +47,13 @@ define('_AM_NEWBB_CANCELPOST','Cancelar');
 define('_AM_NEWBB_GOTOMOD','Ir para o Módulo');
 
 define('_AM_NEWBB_PREFERENCES','Preferências');
-define('_AM_NEWBB_POLLMODULE','Módulo XoopsPoll (Votações)');
+define('_AM_NEWBB_POLLMODULE','Módulo XoopsPoll (Enquetes)');
 define('_AM_NEWBB_POLL_OK','Disponível para uso');
 define('_AM_NEWBB_GDLIB1','Biblioteca GD1:');
 define('_AM_NEWBB_GDLIB2','Biblioteca GD2:');
-define('_AM_NEWBB_AUTODETECTED','Detectado: ');
+define('_AM_NEWBB_AUTODETECTED','Disponível: ');
 define('_AM_NEWBB_AVAILABLE','Disponível');
-define('_AM_NEWBB_NOTAVAILABLE','<font color="red">Não disponível</font>');
+define('_AM_NEWBB_NOTAVAILABLE','<font color="red">Indisponível</font>');
 define('_AM_NEWBB_NOTWRITABLE','<font color="red">Sem permissão de gravação</font>');
 define('_AM_NEWBB_IMAGEMAGICK','ImageMagick:');
 define('_AM_NEWBB_IMAGEMAGICK_NOTSET','Não configurado');
@@ -71,12 +71,12 @@ define('_AM_NEWBB_DIRNOTCREATED','Não foi possível a criação do diretório');
 define('_AM_NEWBB_PERMSET','Permissão alterada');
 define('_AM_NEWBB_PERMNOTSET','Não foi possível a alteração da permissão');
 
-define('_AM_NEWBB_DIGEST','Notificação de Resumo');
+define('_AM_NEWBB_DIGEST','Notificação de Informativo');
 define('_AM_NEWBB_DIGEST_PAST','<font color="red">Deveria ter sido enviado há %d minutos</font>');
 define('_AM_NEWBB_DIGEST_NEXT','Será enviado em %d minutos');
-define('_AM_NEWBB_DIGEST_ARCHIVE','Arquivo de resumos');
-define('_AM_NEWBB_DIGEST_SENT','Resumo processado');
-define('_AM_NEWBB_DIGEST_FAILED','Resumo não processado');
+define('_AM_NEWBB_DIGEST_ARCHIVE','Arquivo de informativos');
+define('_AM_NEWBB_DIGEST_SENT','Informativo processado');
+define('_AM_NEWBB_DIGEST_FAILED','Informativo não processado');
 
 // admin_forum_manager.php
 define("_AM_NEWBB_NAME","Nome");
@@ -195,7 +195,7 @@ define ("_AM_NEWBB_PRUNE_FORUMSELERROR","Você não selecionou o(s) fórum(s) para 
 define ("_AM_NEWBB_PRUNE_DAYS","Expurgue tópicos sem respostas a:");
 define ("_AM_NEWBB_PRUNE_FORUMS","Fóruns a serem expurgados");
 define ("_AM_NEWBB_PRUNE_STICKY","Manter tópicos fixos");
-define ("_AM_NEWBB_PRUNE_DIGEST","Manter resumo dos tópicos");
+define ("_AM_NEWBB_PRUNE_DIGEST","Manter informativo dos tópicos");
 define ("_AM_NEWBB_PRUNE_LOCK","Manter tópicos bloqueados");
 define ("_AM_NEWBB_PRUNE_HOT","Manter tópicos com mais de 'x' repostas");
 define ("_AM_NEWBB_PRUNE_SUBMIT","OK");
@@ -239,11 +239,11 @@ define("_AM_NEWBB_REPORTTEXT","Texto");
 define("_AM_NEWBB_REPORTMEMO","Nota");
 
 // admin_report.php
-define("_AM_NEWBB_DIGESTADMIN","Gerenciador de Resumos");
-define("_AM_NEWBB_DIGESTCONTENT","Conteúdo do Resumo");
+define("_AM_NEWBB_DIGESTADMIN","Gerenciador de Informativos");
+define("_AM_NEWBB_DIGESTCONTENT","Conteúdo do Informativo");
 
 // admin_votedata.php
-define("_AM_NEWBB_VOTE_RATINGINFOMATION", "Votações");
+define("_AM_NEWBB_VOTE_RATINGINFOMATION", "Enquetes");
 define("_AM_NEWBB_VOTE_TOTALVOTES", "Total de votos: ");
 define("_AM_NEWBB_VOTE_REGUSERVOTES", "Votos de usuários: %s");
 define("_AM_NEWBB_VOTE_ANONUSERVOTES", "Votos de visitantes: %s");
@@ -258,8 +258,8 @@ define("_AM_NEWBB_VOTE_NOUNREGVOTES", "Nenhum voto de visitantes");
 define("_AM_NEWBB_VOTEDELETED", "Avaliações excluídas.");
 define("_AM_NEWBB_VOTE_ID", "Id");
 define("_AM_NEWBB_VOTE_FILETITLE", "Tópico");
-define("_AM_NEWBB_VOTE_DISPLAYVOTES", "Informações de Votações");
-define("_AM_NEWBB_VOTE_NOVOTES", "Nenhum voto a exibir");
-define("_AM_NEWBB_VOTE_DELETE", "Nenhum voto a exibir");
+define("_AM_NEWBB_VOTE_DISPLAYVOTES", "Informações de Enquetes");
+define("_AM_NEWBB_VOTE_NOVOTES", "Não há votos a exibir");
+define("_AM_NEWBB_VOTE_DELETE", "Não há votos a excluir");
 define("_AM_NEWBB_VOTE_DELETEDSC", "<strong>Exclui</strong> a avaliação escolhida do banco de dados.");
 ?>

@@ -1,5 +1,5 @@
 <?php
-// $Id: main.php,v 1.1 2005/07/13 03:55:49 mauriciodelima Exp $
+// $Id: main.php,v 1.2 2005/07/23 05:51:17 mauriciodelima Exp $
 if(defined('MAIN_DEFINED')) return;
 define('MAIN_DEFINED',true);
 
@@ -142,8 +142,8 @@ define('_MD_LOCKTOPIC','Bloquear este tópico');
 define('_MD_UNLOCKTOPIC','Desbloquear este tópico');
 define('_MD_UNSTICKYTOPIC','Desfixar este tópico');
 define('_MD_STICKYTOPIC','Fixar este tópico');
-define('_MD_DIGESTTOPIC','Incluir no Resumo');
-define('_MD_UNDIGESTTOPIC','Retirar do Resumo');
+define('_MD_DIGESTTOPIC','Incluir no Informativo');
+define('_MD_UNDIGESTTOPIC','Retirar do Informativo');
 define('_MD_MOVETOPIC','Mover este tópico');
 define('_MD_DELETETOPIC','Excluir este tópico');
 define('_MD_TOP','Topo');
@@ -299,8 +299,8 @@ define('_MD_TOPICLOCK','O tópico foi bloqueado.');
 define('_MD_TOPICUNLOCK','O tópico foi desbloqueado.');
 define('_MD_TOPICSTICKY','Tópico fixado');
 define('_MD_TOPICUNSTICKY','O tópico não é mais fixo.');
-define('_MD_TOPICDIGEST','Tópico incluído no Resumo');
-define('_MD_TOPICUNDIGEST','O tópico foi excluído do Resumo.');
+define('_MD_TOPICDIGEST','Tópico incluído no Informativo');
+define('_MD_TOPICUNDIGEST','O tópico foi excluído do Informativo.');
 
 define('_MD_DELETE','Excluir');
 define('_MD_MOVE','Mover');
@@ -308,8 +308,8 @@ define('_MD_LOCK','Bloquear');
 define('_MD_UNLOCK','Desbloquear');
 define('_MD_STICKY','Fixar');
 define('_MD_UNSTICKY','Desfixar');
-define('_MD_DIGEST','Incluir no Resumo');
-define('_MD_UNDIGEST','Retirar do Resumo');
+define('_MD_DIGEST','Incluir no Informativo');
+define('_MD_UNDIGEST','Retirar do Informativo');
 
 define('_MD_DESC_DELETE','Clicando em EXCLUIR no final desta página, o tópico selecionado e todas as mensagens vinculadas serão <strong>permanentemente</strong> excluídos.');
 define('_MD_DESC_MOVE','Clicando em MOVER no final desta página, o tópico selecionado e todas as mensagens vinculadas serão movidas para o fórum selecionado.');
@@ -386,7 +386,7 @@ define("_MD_POLL_RUSUREDEL", "Você tem certeza que quer excluir esta votação e t
 define("_MD_POLL_RESTARTPOLL", "Reativar votação");
 define("_MD_POLL_RESET", "Apagar todos os registros para esta votação?");
 define("_MD_POLL_ADDPOLL","Incluir votação");
-define("_MD_POLLMODULE_ERROR","Módulo Votações não está disponível");
+define("_MD_POLLMODULE_ERROR","Módulo Enquetes não está disponível");
 
 //report.php
 define("_MD_REPORTED", "Obrigado por informar sobre esse tópico/mensagem! Um moderador examirá seu relatório em breve.");

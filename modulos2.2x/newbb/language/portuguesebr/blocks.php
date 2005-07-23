@@ -1,5 +1,5 @@
 <?php
-// $Id: blocks.php,v 1.1 2005/07/13 03:55:49 mauriciodelima Exp $
+// $Id: blocks.php,v 1.2 2005/07/23 05:51:17 mauriciodelima Exp $
 // Blocks
 if(defined('_MB_NEWBB_DEFINED')) return;
 else define('_MB_NEWBB_DEFINED',true);
@@ -30,7 +30,7 @@ define("_MB_NEWBB_CRITERIA_TITLE","Post title");
 define("_MB_NEWBB_CRITERIA_TEXT","Texto da mensagem");
 define("_MB_NEWBB_CRITERIA_VIEWS","Mais lidas");
 define("_MB_NEWBB_CRITERIA_REPLIES","Mais respostas");
-define("_MB_NEWBB_CRITERIA_DIGEST","Mais recentes no resumo");
+define("_MB_NEWBB_CRITERIA_DIGEST","Mais recentes no informativo");
 define("_MB_NEWBB_CRITERIA_STICKY","Mais recentes fixadas");
 define("_MB_NEWBB_CRITERIA_DIGESTS","Most digests");
 define("_MB_NEWBB_CRITERIA_STICKYS","Most sticky topics");
