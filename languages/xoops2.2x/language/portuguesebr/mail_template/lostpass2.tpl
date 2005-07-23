@@ -3,7 +3,7 @@ Olá! {X_UNAME},
 O usuário do {IP} requisitou o reenvio da senha em {SITENAME} .
 
 -----------
-Nome de usuário: {X_UNAME}
+Nome de usuário: {LOGINNAME}
 Nova Senha: {NEWPWD}
 -----------
 

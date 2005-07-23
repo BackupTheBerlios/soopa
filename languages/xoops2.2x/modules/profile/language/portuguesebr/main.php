@@ -1,8 +1,9 @@
 <?php
-// $Id: main.php,v 1.4 2005/07/11 04:05:43 mauriciodelima Exp $
+// $Id: main.php,v 1.5 2005/07/23 01:52:16 mauriciodelima Exp $
 define("_PROFILE_MA_ERRORDURINGSAVE", "Error during save");
 define('_PROFILE_MA_USERREG','Cadastro de Usuários');
 define('_PROFILE_MA_NICKNAME','Nome do usuário');
+define('_PROFILE_MA_REALNAME', 'Nome real');
 define('_PROFILE_MA_EMAIL','E-mail');
 define('_PROFILE_MA_ALLOWVIEWEMAIL','Exibir e-mails a outros usuários');
 define('_PROFILE_MA_TIMEZONE','Fuso Horário');
@@ -20,6 +21,7 @@ define('_PROFILE_MA_NOREGISTER','Sorry, we are currently closed for new user reg
 
 // %s is username. This is a subject for email
 define('_PROFILE_MA_USERKEYFOR','Link de ativação de %s');
+define('_PROFILE_MA_ACTLOGIN','Your account has been activated. Please login with the registered password.');
 
 define('_PROFILE_MA_YOURREGISTERED','An email containing an user activation key has been sent to the email account you provided. Please follow the instructions in the mail to activate your account. ');
 define('_PROFILE_MA_YOURREGMAILNG','You are now registered. However, we were unable to send the activation mail to your email account due to an internal error that had occurred on our server. We are sorry for the inconvenience, please send the webmaster an email notifying him/her of the situation.');
