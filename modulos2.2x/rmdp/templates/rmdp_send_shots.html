@@ -1,0 +1,79 @@
+<link href="../rmdp.css" rel="stylesheet" type="text/css">
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="left"><img src="images/logo.gif" width="50" height="50" align="absmiddle"> <span style="font-size: 22px; font-weight: bold;"><{$rmdp_title}></span></td>
+  </tr>
+  <tr>
+    <td class="yellow_line"><img src="images/pixel.gif" width="1" height="1"></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><{include file="db:rmdp_nav_srh.html"}></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>
+	<{if !$shotlimit}>
+	<table width="100%"  border="0" cellspacing="1" cellpadding="0" class="outer">
+      <tr>
+        <th colspan="2"><{$lang_newshot}></th>
+      </tr>
+      <form name="frmAdd" method="post" action="mysends.php">
+        <tr align="left">
+          <td class="even"><{$lang_small}></td>
+          <td class="odd"><input value="<{$edit_small}>" name="small" type="text" id="small2" size="50" maxlength="255"></td>
+        </tr>
+        <tr align="left">
+          <td class="even"><{$lang_big}></td>
+          <td class="odd"><input value="<{$edit_big}>" name="big" type="text" id="big2" size="50" maxlength="255"></td>
+        </tr>
+        <tr align="left">
+          <td class="even"><{$lang_text}></td>
+          <td class="odd"><input value="<{$edit_text}>" name="text" type="text" id="text2" size="50" maxlength="255"></td>
+        </tr>
+        <tr align="left">
+          <td class="even">&nbsp;</td>
+          <td class="odd"><input type="submit" name="Submit" value="<{$lang_send}>">
+              <input name="id" type="hidden" id="id2" value="<{$soft_id}>">
+              <input name="op" type="hidden" id="op2" value="<{$action}>">
+              <input type="hidden" name="shot" value="<{$edit_shot}>"></td>
+        </tr>
+      </form>
+    </table>
+	<{/if}>
+	</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="sponsor_title"><{$lang_downshot}></td>
+  </tr>
+  <tr><td height="5"><img src="images/pixel.gif" width="1" height="1"></td></tr>
+  <tr>
+    <td class="yellow_line"><img src="images/pixel.gif" width="1" height="1"></td>
+  </tr>
+  <tr>
+    <td>
+	<!-- Tabla de Pantallas -->
+	<table width="100%"  border="0" cellpadding="3" cellspacing="0" class="rmdp_data">
+	  <{foreach item=s from=$shots}>
+      <tr class="<{cycle values="even,odd"}>">
+        <td width="<{$img_width}>"><a href="<{$s.big}>" target="_blank"><img src="<{$s.small}>" width="<{$img_width}>" border="0"></a></td>
+        <td><a href="<{$s.big}>" target="_blank"><{$s.text}></a><br>
+		<span style="font-size: 10px;"><strong><{$lang_hits}></strong> <{$s.hits}>&nbsp;&nbsp;&nbsp;<strong><{$lang_date}></strong> <{$s.fecha}></span><br />
+		<a href="mysends.php?op=editshot&amp;id=<{$soft_id}>&amp;shot=<{$s.id}>"><{$lang_modify}></a>&nbsp;&nbsp;&nbsp;
+		<a href="mysends.php?op=delshot&amp;id=<{$soft_id}>&amp;shot=<{$s.id}>"><{$lang_delete}></a></td>
+      </tr>
+	  <{/foreach}>
+    </table>
+	<!-- Fin de la tabla de pantallas -->	</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>

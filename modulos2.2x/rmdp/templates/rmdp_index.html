@@ -1,0 +1,184 @@
+<table width="100%"  border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td class="sections_title"><img src="images/down_arrow.gif" width="6" height="6" align="absmiddle"> <{$lang_sponsornews}></td>
+  </tr>
+  <tr>
+    <td class="yellow_line"><img src="images/pixel.gif" width="1" height="1"></td>
+  </tr>
+  <tr>
+    <td>
+	<!-- Enlaces Patrocinados //-->
+	<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+      <tr>
+	  <!-- Inicia ciclo de Sponsors -->
+	  <{assign var="i" value="1"}>
+	  <{foreach item=spon from=$sponsors}>
+	    <{if $i>3}>
+		</tr><tr>
+			<{assign var="i" value="1"}>
+		<{/if}>
+        <td width="33%">
+		<table width="100%" cellpadding="0" cellspacing="0" border="0">
+		  <tr><td height="20" class="sponsor_body">
+		  <span class="sponsor_title"><{$spon.title}></span></td>
+		  </tr>
+		  <tr><td height="20" class="sponsor_body">&nbsp;&nbsp;<img src="images/down_icon.gif" width="17" height="17" align="absmiddle">
+		  <a href="down.php?id=<{$spon.id}>"><{$lang_download_now}></a></td>
+		  </tr>
+		  <tr>
+		    <td class="sponsor_body"><{$spon.desc}></td>
+		    </tr>
+		  <tr><td class="sponsor_foot" align="left" valign="bottom">&nbsp;</td>
+		  </tr>
+		</table>
+		</td>
+      	<{assign var="i" value=$i+1}>
+	  <{/foreach}>
+	  </tr>
+	  <!-- Termina ciclo de Sponsors -->
+    </table>
+	<!-- Fin de enlaces Patrocinados //-->	</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="rmdp_sections"><img src="images/categos_title.gif" width="132" height="7"></td>
+  </tr>
+  <tr>
+    <td class="yellow_line"><img src="images/pixel.gif" width="1" height="1"></td>
+  </tr>
+  <tr>
+    <td><table width="95%"  border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>
+            <!-- Tabla para las categor&iacute;as -->
+            <table width="100%"  border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <!-- ciclo para las categor&iacute;as -->
+<{assign var="i" value="1"}> <{foreach item=catego from=$categos}> <{if $i>2}> </tr>
+              <tr> <{assign var="i" value="1"}> <{/if}>
+                  <td width="50%" valign="top" class="categos_list"><a href="categos.php?id=<{$catego.id}>" style="font-size: 14px; font-weight: bold; "><{$catego.nombre}></a> <{if $catego.isnew}><img src="images/new.gif" align="top" border="0"><{/if}><br>
+<{$catego.subcats}> </td>
+    <{assign var="i" value=$i+1}> <{/foreach}>
+                  <!-- Fin del Ciclo de categor&iacute;as -->
+              </tr>
+            </table>
+            <!-- Fin de tabla para las categor&iacute;as -->
+          </td>
+        </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="the_newtitle"><{$lang_today}></td>
+  </tr>
+  <tr>
+    <td><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td colspan="3">&nbsp;</td>
+        </tr>
+        <tr>
+          <td align="center"> <a href="down.php?id=<{$drandom.id}>"><img src="<{$drandom.img}>" width="<{$download_imgw}>" border="0" alt="<{$drandom.title}>"></a> </td>
+          <td class="random_download"><span class="sponsor_title"><a href="down.php?id=<{$drandom.id}>"><{$drandom.title}></a></span><br>
+<{$drandom.desc}></td>
+          <td nowrap class="another"><a href="popular.php" style="color: #FF0000;"><{$lang_popular}></a><br>
+              <a href="rate.php" style="color: #009900;"><{$lang_bestrated}></a><br>
+              <a href="/modules/newbb" style="color: #0000FF;"><{$lang_forums}></a> </td>
+        </tr>
+        <tr>
+          <td colspan="3">&nbsp;</td>
+        </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>
+	<!-- Tabla para lo nuevo en categorías -->
+	<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+		<!-- Ciclo para lo nuevo -->
+		<{foreach item=catego from=$categos_with_news}>
+      <tr>
+        <td colspan="2" class="thenew_title"><{$catego.lng_thenewin}></td>
+        <td><img src="images/pixel.gif" width="1" height="1"></td>
+        <td nowrap class="thenew_title"><{$lng_moredownloads}></td>
+      </tr>
+      <tr>
+        <td colspan="4">&nbsp;</td>
+        </tr>
+      <tr>
+        <td style="padding-right: 10px; ">
+		<a href="down.php?id=<{$catego.down_id}>"><img src="<{$catego.down_img}>" border="0" width="<{$download_imgw}>" alt="<{$catego.down_nombre}>"></a>
+		</td>
+        <td style="padding-right: 10px; ">
+		<a href="down.php?id=<{$catego.down_id}>" style="font-size: 11px;"><{$catego.down_nombre}></a><br>
+		<{$catego.down_desc}>		</td>
+        <td width="10"><img src="images/pixel.gif" width="1" height="1"></td>
+        <td nowrap style="font-size: 10px; ">
+		<img src="images/star.gif" width="8" height="8" align="absmiddle"> <a href="categos.php?id=<{$catego.id}>"><{$lang_seall}></a><br>
+		<img src="images/star.gif" width="8" height="8" align="absmiddle"> <a href="popular.php?tbl=0&amp;item=<{$catego.id}>"><{$lang_popular}></a><br>
+		<img src="images/star.gif" width="8" height="8" align="absmiddle"> <a href="rate.php?tbl=0&amp;item=<{$catego.id}>"><{$lang_bestrated}></a>
+		</td>
+      </tr>
+      <tr>
+        <td colspan="4">&nbsp;</td>
+        </tr>
+		<{/foreach}>
+    </table>
+	<!-- Fin de tabla para lo nuevo en categorías -->	</td>
+  </tr>
+  <tr>
+    <td><table width="95%"  border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="48%" valign="top"><table width="100%"  border="0" cellpadding="0" cellspacing="0" class="favorite">
+          <tr>
+            <td class="title"><img src="images/check.gif" width="16" height="16" align="absmiddle"> <{$lang_our_favorites}></td>
+          </tr>
+          <tr>
+            <td class="body"><{$lng_favmsg}><br><br></td>
+          </tr>
+		  <!-- Ciclo de favoritos -->
+		  <{assign var="i" value="1"}>
+		  <{foreach item=fav from=$favoritos}>
+          <tr>
+            <td class="body">
+			<strong><{$i}>.</strong> <strong><a href="down.php?id=<{$fav.id}>"><{$fav.nombre}></a></strong><br>
+			<span style="font-size: 10px; "><{$fav.desc}></span>
+			</td>
+          </tr>
+		  <{assign var="i" value=$i+1}>
+		  <{/foreach}>
+		  <!-- fin del ciclo de favoritos -->
+        </table></td>
+        <td width="4%"><img src="images/pixel.gif" width="1" height="1"></td>
+        <td width="48%" valign="top"><table width="100%"  border="0" cellpadding="0" cellspacing="0" class="favorite">
+          <tr>
+            <td class="title"><img src="images/check2.gif" width="16" height="16" align="absmiddle"> <{$lang_popular_soft}></td>
+          </tr>
+          <tr>
+            <td class="body">&nbsp;</td>
+          </tr>
+		  <!-- Ciclo de Populares -->
+		  <{assign var="i" value="1"}>
+		  <{foreach item=pop from=$populares}>
+          <tr>
+            <td class="body">
+			<strong><{$i}>.</strong> <strong><a href="down.php?id=<{$pop.id}>"><{$pop.nombre}></a></strong><br>
+			<span style="font-size: 10px; "><{$pop.desc}></span>
+			</td>
+          </tr>
+		  <{assign var="i" value=$i+1}>
+		  <{/foreach}>
+		  <!-- fin del ciclo de Populares -->
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>

@@ -1,0 +1,142 @@
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_validateForm() { //v4.0
+  var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
+  for (i=0; i<(args.length-2); i+=3) { test=args[i+2]; val=MM_findObj(args[i]);
+    if (val) { nm=val.name; if ((val=val.value)!="") {
+      if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');
+        if (p<1 || p==(val.length-1)) errors+='- '+nm+' must contain an e-mail address.\n';
+      } else if (test!='R') { num = parseFloat(val);
+        if (isNaN(val)) errors+='- '+nm+' <{$lang_mustbe_num}>.\n';
+        if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
+          min=test.substring(8,p); max=test.substring(p+1);
+          if (num<min || max<num) errors+='- '+nm+' must contain a number between '+min+' and '+max+'.\n';
+    } } } else if (test.charAt(0) == 'R') errors += '- '+nm+' <{$lang_is_empty}>.\n'; }
+  } if (errors) alert('<{$lang_errores_happen}>\n'+errors);
+  document.MM_returnValue = (errors == '');
+}
+
+function validateForm(){
+	MM_validateForm('nombre','','R','version','','R','archivo','','R','size','','RisNum');
+	return document.MM_returnValue;
+}
+//-->
+</script>
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="left"><img src="images/logo.gif" width="50" height="50" align="absmiddle"> <span style="font-size: 22px; font-weight: bold;"><{$rmdp_title}></span></td>
+  </tr>
+  <tr>
+    <td class="yellow_line"><img src="images/pixel.gif" width="1" height="1"></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><{include file="db:rmdp_nav_srh.html"}></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><{$lang_info}></td>
+  </tr>
+  <tr>
+    <td><{$lang_info2}></td>
+  </tr>
+  <tr>
+    <td><table width="100%"  border="0" cellspacing="1" cellpadding="0" class="outer">
+      <tr>
+        <th colspan="2" align="left"><{$modify_title}></th>
+        </tr>
+		<form name="frmSend" method="post" action="mysends.php">
+      <tr>
+        <td width="27%" class="even">*<{$lang_nombre}></td>
+        <td width="73%" class="odd"><input value="<{$param_nombre}>" name="nombre" type="text" id="nombre" size="50" maxlength="200"></td>
+      </tr>
+      <tr>
+        <td class="even">*<{$lang_version}></td>
+        <td class="odd"><input value="<{$param_version}>" name="version" type="text" id="version" size="50" maxlength="10"></td>
+      </tr>
+      <tr>
+        <td class="even">*<{$lang_licencia}></td>
+        <td class="odd"><select name="licencia">
+          <{foreach item=lic from=$licencias}>
+		  	<{if $lic.id==$param_licencia}>
+          		<option value="<{$lic.id}>" selected><{$lic.nombre}></option>
+		   <{else}>
+		   		<option value="<{$lic.id}>"><{$lic.nombre}></option>
+		   <{/if}>
+          <{/foreach}>
+        </select></td>
+      </tr>
+      <tr>
+        <td class="even">*<{$lang_archivo}></td>
+        <td class="odd"><input value="<{$param_archivo}>" name="archivo" type="text" id="archivo" size="50" maxlength="255"></td>
+      </tr>
+      <tr>
+        <td class="even"><{$lang_img}><br>
+		<span style="font-size: 10px; "><{$lang_imgtip}></span></td>
+        <td class="odd"><input value="<{$param_img}>" name="img" type="text" id="img" size="50" maxlength="255"></td>
+      </tr>
+      <tr>
+        <td class="even">*<{$lang_catego}></td>
+        <td class="odd"><select name="catego" id="catego">
+		<{foreach item=cat from=$srhoptions}>
+			<{if $cat.id==$param_catego}>
+				<option value="<{$cat.id}>" selected><{$cat.nombre}></option>
+			<{else}>
+				<option value="<{$cat.id}>"><{$cat.nombre}></option>
+			<{/if}>
+		<{/foreach}>
+        </select></td>
+      </tr>
+      <tr>
+        <td class="even">*<{$lang_desc}><br>
+		<span style="font-size:10px; "><{$lang_desctip}></span></td>
+        <td class="odd"><{$xoops_codes}><{$xoops_smiles}></td>
+      </tr>
+      <tr>
+        <td class="even"><{$lang_anonimo}></td>
+        <td class="odd"><input name="anonimo" type="radio" value="1" <{if $param_anonimo==1}>checked<{/if}>> 
+          <{$lang_yes}> &nbsp;&nbsp;
+          <input name="anonimo" type="radio" value="0" <{if $param_anonimo==0}>checked<{/if}>> <{$lang_no}></td>
+      </tr>
+      <tr>
+        <td class="even">*<{$lang_size}></td>
+        <td class="odd"><input value="<{$param_size}>" name="size" type="text" id="size" size="50" maxlength="30"></td>
+      </tr>
+      <tr>
+        <td class="even"><{$lang_web}></td>
+        <td class="odd"><input value="<{$param_urltitle}>" name="web" type="text" id="web" size="50" maxlength="200"></td>
+      </tr>
+      <tr>
+        <td class="even"><{$lang_url}></td>
+        <td class="odd"><input value="<{$param_url}>" name="url" type="text" id="url" size="50" maxlength="255">
+          <input name="op" type="hidden" id="op" value="send">
+		  <input name="id" type="hidden" id="id" value="<{$param_id_soft}>"></td>
+      </tr>
+      <tr>
+        <td class="even">*<{$lang_os}></td>
+        <td class="odd">
+		<{foreach item=os from=$plataformas}>
+			<input name="os[]" type="checkbox" id="os[]" value="<{$os.id}>" /> <{$os.nombre}>&nbsp;&nbsp;
+		<{/foreach}>
+		</td>
+      </tr>
+      <tr>
+        <td class="even">&nbsp;</td>
+        <td class="odd"><input name="Submit" type="submit" onClick="return validateForm();" value="<{$lang_send}>"></td>
+      </tr>
+		</form>
+    </table></td>
+  </tr>
+</table>

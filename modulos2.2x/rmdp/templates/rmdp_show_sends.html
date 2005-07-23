@@ -1,0 +1,48 @@
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="left"><img src="images/logo.gif" width="50" height="50" align="absmiddle"> <span style="font-size: 22px; font-weight: bold;"><{$rmdp_title}></span></td>
+  </tr>
+  <tr>
+    <td class="yellow_line"><img src="images/pixel.gif" width="1" height="1"></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><{include file="db:rmdp_nav_srh.html"}></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="left"><{$location_bar}></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>
+	  <table class="outer" width="100%"  border="0" cellspacing="1">
+        <tr>
+          <th colspan="4"><{$lang_mydowns}></th>
+        </tr>
+		<tr class="head" align="center">
+		  <td><{$lang_name}></td>
+		  <td><{$lang_date}></td>
+		  <td><{$lang_downs}></td>
+		  <td><{$lang_options}></td>
+		</tr>
+		<{foreach item=d from=$downloads}>
+        <tr class="<{cycle values="even,odd"}>">
+          <td align="left"><a href="down.php?id=<{$d.id}>"><{$d.nombre}></a><br>
+		  <span style="font-size: 10px;"><{$d.desc}></span></td>
+          <td align="center"><{$d.fecha}></td>
+          <td align="center"><{$d.descargas}></td>
+          <td align="center" nowrap><a href="mysends.php?op=modify&amp;id=<{$d.id}>"><{$lang_modify}></a>&nbsp;|
+		  <a href="mysends.php?op=shots&amp;id=<{$d.id}>"><{$lang_shots}></a></td>
+        </tr>
+		<{/foreach}>
+      </table>
+	</td>
+  </tr>
+</table>

@@ -1,0 +1,146 @@
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="sections_title"><img src="images/down_arrow.gif" width="6" height="6" align="absmiddle"> <{$lang_sponsornews}></td>
+  </tr>
+  <tr>
+    <td class="yellow_line"><img src="images/pixel.gif" width="1" height="1"></td>
+  </tr>
+  <tr>
+    <td>
+	<!-- Enlaces Patrocinados //-->
+	<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+      <tr>
+	  <!-- Inicia ciclo de Sponsors -->
+	  <{assign var="i" value="1"}>
+	  <{foreach item=spon from=$sponsors}>
+	    <{if $i>3}>
+		</tr><tr>
+			<{assign var="i" value="1"}>
+		<{/if}>
+        <td width="33%" valign="top">
+		<table width="100%" cellpadding="0" cellspacing="0" border="0">
+		  <tr><td height="20" class="sponsor_body">
+		  <span class="sponsor_title"><{$spon.title}></span></td>
+		  </tr>
+		  <tr><td height="20" class="sponsor_body">&nbsp;&nbsp;<img src="images/down_icon.gif" width="17" height="17" align="absmiddle">
+		  <a href="down.php?id=<{$spon.id}>"><{$lang_download_now}></a></td>
+		  </tr>
+		  <tr>
+		    <td class="sponsor_body"><{$spon.desc}></td>
+		    </tr>
+		</table>
+		</td>
+      	<{assign var="i" value=$i+1}>
+	  <{/foreach}>
+	  </tr>
+		<tr>
+		  <td valign="top">&nbsp;</td>
+	    </tr>
+	  <!-- Termina ciclo de Sponsors -->
+    </table>
+	<!-- Fin de enlaces Patrocinados //-->
+	</td>
+  </tr>
+  <tr>
+    <td><{include file="db:rmdp_nav_srh.html"}></td>
+  </tr>
+  <tr><td><strong><{$location_bar}></strong></td></tr>
+  <tr><td>&nbsp;</td></tr>
+  <tr>
+    <td align="right" class="sponsor_title"><{$lang_toppop}></td>
+  </tr>
+  <tr>
+    <td align="right" class="sponsor_title">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="right" class="sponsor_title"><{$lng_total_results}></td>
+  </tr>
+  <tr>
+    <td><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+      <tr align="center" bgcolor="#EBEBEB">
+        <td class="order_results" style="padding 4px; border-top: 1px solid #000000; border-left: 1px solid #000000; border-bottom: 1px solid #000000;"><{$lng_resort_by}><br> 
+		<strong><a href="search.php?cat=<{$rmdp_cat}>&amp;key=<{$key}>&amp;sort=0&amp;ad=<{$rmdp_ad}>"><{$lng_nombre}></a></strong></td>
+        <td class="order_results" style="padding 4px; border-top: 1px solid #000000; border-bottom: 1px solid #000000;">
+		<strong><a href="search.php?cat=<{$rmdp_cat}>&amp;key=<{$key}>&amp;sort=1&amp;ad=<{$rmdp_ad}>"><{$lng_fecha}></a></strong></td>
+        <td class="order_results" style="padding 4px; border-top: 1px solid #000000; border-bottom: 1px solid #000000;">
+		<strong><a href="search.php?cat=<{$rmdp_cat}>&amp;key=<{$key}>&amp;sort=2&amp;ad=<{$rmdp_ad}>"><{$lng_rating}></a></strong></td>
+        <td class="order_results" style="padding 4px; border-top: 1px solid #000000; border-bottom: 1px solid #000000;">
+		<strong><a href="search.php?cat=<{$rmdp_cat}>&amp;key=<{$key}>&amp;sort=3&amp;ad=<{$rmdp_ad}>"><{$lng_ourrating}></a></strong></td>
+        <td class="order_results" style="padding 4px; border-top: 1px solid #000000; border-bottom: 1px solid #000000;">
+		<strong><a href="search.php?cat=<{$rmdp_cat}>&amp;key=<{$key}>&amp;sort=4&amp;ad=<{$rmdp_ad}>"><{$lng_downloads}></a></strong></td>
+        <td class="order_results" style="padding 4px; border-top: 1px solid #000000; border-right: 1px solid #000000; border-bottom: 1px solid #000000;">
+		<strong><a href="search.php?cat=<{$rmdp_cat}>&amp;key=<{$key}>&amp;sort=5&amp;ad=<{$rmdp_ad}>"><{$lng_sendby}></a></strong></td>
+      </tr>
+      <tr>
+        <td colspan="6">&nbsp;</td>
+      </tr>
+	  <!--inicia ciclo de resultados -->
+	  <{foreach item=soft from=$downloads}>
+      <tr <{if $soft.resaltar}>bgcolor="<{$resalte_bg}>"<{/if}>>
+        <td class="single_result">
+		<{if $soft.issponsor}>
+			<img src="images/mark_sponsor.gif" border="0" align="absmiddle"> <span class="sections_title"><{$lang_sponsored}></span><br>
+		<{/if}>
+		<a style="font-size: 11px; font-weight: bold; " href="down.php?id=<{$soft.id}>"><{$soft.nombre}></a><br>
+		<{$soft.desc}><br>
+		<strong><{$lng_os}></strong> <{$soft.os}><br>
+		<strong><{$lng_version}></strong> <{$soft.version}><br>
+		<strong><{$lng_filesize}></strong> <{$soft.size}><br>
+		<strong><{$lng_licence}></strong> <{$soft.licence}></td>
+        <td class="single_result" align="center" valign="top"><{$soft.fecha}><br>
+		<{if $soft.isnew}>
+			<span style="color: #FF0000; "><{$lng_new}></span>
+		<{elseif $soft.isupdate}>
+			<span style="color: #FF0000; "><{$lng_update}></span>
+		<{/if}></td>
+        <td class="single_result" align="center" valign="top">
+		
+			<img src="images/rating<{$soft.rating}>.gif" border='0'><br />
+		
+		<{$soft.votos}>
+		</td>
+        <td class="single_result" align="center" valign="top">
+		<img src="images/ourrate<{$soft.calificacion}>.gif" border='0'>
+		</td>
+        <td class="single_result" align="center" valign="top"><{$soft.descargas}></td>
+        <td align="center" valign="top" nowrap class="single_result" abbr="center">
+		<a href="<{$xoops_url}>/user.php?uid=<{$soft.submitter}>"><{$soft.uname}></a><br>
+		<img src="images/down_icon.gif" width="17" height="17" align="absmiddle">
+		<a href="down.php?id=<{$soft.id}>&amp;sw=now"><{$lang_download_now}></a><br><br>
+		<{if $soft.shots}>
+			<img src="images/view_shots.gif" align="absmiddle"> <a href="shots.php?id=<{$soft.id}>"><{$view_shots}></a>
+		<{/if}>
+		</td>
+      </tr>
+	  <{/foreach}>
+	  <!-- termina ciclo de resultados -->
+    </table></td>
+  </tr>
+  <tr><td align="right"><{$nav_pages}></td>
+  </tr>
+
+  <tr><td>&nbsp;</td></tr>
+  <tr>
+    <td><table width="70%"  border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+          <td valign="top"><table width="100%"  border="0" cellpadding="0" cellspacing="0" class="favorite">
+              <tr>
+                <td class="title"><img src="images/check.gif" width="16" height="16" align="absmiddle"> <{$lang_our_favorites}></td>
+              </tr>
+              <tr>
+                <td class="body"><{$lng_favmsg}><br>
+                    <br></td>
+              </tr>
+              <!-- Ciclo de favoritos -->
+<{assign var="i" value="1"}> <{foreach item=fav from=$favoritos}>
+            <tr>
+              <td class="body"> <strong><{$i}>.</strong> <strong><a href="down.php?id=<{$fav.id}>"><{$fav.nombre}></a></strong><br>
+                  <span style="font-size: 10px; "><{$fav.desc}></span> </td>
+            </tr>
+<{assign var="i" value=$i+1}> <{/foreach}>
+            <!-- fin del ciclo de favoritos -->
+          </table>            <img src="images/pixel.gif" width="1" height="1"></td>
+        </tr>
+    </table></td>
+  </tr>
+</table>
