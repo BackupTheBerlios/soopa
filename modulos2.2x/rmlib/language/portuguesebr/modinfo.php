@@ -1,5 +1,5 @@
 <?php
-// $Id: modinfo.php,v 1.1 2005/07/10 02:32:18 mauriciodelima Exp $
+// $Id: modinfo.php,v 1.2 2005/07/23 17:15:01 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //              RM+SOFT - Systema de Ayuda y Manuales en Línea               //
 //                Copyright RM+SOFT © 2005. (Eduardo Cortés)                 //
@@ -30,8 +30,8 @@
 //	Preguntas, errores o cualquier comentario escribeme						 //
 //	<adminone@redmexico.com.mx>												 //
 //  ------------------------------------------------------------------------ //
-define("_MI_RMLIB_NAME", "RM+Soft Library");
-define("_MI_RMLIB_DESC", "Biblioteca em linha");
+define("_MI_RMLIB_NAME", "Biblioteca");
+define("_MI_RMLIB_DESC", "Biblioteca de artigos, tutoriais, livros, etc.");
 define("_MI_RMLIB_AM1", "Controle de Seções/Livros/Índices");
 define("_MI_RMLIB_AM2", "Criar Nova Seção");
 
