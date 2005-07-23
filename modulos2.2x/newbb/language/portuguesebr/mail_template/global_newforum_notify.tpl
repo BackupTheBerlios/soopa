@@ -8,7 +8,7 @@ Descrição:
 Clique neste link para acessá-lo:
 {FORUM_URL}
 
-Clique neste link para ver o índice do Fórum:
+Clique neste link para exibir o índice do Fórum:
 {X_MODULE_URL}
 
 -----------

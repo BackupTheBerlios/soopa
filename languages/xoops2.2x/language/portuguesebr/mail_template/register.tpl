@@ -6,7 +6,7 @@ Como usuário registrado do site {SITENAME}, você poderá
 - Enviar mensagens particulares (MP) a outros usuários do portal
 - Participar das discussões dos fóruns
 - Receber as últimas notícias publicadas
-- Comentar os tópicos
+- Comentar as publicações
 - E muito mais....
 
 

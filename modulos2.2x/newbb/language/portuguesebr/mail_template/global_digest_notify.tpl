@@ -2,7 +2,7 @@ Olá {X_UNAME},
 
 Informativo de {X_MODULE} do site {X_SITENAME}: # {DIGEST_ID} .
 
-Clique nos links abaixo para ver as mensagens:
+Clique nos links abaixo para exibir as mensagens:
 {DIGEST_CONTENT}
 
 -----------

@@ -1,5 +1,5 @@
 <?php
-// $Id: modulesadmin.php,v 1.1 2005/07/05 05:10:36 mauriciodelima Exp $
+// $Id: modulesadmin.php,v 1.2 2005/07/23 16:28:08 mauriciodelima Exp $
 //%%%%%%	File Name  modulesadmin.php 	%%%%%
 define("_MD_AM_MODADMIN","Administração de módulos");
 define("_MD_AM_MODULE","Módulo");
@@ -32,7 +32,7 @@ define("_MD_AM_UNINSTALL","Desinstalar");
 define("_MD_AM_SUBMIT","Prosseguir");
 define("_MD_AM_CANCEL","Cancelar");
 define("_MD_AM_DBUPDATE","As informações foram salvas corretamente.");
-define("_MD_AM_BTOMADMIN","Retornar à página de administração dos módulos");
+define("_MD_AM_BTOMADMIN","Voltar à administração dos módulos");
 
 // %s represents module name
 define("_MD_AM_FAILINS","Não foi possível instalar %s.");

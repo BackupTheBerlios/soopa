@@ -2,10 +2,10 @@ Olá {X_UNAME},
 
 Uma nova mensagem foi postada no tópico "{THREAD_NAME}".
 
-Clique neste link para ver a mensagem:
+Clique neste link para exibir a mensagem:
 {POST_URL}
 
-Clique abaixo para ver o tópico:
+Clique abaixo para exibir o tópico:
 {THREAD_URL}
 
 -----------

@@ -1,5 +1,5 @@
 <?php
-// $Id: calendar.php,v 1.1 2005/07/05 04:56:36 mauriciodelima Exp $
+// $Id: calendar.php,v 1.2 2005/07/23 16:26:22 mauriciodelima Exp $
 //%%%%%		Time Zone	%%%%
 define("_CAL_SUNDAY", "Domingo");
 define("_CAL_MONDAY", "Segunda");
@@ -29,6 +29,6 @@ define("_CAL_NEXTYR", "Próximo Ano (selecione no menu)");
 define("_CAL_SELDATE", "Selecione a data");
 define("_CAL_DRAGMOVE", "Arraste para mover");
 define("_CAL_TODAY", "Hoje");
-define("_CAL_DISPM1ST", "Mostrar 'segunda' como o primeiro dia da semana");
-define("_CAL_DISPS1ST", "Mostrar 'domingo' como o primeiro dia da semana");
+define("_CAL_DISPM1ST", "Exibir 'segunda' como o primeiro dia da semana");
+define("_CAL_DISPS1ST", "Exibir 'domingo' como o primeiro dia da semana");
 ?>

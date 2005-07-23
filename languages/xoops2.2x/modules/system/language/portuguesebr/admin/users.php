@@ -1,5 +1,5 @@
 <?php
-// $Id: users.php,v 1.2 2005/07/05 20:24:45 mauriciodelima Exp $
+// $Id: users.php,v 1.3 2005/07/23 16:28:08 mauriciodelima Exp $
 //%%%%%%	Admin Module Name  Users 	%%%%%
 
 define("_AM_AYSYWTDU","Deseja excluir o usuário %s?");
@@ -47,7 +47,7 @@ define("_AM_COMMENTS","Número de textos enviados (sem contar as notícias):");
 define("_AM_PTBBTSDIYT","Clique no botão abaixo para sincronizar os dados, caso você suspeite de que as informações de envio acima não parecem indicar o seu real estado.");
 define("_AM_SYNCHRONIZE","SINCRONIZAR");
 define("_AM_USERDONEXIT","Usuário inexistente.");
-define("_AM_STNPDNM","As novas senhas não conferem. Clique em retornar e tente de novo");
+define("_AM_STNPDNM","As novas senhas não conferem. Clique em voltar e tente novamente");
 define("_AM_CNGTCOM","Não foi possível obter o número total de comentários");
 define("_AM_CNGTST","Não é possível obter o número total de notícias");
 define("_AM_CNUUSER","Não é possível editar o usuário");

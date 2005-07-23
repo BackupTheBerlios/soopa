@@ -1,5 +1,5 @@
 <?php
-// $Id: notification.php,v 1.2 2005/07/05 20:24:45 mauriciodelima Exp $
+// $Id: notification.php,v 1.3 2005/07/23 16:26:22 mauriciodelima Exp $
 
 // RMV-NOTIFY
 
@@ -32,7 +32,7 @@ define ('_NOT_PM', 'Mensagem particular');
 define ('_NOT_DISABLE', 'Desativado');
 define ('_NOT_CHANGE', 'Alterar');
 
-define ('_NOT_NOACCESS', 'Você não tem permissão para acessar essa página');
+define ('_NOT_NOACCESS', 'Você não tem permissão para acessar esta seção.');
 
 // Text for module config options
 

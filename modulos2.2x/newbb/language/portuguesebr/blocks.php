@@ -1,5 +1,5 @@
 <?php
-// $Id: blocks.php,v 1.2 2005/07/23 05:51:17 mauriciodelima Exp $
+// $Id: blocks.php,v 1.3 2005/07/23 16:27:09 mauriciodelima Exp $
 // Blocks
 if(defined('_MB_NEWBB_DEFINED')) return;
 else define('_MB_NEWBB_DEFINED',true);
@@ -15,7 +15,7 @@ define("_MB_NEWBB_DISPLAYMODE","Modo de exibição: ");
 define("_MB_NEWBB_DISPLAYMODE_FULL","Completo");
 define("_MB_NEWBB_DISPLAYMODE_COMPACT","Compacto");
 define("_MB_NEWBB_DISPLAYMODE_LITE","Simples");
-define("_MB_NEWBB_FORUMLIST","Lista de fóruns que serão exibidos");
+define("_MB_NEWBB_FORUMLIST","Filtro de exibição:");
 //define("_MB_NEWBB_FORUMLIST_DESC","ID dos fóruns que serão exibidos no bloco.<br/>Delimitador ','; '0' para TODOS; '-' para excluir.");
 //define("_MB_NEWBB_FORUMLIST_ID","ID");
 //define("_MB_NEWBB_FORUMLIST_NAME","Fórum");

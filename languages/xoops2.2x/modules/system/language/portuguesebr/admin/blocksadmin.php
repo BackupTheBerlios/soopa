@@ -1,8 +1,8 @@
 <?php
-// $Id: blocksadmin.php,v 1.2 2005/07/05 20:24:45 mauriciodelima Exp $
+// $Id: blocksadmin.php,v 1.3 2005/07/23 16:28:08 mauriciodelima Exp $
 
 //%%%%%%	blocks.php 	%%%%%
-define("_AM_BADMIN","Gerenciamento de blocos");
+define("_AM_BADMIN","Administração de blocos");
 define("_AM_ADDBLOCK","Incluir um novo bloco");
 define("_AM_LISTBLOCK","Listar todos os blocos");
 define("_AM_SIDE","Tipo");
@@ -14,17 +14,17 @@ define("_AM_BLKTYPE","Tipo de bloco");
 define("_AM_LEFT","Esquerda");
 define("_AM_RIGHT","Direita");
 define("_AM_CENTER","Central");
-define("_AM_VISIBLE","Visível");
+define("_AM_VISIBLE","Exibir");
 define("_AM_POSCONTT","ordem do conteúdo adicional");
 define("_AM_ABOVEORG","Antes do conteúdo original");
 define("_AM_AFTERORG","Após o conteúdo original");
 define("_AM_EDIT","Editar");
 define("_AM_DELETE","Excluir");
-define("_AM_SBLEFT","Bloco lateral - esquerda");
-define("_AM_SBRIGHT","Bloco lateral - direita");
-define("_AM_CBLEFT","Bloco central - esquerda");
-define("_AM_CBRIGHT","Bloco central - direita");
-define("_AM_CBCENTER","Bloco central - centro");
+define("_AM_SBLEFT","Lateral - esquerda");
+define("_AM_SBRIGHT","Lateral - direita");
+define("_AM_CBLEFT","Central - esquerda");
+define("_AM_CBRIGHT","Central - direita");
+define("_AM_CBCENTER","Central - centro");
 define("_AM_OPTIONS","Opções");
 define("_AM_CONTENT","Conteúdo");
 define("_AM_SUBMIT","Prosseguir");
@@ -37,13 +37,13 @@ define("_AM_RUSUREDEL","Excluir o módulo <b>%s</b>?");
 define("_AM_NAME","Nome");
 define("_AM_USEFULTAGS","Códigos úteis:");
 define("_AM_BLOCKTAG1","<b>%s</b> resultará em <i>%s</i>");
-define('_AM_SVISIBLEIN', 'Mostrar blocos visíveis em %s');
+define('_AM_SVISIBLEIN', 'Exibir blocos visíveis em %s');
 define('_AM_TOPPAGE', 'Página principal');
-define('_AM_VISIBLEIN', 'Visível em');
+define('_AM_VISIBLEIN', 'Exibir em');
 define('_AM_ALLPAGES', 'Todas as páginas');
 define('_AM_TOPONLY', 'Somente a página principal');
 define('_AM_ADVANCED', 'Opções avançadas');
-define('_AM_BCACHETIME', 'Tempo do cache');
+define('_AM_BCACHETIME', 'Tempo de vida do cache');
 define('_AM_BALIAS', 'Alias');
 define('_AM_CLONE', 'Clonar');  // clone a block
 define('_AM_CLONEBLK', 'Clonar'); // cloned block

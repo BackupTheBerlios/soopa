@@ -1,5 +1,5 @@
 <?php
-// $Id: main.php,v 1.2 2005/07/23 05:51:17 mauriciodelima Exp $
+// $Id: main.php,v 1.3 2005/07/23 16:27:09 mauriciodelima Exp $
 if(defined('MAIN_DEFINED')) return;
 define('MAIN_DEFINED',true);
 
@@ -35,14 +35,14 @@ define('_MD_POSTS','Mensagens');
 define('_MD_LASTPOST','Última Mensagem');
 define('_MD_MODERATOR','Moderador');
 define('_MD_NEWPOSTS','Novas mensagens');
-define('_MD_NONEWPOSTS','Nenhuma nova mensagem');
+define('_MD_NONEWPOSTS','Sem novas mensagens');
 define('_MD_PRIVATEFORUM','Fórum privativo');
 define('_MD_BY','by'); // Posted by
 define('_MD_TOSTART','Para acessar as mensagens, selecione abaixo o fórum que deseja visitar.');
 define('_MD_TOTALTOPICSC','Tópicos: ');
 define('_MD_TOTALPOSTSC','Mensagens: ');
 define('_MD_TOTALUSER','Usuários: ');
-define('_MD_TIMENOW','Horário atual: %s');
+define('_MD_TIMENOW','Data e hora atual: %s');
 define('_MD_LASTVISIT','Última visita: %s');
 define('_MD_ADVSEARCH','Pesquisa Avançada');
 define('_MD_POSTEDON','Enviado em: ');
@@ -79,7 +79,7 @@ define('_MD_REPLIES','Respostas');
 define('_MD_POSTER','Autor');
 define('_MD_VIEWS','Leituras');
 define('_MD_MORETHAN','Novas mensagens [Popular]');
-define('_MD_MORETHAN2','Nenhuma nova mensagem  [Popular]');
+define('_MD_MORETHAN2','Sem novas mensagens  [Popular]');
 define('_MD_TOPICSHASATT','Tópico com anexo(s)');
 define('_MD_TOPICHASPOLL','Tópico com votação');
 define('_MD_TOPICLOCKED','Tópico bloqueado');
@@ -106,8 +106,8 @@ define("_MD_CAN_ACCESS", "You <strong>can</strong> access the forum.<br />");
 define("_MD_CANNOT_ACCESS", "You <strong>cannot</strong> access the forum.<br />");
 define("_MD_CAN_POST", "Você <strong>pode</b> iniciar um novo tópico.<br>");
 define("_MD_CANNOT_POST", "Você <strong>não pode</b> iniciar um novo tópico.<br>");
-define("_MD_CAN_VIEW", "Você <strong>pode</b> ver os tópicos.<br />");
-define("_MD_CANNOT_VIEW", "Você <strong>não pode</b> ver os tópicos.<br />");
+define("_MD_CAN_VIEW", "Você <strong>pode</b> exibir os tópicos.<br />");
+define("_MD_CANNOT_VIEW", "Você <strong>não pode</b> exibir os tópicos.<br />");
 define("_MD_CAN_REPLY", "Você <strong>pode</b> responder.<br>");
 define("_MD_CANNOT_REPLY", "Você <strong>não pode</b> responder.<br>");
 define("_MD_CAN_EDIT", "Você <strong>pode</b> editar.<br>");
@@ -227,10 +227,10 @@ define("_MD_FORM_TINYMCE","TinyMCE Editor");
 // ERROR messages
 define('_MD_ERRORFORUM','ERRO: Fórum não selecionado!');
 define('_MD_ERRORPOST','ERRO: Mensagem não selecionada!');
-define('_MD_NORIGHTTOVIEW','Você não tem permissão para visualizar este fórum.');
-define('_MD_NORIGHTTOPOST','Você não tem permissão para escrever neste fórum.');
-define('_MD_NORIGHTTOEDIT','Você não tem permissão para editar mensagens neste fórum.');
-define('_MD_NORIGHTTOREPLY','Você não tem permissão para enviar respostas neste fórum.');
+define('_MD_NORIGHTTOVIEW','Você não tem permissão para exibir este fórum.');
+define('_MD_NORIGHTTOPOST','Você não tem permissão para publicar neste fórum.');
+define('_MD_NORIGHTTOEDIT','Você não tem permissão para editar neste fórum.');
+define('_MD_NORIGHTTOREPLY','Você não tem permissão para responder neste fórum.');
 define('_MD_NORIGHTTOACCESS','Você não tem permissão para acessar este fórum.');
 define('_MD_ERRORTOPIC','ERRO: Tópico não selecionado!');
 define('_MD_ERRORCONNECT','ERRO: O fórum que você selecionou não existe. Por favor, tente novamente mais tarde.');
@@ -239,8 +239,8 @@ define('_MD_ERROROCCURED','Ocorreu um erro');
 define('_MD_COULDNOTQUERY','Não foi possível consultar o banco de dados do fórum.');
 define('_MD_FORUMNOEXIST','ERRO: O fórum ou tópico que você selecionou não existe. Por favor, tente novamente mais tarde.');
 define('_MD_USERNOEXIST','Usuário não existe. Por favor, tente novamente mais tarde.');
-define('_MD_COULDNOTREMOVE','ERRO: Não foi possível remover mensagens do banco de dados!');
-define('_MD_COULDNOTREMOVETXT','ERRO: não foi possível remover os textos das mensagens!');
+define('_MD_COULDNOTREMOVE','Operação de exclusão não realizada!');
+define('_MD_COULDNOTREMOVETXT','Exclusão dos textos das mensagens não realizada!');
 define('_MD_TIMEISUP','Você alcançou o limite de tempo para editar sua mensagem.');
 define('_MD_TIMEISUPDEL','Você alcançou o limite do tempo para excluir sua mensagem.');
 
@@ -256,7 +256,7 @@ define('_MD_THANKSSUBMIT','Obrigado pela sua participação!');
 define('_MD_REPLYPOSTED','Foi enviada uma resposta para o seu tópico.');
 define('_MD_HELLO','Olá %s,');
 define('_MD_URRECEIVING','Você está recebendo este e-mail porque uma tópico que você criou no fórum do site %s foi respondido.'); // %s is your site name
-define('_MD_CLICKBELOW','Clique no link abaixo para ver o tópico:');
+define('_MD_CLICKBELOW','Clique no link abaixo para exibir o tópico:');
 define('_MD_WAITFORAPPROVAL','Obrigado. Sua mensagem será analisada antes da publicação.');
 define('_MD_POSTING_LIMITED','Dê um tempo e volte em %d segundos');
 
@@ -288,10 +288,10 @@ define('_MD_REPLY','Responder');
 
 // topicmanager.php
 define('_MD_VIEWTHETOPIC','Exibir tópico');
-define('_MD_RETURNTOTHEFORUM','Retornar ao fórum');
-define('_MD_RETURNFORUMINDEX','Retornar ao índice do fórum');
+define('_MD_RETURNTOTHEFORUM','Voltar ao fórum');
+define('_MD_RETURNFORUMINDEX','Voltar ao índice do fórum');
 define('_MD_ERROR_BACK','Ocorreu um erro por favor volte e tente novamente.');
-define('_MD_GOTONEWFORUM','Ver tópico atualizado.');
+define('_MD_GOTONEWFORUM','Exibir tópico atualizado.');
 
 define('_MD_TOPICDELETE','O tópico foi excluído.');
 define('_MD_TOPICMOVE','O tópico foi movido.');
@@ -378,7 +378,7 @@ define("_MD_POLL_NOTIFY", "Notificar o autor da votação quando expirar?");
 define("_MD_POLL_POLLOPTIONS", "Opções");
 define("_MD_POLL_EDITPOLL", "Editar votação");
 define("_MD_POLL_FORMAT", "Formato: yyyy-mm-dd hh:mm:ss");
-define("_MD_POLL_CURRENTTIME", "Horário atual: %s");
+define("_MD_POLL_CURRENTTIME", "Data e Hora atual: %s");
 define("_MD_POLL_EXPIREDAT", "Expirou em %s");
 define("_MD_POLL_RESTART", "Reativar esta votação");
 define("_MD_POLL_ADDMORE", "Incluir mais opções");

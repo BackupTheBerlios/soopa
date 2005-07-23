@@ -1,5 +1,5 @@
 <?php
-// $Id: main.php,v 1.2 2005/07/23 03:00:19 mauriciodelima Exp $
+// $Id: main.php,v 1.3 2005/07/23 16:27:27 mauriciodelima Exp $
 //%%%%%%		File Name index.php 		%%%%%
 define("_NW_PRINTER","Imprimir");
 define("_NW_SENDSTORY","Enviar esta notícia por e-mail");
@@ -14,7 +14,7 @@ define("_NW_MORERELEASES", "Veja mais em ");
 //%%%%%%		File Name submit.php		%%%%%
 define("_NW_SUBMITNEWS","Publicar notícia");
 define("_NW_TITLE","Título");
-define("_NW_TOPIC","Tópico");
+define("_NW_TOPIC","Categoria");
 define("_NW_THESCOOP","Introdução");
 define("_NW_NOTIFYPUBLISH","Avisar-me por e-mail quando for publicada.");
 define("_NW_POST","Salvar");
@@ -38,7 +38,7 @@ define("_NW_THEREAREINTOTAL","Número total de notícias");
 define("_NW_INTARTICLE","Encontrei uma um notícia interessante no %s");
 define("_NW_INTARTFOUND","Encontrei está notícia interessante no %s");
 
-define("_NW_TOPICC","Tópico:");
+define("_NW_TOPICC","Categoria:");
 define("_NW_URL","Endereço:");
 define("_NW_NOSTORY","Lamento, a notícia selecionada não existe.");
 
@@ -87,5 +87,5 @@ define("_NW_META_KEYWORDS","Meta palavras chave");
 define("_NW_MAKEPDF","Criar um PDF do artigo");
 define('_MD_POSTEDON',"Postado em:");
 define("_NW_AUTHOR_ID","ID do autor");
-define("_NW_POST_SORRY","Sinto masou não existem tópicos ou você não tem permissões para postar em um topico");
+define("_NW_POST_SORRY","Você não tem permissão para acessar as categorias.!");
 ?>

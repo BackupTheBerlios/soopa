@@ -2,7 +2,7 @@ Olá {X_UNAME},
 
 Uma nova mensagem foi postada no "{THREAD_NAME}".
 
-Clique neste link para ver a mensagem:
+Clique neste link para exibir a mensagem:
 {POST_URL}
 
 -----------

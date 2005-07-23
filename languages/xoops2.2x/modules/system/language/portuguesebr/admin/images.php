@@ -1,12 +1,12 @@
 <?php
-// $Id: images.php,v 1.1 2005/07/05 05:10:36 mauriciodelima Exp $
+// $Id: images.php,v 1.2 2005/07/23 16:28:08 mauriciodelima Exp $
 //%%%%%% Image Manager %%%%%
 
 
 define('_MD_IMGMAIN','Imagens');
 
-define('_MD_ADDIMGCAT','Incluir categoria de imagens');
-define('_MD_EDITIMGCAT','Editar categoria de imagens');
+define('_MD_ADDIMGCAT','Incluir nova categoria');
+define('_MD_EDITIMGCAT','Editar categoria');
 define('_MD_IMGCATNAME','Nome');
 define('_MD_IMGCATRGRP',"Selecione os grupos que podem usar o gerenciador de imagem:<br/><br/><span style='font-weight: normal;'>Estes grupos tem permissão para usar o gerenciador de imagens, mas não enviá-las</span>");
 define('_MD_IMGCATWGRP',"Selecionar os grupos que têm permissão para enviar imagens:<br/><br/><span style='font-weight: normal;'>Para uso de moderadores e administradores.</span>");

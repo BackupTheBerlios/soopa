@@ -1,5 +1,5 @@
 <?php
-// $Id: tplsets.php,v 1.1 2005/07/05 05:10:36 mauriciodelima Exp $
+// $Id: tplsets.php,v 1.2 2005/07/23 16:28:08 mauriciodelima Exp $
 //%%%%%% Template Manager %%%%%
 define('_MD_TPLMAIN','Gerenciamento de Modelos');
 define('_MD_INSTALL','Instalar');
@@ -44,7 +44,7 @@ define('_MD_TITLE','Título');
 define('_MD_CONTENT','Conteúdo');
 define('_MD_ACTION','Ação');
 define('_MD_DEFAULTTHEME','Modelo definido como padrão.');
-define('_MD_AM_ERRTHEME', 'O modelo a seguir tem um arquivo de skin com dados inválidos. Pressione delete para remover os dados relacionados ao modelo.');
+define('_MD_AM_ERRTHEME', 'O modelo possui arquivo com dados inválidos. Pressione delete para excluir os dados do modelo.');
 define('_MD_SKINIMGS','Arquivo de imagem do Skin');
 define('_MD_EDITSKINIMG','Editar arquivo de imagem do Skin');
 define('_MD_IMGFILE','Nome de arquivo');

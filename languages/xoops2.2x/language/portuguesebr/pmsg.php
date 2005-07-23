@@ -1,5 +1,5 @@
 <?php
-// $Id: pmsg.php,v 1.2 2005/07/05 20:24:45 mauriciodelima Exp $
+// $Id: pmsg.php,v 1.3 2005/07/23 16:26:22 mauriciodelima Exp $
 //%%%%%%	File Name readpmsg.php 	%%%%%
 define("_PM_DELETED","Sua mensagem foi excluída.");
 define("_PM_PRIVATEMESSAGE","Mensagens particulares");
@@ -17,7 +17,7 @@ define("_PM_NEXT","Próxima");
 //%%%%%%	File Name pmlite.php 	%%%%%
 define("_PM_SORRY","Lamento, você não é um usuário cadastrado.");
 define("_PM_REGISTERNOW","Cadastre-se agora.");
-define("_PM_GOBACK","Retornar");
+define("_PM_GOBACK","Voltar");
 define("_PM_USERNOEXIST","O usuário selecionado não está cadastrado.");
 define("_PM_PLZTRYAGAIN","Verifique o nome de usuário e tente novamente.");
 define("_PM_MESSAGEPOSTED","Mensagem particular enviada");

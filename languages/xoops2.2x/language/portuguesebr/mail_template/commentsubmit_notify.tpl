@@ -2,7 +2,7 @@ Olá! {X_UNAME},
 
 Um comentário foi enviado para aprovação em {X_ITEM_TYPE} "{X_ITEM_NAME}" você está monitorando o módulo {X_MODULE} em nosso site.
 
-Para ver o comentário clique em {X_COMMENT_URL}
+Para exibir o comentário clique em {X_COMMENT_URL}
 
 -----------
 

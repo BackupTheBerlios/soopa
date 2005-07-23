@@ -10,7 +10,7 @@ define("_PM_MI_LINK_DESCRIPTION", "Exibe o link para envio de uma Mensagem Priva
 define("_PM_MI_MESSAGE", "Escrever uma mensagem para");
 
 define("_PM_MI_PRUNESUBJECT", "Exclusão de Mensagens Particulares");
-define("_PM_MI_PRUNESUBJECT_DESC", "Este é Assunto da MP que o usuário receberá após realziado o processo de Exclusão");
+define("_PM_MI_PRUNESUBJECT_DESC", "Este é Assunto da MP que o usuário receberá após realizado o processo de Exclusão");
 define("_PM_MI_PRUNEMESSAGE", "Mensagem ao usuário sobre a Exclusão de MP");
 define("_PM_MI_PRUNEMESSAGE_DESC", "Esta é a mensagem que os usuários afetados pela exclusão de MP receberão em sua caixa de Mensagens Particulares. Use {PM_COUNT} no texto para informar ao usuário o número de MP excluídas no processo.");
 define("_PM_MI_PRUNESUBJECTDEFAULT", "Mensagens excluídas durante a limpeza");

@@ -1,5 +1,5 @@
 <?php
-// $Id: modinfo.php,v 1.3 2005/07/23 05:24:05 mauriciodelima Exp $
+// $Id: modinfo.php,v 1.4 2005/07/23 16:27:27 mauriciodelima Exp $
 // Module Info
 
 // The name of this module
@@ -9,19 +9,19 @@ define('_MI_NEWS_NAME','Notícias');
 define('_MI_NEWS_DESC','Cria um grupo de notícias, onde os usuário podem enviar notícias, comentários e anexar arquivos.');
 
 // Names of blocks for this module (Not all module has blocks)
-define('_MI_NEWS_BNAME1','Tópicos');
+define('_MI_NEWS_BNAME1','Categorias');
 define('_MI_NEWS_BNAME3','Notícia do dia');
 define('_MI_NEWS_BNAME4','Notícias mais lidas');
 define('_MI_NEWS_BNAME5','Últimas notícias');
 define('_MI_NEWS_BNAME6','Notícias pendentes');
-define('_MI_NEWS_BNAME7','Navegar pelos tópicos');
+define('_MI_NEWS_BNAME7','Categoria de Notícias');
 
 // Sub menus in main menu block
 define('_MI_NEWS_SMNAME1','Enviar notícia');
 define('_MI_NEWS_SMNAME2','Histórico');
 
 // Names of admin menu items
-define('_MI_NEWS_ADMENU2', 'Tópicos');
+define('_MI_NEWS_ADMENU2', 'Categorias');
 define('_MI_NEWS_ADMENU3', 'Notícias');
 define('_MI_NEWS_GROUPPERMS', 'Permissões');
 // Added by Hervé for prune option
@@ -51,7 +51,7 @@ define('_MI_DISPLAYNAVDSC', 'Sim, mostra a caixa de navegação no topo de cada pá
 define('_MI_AUTOAPPROVEDSC', 'Aprovar automaticamente as notícias enviadas');
 define("_MI_ALLOWEDSUBMITGROUPSDESC", "Selecionados o grupo que poderá enviar notícias");
 define("_MI_ALLOWEDAPPROVEGROUPSDESC", "Selecione os grupos com permissão para aprovar as notícias");
-define("_MI_NEWSDISPLAYDESC", "Clássica mostra todas as notícias por data de publicação. Moderna, agrupa as notícia por tópicos, mostrando só as mais recente em tamanho original.");
+define("_MI_NEWSDISPLAYDESC", "Clássica mostra todas as notícias por data de publicação. Moderna, agrupa as notícia por categorias, mostrando só as mais recente em tamanho original.");
 define('_MI_ADISPLAYNAMEDSC', 'Selecione como serão mostrados os nomes dos autores');
 define("_MI_COLUMNMODE_DESC","Escolher com quantas colunas será mostrada a lista de notícia. Disponível só no layout clássico.");
 define("_MI_STORYCOUNTADMIN_DESC","");
@@ -76,10 +76,10 @@ define('_MI_NEWS_GLOBAL_NOTIFYDSC', 'Opções gerais dos avisos de notícias.');
 define('_MI_NEWS_STORY_NOTIFY', 'Notícia');
 define('_MI_NEWS_STORY_NOTIFYDSC', 'Opções de aviso que se aplicam a esta notícia.');
 
-define('_MI_NEWS_GLOBAL_NEWCATEGORY_NOTIFY', 'Novo tópico');
-define('_MI_NEWS_GLOBAL_NEWCATEGORY_NOTIFYCAP', 'Quando criar um tópico.');
-define('_MI_NEWS_GLOBAL_NEWCATEGORY_NOTIFYDSC', 'Receber aviso de um novo tópico for criado.');
-define('_MI_NEWS_GLOBAL_NEWCATEGORY_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} aviso automático: um novo tópico foi criado na seção de notícias.');
+define('_MI_NEWS_GLOBAL_NEWCATEGORY_NOTIFY', 'Nova categoria');
+define('_MI_NEWS_GLOBAL_NEWCATEGORY_NOTIFYCAP', 'Quando criar uma categoria.');
+define('_MI_NEWS_GLOBAL_NEWCATEGORY_NOTIFYDSC', 'Receber aviso de uma nova categoria criada.');
+define('_MI_NEWS_GLOBAL_NEWCATEGORY_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} aviso automático: uma nova categoria foi criada na seção de notícias.');
 
 define('_MI_NEWS_GLOBAL_STORYSUBMIT_NOTIFY', 'Nova notícia enviada');
 define('_MI_NEWS_GLOBAL_STORYSUBMIT_NOTIFYCAP', 'Quando uma notícia aguardar por aprovação.');
@@ -96,20 +96,20 @@ define('_MI_NEWS_STORY_APPROVE_NOTIFYCAP', 'Quando esta notícia for aprovada.');
 define('_MI_NEWS_STORY_APPROVE_NOTIFYDSC', 'Receber aviso quando esta notícia for aprovada.');
 define('_MI_NEWS_STORY_APPROVE_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} aviso automático: notícia aprovada.');
 
-define('_MI_RESTRICTINDEX', 'Exibir os tópicos apenas na página inicial das notícias?');
-define('_MI_RESTRICTINDEXDSC', 'Sim, para os usuários ver somente os artigos alistados nos tópicos, ajustados nas permissões das notícia.');
+define('_MI_RESTRICTINDEX', 'Exibir as categorias apenas na página inicial das notícias?');
+define('_MI_RESTRICTINDEXDSC', 'Sim, exibir aos usuários somente os artigos das categotias ajustados nas permissões das notícia.');
 
 define('_MI_NEWSBYTHISAUTHOR', 'Notícias do mesmo autor');
-define('_MI_NEWSBYTHISAUTHORDSC', 'Se você habilitou essa opção, então um link \'Notícias deste autor\' estará visível');
+define('_MI_NEWSBYTHISAUTHORDSC', 'Habilitando este opção um link \'Notícias deste autor\' será exibido nas notícias.');
 
 define('_MI_NEWS_PREVNEX_LINK','Exibir links de próximo e anterior?');
 define('_MI_NEWS_PREVNEX_LINK_DESC','Quando está opção é habilitada, dois novos links estarão visíveis no fim de cada artigo. Estes links serão usados para ir para o artigo anterior e próximo de acordo com a data publicada.');
-define('_MI_NEWS_SUMMARY_SHOW','Exibir tabela de resumo?');
+define('_MI_NEWS_SUMMARY_SHOW','Exibir bloco de últimas notícias?');
 define('_MI_NEWS_SUMMARY_SHOW_DESC','Quando você usa esta opção, um resumo contendo links para todos artigos publicados recentementes estará visível no fim de cada artigo.');
 define('_MI_NEWS_AUTHOR_EDIT','Os autores poderão editar suas próprias notícias?');
 define('_MI_NEWS_AUTHOR_EDIT_DESC','Com esta opção, autores podem editar aquelas notícias enviadas por eles..');
 define('_MI_NEWS_RATE_NEWS','Habilitar usuários a avaliar noticias?');
-define('_MI_NEWS_TOPICS_RSS','Habilitar RSS feeds por tópicos?');
+define('_MI_NEWS_TOPICS_RSS','Habilitar RSS feeds por categorias?');
 define('_MI_NEWS_TOPICS_RSS_DESC',"Se você habilitar esta opção então o conteúdo dos topicos estarão disponíveis como RSS feeds");
 define('_MI_NEWS_DATEFORMAT', "Formato de data");
 define('_MI_NEWS_DATEFORMAT_DESC',"Por favor, procure a documentação do PHP (http://fr.php.net/manual/en/function.date.php) para mais informações sobre como selecionar um formato. Se você não digitar algo então a opção padrão será usada.");

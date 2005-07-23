@@ -1,5 +1,5 @@
 <?php
-// $Id: comment.php,v 1.1 2005/07/05 04:56:36 mauriciodelima Exp $
+// $Id: comment.php,v 1.2 2005/07/23 16:26:22 mauriciodelima Exp $
 define('_CM_TITLE','Título');
 define('_CM_MESSAGE','Mensagem');
 define('_CM_DOSMILEY','Ativar emoticons');
@@ -19,7 +19,7 @@ define('_CM_BOTTOM','Final');
 define('_CM_ONLINE','Online!');
 define('_CM_POSTED','Publicado'); // Posted date
 define('_CM_UPDATED', 'Atualizado');
-define('_CM_THREAD','Tópico');
+define('_CM_THREAD','Categoria');
 define('_CM_POSTER','Enviado por');
 define('_CM_JOINED','Usuário desde');
 define('_CM_POSTS','Mensagens');

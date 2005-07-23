@@ -2,7 +2,7 @@ Olá {X_UNAME},
 
 Uma nova mensagem foi enviada no {X_MODULE} nosso site, no tópico "{THREAD_NAME}" do fórum "{FORUM_NAME}".
 
-Clique neste link para ver a mensagem:
+Clique neste link para exibir a mensagem:
 {POST_URL}
 
 -----------

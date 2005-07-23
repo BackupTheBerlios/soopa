@@ -1,7 +1,7 @@
 <?php
-// $Id: admin.php,v 1.2 2005/07/05 05:19:39 mauriciodelima Exp $
+// $Id: admin.php,v 1.3 2005/07/23 16:26:22 mauriciodelima Exp $
 //%%%%%%	File Name  admin.php 	%%%%%
-define("_AD_NORIGHT","Você não possui permissão de acesso a esta área.");
+define("_AD_NORIGHT","Você não tem permissão para acessar esta seção.");
 define("_AD_ACTION","Ação");
 define("_AD_EDIT","Editar");
 define("_AD_DELETE","Excluir");

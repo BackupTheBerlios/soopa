@@ -1,5 +1,5 @@
 <?php
-// $Id: global.php,v 1.2 2005/07/05 20:24:45 mauriciodelima Exp $
+// $Id: global.php,v 1.3 2005/07/23 16:26:22 mauriciodelima Exp $
 //%%%%%%	File Name mainfile.php 	%%%%%
 define("_PLEASEWAIT","Aguarde...");
 define("_FETCHING","Carregando...");
@@ -95,7 +95,7 @@ define("_SEND","Enviar");
 define("_CANCEL","Cancelar");
 define("_ASCENDING","Ordem crescente");
 define("_DESCENDING","Ordem decrescente");
-define('_BACK', 'Retornar');
+define('_BACK', 'Voltar');
 define('_NOTITLE', 'Sem título');
 
 /* Image manager */

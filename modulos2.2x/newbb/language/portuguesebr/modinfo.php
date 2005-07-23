@@ -1,5 +1,5 @@
 <?php
-// $Id: modinfo.php,v 1.2 2005/07/23 05:51:17 mauriciodelima Exp $
+// $Id: modinfo.php,v 1.3 2005/07/23 16:27:09 mauriciodelima Exp $
 // Thanks Tom (http://www.wf-projects.com), for correcting the Engligh language package
 
 // Module Info
@@ -11,10 +11,10 @@ define("_MI_NEWBB_NAME","Fórum");
 define("_MI_NEWBB_DESC","Módulo de Fórum para XOOPS");
 
 // Names of blocks for this module (Not all module has blocks)
-define("_MI_NEWBB_BLOCK_TOPIC_POST","Últimas respostas");
-define("_MI_NEWBB_BLOCK_TOPIC","Tópicos recentes");
-define("_MI_NEWBB_BLOCK_POST","Últimas Postagens");
-define("_MI_NEWBB_BLOCK_AUTHOR","Autores");
+define("_MI_NEWBB_BLOCK_TOPIC_POST","Últimas respostas nos fóruns");
+define("_MI_NEWBB_BLOCK_TOPIC","Tópicos recentes nos fóruns");
+define("_MI_NEWBB_BLOCK_POST","Últimas mensagens nos fóruns");
+define("_MI_NEWBB_BLOCK_AUTHOR","Autores dos fóruns");
 /*
 define("_MI_NEWBB_BNAME2","Tópicos mais ativos");
 define("_MI_NEWBB_BNAME3","Tópicos mais visitados");
@@ -34,7 +34,7 @@ define("_MI_NEWBB_ADMENU_CATEGORY","Categorias");
 define("_MI_NEWBB_ADMENU_FORUM","Fóruns");
 define("_MI_NEWBB_ADMENU_PERMISSION","Permissões");
 define("_MI_NEWBB_ADMENU_BLOCK","Blocos");
-define("_MI_NEWBB_ADMENU_ORDER","Reorganizar");
+define("_MI_NEWBB_ADMENU_ORDER","Reordenar");
 define("_MI_NEWBB_ADMENU_SYNC","Sincronizar");
 define("_MI_NEWBB_ADMENU_PRUNE","Exclusões");
 define("_MI_NEWBB_ADMENU_REPORT","Relatórios");
@@ -259,12 +259,12 @@ define ('_MI_NEWBB_FORUM_NEWTHREAD_NOTIFYDSC', 'Receba aviso quando um novo tópi
 define ('_MI_NEWBB_FORUM_NEWTHREAD_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} aviso: Novo tópico no fórum');
 
 define ('_MI_NEWBB_GLOBAL_NEWFORUM_NOTIFY', 'Novo Fórum');
-define ('_MI_NEWBB_GLOBAL_NEWFORUM_NOTIFYCAP', 'Avise-me sobre novos fóruns.');
+define ('_MI_NEWBB_GLOBAL_NEWFORUM_NOTIFYCAP', 'Quando houverem novos fóruns.');
 define ('_MI_NEWBB_GLOBAL_NEWFORUM_NOTIFYDSC', 'Receba aviso quando for criado um novo fórum.');
 define ('_MI_NEWBB_GLOBAL_NEWFORUM_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} aviso: Novo fórum');
 
 define ('_MI_NEWBB_GLOBAL_NEWPOST_NOTIFY', 'Nova Mensagem');
-define ('_MI_NEWBB_GLOBAL_NEWPOST_NOTIFYCAP', 'Avise-me de qualquer nova mensagem.');
+define ('_MI_NEWBB_GLOBAL_NEWPOST_NOTIFYCAP', 'Quando houver nova mensagem.');
 define ('_MI_NEWBB_GLOBAL_NEWPOST_NOTIFYDSC', 'Receba aviso quando uma nova mensagem for enviada.');
 define ('_MI_NEWBB_GLOBAL_NEWPOST_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} aviso: Nova mensagem');
 
@@ -274,12 +274,12 @@ define ('_MI_NEWBB_FORUM_NEWPOST_NOTIFYDSC', 'Receba aviso quando uma nova mensa
 define ('_MI_NEWBB_FORUM_NEWPOST_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} aviso: Nova mensagem no fórum');
 
 define ('_MI_NEWBB_GLOBAL_NEWFULLPOST_NOTIFY', 'Nova Mensagem (texto completo)');
-define ('_MI_NEWBB_GLOBAL_NEWFULLPOST_NOTIFYCAP', 'Avise-me de qualquer nova mensagem (inclui texto completo no aviso).');
+define ('_MI_NEWBB_GLOBAL_NEWFULLPOST_NOTIFYCAP', 'Quando houver nova mensagem (incluir texto completo).');
 define ('_MI_NEWBB_GLOBAL_NEWFULLPOST_NOTIFYDSC', 'Receba aviso com o texto completo quando uma nova mensagem for enviada.');
 define ('_MI_NEWBB_GLOBAL_NEWFULLPOST_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} aviso: Nova mensagem (texto completo)');
 
 define ('_MI_NEWBB_GLOBAL_DIGEST_NOTIFY', 'Informativo');
-define ('_MI_NEWBB_GLOBAL_DIGEST_NOTIFYCAP', 'Envie-me resumo do fórum.');
+define ('_MI_NEWBB_GLOBAL_DIGEST_NOTIFYCAP', 'Informativo com resumo do fórum.');
 define ('_MI_NEWBB_GLOBAL_DIGEST_NOTIFYDSC', 'Receba resumos do fórum.');
 define ('_MI_NEWBB_GLOBAL_DIGEST_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} aviso: Informativo do fórum');
 

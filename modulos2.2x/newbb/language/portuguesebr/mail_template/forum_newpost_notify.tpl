@@ -2,7 +2,7 @@ Olá {X_UNAME},
 
 Uma nova mensagem foi postada no Fórum "{FORUM_NAME}".
 
-Clique abaixo para ver a mensagem:
+Clique abaixo para exibir a mensagem:
 {POST_URL}
 
 -----------

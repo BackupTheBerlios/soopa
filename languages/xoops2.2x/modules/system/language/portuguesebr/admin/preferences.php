@@ -1,5 +1,5 @@
 <?php
-// $Id: preferences.php,v 1.2 2005/07/05 20:24:45 mauriciodelima Exp $
+// $Id: preferences.php,v 1.3 2005/07/23 16:28:08 mauriciodelima Exp $
 //%%%%%%	Admin Module Name  AdminGroup 	%%%%%
 // dont change
 
@@ -66,7 +66,7 @@ define('_MD_AM_DOBADIPSDSC', 'Os usuários dos IP especificados não terão acesso 
 define('_MD_AM_BADIPS', 'Digite os IP que devem ser banidos do site.<br>Separar cada um por um <b>|</b> é indiferente o uso de maiusculas ou minusculas, regex ligadas.');
 define('_MD_AM_BADIPSDSC', 'aaa.bbb.ccc restringe os com IP que comecem por aaa.bbb.ccc<br>aaa.bbb.ccc$ restringe os IP que acabem em aaa.bbb.ccc<br>aaa.bbb.ccc restringe os IP que contenham aaa.bbb.ccc');
 define('_MD_AM_PREFMAIN', 'Preferências');
-define('_MD_AM_METAKEY', 'Palavras-chave (Palavras-chave que tenham a ver com o site)');
+define('_MD_AM_METAKEY', 'Palavras-chave (meta-dados)');
 define('_MD_AM_METAKEYDSC', 'As palavras-chave são uma série de palavras, separadas por vírgula, que representam o conteúdo do seu site (ex: xoops, php, mysql, sistema de portais).');
 define('_MD_AM_METARATING', 'Meta Rating (classificação)');
 define('_MD_AM_METARATINGDSC', 'O campo Meta Rating define a classificação do conteúdo do site.');
@@ -149,8 +149,39 @@ define("_MD_AM_SENDMAILPATH","Caminho do sendmail");
 define("_MD_AM_SENDMAILPATHDESC","Caminho para o sendmail, ou substituto, no servidor web");
 define("_MD_AM_THEMEOK","Temas selecionáveis");
 define("_MD_AM_THEMEOKDSC","Escolha os temas que os usuários podem selecionar como o tema padrão");
+
 define("_MD_AM_ADMINTHEME", "Tema da Administração");
 define("_MD_AM_FRONTSIDE_THEME", "Tema padrão do usuário");
 
 define('_MD_AM_MODULEPREF', 'Configurações Gerais');
+
+// Authentication constants
+
+define("_MD_AM_AUTHENTICATION", "Opções de Autenticação");
+define("_MD_AM_AUTHMETHOD", "Método de Autenticação");
+define("_MD_AM_AUTHMETHODDESC", "Define o método usado para autenticar os usuários que entram no portal.");
+define("_MD_AM_LDAP_MAIL_ATTR", "LDAP - Mail Field Name");
+define("_MD_AM_LDAP_MAIL_ATTR_DESC","The name of the E-Mail field in your LDAP directory tree.");
+define("_MD_AM_LDAP_NAME_ATTR","LDAP - Common Name Field Name");
+define("_MD_AM_LDAP_NAME_ATTR_DESC","The name of the Comman Name field in your LDAP directory.");
+define("_MD_AM_LDAP_SURNAME_ATTR","LDAP - Surname Fiend Name");
+define("_MD_AM_LDAP_SURNAME_ATTR_DESC","The name of the Surname field in your LDAP directory.");
+define("_MD_AM_LDAP_GIVENNAME_ATTR","LDAP - Given Name Field Name");
+define("_MD_AM_LDAP_GIVENNAME_ATTR_DSC","The name of the Given Name field in your LDAP directory.");
+define("_MD_AM_LDAP_UID_ATTR","LDAP - UID Field Name");
+define("_MD_AM_LDAP_UID_ATTR_DESC","The name of the User ID field in your LDAP directory.");
+define("_MD_AM_LDAP_BASE_DN", "LDAP - Base DN");
+define("_MD_AM_LDAP_BASE_DN_DESC", "The base DN (Distinguished Name) of your LDAP directory tree.");
+define("_MD_AM_LDAP_PORT","LDAP - Port Number");
+define("_MD_AM_LDAP_PORT_DESC","The port number needed to access your LDAP directory server.");
+define("_MD_AM_LDAP_SERVER","LDAP - Server Name");
+define("_MD_AM_LDAP_SERVER_DESC","The name of your LDAP directory server.");
+define("_MD_AM_LDAP_UID_ASDN", "UID as DN");
+define("_MD_AM_LDAP_UID_ASDN_DESC", "The uid attribute is used as DN");
+
+define("_MD_AM_LDAP_MANAGER_DN", "DN of the LDAP manager");
+define("_MD_AM_LDAP_MANAGER_DN_DESC", "The DN of the user allow to make search (eg manager)");
+define("_MD_AM_LDAP_MANAGER_PASS", "Password of the LDAP manager");
+define("_MD_AM_LDAP_MANAGER_PASS_DESC", "The password of the user allow to make search");
+
 ?>

@@ -1,5 +1,5 @@
 <?php
-// $Id: install.php,v 1.2 2005/07/23 01:52:15 mauriciodelima Exp $
+// $Id: install.php,v 1.3 2005/07/23 16:26:03 mauriciodelima Exp $
 define("_INSTALL_L0","<span style='color: #2F5376; font-size: 13pt'><center>Bem-vindo ao assistente de instalação do XOOPS 2.1</center></span>");
 define("_INSTALL_L70","Altere as permissões do arquivo <b><font color='#2F5376'>/mainfile.php</font></b> para que seja executável pelo servidor (Por exemplo: CHMOD 777 mainfile.php em um servidor UNIX/LINUX, ou, no caso de um servidor Windows, verifique se o arquivo não está marcado como Somente Leitura (Read Only). Atualize esta página depois que ajustar as configurações.");
 //define("_INSTALL_L71","Click on the button below to begin the installation.");
@@ -50,7 +50,7 @@ define("_INSTALL_L58","Caminho virtual do diretório-raiz do XOOPS, sem / no fina
 
 define("_INSTALL_L31","Não foi possível a criação do banco de dados.<br>Verifique as configurações ou contate o provedor de hospedagem.");
 define("_INSTALL_L32","<span style='color: #2F5376; font-size: 13pt'><center>O XOOPS 2.0 foi instalado com sucesso!</center></span>");
-define("_INSTALL_L33","Clique <a href='../index.php'><span style='color: #2F5376; font-size: 13pt'>AQUI</span></a> para ver a página principal do seu site.");
+define("_INSTALL_L33","Clique <a href='../index.php'><span style='color: #2F5376; font-size: 13pt'>AQUI</span></a> para exibir a página principal do seu site.");
 define("_INSTALL_L35","Se você encontrou algum erro. Utilize o fórum do <a href='http://www.xoopsbr.org/' target='_blank'>Xoops Total</a>, comunidade de suporte ao XOOPS no Brasil.");
 define("_INSTALL_L36","Informe o nome e senha do administrador do site.");
 define("_INSTALL_L37","Nome do Administrador");

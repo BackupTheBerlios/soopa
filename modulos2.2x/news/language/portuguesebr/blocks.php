@@ -1,5 +1,5 @@
 <?php
-// $Id: blocks.php,v 1.3 2005/07/23 05:24:05 mauriciodelima Exp $
+// $Id: blocks.php,v 1.4 2005/07/23 16:27:27 mauriciodelima Exp $
 define("_MB_NEWS_NOTYET","Não há historia interessante, até agora...");
 define("_MB_NEWS_TMRSI","Notícia do dia:");
 define("_MB_NEWS_ORDER","Organizar por");
@@ -13,9 +13,9 @@ define("_MB_TITLE", "Título");
 define("_MB_POSTED", "Publicado");
 define("_MB_POSTER", "Autor");
 define("_MB_ACTION", "Ação");
-define("_MB_TOPIC", "Tópico");
-define("_MB_DELETE", "Remover");
-define("_MB_NEWS_RESTRICTTOPICS", "Restringir os tópicos que poderão ser vistos por visitante?");
+define("_MB_TOPIC", "Categoria");
+define("_MB_DELETE", "Excluir");
+define("_MB_NEWS_RESTRICTTOPICS", "Saelecionar as categorias exibidas para aos visitantes?");
 define("_MB_NEWS_TEASER", "Exibir teaser de tamanho (0 para nenhum teaser)");
 define("_MB_NEWS_SPOTLIGHT", "Habilitar a opção de spotlight");
 define("_MB_NEWS_FIRST", "--Primeiro item--");
