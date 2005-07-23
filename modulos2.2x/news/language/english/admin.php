@@ -1,5 +1,5 @@
 <?php
-// $Id: admin.php,v 1.2 2005/07/23 02:51:03 mauriciodelima Exp $
+// $Id: admin.php,v 1.3 2005/07/23 03:00:19 mauriciodelima Exp $
 //%%%%%%	Admin Module Name  Articles 	%%%%%
 define("_AM_DBUPDATED","Database Updated Successfully!");
 define("_AM_CONFIG","News Configuration");

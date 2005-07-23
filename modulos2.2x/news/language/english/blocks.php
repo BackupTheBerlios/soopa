@@ -1,5 +1,5 @@
 <?php
-// $Id: blocks.php,v 1.2 2005/07/23 02:51:03 mauriciodelima Exp $
+// $Id: blocks.php,v 1.3 2005/07/23 03:00:19 mauriciodelima Exp $
 define("_MB_NEWS_NOTYET","There isn't a Biggest Story for Today, yet.");
 define("_MB_NEWS_TMRSI","Today's most read Story is:");
 define("_MB_NEWS_ORDER","Order By");

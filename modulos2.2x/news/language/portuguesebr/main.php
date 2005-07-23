@@ -1,5 +1,5 @@
 <?php
-// $Id: main.php,v 1.1 2005/07/05 12:55:21 mauriciodelima Exp $
+// $Id: main.php,v 1.2 2005/07/23 03:00:19 mauriciodelima Exp $
 //%%%%%%		File Name index.php 		%%%%%
 define("_NW_PRINTER","Imprimir");
 define("_NW_SENDSTORY","Enviar esta notícia por e-mail");
@@ -14,10 +14,10 @@ define("_NW_MORERELEASES", "Veja mais em ");
 //%%%%%%		File Name submit.php		%%%%%
 define("_NW_SUBMITNEWS","Publicar notícia");
 define("_NW_TITLE","Título");
-define("_NW_TOPIC","Assunto");
-define("_NW_THESCOOP","Escopo");
+define("_NW_TOPIC","Tópico");
+define("_NW_THESCOOP","Introdução");
 define("_NW_NOTIFYPUBLISH","Avisar-me por e-mail quando for publicada.");
-define("_NW_POST","Enviar");
+define("_NW_POST","Salvar");
 define("_NW_GO","Prosseguir");
 define("_NW_THANKS","Obrigado pela sua participação!"); //submission of news article
 
@@ -38,7 +38,7 @@ define("_NW_THEREAREINTOTAL","Número total de notícias");
 define("_NW_INTARTICLE","Encontrei uma um notícia interessante no %s");
 define("_NW_INTARTFOUND","Encontrei está notícia interessante no %s");
 
-define("_NW_TOPICC","Assunto:");
+define("_NW_TOPICC","Tópico:");
 define("_NW_URL","Endereço:");
 define("_NW_NOSTORY","Lamento, a notícia selecionada não existe.");
 
@@ -54,7 +54,7 @@ define("_NW_ATTACHEDFILES","Arquivos anexados:");
 define("_NW_ATTACHEDLIB","Este artigo tem arquivos anexados");
 define("_NW_NEWSSAMEAUTHORLINK","Notícias do mesmo autor");
 define("_NW_NEWS_NO_TOPICS","Sinto mas atualmente não há topicos, por favor crie um antes de submeter uma notícia.");
-define("_NW_PREVIOUS_ARTICLE","Artigo anterior");
+define("_NW_PREVIOUS_ARTICLE","artigo anterior");
 define("_NW_NEXT_ARTICLE","Próximo artigo");
 define("_NW_OTHER_ARTICLES","Outros artigos");
 

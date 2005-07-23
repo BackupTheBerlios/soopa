@@ -1,5 +1,5 @@
 <?php
-// $Id: main.php,v 1.2 2005/07/23 02:51:03 mauriciodelima Exp $
+// $Id: main.php,v 1.3 2005/07/23 03:00:19 mauriciodelima Exp $
 //%%%%%%		File Name index.php 		%%%%%
 define("_NW_PRINTER","Printer Friendly Page");
 define("_NW_SENDSTORY","Send this Story to a Friend");
