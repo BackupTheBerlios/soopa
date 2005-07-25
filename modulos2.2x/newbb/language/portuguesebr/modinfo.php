@@ -1,5 +1,5 @@
 <?php
-// $Id: modinfo.php,v 1.3 2005/07/23 16:27:09 mauriciodelima Exp $
+// $Id: modinfo.php,v 1.4 2005/07/25 12:53:15 mauriciodelima Exp $
 // Thanks Tom (http://www.wf-projects.com), for correcting the Engligh language package
 
 // Module Info
@@ -95,7 +95,7 @@ define("_MI_WOL_MOD_COL","Cor de destaque do Moderador");
 define("_MI_WOL_MOD_COL_DESC","Cor dos moderadores que aparecerem no bloco 'Quem está online'");
 //define("_MI_LEVELS_ENABLE", "Ativar níveis de HP/MP/EXP");
 //define("_MI_LEVELS_ENABLE_DESC", "<strong>HP</b> é determinado pela média diária de mensagens.<br /><strong>MP</b> é determinado pelas mensagens enviadas desde o cadastramento.<br /><strong>EXP</strong> sobe toda vez que você envia uma mensagem, e quando chega a  100%, você sobe um nivel e EXP cai para 0 novamente.");
-define("_MI_NULL", "desativado");
+define("_MI_NULL", "desabilitado");
 define("_MI_TEXT", "texto");
 define("_MI_GRAPHIC", "imagem");
 define("_MI_USERLEVEL", "Exibição de níveis HP/MP/EXP");
@@ -130,7 +130,7 @@ define("_MI_MENUMODE_DESC","'SELECT' - Caixa de Seleção, 'HOVER' - Mais lento no
 define("_MI_REPORTMOD_ENABLE","Relatório de mensagens para Moderador");
 define("_MI_REPORTMOD_ENABLE_DESC","O usuário pode enviar uma mensagem ao moderador para que esse tome as medidas cabíveis");
 define("_MI_SHOW_JUMPBOX", "Exibir Caixa de Seleção de Fóruns");
-define("_MI_JUMPBOXDESC", "Se ativado, um menu drop-down permitirá aos usuários o acesso a outro fórum a partir de um fórum ou tópico");
+define("_MI_JUMPBOXDESC", "Se desativado, um menu drop-down permitirá aos usuários o acesso a outro fórum a partir de um fórum ou tópico");
 
 define("_MI_SHOW_PERMISSIONTABLE", "Exibir permissões");
 define("_MI_SHOW_PERMISSIONTABLE_DESC", "Acrescenta uma lista de permissões do usuário");
@@ -142,7 +142,7 @@ define("_MI_NEWBB_EMAIL_DAILY", "Diariamente");
 define("_MI_NEWBB_EMAIL_WEEKLY", "Semanalmente");
 
 define("_MI_SHOW_IP", "Exibir IP do usuário");
-define("_MI_SHOW_IP_DESC", "Se ativado, o IP dos usuários será mostrado aos Moderadores");
+define("_MI_SHOW_IP_DESC", "Se desativado, o IP dos usuários será mostrado aos Moderadores");
 
 define("_MI_ENABLE_KARMA", "Ativar verificação de Karma");
 define("_MI_ENABLE_KARMA_DESC", "Permite que o usuário configure a pontuação de Karma requerida para ler a mensagem");
@@ -186,7 +186,7 @@ define("_MI_SUBJECT_PREFIX_DEFAULT", '<font color="#00CC00">[Ok]</font>,<font co
 
 define("_MI_SUBJECT_PREFIX_LEVEL", "Grupos que podem usar Prefixo");
 define("_MI_SUBJECT_PREFIX_LEVEL_DESC", "Selecione os grupos que podem usar Prefixo.");
-define("_MI_SPL_DISABLE", 'Desativado');
+define("_MI_SPL_DISABLE", 'desabilitado');
 define("_MI_SPL_ANYONE", 'Todos');
 define("_MI_SPL_MEMBER", 'Usuários');
 define("_MI_SPL_MODERATOR", 'Moderadores');

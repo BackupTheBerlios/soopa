@@ -1,5 +1,5 @@
 <?php
-// $Id: main.php,v 1.3 2005/07/23 16:27:09 mauriciodelima Exp $
+// $Id: main.php,v 1.4 2005/07/25 12:53:15 mauriciodelima Exp $
 if(defined('MAIN_DEFINED')) return;
 define('MAIN_DEFINED',true);
 
@@ -234,9 +234,9 @@ define('_MD_NORIGHTTOREPLY','Você não tem permissão para responder neste fórum.'
 define('_MD_NORIGHTTOACCESS','Você não tem permissão para acessar este fórum.');
 define('_MD_ERRORTOPIC','ERRO: Tópico não selecionado!');
 define('_MD_ERRORCONNECT','ERRO: O fórum que você selecionou não existe. Por favor, tente novamente mais tarde.');
-define('_MD_ERROREXIST','ERRO: Não foi possível conectar ao banco de dados.');
+define('_MD_ERROREXIST','ERRO: Não é possível conectar ao banco de dados.');
 define('_MD_ERROROCCURED','Ocorreu um erro');
-define('_MD_COULDNOTQUERY','Não foi possível consultar o banco de dados do fórum.');
+define('_MD_COULDNOTQUERY','Não é possível consultar o banco de dados do fórum.');
 define('_MD_FORUMNOEXIST','ERRO: O fórum ou tópico que você selecionou não existe. Por favor, tente novamente mais tarde.');
 define('_MD_USERNOEXIST','Usuário não existe. Por favor, tente novamente mais tarde.');
 define('_MD_COULDNOTREMOVE','Operação de exclusão não realizada!');
@@ -267,7 +267,7 @@ define('_MD_REGISTER','Registro');
 define('_MD_SUBJECTC','Assunto:');
 define('_MD_MESSAGEICON','Ícone da mensagem:');
 define('_MD_MESSAGEC','Mensagem:');
-define('_MD_ALLOWEDHTML','HTML ativado:');
+define('_MD_ALLOWEDHTML','HTML desativado:');
 define('_MD_OPTIONS','Opções:');
 define('_MD_POSTANONLY','Enviar anonimamente');
 define('_MD_DOSMILEY','Ativar emoticons');
@@ -408,7 +408,7 @@ define("_MD_COMPACT","Compacto");
 
 define("_MD_MENU_SELECT","Menu Caixa de Seleção");
 define("_MD_MENU_HOVER","Menu sensível ao mouse");
-define("_MD_MENU_CLICK","Menu ativado por clique");
+define("_MD_MENU_CLICK","Menu desativado por clique");
 
 define("_MD_WELCOME_SUBJECT","%s acessou o fórum");
 define("_MD_WELCOME_MESSAGE","Olá, %s é novo no fórum.");

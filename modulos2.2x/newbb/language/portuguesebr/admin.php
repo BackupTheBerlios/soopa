@@ -1,5 +1,5 @@
 <?php
-// $Id: admin.php,v 1.3 2005/07/23 16:27:09 mauriciodelima Exp $
+// $Id: admin.php,v 1.4 2005/07/25 12:53:15 mauriciodelima Exp $
 //%%%%%%	File Name  index.php   	%%%%%
 define("_AM_NEWBB_FORUMCONF","Configuração do fórum");
 define("_AM_NEWBB_ADDAFORUM","Criar um fórum");
@@ -67,9 +67,9 @@ define('_AM_NEWBB_REPORT_PROCESSED','Processados');
 define('_AM_NEWBB_CREATETHEDIR','Criar Diretório');
 define('_AM_NEWBB_SETMPERM','Alterar permissão');
 define('_AM_NEWBB_DIRCREATED','O diretório foi criado');
-define('_AM_NEWBB_DIRNOTCREATED','Não foi possível a criação do diretório');
+define('_AM_NEWBB_DIRNOTCREATED','Não é possível a criação do diretório');
 define('_AM_NEWBB_PERMSET','Permissão alterada alterada com sucesso');
-define('_AM_NEWBB_PERMNOTSET','Não foi possível a alteração da permissão');
+define('_AM_NEWBB_PERMNOTSET','Não é possível a alteração da permissão');
 
 define('_AM_NEWBB_DIGEST','Notificação de Informativo');
 define('_AM_NEWBB_DIGEST_PAST','<font color="red">Deveria ter sido enviado há %d minutos</font>');
@@ -165,7 +165,7 @@ define("_AM_NEWBB_REORDERID","Id");
 define("_AM_NEWBB_REORDERTITLE","Título");
 define("_AM_NEWBB_REORDERWEIGHT","Posição");
 define("_AM_NEWBB_SETFORUMORDER","Reordenar");
-define("_AM_NEWBB_BOARDREORDER","As categorias e os fóruns foram reordenados corretamente");
+define("_AM_NEWBB_BOARDREORDER","As categorias e os fóruns foram reordenados com sucesso");
 
 // forum_access.php
 define("_AM_NEWBB_PERMISSIONS_TO_THIS_FORUM","Permissões de tópico para este fórum");
@@ -186,7 +186,7 @@ define("_AM_NEWBB_PERM_TEMPLATE","Modelos de Permissão");
 define("_AM_NEWBB_PERM_TEMPLATE_DESC","Aplicar ao novos fóruns");
 define("_AM_NEWBB_PERM_FORUMS","Selecionar fóruns");
 define("_AM_NEWBB_PERM_TEMPLATE_CREATED","Modelo de permissões atualizado com sucesso.");
-define("_AM_NEWBB_PERM_TEMPLATE_ERROR","Não foi possível atualizar modelo de permissões");
+define("_AM_NEWBB_PERM_TEMPLATE_ERROR","Não é possível atualizar modelo de permissões");
 define("_AM_NEWBB_PERM_TEMPLATEAPP","Aplicar modelo de permissões padrão");
 define("_AM_NEWBB_PERM_TEMPLATE_APPLIED","Modelo de permissões aplicado com sucesso!");
 define("_AM_NEWBB_PERM_ACTION","Modo avançado de permissões");
