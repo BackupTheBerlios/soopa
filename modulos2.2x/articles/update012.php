@@ -1,5 +1,5 @@
 <?php
-// $Id: update012.php,v 1.1 2005/07/25 15:18:12 mauriciodelima Exp $
+// $Id: update012.php,v 1.2 2005/07/25 15:48:20 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //  Author: Andrew Mills                                                     //
 //  Email:  ajmills@sirium.net                                         //
@@ -296,7 +296,7 @@ $myrow = $xoopsDB->fetchArray($result);
     $email_loggedin = 1;
     $email_allowown = 0; 
     $email_subject  = "A friend recommended this Article";
-    $email_text     = "Hello,\r\n\r\nA user of {SITE_NAME} feels that the following page may be of interest to you.\r\n\r\n{ARTICLE_URL}\r\n\r\nTheir message below:\r\n\r\n**\r\n\r\n{USER_MESSAGE}\r\n\r\n**\r\n\r\nSecurity information:\r\nIf this e-mail has been sent inappropriately, please forward the complete e-mail to {ADMIN_EMAIL}.\r\nUser\'s IP address: {USER_IP}\r\nUser\'s Browser: {USER_BROWSER}\r\nTime sent: {USER_TIME}\r\n\r\n-- \r\n {SITE_NAME}\r\n {SITE_URL}\r\n";
+    $email_text     = "Hello,\r\n\r\nA user of {SITE_NAME} feels that the following page may be of interest to you.\r\n\r\n{ARTICLE_URL}\r\n\r\nTheir message below:\r\n\r\n**\r\n\r\n{USER_MESSAGE}\r\n\r\n**\r\n\r\nSecurity information:\r\nIf this e-mail has been sent inappropriately, por favor forward the complete e-mail to {ADMIN_EMAIL}.\r\nUser\'s IP address: {USER_IP}\r\nUser\'s Browser: {USER_BROWSER}\r\nTime sent: {USER_TIME}\r\n\r\n-- \r\n {SITE_NAME}\r\n {SITE_URL}\r\n";
     $email_maxchars = "200";
     $art_reads      = 1;
     $art_posted     = 1;
@@ -332,7 +332,7 @@ $result = $xoopsDB->queryF("UPDATE ".$xoopsDB->prefix("articles_prefs")." SET id
 
 ?>
 
-	<p><span style=\"color: red;\">Please note:</span> Don't forget to delete 
+	<p><span style=\"color: red;\">Por Favor note:</span> Don't forget to delete 
 	this file! You can find it at:<br />
 	<span style="color: green;"><?=$_SERVER['PHP_SELF']?></span></p>
 

@@ -40,11 +40,11 @@ The Articles module requires the following:
 
 4) Installation
 
-Please see the INSTALL.txt text file.
+Por Favor see the INSTALL.txt text file.
 
 5) Contact the author
 
-You can contact Andrew Mills at ajmills@sirium.net.  Please only use this
+You can contact Andrew Mills at ajmills@sirium.net.  Por Favor only use this
 address to contact me regarding the Articles module - send anything Xoops 
 related to the Xoops people or community at http://www.xoops.org . If you send
 it to me, I will ignore it.

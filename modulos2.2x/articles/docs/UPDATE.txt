@@ -1,7 +1,7 @@
 Updating Articles:
 
 If you are installing Articles for the first time, or are re-installing afresh,
-please disregard this file.
+por favor disregard this file.
 
 
 Upgrading to v0.25
@@ -35,7 +35,7 @@ Upgrading to v0.22
 ==================
 
 .:IMPORTANT:.
-This release requires a database update, please run "update021.php" after the 
+This release requires a database update, por favor run "update021.php" after the 
 module has been updated in XOOPS.
 
 Unarchive the Articles package and upload the "articles" folder and its contents

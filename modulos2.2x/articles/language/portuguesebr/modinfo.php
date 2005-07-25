@@ -16,11 +16,11 @@ define('_MI_ARTICLES_BNAME4',	'Artigos Populares Publicados'); // Top by rates -
 
 // Names of admin menu items
 define('_MI_ARTICLE_ADMENU1',	'Indice');
-define('_MI_ARTICLE_ADMENU2',	'Adicionar / Editar Artigos');
-define('_MI_ARTICLE_ADMENU3',	'Adicionar / Editar Categorias');
+define('_MI_ARTICLE_ADMENU2',	'Incluir/Editar Artigos');
+define('_MI_ARTICLE_ADMENU3',	'Incluir/Editar Categorias');
 define('_MI_ARTICLE_ADMENU4',	'Preferências Gerais ');
-define('_MI_ARTICLE_ADMENU5',	'Adicionar/editar categorias');
-define('_MI_ARTICLE_ADMENU6',	'Validar artigos');
+define('_MI_ARTICLE_ADMENU5',	'Incluir/Editar categorias');
+define('_MI_ARTICLE_ADMENU6',	'Aprovar artigos');
 
 // Sub menu items
 define('_MI_ARTICLE_SUBMENU1',	'Enviar artigo');
@@ -59,7 +59,7 @@ define('_MI_ART_OPTION_EDITADMIN',		'Editor do administrador.');
 define('_MI_ART_OPTION_EDITADMINDSC',	'O editor que será usado na área administrativa. Se um editor de terceiros for selecionado, mas não instalado, o editor padrão será usado.');
 define('_MI_ART_OPTION_EDITUSER',		'Editor dos usuários.');
 define('_MI_ART_OPTION_EDITUSERDSC',	'O editor que será usado nas áreas de usuário/visitantes. Se um editor de terceiros for selecionado, mas não instalado, o editor padrão será usado.');
-define('_MI_ART_OPTION_INDEXVIEW',		'Tipo de visualização da página principal');
+define('_MI_ART_OPTION_INDEXVIEW',		'Tipo de exibição da página principal');
 define('_MI_ART_OPTION_INDEXVIEWDSC',	'selecione como a pagina principal deve ser mostrada.');
 define('_MI_ART_OPTION_INDEXFLAT',		'Inflado');
 define('_MI_ART_OPTION_INDEXTHREAD',	'Tópicos');
@@ -78,7 +78,7 @@ define('_MI_ART_OPTION_ALLOWEMAILDSC',	'permite envio de emails para amigo');
 define('_MI_ART_OPTION_EMLLOGGEDIN',	'Logado para enviar email');
 define('_MI_ART_OPTION_EMLLOGGEDINDSC',	'Usuário precisa estar logado para enviar email para amigo.');
 define('_MI_ART_OPTION_EMLOWNMSG',		'Permitir mensagem personalizada');
-define('_MI_ART_OPTION_EMLOWNMSGDSC',	'Permite ao usuário adicionar uma mensagem personalizada ao email.');
+define('_MI_ART_OPTION_EMLOWNMSGDSC',	'Permite ao usuário incluir uma mensagem personalizada ao email.');
 define('_MI_ART_OPTION_EMLMSGSBJCT',	'Assunto do email');
 define('_MI_ART_OPTION_EMLMSGSBJCTDSC',	'O texto que irá aparecer no campo assunto do email.');
 define('_MI_ART_OPTION_EMLMSGSUBJECT',	'Um amigo te recomendou este Artigo');
@@ -112,7 +112,7 @@ Hora do envio: {USER_TIME}
  {SITE_NAME} {SITE_URL}');
 
 define('_MI_ART_OPTION_DATEFRMT',	'Formato de data - artigo');
-define('_MI_ART_OPTION_DATEFRMTSC',	'Formato de data para os artigos da página principal. Veja a página de a href="http://www.php.net/date" target="_blank">formatos de data</a> do PHP para ver os diferentes caracteres que você pode usar.');
+define('_MI_ART_OPTION_DATEFRMTSC',	'Formato de data para os artigos da página inicial. Veja a página de a href="http://www.php.net/date" target="_blank">formatos de data</a> do PHP para ver os diferentes caracteres que você pode usar.');
 define('_MI_ART_OPTION_DATEFRMTP',	'Formato de data - Impressão');
 define('_MI_ART_OPTION_DATEFRMTPSC',	'Formato de data para a página versão de impressão. Veja a página de a href="http://www.php.net/date" target="_blank">formatos de data</a> do PHP para ver os diferentes caracteres que você pode usar.');
 define('_MI_ART_OPTION_ALLWPRT',	'Permitir página de impressão');

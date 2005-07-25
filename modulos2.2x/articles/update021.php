@@ -1,5 +1,5 @@
 <?php
-// $Id: update021.php,v 1.1 2005/07/25 15:18:12 mauriciodelima Exp $
+// $Id: update021.php,v 1.2 2005/07/25 15:48:20 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //  Author: Andrew Mills                                                     //
 //  Email:  ajmills@sirium.net                                         //
@@ -131,7 +131,7 @@ $result = $xoopsDB->queryF("ALTER TABLE ".$xoopsDB->prefix("articles_cat")." ADD
 
 ?>
 
-<p>Please check your categories and articles - due to some changes in the
+<p>Por Favor check your categories and articles - due to some changes in the
 code, they may need their display settings re-setting.</p>
 
 <p><strong>Optional:</strong></p>
@@ -175,7 +175,7 @@ $result = $xoopsDB->queryF("DROP TABLE ".$xoopsDB->prefix("articles_prefs")." ")
 	}
 ?>
 
-<p>Done! Please remove this file from your web space.</p>
+<p>Done! Por Favor remove this file from your web space.</p>
 
 </td>
 </tr>

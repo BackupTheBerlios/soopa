@@ -1,6 +1,6 @@
 ToDo list for Articles
 
-Please see http://support.sirium.net/modules/newbb/viewforum.php?forum=4 to 
+Por Favor see http://support.sirium.net/modules/newbb/viewforum.php?forum=4 to 
 check up on the latest feature requests, or to add your own.
 
  o Implement ratings. (now planned for a later incarnation)

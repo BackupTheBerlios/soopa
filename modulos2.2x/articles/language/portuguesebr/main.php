@@ -1,12 +1,12 @@
 <?php
-// $Id: main.php,v 1.1 2005/07/25 15:21:26 mauriciodelima Exp $
+// $Id: main.php,v 1.2 2005/07/25 15:48:20 mauriciodelima Exp $
 
 // Versão em Portuguesebr por agamen0n (Hugo Christiano)
 
 
 // Cat/Article listing index.
 define("_MD_CATLIST_CAPTION",	"Artigos");			// Caption of category/article list
-define("_MD_INDEX_PAGE_TITLE",	"Título página principal");	// Title of category/article list page (not used in shipped package)
+define("_MD_INDEX_PAGE_TITLE",	"Título da página inicial");	// Title of category/article list page (not used in shipped package)
 define("_MD_ARTICLE_VIEW_CAP",	"leituras");				// Caption for number of views
 define("_MD_NUM_ARTICLE_CAP",	"artigos");			// Caption for number of articles for category
 
@@ -75,7 +75,7 @@ define("_MD_ART_SUBTNOTIFY",	"Notificar:");
 define("_MD_ART_SUBTNOTIFYDES",	"Notificar quando o artigo for publicado?");
 define("_MD_ART_SUBMIT",		" Enviar artigo");
 define("_MD_ART_SUBRESET",		" Apagar");
-define("_MD_ART_PREVIEW",		" Visualizar");
+define("_MD_ART_PREVIEW",		" Exibir");
 define("_MD_SUBMITTEDMSG",		"Artigo enviado");
 define("_MD_SUBMITTEDMSGDESC",	"Obrigado pelo seu envio, estaremos avaliando seu material antes de publicá-lo.");
 define("_MD_FORMCAPTIONPAGEBRK",	"Use <strong>[pagebreak]</strong> para quebrar o artigo em mais de uma página.");

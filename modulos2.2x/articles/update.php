@@ -1,5 +1,5 @@
 <?php
-// $Id: update.php,v 1.1 2005/07/25 15:18:12 mauriciodelima Exp $
+// $Id: update.php,v 1.2 2005/07/25 15:48:20 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //  Author: Andrew Mills                                                     //
 //  Email:  ajmills@sirium.net                                         //
@@ -296,7 +296,7 @@ if ($result) {
 
 ?>
 
-	<p><span style=\"color: red;\">Please note:</span> Don't forget to delete 
+	<p><span style=\"color: red;\">Por Favor note:</span> Don't forget to delete 
 	this file! You can find it at:<br />
 	<span style="color: green;"><?=$_SERVER['PHP_SELF']?></span></p>
 

@@ -2,7 +2,7 @@ Olá {X_UNAME},
 
 A nova categoria "{CAT_TITLE}" foi adicionada ao {X_SITENAME}.
 
-Você pode visualizar esta categoria aqui:
+Você pode exibir esta categoria aqui:
 {CAT_URL}
 
 (Note que esta categoria pode ainda não conter nenhum artigo novo).
