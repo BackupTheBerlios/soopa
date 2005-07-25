@@ -1,5 +1,5 @@
 <?php
-// $Id: post.php,v 1.2 2005/07/17 17:02:32 mauriciodelima Exp $
+// $Id: post.php,v 1.3 2005/07/25 12:55:32 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //
@@ -334,7 +334,7 @@ if ( !empty($_POST['contents_submit']) ) {
 		if(!empty($xoopsModuleConfig['cache_enabled'])){
 			newbb_setsession("t".$forumpost->getVar("topic_id"), null);
 		}
-    	$redirect = "viewtopic.php?topic_id=".$forumpost->getVar('topic_id')."&amp;start=".$start."#forumpost".$postid."";
+    	$redirect = "viewtopic.php?topic_id=".$forumpost->getVar('topic_id')."&amp;post_id=".$postid."#forumpost".$postid."";
 	    $message = _MD_THANKSSUBMIT."<br />".$error_upload;
     }else{
 	    $redirect = "viewforum.php?forum=".$forumpost->getVar('forum_id');

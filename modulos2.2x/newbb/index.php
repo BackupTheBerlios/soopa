@@ -1,5 +1,5 @@
 <?php
-// $Id: index.php,v 1.2 2005/07/17 17:02:32 mauriciodelima Exp $
+// $Id: index.php,v 1.3 2005/07/25 12:55:32 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //
@@ -207,5 +207,4 @@ $xoopsTpl->assign(array(
 	"img_locked_newposts" => newbb_displayImage($forumImage['locked_forum_newposts']),
 	'img_subforum' => newbb_displayImage($forumImage['subforum'])));
 include_once XOOPS_ROOT_PATH.'/footer.php';
-
 ?>

@@ -1,5 +1,5 @@
 <?php
-// $Id: forum.php,v 1.2 2005/07/17 17:02:33 mauriciodelima Exp $
+// $Id: forum.php,v 1.3 2005/07/25 12:55:32 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //
@@ -110,7 +110,6 @@ class Forum extends XoopsObject {
         $sql = 'SELECT f.*, u.uname, u.name, u.uid, p.topic_id, p.post_time, p.poster_name, p.subject, p.icon FROM ' . $this->db->prefix('bb_forums') . ' f LEFT JOIN ' . $this->db->prefix('bb_posts') . ' p ON p.post_id = f.forum_last_post_id LEFT JOIN ' . $this->db->prefix('users') . ' u ON u.uid = p.uid';
 
         $sql .= ' WHERE f.parent_forum = ' . $this->getVar('forum_id') . ' ORDER BY f.forum_order';
-        //$xoopsTpl->assign('forum_index_title', sprintf(_MD_FORUMINDEX, $xoopsConfig['sitename']));
 
         if (!$result = $this->db->query($sql)) {
             //echo "<br />Forum::getSubForums error::" . $sql;
@@ -361,16 +360,6 @@ class NewbbForumHandler extends XoopsObjectHandler
         }
 
         return $this->deletePermission($forum);
-        /*
-        // Delete group permissions
-        $gperm_handler = &xoops_gethandler('groupperm');
-        $gperm_names = "('forum_access', 'forum_post', 'forum_view', 'forum_reply', 'forum_edit', 'forum_delete', 'forum_addpoll', 'forum_vote', 'forum_attach', 'category_access')";
-
-        $criteria = new CriteriaCompo(new Criteria('gperm_modid', intval($xoopsModule->getVar('mid'))));
-        $criteria->add(new Criteria('gperm_name', $gperm_names, 'IN'));
-        $criteria->add(new Criteria('gperm_itemid', $forum->getVar('forum_id')));
-        return $gperm_handler->deleteAll($criteria);
-        */
     }
 
     function &getForums($cat = 0, $permission = "")

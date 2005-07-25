@@ -1,5 +1,5 @@
 <?php
-// $Id: newbb_block.php,v 1.2 2005/07/17 17:02:33 mauriciodelima Exp $
+// $Id: newbb_block.php,v 1.3 2005/07/25 12:55:32 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //
@@ -48,12 +48,6 @@ function b_newbb_show($options)
     $order = "";
     $extra_criteria = "";
     $time_criteria = null;
-    /*
-	if(!empty($options[2])) {
-		$time_criteria = time() - newbb_getSinceTime($options[2]);
-		$extra_criteria = " AND t.topic_time>".$time_criteria;
-	}
-	*/
     switch ($options[0]) {
         case 'time':
         default:
@@ -812,78 +806,4 @@ function b_newbb_author_edit($options)
 
     return $form;
 }
-
-/*
-function b_newbb_custom($options)
-{
-	global $xoopsConfig;
-	// If no newbb module block set, we have to include the language file
-	if(is_readable(XOOPS_ROOT_PATH.'/modules/newbb/language/'.$xoopsConfig['language'].'/blocks.php'))
-		include_once(XOOPS_ROOT_PATH.'/modules/newbb/language/'.$xoopsConfig['language'].'/blocks.php');
-	else
-		include_once(XOOPS_ROOT_PATH.'/modules/newbb/language/english/blocks.php');
-
-	$options = explode('|',$options);
-	$block = &b_newbb_show($options);
-	if(count($block["topics"])<1) return false;
-
-	$tpl = new XoopsTpl();
-	$tpl->assign('block', $block);
-	$tpl->display('db:newbb_block.html');
-}
-
-function b_newbb_custom_topic($options)
-{
-	global $xoopsConfig;
-	// If no newbb module block set, we have to include the language file
-	if(is_readable(XOOPS_ROOT_PATH.'/modules/newbb/language/'.$xoopsConfig['language'].'/blocks.php'))
-		include_once(XOOPS_ROOT_PATH.'/modules/newbb/language/'.$xoopsConfig['language'].'/blocks.php');
-	else
-		include_once(XOOPS_ROOT_PATH.'/modules/newbb/language/english/blocks.php');
-
-	$options = explode('|',$options);
-	$block = &b_newbb_topic_show($options);
-	if(count($block["topics"])<1) return false;
-
-	$tpl = new XoopsTpl();
-	$tpl->assign('block', $block);
-	$tpl->display('db:newbb_block_topic.html');
-}
-
-function b_newbb_custom_post($options)
-{
-	global $xoopsConfig;
-	// If no newbb module block set, we have to include the language file
-	if(is_readable(XOOPS_ROOT_PATH.'/modules/newbb/language/'.$xoopsConfig['language'].'/blocks.php'))
-		include_once(XOOPS_ROOT_PATH.'/modules/newbb/language/'.$xoopsConfig['language'].'/blocks.php');
-	else
-		include_once(XOOPS_ROOT_PATH.'/modules/newbb/language/english/blocks.php');
-
-	$options = explode('|',$options);
-	$block = &b_newbb_post_show($options);
-	if(count($block["topics"])<1) return false;
-
-	$tpl = new XoopsTpl();
-	$tpl->assign('block', $block);
-	$tpl->display('db:newbb_block_post.html');
-}
-
-function b_newbb_custom_author($options)
-{
-	global $xoopsConfig;
-	// If no newbb module block set, we have to include the language file
-	if(is_readable(XOOPS_ROOT_PATH.'/modules/newbb/language/'.$xoopsConfig['language'].'/blocks.php'))
-		include_once(XOOPS_ROOT_PATH.'/modules/newbb/language/'.$xoopsConfig['language'].'/blocks.php');
-	else
-		include_once(XOOPS_ROOT_PATH.'/modules/newbb/language/english/blocks.php');
-
-	$options = explode('|',$options);
-	$block = &b_newbb_author_show($options);
-	if(count($block["authors"])<1) return false;
-
-	$tpl = new XoopsTpl();
-	$tpl->assign('block', $block);
-	$tpl->display('db:newbb_block_author.html');
-}
-*/
 ?>

@@ -1,5 +1,5 @@
 <?php
-// $Id: admin_forum_manager.php,v 1.2 2005/07/17 17:02:32 mauriciodelima Exp $
+// $Id: admin_forum_manager.php,v 1.3 2005/07/25 12:55:32 mauriciodelima Exp $
 // ------------------------------------------------------------------------ //
 // XOOPS - PHP Content Management System                      //
 // Copyright (c) 2000 XOOPS.org                           //
@@ -31,7 +31,6 @@
 include 'admin_header.php';
 include XOOPS_ROOT_PATH . "/class/xoopstree.php";
 include_once XOOPS_ROOT_PATH . "/class/pagenav.php";
-include_once XOOPS_ROOT_PATH . "/modules/newbb/class/formselectuser.php";
 
 $op = '';
 $confirm = '';

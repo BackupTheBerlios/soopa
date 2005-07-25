@@ -1,22 +1,28 @@
-CBB 2.2 alpha
+CBB 2.2 RC
 
-XOOPS Community bulletin Board 2.2 alpha, for XOOPS 2.2 pre-release debug
-You should switch to CBB 2.2 final once XOOPS 2.2 is released.
+XOOPS Community bulletin Board 2.2 RC, for XOOPS 2.2
 
-If you have any problem with XOOPS 2.2 + CBB 2.2, plz report to http://xoops.org to help XOOPS 2.2 development and CBB development
+Changelog:
+1 block/profile/css/adminmenu/encoding related content upgraded to XOOPS 2.2
+2 XOOPS editor framework implemented
+3 permission management separated from forum/category and default permission set and management added
+4 category/forum creation on module installation
+5 send PM with quoted post content
+6 embedded upgrade: any version of newbb/cbb could be updated to up-to-date CBB by updating module
+7 forum queries in xoops_version.php moved to save db query
+8 change relative path to full path for some images
+9 change forum list in jumpbox and topicmanager to a more clear style
+10 moderator management merged into forum admin form with xoopsuserselect form
 
 
-XOOPS 2.2 bug report:
-http://sourceforge.net/tracker/?group_id=41586&atid=430840
+Bugfix:
+1 bugfix for forum_id=0 in viewforum.php
+2 bugfix for menu config newbb_viewpost.html
 
-XOOPS 2.2 CVS:
-http://cvs.sf.net/viewcvs.py/xoops/xoops2/?only_with_tag=xoops2_1_0-branch-new
-
-XOOPS 2.2 topic: 
-http://www.xoops.org/modules/newbb/viewtopic.php?viewmode=flat&topic_id=37914
 
 Team CBB:
 http://cbb.getituponline.com
 
-D.J.'s XOOPS 2.2 test site:
-http://xoopsforge.com
+D.J.
+http://xoops.org.cn
+http://cbb.xoopsforge.com

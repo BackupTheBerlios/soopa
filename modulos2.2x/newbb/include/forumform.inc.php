@@ -1,5 +1,5 @@
 <?php
-// $Id: forumform.inc.php,v 1.2 2005/07/17 17:02:33 mauriciodelima Exp $
+// $Id: forumform.inc.php,v 1.3 2005/07/25 12:55:32 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //
@@ -283,9 +283,9 @@ if ( !empty($isreply) && !empty($hidden) ) {
 
 $preview_button = new XoopsFormButton('', 'btn_preview', _PREVIEW, "button");
 $preview_button->setExtra("tabindex='5'");
-$preview_button->setExtra('onclick="window.document.forumform.contents_preview.value=1;
-		window.document.forumform.skipValidationJS=1;
-		window.document.forumform.submit();"');
+$preview_button->setExtra('onclick="window.document.forms.forumform.contents_preview.value=1;
+		window.document.forms.forumform.skipValidationJS.value=1;
+		window.document.forms.forumform.submit();"');
 $forum_form->addElement(new XoopsFormHidden('contents_preview', 0));
 
 $button_tray->addElement($preview_button);

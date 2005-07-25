@@ -1,5 +1,5 @@
 <?php
-// $Id: viewtopic.php,v 1.2 2005/07/17 17:02:33 mauriciodelima Exp $
+// $Id: viewtopic.php,v 1.3 2005/07/25 12:55:32 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //
@@ -525,7 +525,6 @@ if( $isadmin ||
 
 	if(!is_object($xoopsUser)){
 		$config_handler =& xoops_gethandler('config');
-		$xoopsConfigUser =& $config_handler->getConfigsByCat(XOOPS_CONF_USER);
 		$user_tray = new XoopsFormElementTray(_MD_ACCOUNT);
 		$user_tray->addElement(new XoopsFormText(_MD_NAME, "uname", 26, 255));
 		$user_tray->addElement(new XoopsFormPassword(_MD_PASSWORD, "pass", 10, 32));

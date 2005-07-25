@@ -1,5 +1,5 @@
 <?php
-// $Id: schinese.php,v 1.2 2005/07/17 17:02:33 mauriciodelima Exp $
+// $Id: schinese.php,v 1.3 2005/07/25 12:55:32 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //
@@ -151,22 +151,7 @@ class PDF_language extends PDF_Chinese
 
 	function _encoding(&$text, $in_charset, $out_charset)
 	{
-		if(function_exists("xoopschina_convert_encoding")) {
-			$text = xoopschina_convert_encoding($text, $in_charset, $out_charset);
-			return;
-		}
-
-		$xconv_handler = @xoops_getmodulehandler('xconv', 'xconv', true);
-		if($xconv_handler &&
-			$converted_text = @$xconv_handler->convert_encoding($text, $out_charset, $in_charset)
-		){
-			$text = $converted_text;
-			return;
-		}
-		if(XOOPS_USE_MULTIBYTES && function_exists('mb_convert_encoding')) $converted_text = @mb_convert_encoding($text, $out_charset, $in_charset);
-		else
-		if(function_exists('iconv')) $converted_text = @iconv($in_charset, $out_charset . "//TRANSLIT", $text);
-		$text = empty($converted_text)?$text:$converted_text;
+		$text =& XoopsLocal::convert_encoding($text, $out_charset, $in_charset);
 	}
 }
 ?>

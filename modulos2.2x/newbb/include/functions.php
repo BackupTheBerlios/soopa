@@ -1,5 +1,5 @@
 <?php
-// $Id: functions.php,v 1.2 2005/07/17 17:02:33 mauriciodelima Exp $
+// $Id: functions.php,v 1.3 2005/07/25 12:55:32 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //
@@ -506,8 +506,8 @@ function &getModuleAdministrators($mid=0)
 
 function newbb_isAdministrator($user=-1, $mid=0)
 {
-	global $xoopsUser;
-	static $administrators, $xoopsModule, $newBB_mid;
+	global $xoopsUser, $xoopsModule;
+	static $administrators, $newBB_mid;
 
 	if($user == -1) $user = &$xoopsUser;
 	if(!is_object($user) && intval($user)<1) return false;
@@ -548,7 +548,7 @@ function newbb_isAdmin($forum = 0, $user=-1)
 	if(!isset($_cachedModerators[$cache_id])){
 		$forum_handler =& xoops_getmodulehandler('forum', 'newbb');
 		if(!is_object($forum)) $forum = $forum_handler->get(intval($forum));
-		$_cachedModerators[$cache_id] = &$forum_handler->getModerators($forum);
+		$_cachedModerators[$cache_id] = $forum_handler->getModerators($forum);
 	}
 	return in_array($uid,$_cachedModerators[$cache_id]);
 }
@@ -566,7 +566,7 @@ function newbb_isModerator($forum = 0, $user=-1)
 	if(!isset($_cachedModerators[$cache_id])){
 		$forum_handler =& xoops_getmodulehandler('forum', 'newbb');
 		if(!is_object($forum)) $forum = $forum_handler->get(intval($forum));
-		$_cachedModerators[$cache_id] = &$forum_handler->getModerators($forum);
+		$_cachedModerators[$cache_id] = $forum_handler->getModerators($forum);
 	}
 	return in_array($uid,$_cachedModerators[$cache_id]);
 }
@@ -1077,6 +1077,14 @@ function newbb_welcome( $user = -1 )
 		|| $user->getVar('posts')
 		) return null;
 
+	$forum_handler =& xoops_getmodulehandler('forum', 'newbb');
+	$forum =& $forum_handler->get($xoopsModuleConfig["welcome_forum"]);
+	if (!$forum_handler->getPermission($forum)){
+		unset($forum);
+		return null;
+	}
+	unset($forum);
+	
 	$post_handler =& xoops_getmodulehandler('post', 'newbb');
 	$forumpost =& $post_handler->create();
     $forumpost->setVar('poster_ip', newbb_getIP());
@@ -1084,7 +1092,7 @@ function newbb_welcome( $user = -1 )
 	$forumpost->setVar('approved', 1);
     $forumpost->setVar('forum_id', $xoopsModuleConfig["welcome_forum"]);
 
-    $subject = sprintf(_MD_WELCOME_SUBJECT, $user->getVar('name'));
+    $subject = sprintf(_MD_WELCOME_SUBJECT, $user->getVar('uname'));
     $forumpost->setVar('subject', $subject);
     $forumpost->setVar('dohtml', 1);
     $forumpost->setVar('dosmiley', 1);
@@ -1123,8 +1131,6 @@ function newbb_welcome( $user = -1 )
 	}
 	if ($user->getVar('user_viewemail') == 1) {
 	    $email = $user->getVar('email', 'E');
-	}
-	if ($email != "") {
 	    $categories[0]['fields'][] = array('title' => _PROFILE_MA_EMAIL, 'value' => $email);
 	    $weights[0][] = 0;
 	}
@@ -1152,7 +1158,7 @@ function newbb_welcome( $user = -1 )
 	ksort($categories);
     
 	$message = sprintf(_MD_WELCOME_MESSAGE, $user->getVar('name'))."\n\n";
-	$message .= _PROFILE.": <a href='".XOOPS_URL . "/userinfo.php?uid=" . $user->getVar('uid')."'><strong>".$user->getVar('name')."</strong></a> ";
+	$message .= _PROFILE.": <a href='".XOOPS_URL . "/userinfo.php?uid=" . $user->getVar('uid')."'><strong>".$user->getVar('uname')."</strong></a> ";
 	$message .= " | <a href='".XOOPS_URL . "/pmlite.php?send2=1&amp;to_userid=" . $user->getVar('uid')."'>"._MD_PM."</a>\n";
 	foreach($categories as $category){
 		if(isset($category["fields"])){
@@ -1221,69 +1227,5 @@ function newbb_formatTimestamp($time, $format="", $timeoffset="")
 		$time_string = formatTimestamp($time, _MD_YEARMONTHDAY);
 	}
 	return $time_string;
-}
-
-function &newbb_getRecentTopics($forums=null, $count=5, $length=0)
-{
-    $db = &Database::getInstance();
-    $myts = &MyTextSanitizer::getInstance();
-    $forum_handler = &xoops_getmodulehandler('forum', 'newbb');
-    $access_forums = $forum_handler->getForums(0, 'access'); // get all accessible forums
-    $allowed_forums = empty($forums)?array_keys($access_forums):array_intersect($forums, array_keys($access_forums));
-
-    $forums_finished = array();
-    foreach($allowed_forums as $_key){
-    	$forums_remain[$_key] = 1;
-	}
-    while(count($forums_remain)>0){
-	    $query = 'SELECT'.
-	    		'	t.topic_id, t.forum_id, t.topic_title, t.topic_time '.
-	    		'	FROM ' . $db->prefix('bb_topics') . ' AS t '.
-	    		'	WHERE 1=1 ' .
-	    		'	AND t.forum_id IN (' . implode(',', array_keys($forums_remain)) . ')'.
-	    		' 	AND t.approved = 1'.
-	    		' 	ORDER BY t.topic_time DESC';
-	
-	    if (!$result = $db->query($query, count($forums_remain)*$count*2, 0)) {
-	        break;
-	    }
-	    $_forums=array();
-	    $_is_finished = true;
-	    while ($row = $db->fetchArray($result)) {
-		    if(!in_array($row["forum_id"], array_keys($forums_remain))) {
-			    continue;
-		    }
-		    if(count($_forums[$row["forum_id"]])>=$count) {
-			    $forums_finished[$row["forum_id"]]["topics"] = $_forums[$row["forum_id"]];
-			    unset($forums_remain[$row["forum_id"]]);
-	    		$_is_finished = false;
-			    continue;
-		    }
-		    $_forums[$row["forum_id"]][$row["topic_id"]] = $row;
-	    }
-	    if($_is_finished){
-		    foreach($forums_remain as $_key=>$_val){
-			    $forums_finished[$_key] = $_forums[$_key];
-		    }
-			$forums_remain=array();
-	    }
-	    unset($_forums);
-    }
-    
-    foreach(array_keys($forums_finished) as $_key){
-	    $forums_finished[$_key]["forum_name"] = $access_forums[$_key]->getVar("forum_name");
-	    if(!isset($forums_finished[$_key]["topics"])){
-		    continue;
-	    }
-	    foreach (array_keys($forums_finished[$_key]["topics"]) as $__key) {
-	        $forums_finished[$_key]["topics"][$__key]["topic_title"] = $myts->htmlSpecialChars($forums_finished[$_key]["topics"][$__key]["topic_title"]);
-	        if(!empty($length)){
-	        	$forums_finished[$_key]["topics"][$__key]["topic_title"] = xoops_substr($forums_finished[$_key]["topics"][$__key]["topic_title"], 0, $length);
-        	}
-	        $forums_finished[$_key]["topics"][$__key]["topic_time"] = newbb_formatTimestamp($forums_finished[$_key]["topics"][$__key]["topic_time"]);
-	    }
-    }
-
-    return $forums_finished;
 }
 ?>

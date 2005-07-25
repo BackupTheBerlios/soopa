@@ -1,5 +1,5 @@
 <?php
-// $Id: viewforum.php,v 1.2 2005/07/17 17:02:33 mauriciodelima Exp $
+// $Id: viewforum.php,v 1.3 2005/07/25 12:55:32 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //
@@ -31,7 +31,7 @@
 
 include "header.php";
 
-if ( !isset($_GET['forum']) ) {
+if ( empty($_GET['forum']) ) {
 	redirect_header("index.php", 2, _MD_ERRORFORUM);
 	exit();
 }

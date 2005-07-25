@@ -1,5 +1,5 @@
 <?php
-// $Id: admin.php,v 1.2 2005/07/17 17:02:33 mauriciodelima Exp $
+// $Id: admin.php,v 1.3 2005/07/25 12:55:32 mauriciodelima Exp $
 //%%%%%%	File Name  index.php   	%%%%%
 define("_AM_NEWBB_FORUMCONF","Forum Configuration");
 define("_AM_NEWBB_ADDAFORUM","Add a Forum");
@@ -182,8 +182,8 @@ define("_AM_NEWBB_CAN_ATTACH","Can Attach");
 define("_AM_NEWBB_CAN_NOAPPROVE","Can Post without Approval");
 define("_AM_NEWBB_ACTION","Action");
 
-define("_AM_NEWBB_PERM_TEMPLATE","Permission Template");
-define("_AM_NEWBB_PERM_TEMPLATE_DESC","To be applied to new forum");
+define("_AM_NEWBB_PERM_TEMPLATE","Default Permission Template");
+define("_AM_NEWBB_PERM_TEMPLATE_DESC","Can be applied to a forum");
 define("_AM_NEWBB_PERM_FORUMS","Select forums");
 define("_AM_NEWBB_PERM_TEMPLATE_CREATED","Permission template has been created");
 define("_AM_NEWBB_PERM_TEMPLATE_ERROR","Error occurs during permission template creation");

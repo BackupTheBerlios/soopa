@@ -1,5 +1,5 @@
 <?php
-// $Id: category.php,v 1.2 2005/07/17 17:02:33 mauriciodelima Exp $
+// $Id: category.php,v 1.3 2005/07/25 12:55:32 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //
@@ -150,7 +150,7 @@ class NewbbCategoryHandler extends XoopsObjectHandler
         $perm->saveCategory_Permissions($category->groups_cat_access, $category->getVar('cat_id'), 'forum_cat_access');
         */
 
-        return true;
+        return $category->getVar('cat_id');
     }
 
     function delete(&$category)

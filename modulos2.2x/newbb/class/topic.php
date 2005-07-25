@@ -1,5 +1,5 @@
 <?php
-// $Id: topic.php,v 1.2 2005/07/17 17:02:33 mauriciodelima Exp $
+// $Id: topic.php,v 1.3 2005/07/25 12:55:32 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //
@@ -331,7 +331,7 @@ class NewbbTopicHandler extends XoopsObjectHandler
 
         if (!isset($_cachedTopicPerms)){
             $getpermission = &xoops_getmodulehandler('permission', 'newbb');
-            $_cachedTopicPerms = &$getpermission->getPermissions("topic");
+            $_cachedTopicPerms = $getpermission->getPermissions("topic");
         }
 
         $type = strtolower($type);

@@ -1,5 +1,5 @@
 <?php
-// $Id: notification_update.php,v 1.2 2005/07/17 17:02:32 mauriciodelima Exp $
+// $Id: notification_update.php,v 1.3 2005/07/25 12:55:32 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //

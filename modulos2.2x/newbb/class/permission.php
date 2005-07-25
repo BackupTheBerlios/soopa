@@ -1,5 +1,5 @@
 <?php
-// $Id: permission.php,v 1.2 2005/07/17 17:02:33 mauriciodelima Exp $
+// $Id: permission.php,v 1.3 2005/07/25 12:55:32 mauriciodelima Exp $
 // ------------------------------------------------------------------------ //
 // XOOPS - PHP Content Management System                      //
 // Copyright (c) 2000 XOOPS.org                           //
@@ -183,7 +183,13 @@ class NewbbPermissionHandler extends XoopsObjectHandler {
 
     function setCategoryPermission($category, $groups=null)
     {
-		$mid = empty($mid)?$GLOBALS["xoopsModule"]->getVar('mid'):$mid;
+	    if(is_object($GLOBALS["xoopsModule"]) && $GLOBALS["xoopsModule"]->getVar("dirname")=="newbb"){
+		    $mid = $GLOBALS["xoopsModule"]->getVar("mid");
+	    }else{
+    		$module_handler =& xoops_gethandler('module');
+			$newbb =& $module_handler->getByDirname('newbb');
+			$mid = $newbb->getVar("mid");
+	    }
 		$groupperm_handler =& xoops_gethandler('groupperm');
 		if(!is_array($groups)){
 		    $member_handler =& xoops_gethandler('member');
@@ -205,9 +211,17 @@ class NewbbPermissionHandler extends XoopsObjectHandler {
         
     function applyTemplate($forum, $mid=null)
     {
+	    if(empty($mid)){
+		    if(is_object($GLOBALS["xoopsModule"]) && $GLOBALS["xoopsModule"]->getVar("dirname")=="newbb"){
+			    $mid = $GLOBALS["xoopsModule"]->getVar("mid");
+		    }else{
+    			$module_handler =& xoops_gethandler('module');
+				$newbb =& $module_handler->getByDirname('newbb');
+				$mid = $newbb->getVar("mid");
+		    }
+	    }
 	    $perm_template = $this->getTemplate();
 	    if(empty($perm_template)) return false;
-		$mid = empty($mid)?$GLOBALS["xoopsModule"]->getVar('mid'):$mid;
 	    
 		$groupperm_handler =& xoops_gethandler('groupperm');
 	    $member_handler =& xoops_gethandler('member');

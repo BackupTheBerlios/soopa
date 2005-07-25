@@ -1,5 +1,5 @@
 <?php
-// $Id: main.php,v 1.2 2005/07/17 17:02:33 mauriciodelima Exp $
+// $Id: main.php,v 1.3 2005/07/25 12:55:32 mauriciodelima Exp $
 if(defined('MAIN_DEFINED')) return;
 define('MAIN_DEFINED',true);
 
@@ -411,14 +411,16 @@ define("_MD_MENU_HOVER","HOVER");
 define("_MD_MENU_CLICK","CLICK");
 
 define("_MD_WELCOME_SUBJECT","%s has joined the forum");
-define("_MD_WELCOME_MESSAGE","Hi, %s is a newbie.");
+define("_MD_WELCOME_MESSAGE","Hi, %s has joined you. Let's start ...");
 
+/*
 // !!IMPORTANT!! insert '\' to any char among reserved chars: "a", "A","B","c","d","D","F","g","G","h","H","i","I","j","l","L","m","M","n","O","r","s","S","t","T","U","w","W","Y","y","z","Z"	
 // insert additional '\' to 't', 'r', 'n'
 define("_MD_TODAY", "\To\d\a\y G:i:s");
 define("_MD_YESTERDAY", "\Ye\s\\te\\r\d\a\y G:i:s");
 define("_MD_MONTHDAY", "n/j G:i:s");
 define("_MD_YEARMONTHDAY", "Y/n/j G:i");
+*/
 
 define("_MD_VIEWNEWPOSTS","View new posts");
 

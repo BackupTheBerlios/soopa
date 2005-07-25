@@ -1,5 +1,5 @@
 <?php
-// $Id: xmlrss.php,v 1.2 2005/07/17 17:02:33 mauriciodelima Exp $
+// $Id: xmlrss.php,v 1.3 2005/07/25 12:55:32 mauriciodelima Exp $
 // ------------------------------------------------------------------------ //
 // XOOPS - PHP Content Management System                      //
 // Copyright (c) 2000 XOOPS.org                           //
@@ -105,7 +105,7 @@ class Xmlrss {
     function cleanup($text, $trim = 0)
     {
         if(strtolower($this->xml_encoding) == "utf-8" && strncasecmp(_CHARSET,$this->xml_encoding, 5)){
-        	$text = xoops_utf8_encode($text);
+        	$text =& XoopsLocal::convert_encoding($text, "utf-8");
     	}
         if(!empty($trim))
         $text = xoops_substr($text, 0, intval($trim));
