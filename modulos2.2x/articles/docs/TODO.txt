@@ -1,0 +1,14 @@
+ToDo list for Articles
+
+Please see http://support.sirium.net/modules/newbb/viewforum.php?forum=4 to 
+check up on the latest feature requests, or to add your own.
+
+ o Implement ratings. (now planned for a later incarnation)
+ o Add pagination and/or collapsible article listings under the 
+   category/article listing.
+ o Set published time to user's local timezone, rather than the server's 
+   timezone?
+ o Add function to delete articles under category when deleting category.
+ o Add sub-categories.   
+ o Remove unused columns from articles listings, depending upon listing prefs.
+ 
