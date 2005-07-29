@@ -9,10 +9,10 @@ define('_ALBM_LIDASC','Record Number (Bigger is latter)');
 define('_ALBM_LIDDESC','Record Number (Smaller is latter)');
 
 // Appended by Xoops Language Checker -GIJOE- in 2004-05-17 18:42:56
-define('_ALBM_BTN_SELECTALL','Select All');
-define('_ALBM_BTN_SELECTNONE','Select None');
+define('_ALBM_BTN_SELECTALL','Selecionar Todos');
+define('_ALBM_BTN_SELECTNONE','Deselecionar Todos');
 define('_ALBM_BTN_SELECTRVS','Select Reverse');
-define('_ALBM_FMT_PHOTONUM','%s every a page');
+define('_ALBM_FMT_PHOTONUM','%s imagens por página');
 define('_ALBM_AM_BUTTON_UPDATE','Modify');
 define('_ALBM_NOIMAGESPECIFIED','Error: No photo is uploaded');
 define('_ALBM_FILEREADERROR','Error: Photos are not readable.');
@@ -38,9 +38,9 @@ define( "_ALBM_AM_BUTTON_EXTRACT" , "extrair" ) ;
 
 define( "_ALBM_AM_PHOTOMANAGER" , "Gerenciador de Foto" ) ;
 define( "_ALBM_AM_PHOTONAVINFO" , "Foto no %s-%s (de um total de %s fotos)" ) ;
-define( "_ALBM_AM_LABEL_REMOVE" , "Remover fotos verificadas" ) ;
-define( "_ALBM_AM_BUTTON_REMOVE" , "Remover!" ) ;
-define( "_ALBM_AM_JS_REMOVECONFIRM" , "Remover OK?" ) ;
+define( "_ALBM_AM_LABEL_REMOVE" , "Excluir imagens verificadas " ) ;
+define( "_ALBM_AM_BUTTON_REMOVE" , "Excluir!" ) ;
+define( "_ALBM_AM_JS_REMOVECONFIRM" , "Excluir OK?" ) ;
 define( "_ALBM_AM_LABEL_MOVE" , "Mudar categoria das fotos verificadas" ) ;
 define( "_ALBM_AM_BUTTON_MOVE" , "Mover" ) ;
 define( "_ALBM_AM_DEADLINKMAINPHOTO" , "A imagem não existe" ) ;
@@ -90,7 +90,7 @@ define("_ALBM_MOVINGPHOTO","Foto movida com sucesso!");
 define("_ALBM_POSTERC","Poster: ");
 define("_ALBM_DATEC","Data: ");
 define("_ALBM_EDITNOTALLOWED","Você não está autorizado à editar esse comentário!");
-define("_ALBM_ANONNOTALLOWED","Usuário anônimo não está autorizado para enviar.");
+define("_ALBM_ANONNOTALLOWED","Usuários anônimos não estão autorizados a incluir.");
 define("_ALBM_THANKSFORPOST","Obrigado pelo envio!");
 define("_ALBM_DELNOTALLOWED","Você não está autorizado para deletar esse comentário!");
 define("_ALBM_GOBACK","Voltar");
@@ -142,7 +142,7 @@ define("_ALBM_NUMPOSTS","%s publicações");
 define("_ALBM_COMMENTSC","Comentários: ");
 define("_ALBM_RATETHISPHOTO","Rankiar esta foto");
 define("_ALBM_MODIFY","Modificar");
-define("_ALBM_VSCOMMENTS","Exibir/Enviar Comentários");
+define("_ALBM_VSCOMMENTS","Exibir/Incluir Comentários");
 
 define("_ALBM_THEREARE","Existem <b>%s</b> imagens no banco de dados.");
 define("_ALBM_LATESTLIST","Fotos mais recentes");
@@ -173,7 +173,7 @@ define("_ALBM_CURSORTEDBY","Fotos ordenadas por: %s");
 define("_ALBM_FOUNDIN","Encontrado em:");
 define("_ALBM_PREVIOUS","Anterior");
 define("_ALBM_NEXT","Próximo");
-define("_ALBM_NOMATCH","Nenhuma foto encontrada.");
+define("_ALBM_NOMATCH","Não há imagens para exibir.");
 
 define("_ALBM_CATEGORIES","Categorias");
 
@@ -212,7 +212,7 @@ define("_ALBM_IMGURLMAIN","URL da Imagem(OPCIONAL e válido apenas para categoria
 define("_ALBM_PARENT","Categoria acima:");
 define("_ALBM_SAVE","Gravar Alterações");
 define("_ALBM_CATDELETED","Categoria Deletada.");
-define("_ALBM_CATDEL_WARNING","AVISO: Você deseja mesmo remover esta categoria e TODAS suas fotos e comentários?");
+define("_ALBM_CATDEL_WARNING","Você realmente deseja excluir a cotegoria com suas imagens e comentários?");
 define("_ALBM_YES","Sim");
 define("_ALBM_NO","Não");
 define("_ALBM_NEWCATADDED","Categoria Adicionada com sucesso!");

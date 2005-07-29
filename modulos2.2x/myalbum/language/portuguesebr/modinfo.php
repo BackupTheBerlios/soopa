@@ -48,15 +48,15 @@ define("_ALBM_BNAME_RECENT_P","Fotos Recentes com thumbnails");
 define("_ALBM_BNAME_HITS_P","Top Photos com thumbnails");
 
 // Config Items
-define( "_ALBM_CFG_PHOTOSPATH" , "Caminho para as fotos" ) ;
+define( "_ALBM_CFG_PHOTOSPATH" , "Diretório para salvar as imagens" ) ;
 define( "_ALBM_CFG_DESCPHOTOSPATH" , "Caminho do diretório instalado o XOOPS.<br />(O primeiro caracter deve ser'/'. O Último caracter não deve ser'/'.)<br />Este diretório terá permissão 777 ou 707 no unix." ) ;
-define( "_ALBM_CFG_THUMBSPATH" , "Caminho para os thumbnails" ) ;
+define( "_ALBM_CFG_THUMBSPATH" , "Diretório para salvar as miniaturas" ) ;
 define( "_ALBM_CFG_DESCTHUMBSPATH" , "Mesmo que 'Caminho para as fotos'." ) ;
 //define( "_ALBM_CFG_USEIMAGICK" , "Use ImageMagick for treating images" ) ;
 //define( "_ALBM_CFG_DESCIMAGICK" , "Not use ImageMagick cause Not work resize or rotate the main photo, and make thumbnails by GD.<br />You'd better use ImageMagick if you can." ) ;
-define( "_ALBM_CFG_IMAGINGPIPE" , "Imagens de tratamento do pacote" ) ;
+define( "_ALBM_CFG_IMAGINGPIPE" , "Biblioteca para tratamento das imagens" ) ;
 define( "_ALBM_CFG_DESCIMAGINGPIPE" , "Verifique se a versão do PHP possui o GD2" ) ;
-define( "_ALBM_CFG_FORCEGD2" , "Forçar conversão GD2" ) ;
+define( "_ALBM_CFG_FORCEGD2" , "Forçar conversão para GD2" ) ;
 define( "_ALBM_CFG_DESCFORCEGD2" , "Verifique se a versão do PHP possui o GD2" ) ;
 define( "_ALBM_CFG_IMAGICKPATH" , "Caminho do ImageMagick" ) ;
 define( "_ALBM_CFG_DESCIMAGICKPATH" , "O Caminho completo para o 'convert'<br />O Último caracter não pode ser '/'.)<br />Esta configuração é valida apenas quando utilizado o ImageMagick" ) ;
@@ -112,7 +112,7 @@ define("_ALBM_MYALBUM_ADMENU2","Categorias");
 define("_ALBM_MYALBUM_ADMENU_GPERM","Permissões Gerais");
 define("_ALBM_MYALBUM_ADMENU3","Verificar Configurações");
 define("_ALBM_MYALBUM_ADMENU4","Inclusão em Massa");
-define("_ALBM_MYALBUM_ADMENU5","Refazer Thumbnails");
+define("_ALBM_MYALBUM_ADMENU5","Manutenção de Imagens");
 
 
 // Text for notifications

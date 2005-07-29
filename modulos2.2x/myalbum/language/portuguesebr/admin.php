@@ -8,7 +8,7 @@ if( defined( 'FOR_XOOPS_LANG_CHECKER' ) || ! defined( 'MYALBUM_AM_LOADED' ) ) {
 // Appended by Xoops Language Checker -GIJOE- in 2004-05-17 18:42:56
 define('_AM_TH_DATE','Atualizado em');
 define('_AM_TH_BATCHUPDATE','Update checked photos collectively');
-define('_AM_OPT_NOCHANGE','- NO CHANGE -');
+define('_AM_OPT_NOCHANGE','- Nenhuma -');
 define('_AM_JS_UPDATECONFIRM','The checked items will be updated. OK?');
 
 // Appended by Xoops Language Checker -GIJOE- in 2004-05-05 15:14:39
@@ -25,9 +25,9 @@ define('_AM_CAT_INSERTED','Categoria incluida com sucesso!');
 define('_AM_CAT_UPDATED','Categoria renomeada com sucesso!');
 define('_AM_CAT_BTN_BATCH','Apply');
 define('_AM_CAT_LINK_MAKETOPCAT','Incluir Categoria ');
-define('_AM_CAT_LINK_ADDPHOTOS','Add a image into this category');
-define('_AM_CAT_LINK_EDIT','Edit this category');
-define('_AM_CAT_LINK_MAKESUBCAT','Create a new category under this category');
+define('_AM_CAT_LINK_ADDPHOTOS','Incluir imagem nesta categoria');
+define('_AM_CAT_LINK_EDIT','Editar esta categoria');
+define('_AM_CAT_LINK_MAKESUBCAT','Incluir uma sub-categoria');
 define('_AM_CAT_FMT_NEEDADMISSION','%s images are needed the admission');
 define('_AM_CAT_FMT_CATDELCONFIRM','%s will be deleted with its sub-categories, images, comments. Are you OK?');
 define('_AM_H3_FMT_ADMISSION','Fontos pendentes (%s)');
@@ -109,7 +109,7 @@ define( "_AM_FMT_NUMBEROFDEADPHOTOS" , "%s de fotos mortas foram encontradas." )
 define( "_AM_FMT_NUMBEROFDEADTHUMBS" , "%s de thumbnails devem ser reconstruídos." ) ;
 define( "_AM_FMT_NUMBEROFREMOVEDTMPS" , "%s garbage files have been removed." ) ;
 define( "_AM_LINK_REDOTHUMBS" , "refazer miniaturas" ) ;
-define( "_AM_LINK_TABLEMAINTENANCE" , "tabelas de manutenção" ) ;
+define( "_AM_LINK_TABLEMAINTENANCE" , "Manutenção de Imagens" ) ;
 
 
 
@@ -134,7 +134,7 @@ define( "_AM_TEXT_NUMBERATATIME" , "Quatidade de imagem a serem processadas:" ) 
 define( "_AM_LABEL_DESCNUMBERATATIME" , "<i>número muito grande, pode ultrapassar o tempo limite do servidor</i>." ) ;
 
 define( "_AM_RADIO_FORCEREDO" , "Sobrescrever miniaturas existentes" ) ;
-define( "_AM_RADIO_REMOVEREC" , "Remover registros sem imagem" ) ;
+define( "_AM_RADIO_REMOVEREC" , "Excluir títulos sem imagem" ) ;
 define( "_AM_RADIO_RESIZE" , "Redimensionar imagens maiores que o tamanho permitido" ) ;
 
 define( "_AM_MB_FINISHED" , "Finalizado" ) ;
