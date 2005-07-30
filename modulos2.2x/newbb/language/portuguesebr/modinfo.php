@@ -1,5 +1,5 @@
 <?php
-// $Id: modinfo.php,v 1.4 2005/07/25 12:53:15 mauriciodelima Exp $
+// $Id: modinfo.php,v 1.5 2005/07/30 22:07:55 mauriciodelima Exp $
 // Thanks Tom (http://www.wf-projects.com), for correcting the Engligh language package
 
 // Module Info
@@ -79,7 +79,7 @@ define("_MI_MAX_IMAGE_WIDTH_DESC", "Configure a <strong>largura</strong> máxima 
 define("_MI_MAX_IMAGE_HEIGHT","Altura máxima criação de miniatura");
 define("_MI_MAX_IMAGE_HEIGHT_DESC", "Configure a <strong>altura</strong> máxima para criação de uma miniatura da imagem. <br >Se a imagem for menor não será criada miniatura.");
 
-define("_MI_SHOW_DIS","Mostrar Declaração de Isenção de Responsabilidade");
+define("_MI_SHOW_DIS","Exibir Declaração de Isenção de Responsabilidade");
 define("_MI_DISCLAIMER","Declaração de Isenção de Responsabilidade");
 define("_MI_DISCLAIMER_DESC","Insira a Declaração que será mostrada conforme acima selecionado.");
 define("_MI_DISCLAIMER_TEXT", "Este fórum contém muitas informações úteis. <br /><br />Pedimos evitar a criação de tópicos com assuntos já abordados anteriormente, efetuando uma busca no fórum antes de criar de um novo tópico.");

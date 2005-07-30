@@ -1,5 +1,5 @@
 <?php
-// $Id: main.php,v 1.4 2005/07/25 12:53:15 mauriciodelima Exp $
+// $Id: main.php,v 1.5 2005/07/30 22:07:55 mauriciodelima Exp $
 if(defined('MAIN_DEFINED')) return;
 define('MAIN_DEFINED',true);
 
@@ -184,7 +184,7 @@ define('_MD_RATE5','Excelente');
 
 define('_MD_TOPICOPTION','Opções');
 define('_MD_KARMA_REQUIREMENT', 'Seu Karma atual é %s e o karma requerido é %s. <br /> Favor tentar mais tarde.');
-define('_MD_REPLY_REQUIREMENT', 'Para visualizar esta mensagem, você precisa enviar antes a sua resposta.');
+define('_MD_REPLY_REQUIREMENT', 'Para exibir esta mensagem, você precisa enviar antes a sua resposta.');
 define('_MD_TOPICOPTIONADMIN','Administração do tópico');
 define('_MD_POLLOPTIONADMIN','Administração de votações');
 
@@ -283,7 +283,7 @@ define('_MD_REMOVE','Excluir');
 define('_MD_UPLOAD','Enviar');
 
 // forumuserpost.php
-define('_MD_ADD','Adicionar');
+define('_MD_ADD','Incluir');
 define('_MD_REPLY','Responder');
 
 // topicmanager.php

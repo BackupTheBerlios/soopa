@@ -1,5 +1,5 @@
 /*
-Please refer to readme.html for full Instructions
+Por Favor refer to readme.html for full Instructions
 
 Text[...]=[title,text]
 

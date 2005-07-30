@@ -1,5 +1,5 @@
 <?php
-// $Id: admin.php,v 1.4 2005/07/25 12:53:15 mauriciodelima Exp $
+// $Id: admin.php,v 1.5 2005/07/30 22:07:55 mauriciodelima Exp $
 //%%%%%%	File Name  index.php   	%%%%%
 define("_AM_NEWBB_FORUMCONF","Configuração do fórum");
 define("_AM_NEWBB_ADDAFORUM","Criar um fórum");
@@ -109,7 +109,7 @@ define("_AM_NEWBB_HOTTOPICTHRESHOLD","N° de tópicos para ser popular:");
 define("_AM_NEWBB_MODERATOR_REMOVE","Excluir moderadores atuais");
 define("_AM_NEWBB_MODERATOR_ADD","Incluir moderadores");
 define("_AM_NEWBB_ALLOW_SUBJECT_PREFIX", "Habilitar Prefixo no assunto do tópico");
-define("_AM_NEWBB_ALLOW_SUBJECT_PREFIX_DESC", "Permite adicionar um Prefixo em cada assunto dos tópicos");
+define("_AM_NEWBB_ALLOW_SUBJECT_PREFIX_DESC", "Permite incluir um Prefixo em cada assunto dos tópicos");
 
 
 // admin_cat_manager.php
