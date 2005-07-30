@@ -1,7 +1,7 @@
 <?php
-// $Id: global.php,v 1.3 2005/07/23 16:26:22 mauriciodelima Exp $
+// $Id: global.php,v 1.4 2005/07/30 01:48:22 mauriciodelima Exp $
 //%%%%%%	File Name mainfile.php 	%%%%%
-define("_PLEASEWAIT","Aguarde...");
+define("_POR FAVORWAIT","Aguarde...");
 define("_FETCHING","Carregando...");
 define("_TAKINGBACK","Retornando...");
 define("_LOGOUT","Sair do site");

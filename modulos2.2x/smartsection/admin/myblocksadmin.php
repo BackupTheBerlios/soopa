@@ -1,7 +1,7 @@
 <?php
 
 /**
-* $Id: myblocksadmin.php,v 1.1 2005/07/05 05:34:13 mauriciodelima Exp $
+* $Id: myblocksadmin.php,v 1.2 2005/07/30 01:47:33 mauriciodelima Exp $
 * Module: SmartSection
 * Author: The SmartFactory <www.smartfactory.ca>
 * Licence: GNU
@@ -45,7 +45,7 @@ $sysperm_handler =& xoops_gethandler('groupperm');
 if (!$sysperm_handler->checkRight('system_admin', XOOPS_SYSTEM_BLOCK, $xoopsUser->getGroups())) redirect_header( XOOPS_URL.'/user.php' , 1 , _NOPERM ) ;
 
 // get blocks owned by the module
-$block_arr =& XoopsBlock::getByModule( $xoopsModule->mid() ) ;
+//$block_arr =& XoopsBlock::getByModule( $xoopsModule->mid() ) ;
 
 
 function list_blocks()

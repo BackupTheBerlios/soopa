@@ -1,5 +1,5 @@
 <?php
-// $Id: comment.php,v 1.2 2005/07/23 16:26:22 mauriciodelima Exp $
+// $Id: comment.php,v 1.3 2005/07/30 01:48:22 mauriciodelima Exp $
 define('_CM_TITLE','Título');
 define('_CM_MESSAGE','Mensagem');
 define('_CM_DOSMILEY','Ativar emoticons');
@@ -29,7 +29,7 @@ define('_CM_COMDELETENG', 'Não foi possível excluir o comentário.');
 define('_CM_DELETESELECT' , 'Excluir todos os comentários vinculados?');
 define('_CM_DELETEONE' , 'Não, excluir apenas este.');
 define('_CM_DELETEALL', 'Sim, excluir todos.');
-define('_CM_THANKSPOST', 'Obrigado por enviar o seu comentário.');
+define('_CM_THANKSPOST', 'Obrigado por seu comentário.');
 define('_CM_NOTICE', "Os comentários são de propriedade de seus respectivos autores. Não somos responsáveis pelo seu conteúdo.");
 define('_CM_COMRULES','Regra dos comentários');
 define('_CM_COMAPPROVEALL','Comentários são automaticamente liberados');

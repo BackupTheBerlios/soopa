@@ -1,7 +1,7 @@
 <?php
 
 /**
-* $Id: main.php,v 1.1 2005/07/05 05:34:14 mauriciodelima Exp $
+* $Id: main.php,v 1.2 2005/07/30 01:47:33 mauriciodelima Exp $
 * Module: SmartSection
 * Author: The SmartFactory <www.smartfactory.ca>
 * Licence: GNU
@@ -36,15 +36,15 @@ define("_MD_SS_APPROVE", "Approve");
 define("_MD_SS_BODY", "Main body");
 define("_MD_SS_BODY_DSC", "Article's man body");
 define("_MD_SS_BODY_REQ", "Main body*");
-define("_MD_SS_CANCEL", "Cancel");
-define("_MD_SS_CATEGORY", "Category");
+define("_MD_SS_CANCEL", "Cancelar");
+define("_MD_SS_CATEGORY", "Categoria");
 define("_MD_SS_CATEGORY_DSC", "Category to which belong this article.");
-define("_MD_SS_CATEGORY_EDIT", "Edit category");
+define("_MD_SS_CATEGORY_EDIT", "Editar categoria");
 define("_MD_SS_CATEGORY_SUMMARY", "Summary of %s");
 define("_MD_SS_CATEGORY_SUMMARY_INFO", "Sub-categories within %s.");
 define("_MD_SS_CLEAR", "Clear");
 define("_MD_SS_COMMENTS", "Comment(s)");
-define("_MD_SS_CREATE", "Create article");
+define("_MD_SS_CREATE", "Incluir artigo");
 define("_MD_SS_DATE", "Date");
 define("_MD_SS_DATESUB", "Published on");
 define("_MD_SS_DELETE", "Delete article");
@@ -83,7 +83,7 @@ define("_MD_SS_HITSDETAIL", "" . "This article has been read");
 define("_MD_SS_HOME", "Home");
 define("_MD_SS_INDEX_CATEGORIES_SUMMARY", "Categories summary");
 define("_MD_SS_INDEX_CATEGORIES_SUMMARY_INFO", "Here is a list of the top categories and their sub-categories. Select a category to see the articles within.");
-define("_MD_SS_INDEX_ITEMS", "Last published articles");
+define("_MD_SS_INDEX_ITEMS", "Últimos artigos publicados");
 define("_MD_SS_INDEX_ITEMS_INFO", "Here is a list of the Last published articles.");
 define("_MD_SS_INTITEM", "Have a look at this article at %s");
 define("_MD_SS_INTITEMFOUND", "Here is an interesting article I have found at %s");
@@ -105,8 +105,8 @@ define("_MD_SS_NAME", "Name");
 define("_MD_SS_NEXT_ITEM", "Next article");
 define("_MD_SS_NO", "No");
 define("_MD_SS_NO_CAT_EXISTS", "Sorry, there&#8217s no category defined as yet.<br />Please contact the site administrator and tell him about this.");
-define("_MD_SS_NO_CAT_PERMISSIONS", "Sorry, you don't have sufficient permissions to access this area.");
-define("_MD_SS_NO_TOP_PERMISSIONS", "Sorry, there is no article to display.");
+define("_MD_SS_NO_CAT_PERMISSIONS", "Você não tem permissões para acessar esta área.");
+define("_MD_SS_NO_TOP_PERMISSIONS", "Não há artigos para exibir.");
 define("_MD_SS_NOCATEGORYSELECTED", "You did not select a valid category !");
 define("_MD_SS_NOITEMS_INFO", "There is presently no article to display.");
 define("_MD_SS_NOITEMSELECTED", "You did not select a validarticle !");
@@ -136,8 +136,8 @@ define("_MD_SS_SUMMARY", "Introduction");
 define("_MD_SS_SUMMARY_DSC", "Article's introduction");
 define("_MD_SS_THE", "the");
 define("_MD_SS_TIMES", "times");
-define("_MD_SS_TITLE", "Title");
-define("_MD_SS_TITLE_REQ", "Title*");
+define("_MD_SS_TITLE", "Título");
+define("_MD_SS_TITLE_REQ", "Título*");
 define("_MD_SS_TOTAL_SMARTITEMS", "Total articles");
 define("_MD_SS_UNKNOWNERROR", "ERROR.  Returning you to where you where!");
 define("_MD_SS_UPLOAD", "Upload");

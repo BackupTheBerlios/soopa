@@ -1,8 +1,8 @@
 <?php
-// $Id: finish.php,v 1.1 2005/07/05 04:56:36 mauriciodelima Exp $
+// $Id: finish.php,v 1.2 2005/07/30 01:48:47 mauriciodelima Exp $
 $content .=
 "<b>O seu site:</b>
-<p>Clique <a href='../index.php'>AQUI</a> para acessar a página principal do seu site.</p>
+<p>Clique <a href='../index.php'>AQUI</a> para acessar a página inicial do seu site.</p>
 <br/>
 <b>Documentação:</b>
 <ul>

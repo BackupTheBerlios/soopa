@@ -1,7 +1,7 @@
 <?php
 
 /**
-* $Id: blocks.php,v 1.1 2005/07/05 05:34:14 mauriciodelima Exp $
+* $Id: blocks.php,v 1.2 2005/07/30 01:47:33 mauriciodelima Exp $
 * Module: SmartSection
 * Author: The SmartFactory <www.smartfactory.ca>
 * Licence: GNU
@@ -28,12 +28,12 @@ include_once(XOOPS_ROOT_PATH . "/modules/smartsection/language/" . $xoopsConfig[
 
 define("_MB_SS_ALLCAT", "All categories");
 define("_MB_SS_AUTO_LAST_ITEMS", "Automatically display last item(s)?");
-define("_MB_SS_CATEGORY", "Category");
+define("_MB_SS_CATEGORY", "Categoria");
 define("_MB_SS_CHARS", "Length of the title");
 define("_MB_SS_COMMENTS", "Comment(s)");
 define("_MB_SS_DATE", "Published date");
 define("_MB_SS_DISP", "Display");
-define("_MB_SS_DISPLAY_CATEGORY", "Display the category name?");
+define("_MB_SS_DISPLAY_CATEGORY", "Exibir nome da categoria?");
 define("_MB_SS_DISPLAY_COMMENTS", "Display comment count?");
 define("_MB_SS_DISPLAY_TYPE", "Display type :");
 define("_MB_SS_DISPLAY_TYPE_BLOCK", "Each item is a block");
