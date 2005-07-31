@@ -1,7 +1,7 @@
 <?php
 
 /**
-* $Id: myblocks.php,v 1.2 2005/07/10 03:37:10 mauriciodelima Exp $
+* $Id: myblocks.php,v 1.3 2005/07/31 23:57:32 mauriciodelima Exp $
 * Module: MultiMenu
 * Author: The WolFactory <www.wolfpackclan.com/wolfactory>
 * Licence: GNU
@@ -23,7 +23,7 @@ function list_blocks()
 
 // get blocks owned by the module
 $module_id = $xoopsModule->getVar('mid');
-$block_arr =& XoopsBlock::getByModule( $xoopsModule->mid() ) ;
+//$block_arr =& XoopsBlock::getByModule( $xoopsModule->mid() ) ;
 $count = 1;
 	// blocks displaying loop
 	foreach( array_keys( $block_arr ) as $i ) {
