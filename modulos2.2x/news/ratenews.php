@@ -1,5 +1,5 @@
 <?php
-// $Id: ratenews.php,v 1.3 2005/07/23 03:00:18 mauriciodelima Exp $
+// $Id: ratenews.php,v 1.4 2005/07/31 07:28:03 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //
@@ -51,9 +51,9 @@
  * @template_name		news_ratenews.html
  *
  * Template's variables :
- * @template_var	string	lang_voteonce	Fixed text "Please do not vote for the same resource more than once."
+ * @template_var	string	lang_voteonce	Fixed text "Por Favor do not vote for the same resource more than once."
  * @template_var	string	lang_ratingscale	Fixed text "The scale is 1 - 10, with 1 being poor and 10 being excellent."
- * @template_var	string	lang_beobjective	Fixed text "Please be objective, if everyone receives a 1 or a 10, the ratings aren't very useful."
+ * @template_var	string	lang_beobjective	Fixed text "Por Favor be objective, if everyone receives a 1 or a 10, the ratings aren't very useful."
  * @template_var	string	lang_donotvote		Fixed text "Do not vote for your own resource."
  * @template_var	string	lang_rateit			Fixed text "Rate It!"
  * @template_var	string	lang_cancel			Fixed text "Cancel"

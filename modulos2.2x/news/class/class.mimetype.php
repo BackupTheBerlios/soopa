@@ -63,7 +63,7 @@ SUCH DAMAGE.
    Author: Jason Sheets <jsheets@shadonet.com>
 
    License: This script is distributed under the BSD License, you are free
-   to use, or modify it however you like.  If you find this script useful please
+   to use, or modify it however you like.  If you find this script useful por favor
    e-mail me.
 **/
 

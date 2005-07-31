@@ -1,5 +1,5 @@
 <?php
-// $Id: index.php,v 1.3 2005/07/23 03:00:18 mauriciodelima Exp $
+// $Id: index.php,v 1.4 2005/07/31 07:28:03 mauriciodelima Exp $
 // ------------------------------------------------------------------------ //
 // XOOPS - PHP Content Management System  				                    //
 // Copyright (c) 2000 XOOPS.org                         					//
@@ -1254,7 +1254,7 @@ switch ($op)
         adminmenu(-1);
         if(!TableExists($xoopsDB->prefix('stories_votedata')) || !TableExists($xoopsDB->prefix('stories_files')) )
         {
-        	echo "<div align='center'>"._AM_NEWS_PLEASE_UPGRADE."</div><br/><br />";
+        	echo "<div align='center'>"._AM_NEWS_POR FAVOR_UPGRADE."</div><br/><br />";
         }
 
         echo "<h4>" . _AM_CONFIG . "</h4>";

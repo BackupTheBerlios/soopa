@@ -1,5 +1,5 @@
 <?php
-// $Id: modinfo.php,v 1.4 2005/07/23 16:27:27 mauriciodelima Exp $
+// $Id: modinfo.php,v 1.5 2005/07/31 07:28:04 mauriciodelima Exp $
 // Module Info
 
 // The name of this module
@@ -45,7 +45,7 @@ define("_MI_UPLOADGROUPS","Grupos com permissão de enviar aquivos");
 
 
 // Description of each config items
-define('_MI_STORYHOMEDSC', 'Selecione o número de notícias na página principal');
+define('_MI_STORYHOMEDSC', 'Número de notícias para exibir na página inicial');
 define('_MI_NOTIFYSUBMITDSC', 'Selecione ');
 define('_MI_DISPLAYNAVDSC', 'Sim, mostra a caixa de navegação no topo de cada página de notícias');
 define('_MI_AUTOAPPROVEDSC', 'Aprovar automaticamente as notícias enviadas');

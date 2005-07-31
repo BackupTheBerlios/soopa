@@ -1,5 +1,5 @@
 <?php
-// $Id: main.php,v 1.3 2005/07/23 03:00:19 mauriciodelima Exp $
+// $Id: main.php,v 1.4 2005/07/31 07:28:03 mauriciodelima Exp $
 //%%%%%%		File Name index.php 		%%%%%
 define("_NW_PRINTER","Printer Friendly Page");
 define("_NW_SENDSTORY","Send this Story to a Friend");
@@ -53,7 +53,7 @@ define("_NW_THISCOMESFROM","This article comes from %s");
 define("_NW_ATTACHEDFILES","Attached Files:");
 define("_NW_ATTACHEDLIB","This article have some attached files");
 define("_NW_NEWSSAMEAUTHORLINK","News by the same author");
-define("_NW_NEWS_NO_TOPICS","Sorry but actually there's no topics, please create one before to submit a news");
+define("_NW_NEWS_NO_TOPICS","Sorry but actually there's no topics, por favor create one before to submit a news");
 define("_NW_PREVIOUS_ARTICLE","Previous article");
 define("_NW_NEXT_ARTICLE","Next article");
 define("_NW_OTHER_ARTICLES","Other articles");
@@ -66,7 +66,7 @@ define("_NW_RATINGLTOH","Rating (Lowest Score to Highest Score)");
 define("_NW_RATINGHTOL","Rating (Highest Score to Lowest Score)");
 define("_NW_RATINGC","Rating: ");
 define("_NW_RATINGSCALE","The scale is 1 - 10, with 1 being poor and 10 being excellent.");
-define("_NW_BEOBJECTIVE","Please be objective, if everyone receives a 1 or a 10, the ratings aren't very useful.");
+define("_NW_BEOBJECTIVE","Por Favor be objective, if everyone receives a 1 or a 10, the ratings aren't very useful.");
 define("_NW_DONOTVOTE","Do not vote for your own resource.");
 define("_NW_RATING","Rating");
 define("_NW_VOTE","Vote");
@@ -77,7 +77,7 @@ define("_NW_ONEVOTE","1 vote");
 define("_NW_NUMVOTES","%u votes");		// Warning
 define("_NW_CANTVOTEOWN","You cannot vote on the resource you submitted.<br />All votes are logged and reviewed.");
 define("_NW_VOTEDELETED","Vote data deleted.");
-define("_NW_VOTEONCE","Please do not vote for the same resource more than once.");
+define("_NW_VOTEONCE","Por Favor do not vote for the same resource more than once.");
 define("_NW_VOTEAPPRE","Your vote is appreciated.");
 define("_NW_THANKYOU","Thank you for taking the time to vote here at %s"); // %s is your site name
 define("_NW_RSSFEED","RSS Feed");	// Warning, this text is included insided an Alt attribut (for a picture), so take care to the quotes

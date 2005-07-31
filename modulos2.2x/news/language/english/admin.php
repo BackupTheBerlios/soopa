@@ -1,5 +1,5 @@
 <?php
-// $Id: admin.php,v 1.3 2005/07/23 03:00:19 mauriciodelima Exp $
+// $Id: admin.php,v 1.4 2005/07/31 07:28:03 mauriciodelima Exp $
 //%%%%%%	Admin Module Name  Articles 	%%%%%
 define("_AM_DBUPDATED","Database Updated Successfully!");
 define("_AM_CONFIG","News Configuration");
@@ -127,7 +127,7 @@ define('_AM_NEWS_UPGRADEFAILED2', "Impossible to change the topic title's length
 define('_AM_NEWS_UPGRADEFAILED21', "Impossible to add the new fields to the topics table");
 define('_AM_NEWS_UPGRADEFAILED3', 'Impossible to create the table stories_votedata');
 define('_AM_NEWS_UPGRADEFAILED4', "Impossible to create the two fields 'rating' and 'votes' for the 'story' table");
-define('_AM_NEWS_UPGRADEFAILED0', "Please note the messages and try to correct the problems with phpMyadmin and the sql definition's file available in the 'sql' folder of the news module");
+define('_AM_NEWS_UPGRADEFAILED0', "Por Favor note the messages and try to correct the problems with phpMyadmin and the sql definition's file available in the 'sql' folder of the news module");
 define('_AM_NEWS_UPGR_ACCESS_ERROR',"Error, to use the upgrade script, you must be an admin on this module");
 define('_AM_NEWS_PRUNE_BEFORE',"Prune stories that were published before");
 define('_AM_NEWS_PRUNE_EXPIREDONLY',"Only remove stories who have expired");
@@ -135,7 +135,7 @@ define('_AM_NEWS_PRUNE_CONFIRM',"Warning, you are going to permanently remove st
 define('_AM_NEWS_PRUNE_TOPICS',"Limit to the following topics");
 define('_AM_NEWS_PRUNENEWS', 'Prune news');
 define('_AM_NEWS_EXPORT_NEWS', 'News Export');
-define('_AM_NEWS_EXPORT_NOTHING', "Sorry but there's nothing to export, please verify your criterias");
+define('_AM_NEWS_EXPORT_NOTHING', "Sorry but there's nothing to export, por favor verify your criterias");
 define('_AM_NEWS_PRUNE_DELETED', '%d news was deleted');
 define('_AM_NEWS_PERM_WARNING', '<h2>Warning, you have 3 forms so you have 3 submit buttons</h2>');
 define('_AM_NEWS_EXPORT_BETWEEN', 'Export news published between');
@@ -173,5 +173,5 @@ define('_AM_NEWS_TOPIC_COLOR',"Topics's color");
 define('_AM_NEWS_COLOR',"Color");
 define('_AM_NEWS_REMOVE_BR',"Convert the html &lt;br&gt; tag to a new line ?");
 // Added in 1.3 RC2
-define('_AM_NEWS_PLEASE_UPGRADE',"<a href='upgrade.php'><font color='#FF0000'>Please upgrade the module !</font></a>");
+define('_AM_NEWS_POR FAVOR_UPGRADE',"<a href='upgrade.php'><font color='#FF0000'>Por Favor upgrade the module !</font></a>");
 ?>

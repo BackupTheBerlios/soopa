@@ -1,7 +1,7 @@
 <?php
-// $Id: admin.php,v 1.4 2005/07/23 16:27:27 mauriciodelima Exp $
+// $Id: admin.php,v 1.5 2005/07/31 07:28:04 mauriciodelima Exp $
 //%%%%%%	Admin Module Name  Articles 	%%%%%
-define("_AM_DBUPDATED","As informações foram gravadas corretamente.");
+define("_AM_DBUPDATED","As informações foram gravadas com sucesso.");
 define("_AM_CONFIG","ADMINISTRAÇÃO DO MÓDULO DE NOTÍCIAS");
 define("_AM_AUTOARTICLES","Notícias agendadas");
 define("_AM_STORYID","Nº identificador da notícia");
@@ -33,7 +33,7 @@ define("_AM_DISAMILEY","Desativar emoticons");
 define("_AM_DISHTML","Desativar HTML");
 define("_AM_APPROVE","Aprovar");
 define("_AM_MOVETOTOP","Mover esta notícia ao topo");
-define("_AM_CHANGEDATETIME","Modificar a data/hora de publicação");
+define("_AM_CHANGEDATETIME","Editar a data/hora de publicação");
 define("_AM_NOWSETTIME","Agora está definida para: %s"); // %s is datetime of publish
 define("_AM_CURRENTTIME","Definição atual: %s");  // %s is the current datetime
 define("_AM_SETDATETIME","Definir data/hora para publicação");
@@ -43,7 +43,7 @@ define("_AM_YEARC","Ano:");
 define("_AM_TIMEC","Hora:");
 define("_AM_PREVIEW","Exibir");
 define("_AM_SAVE","Gravar");
-define("_AM_PUBINHOME","Publicar na página principal?");
+define("_AM_PUBINHOME","Publicar na página inicial?");
 define("_AM_ADD","Incluir");
 
 //%%%%%%	Admin Module Name  Topics 	%%%%%
@@ -58,7 +58,7 @@ define("_AM_FEXAMPLE","por exemplo: jogos.gif");
 define("_AM_ADDSUBTOPIC","Incluir uma sub-categoria");
 define("_AM_IN","em");
 define("_AM_MODIFYTOPIC","Editar Tópico");
-define("_AM_MODIFY","Modificar");
+define("_AM_MODIFY","Editar");
 define("_AM_PARENTTOPIC","Categoria principal");
 define("_AM_SAVECHANGE","Salvar as modificações");
 define("_AM_DEL","Excluir");
@@ -81,7 +81,7 @@ define("_AM_LEFT","Esquerda");
 
 define("_AM_EXPARTS","Notícias expiradas");
 define("_AM_EXPIRED","Expirou");
-define("_AM_CHANGEEXPDATETIME","Modificar o tempo de validade");
+define("_AM_CHANGEEXPDATETIME","Editar o tempo de validade");
 define("_AM_SETEXPDATETIME","Definir data/hora de expiração");
 define("_AM_NOWSETEXPTIME","Está defenida para: %s");
 
@@ -124,7 +124,7 @@ define('_AM_USERS_LIST', "Lista de usuários");
 define('_AM_PUBLISH_FRONTPAGE', "Publicar na pagina principal?");
 define('_AM_NEWS_UPGRADEFAILED1', 'Impossível criar a tabela de estórias_arquivos');
 define('_AM_NEWS_UPGRADEFAILED2', "Impossível mudar o tamanho do titulo do topico");
-define('_AM_NEWS_UPGRADEFAILED21', "Impossível adicionar o novo campo a tabela de topicos");
+define('_AM_NEWS_UPGRADEFAILED21', "Impossível incluir o novo campo a tabela de topicos");
 define('_AM_NEWS_UPGRADEFAILED3', 'Impossível criar a tabela estorias_dadosvoto');
 define('_AM_NEWS_UPGRADEFAILED4', "Impossível criar os dois campos ");
 define('_AM_NEWS_UPGRADEFAILED0', "Por favor, preste atenção nas mensagens e tente corrigir os problemas com phpMyadmin e as definições de sql disponíveis na pasta ");
@@ -149,7 +149,7 @@ define('_AM_NEWS_NEWSLETTER', "Informativo de Notícias Publicadas");
 define('_AM_NEWS_NEWSLETTER_BETWEEN', 'Selecionar noticias publicadas entre');
 define('_AM_NEWS_NEWSLETTER_READY', "O informativo está pronto para download. <br /><a href='%s'>Clique aqui para fazer o download</a>.<br />Não se esqueça de <a href='%s'>excluí-lo</a> assim que tiver feito o download.");
 define('_AM_NEWS_DELETED_OK',"Arquivo deletado com sucesso");
-define('_AM_NEWS_DELETED_PB',"Houve um problema ao deletar esse arquivo");
+define('_AM_NEWS_DELETED_PB',"Houve um problema ao excluir esse arquivo");
 define('_AM_NEWS_STATS0','ESTATÍSTICAS DAS CATEGORIAS');
 define('_AM_NEWS_STATS','Estatisticas');
 define('_AM_NEWS_STATS1','Autores raros');
@@ -168,10 +168,10 @@ define("_AM_NEWS_MODULEADMIN","Administração");
 define("_AM_NEWS_GENERALSET", "Configurações gerais" );
 define('_AM_NEWS_GOTOMOD','Visitar Módulo');
 define('_AM_NEWS_NOTHING',"Sinto mas não há nada para download, verifique seus critérios!");
-define('_AM_NEWS_NOTHING_PRUNE',"Desculpe, não foi possível excluir noticias com esse critério!");
+define('_AM_NEWS_NOTHING_PRUNE',"Desculpe, Não é possível excluir noticias com esse critério!");
 define('_AM_NEWS_TOPIC_COLOR',"Cor do texto da categoria");
 define('_AM_NEWS_COLOR',"Cor");
 define('_AM_NEWS_REMOVE_BR',"Converter a tag html &lt;br&gt; para uma nova linha?");
 // Added in 1.3 RC2
-define('_AM_NEWS_PLEASE_UPGRADE',"<a href='upgrade.php'><font color='#FF0000'>Por favor atualize o modulo!</font></a>");
+define('_AM_NEWS_POR FAVOR_UPGRADE',"<a href='upgrade.php'><font color='#FF0000'>Por favor atualize o modulo!</font></a>");
 ?>
