@@ -1,5 +1,5 @@
 <?php
-// $Id: main.php,v 1.5 2005/07/30 22:07:55 mauriciodelima Exp $
+// $Id: main.php,v 1.6 2005/07/31 18:23:50 mauriciodelima Exp $
 if(defined('MAIN_DEFINED')) return;
 define('MAIN_DEFINED',true);
 
@@ -58,7 +58,7 @@ define("_MD_PENDING_POSTS_FOR_AUTH","Mensagens aguardando aprovação:");
 //page_header.php
 define('_MD_MODERATEDBY','Moderado por');
 define('_MD_SEARCH','Procurar');
-define('_MD_SEARCHRESULTS','Resultado da pesquisa');
+//define('_MD_SEARCHRESULTS','Resultado da pesquisa');
 define('_MD_FORUMINDEX','Índice do Fórum %s');
 define('_MD_POSTNEW','Novo tópico');
 define('_MD_REGTOPOST','Registre-se para enviar mensagens');
@@ -102,10 +102,10 @@ define('_MD_TOPIC_SUBJECTC','Prefixo:');
 
 
 define('_MD_RATINGS','Avaliações');
-define("_MD_CAN_ACCESS", "You <strong>can</strong> access the forum.<br />");
-define("_MD_CANNOT_ACCESS", "You <strong>cannot</strong> access the forum.<br />");
-define("_MD_CAN_POST", "Você <strong>pode</b> iniciar um novo tópico.<br>");
-define("_MD_CANNOT_POST", "Você <strong>não pode</b> iniciar um novo tópico.<br>");
+define("_MD_CAN_ACCESS", "Você <strong>pode</b> acessar o fórum.<br />");
+define("_MD_CANNOT_ACCESS", "Você <strong>não pode</b> acessar o fórum.<br />");
+define("_MD_CAN_POST", "Você <strong>pode</b> iniciar um novo tópico.<br />");
+define("_MD_CANNOT_POST", "Você <strong>não pode</b> iniciar um novo tópico.<br />");
 define("_MD_CAN_VIEW", "Você <strong>pode</b> exibir os tópicos.<br />");
 define("_MD_CANNOT_VIEW", "Você <strong>não pode</b> exibir os tópicos.<br />");
 define("_MD_CAN_REPLY", "Você <strong>pode</b> responder.<br>");

@@ -1,5 +1,5 @@
 <?php
-// $Id: admin_forum_prune.php,v 1.4 2005/07/30 22:07:55 mauriciodelima Exp $
+// $Id: admin_forum_prune.php,v 1.5 2005/07/31 18:23:50 mauriciodelima Exp $
 // ------------------------------------------------------------------------ //
 // XOOPS - PHP Content Management System                      //
 // Copyright (c) 2000 XOOPS.org                           //
@@ -149,7 +149,7 @@ if (!empty($_POST['submit'])) {
 
     $checkbox = new XoopsFormCheckBox(_AM_NEWBB_PRUNE_FORUMS, 'forums');
     $radiobox = new XoopsFormRadio(_AM_NEWBB_PRUNE_STORE, 'store');
-    // PUAJJ I HATE IT, por favor tidy up
+    // PUAJJ I HATE IT, please tidy up
     $sql = "SELECT forum_name, forum_id FROM " . $xoopsDB->prefix("bb_forums") . " ORDER BY forum_id";
     if ($result = $xoopsDB->query($sql)) {
         if ($myrow = $xoopsDB->fetchArray($result)) {

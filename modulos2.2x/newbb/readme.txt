@@ -1,6 +1,6 @@
-CBB 2.2 RC
+CBB 2.2
 
-XOOPS Community bulletin Board 2.2 RC, for XOOPS 2.2
+XOOPS Community bulletin Board 2.2, for XOOPS 2.2
 
 Changelog:
 1 block/profile/css/adminmenu/encoding related content upgraded to XOOPS 2.2
@@ -15,14 +15,9 @@ Changelog:
 10 moderator management merged into forum admin form with xoopsuserselect form
 
 
-Bugfix:
-1 bugfix for forum_id=0 in viewforum.php
-2 bugfix for menu config newbb_viewpost.html
-
-
 Team CBB:
 http://cbb.getituponline.com
 
 D.J.
 http://xoops.org.cn
-http://cbb.xoopsforge.com
+http://xoopsforge.com

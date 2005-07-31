@@ -1,5 +1,5 @@
 <?php
-// $Id: module.php,v 1.1 2005/07/25 12:55:32 mauriciodelima Exp $
+// $Id: module.php,v 1.2 2005/07/31 18:23:50 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //
@@ -371,7 +371,7 @@ function xoops_module_pre_update_newbb(&$module)
 	        $result_sub = $GLOBALS['xoopsDB']->queryF($sql_sub);
 			if (!$result) {
 				$module->setMessage("Could not forum_moderator for forum ".$row["forum_id"]);
-			}        
+			}
         }
     }
 

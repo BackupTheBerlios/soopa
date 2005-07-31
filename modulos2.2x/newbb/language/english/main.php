@@ -1,5 +1,5 @@
 <?php
-// $Id: main.php,v 1.4 2005/07/30 22:07:55 mauriciodelima Exp $
+// $Id: main.php,v 1.5 2005/07/31 18:23:50 mauriciodelima Exp $
 if(defined('MAIN_DEFINED')) return;
 define('MAIN_DEFINED',true);
 
@@ -183,7 +183,7 @@ define('_MD_RATE4','Good');
 define('_MD_RATE5','Excellent');
 
 define('_MD_TOPICOPTION','Topic options');
-define('_MD_KARMA_REQUIREMENT', 'Your personal karm %s does not reach the required karma %s. <br /> Por Favor try later.');
+define('_MD_KARMA_REQUIREMENT', 'Your personal karm %s does not reach the required karma %s. <br /> Please try later.');
 define('_MD_REPLY_REQUIREMENT', 'To view this post, you must login and reply first.');
 define('_MD_TOPICOPTIONADMIN','Topic Admin options');
 define('_MD_POLLOPTIONADMIN','Poll Admin options');
@@ -234,11 +234,11 @@ define('_MD_NORIGHTTOREPLY','You don\'t have the right to reply in this forum.')
 define('_MD_NORIGHTTOACCESS','You don\'t have the right to access this forum.');
 define('_MD_ERRORTOPIC','ERROR: Topic not selected!');
 define('_MD_ERRORCONNECT','ERROR: Could not connect to the forums database.');
-define('_MD_ERROREXIST','ERROR: The forum you selected does not exist. Por Favor go back and try again.');
+define('_MD_ERROREXIST','ERROR: The forum you selected does not exist. Please go back and try again.');
 define('_MD_ERROROCCURED','An Error Occured');
 define('_MD_COULDNOTQUERY','Could not query the forums database.');
-define('_MD_FORUMNOEXIST','Error - The forum/topic you selected does not exist. Por Favor go back and try again.');
-define('_MD_USERNOEXIST','That user does not exist.  Por Favor go back and search again.');
+define('_MD_FORUMNOEXIST','Error - The forum/topic you selected does not exist. Please go back and try again.');
+define('_MD_USERNOEXIST','That user does not exist.  Please go back and search again.');
 define('_MD_COULDNOTREMOVE','Error - Could not remove posts from the database!');
 define('_MD_COULDNOTREMOVETXT','Error - Could not remove post texts!');
 define('_MD_TIMEISUP','Your have reach the timelimit for editing your post.');
@@ -251,7 +251,7 @@ define('_MD_USERWROTE','%s wrote:'); // %s is username
 //post.php
 define('_MD_EDITNOTALLOWED','You\'re not allowed to edit this post!');
 define('_MD_EDITEDBY','Edited by');
-define('_MD_ANONNOTALLOWED','Anonymous users are not allowed to post.<br />Por Favor register.');
+define('_MD_ANONNOTALLOWED','Anonymous users are not allowed to post.<br />Please register.');
 define('_MD_THANKSSUBMIT','Thanks for your submission!');
 define('_MD_REPLYPOSTED','A reply to your topic has been posted.');
 define('_MD_HELLO','Hello %s,');
@@ -290,7 +290,7 @@ define('_MD_REPLY','Reply');
 define('_MD_VIEWTHETOPIC','View the topic');
 define('_MD_RETURNTOTHEFORUM','Return to the forum');
 define('_MD_RETURNFORUMINDEX','Return to the forum index');
-define('_MD_ERROR_BACK','Error - Por Favor go back and try again.');
+define('_MD_ERROR_BACK','Error - Please go back and try again.');
 define('_MD_GOTONEWFORUM','View the updated topic');
 
 define('_MD_TOPICDELETE','The topic has been deleted.');
@@ -351,7 +351,7 @@ define('_MD_ERROR_UPATEATTACHMENT','Error occur when updating attachment');
 
 // ratethread.php
 define("_MD_CANTVOTEOWN", "You cannot vote on the topic you submitted.<br />All votes are logged and reviewed.");
-define("_MD_VOTEONCE", "Por Favor do not vote for the same topic more than once.");
+define("_MD_VOTEONCE", "Please do not vote for the same topic more than once.");
 define("_MD_VOTEAPPRE", "Your vote is appreciated.");
 define("_MD_THANKYOU", "Thank you for taking the time to vote here at %s"); // %s is your site name
 define("_MD_VOTES","Votes");
@@ -424,7 +424,7 @@ define("_MD_YEARMONTHDAY", "Y/n/j G:i");
 
 define("_MD_VIEWNEWPOSTS","View new posts");
 
-define("_MD_INVALID_SUBMIT","Invalid submission. You could have exceeded session time. Por Favor re-submit or make a backup of your post and login to resubmit if necessary.");
+define("_MD_INVALID_SUBMIT","Invalid submission. You could have exceeded session time. Please re-submit or make a backup of your post and login to resubmit if necessary.");
 
 define("_MD_ACCOUNT","Account");
 define("_MD_NAME","Name");

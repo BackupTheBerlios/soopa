@@ -1,5 +1,5 @@
 <?php
-// $Id: permission.php,v 1.3 2005/07/25 12:55:32 mauriciodelima Exp $
+// $Id: permission.php,v 1.4 2005/07/31 18:23:50 mauriciodelima Exp $
 // ------------------------------------------------------------------------ //
 // XOOPS - PHP Content Management System                      //
 // Copyright (c) 2000 XOOPS.org                           //
@@ -31,43 +31,6 @@
 if (!defined('FORUM_PERM_ITEMS')) define('FORUM_PERM_ITEMS', 'access,view,post,reply,edit,delete,addpoll,vote,attach,noapprove');
 
 class NewbbPermissionHandler extends XoopsObjectHandler {
-	
-    /**
-     * Saves permissions for the selected category
-     *
-     *   saveCategory_Permissions()
-     *
-     * @param array $groups : group with granted permission
-     * @param integer $categoryID : categoryID on which we are setting permissions for Categories and Forums
-     * @param string $perm_name : name of the permission
-     * @return boolean : TRUE if the no errors occured
-     */
-
-     /*
-    function saveCategory_Permissions($groups, $categoryID, $perm_name)
-    {
-        global $xoopsModule;
-
-        if (!is_object($xoopsModule)) {
-            $module_handler = &xoops_gethandler('module');
-            $xoopsModule = &$module_handler->getByDirname('newbb');
-        }
-
-        $result = true;
-        $module_id = $xoopsModule->getVar('mid') ;
-        $gperm_handler = &xoops_gethandler('groupperm');
-        // First, if the permissions are already there, delete them
-        $gperm_handler->deleteByModule($module_id, $perm_name, $categoryID);
-        // Save the new permissions
-        if (count($groups) > 0) {
-            foreach ($groups as $group_id) {
-                $gperm_handler->addRight($perm_name, $categoryID, $group_id, $module_id);
-            }
-        }
-        return $result;
-    }
-    */
-
     /*
 	* Returns permissions for a certain type
 	*

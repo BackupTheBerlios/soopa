@@ -1,5 +1,5 @@
 <?php
-// $Id: posttopm.php,v 1.3 2005/07/25 12:55:32 mauriciodelima Exp $
+// $Id: posttopm.php,v 1.4 2005/07/31 18:23:50 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //
@@ -71,7 +71,7 @@ if(isset($postdata)){
 	$pmform->addElement(new XoopsFormHidden('post_id', $post_id));
 	$pmform->addElement(new XoopsFormHidden('subject', $post->getVar('subject')));
 	$data  = " \n \n--------------\n [url=".XOOPS_URL."/modules/".$xoopsModule->getVar("dirname")."/viewtopic.php?post_id=".$post_id."] ".$post->getVar('subject')." [/url] \n".$postdata."";
-	$pmform->addElement(new XoopsFormHidden('message', $data));
+	$pmform->addElement(new XoopsFormHidden('message', htmlspecialchars($data, ENT_QUOTES)));
 }
 $cancel_send = new XoopsFormButton('', 'cancel', _CANCEL, 'button');
 $cancel_send->setExtra("onclick='javascript:window.close();'");

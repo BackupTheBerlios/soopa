@@ -1,5 +1,5 @@
 <?php
-// $Id: newbb_block.php,v 1.3 2005/07/25 12:55:32 mauriciodelima Exp $
+// $Id: newbb_block.php,v 1.4 2005/07/31 18:23:50 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //
@@ -165,7 +165,6 @@ function b_newbb_show($options)
     }
     $block['indexNav'] = intval($options[4]);
 
-    //newbb_message($block);
     return $block;
 }
 

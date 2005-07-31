@@ -1,5 +1,5 @@
 <?php
-// $Id: modinfo.php,v 1.3 2005/07/25 12:55:32 mauriciodelima Exp $
+// $Id: modinfo.php,v 1.4 2005/07/31 18:23:50 mauriciodelima Exp $
 // Thanks Tom (http://www.wf-projects.com), for correcting the Engligh language package
 
 // Module Info

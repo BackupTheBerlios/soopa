@@ -1,5 +1,5 @@
 <?php
-// $Id: xoops_version.php,v 1.3 2005/07/25 12:55:32 mauriciodelima Exp $
+// $Id: xoops_version.php,v 1.4 2005/07/31 18:23:50 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //
@@ -29,7 +29,7 @@ $modversion['name'] = _MI_NEWBB_NAME;
 $modversion['version'] = 2.2;
 $modversion['description'] = _MI_NEWBB_DESC;
 $modversion['credits'] = "NewBB 2 developed by Marko Schmuck (predator) and D.J. (phppp)";
-$modversion['author'] = "D.J. (phppp), XOOPS CHINA Dev Group (http://xoops.org.cn)";
+$modversion['author'] = "D.J. (phppp)";
 $modversion['license'] = "GNU General Public License (GPL) see LICENSE";
 $modversion['image'] = "images/xoopsbb_slogo.png";
 $modversion['dirname'] = "newbb";
@@ -38,8 +38,8 @@ $modversion['author_realname'] = "CBB Dev Team";
 $modversion['author_website_url'] = "http://cbb.xoopsforge.com";
 $modversion['author_website_name'] = "XForge";
 $modversion['author_email'] = "php_pp@hotmail.com";
-$modversion['status_version'] = "2.2 RC";
-$modversion['status'] = "RC";
+$modversion['status_version'] = "2.2";
+$modversion['status'] = "Stable";
 
 $modversion['warning'] = "For XOOPS 2.2";
 
@@ -47,8 +47,8 @@ $modversion['demo_site_url'] = "http://cbb.xoopsforge.com";
 $modversion['demo_site_name'] = "XForge";
 $modversion['support_site_url'] = "http://cbb.getituponline/modules/newbb/";
 $modversion['support_site_name'] = "Team CBB";
-$modversion['submit_bug'] = "http://cbb.xoopsforge.com/";
-$modversion['submit_feature'] = "http://cbb.getituponline/modules/newbb/";
+$modversion['submit_feature'] = "http://cbb.xoopsforge.com/";
+$modversion['submit_bug'] = "http://cbb.getituponline/modules/newbb/";
 
 $modversion['author_word'] = "Team CBB is starting to work (http://cbb.getituponline.com, Coordinator: davidl2)";
 

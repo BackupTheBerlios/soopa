@@ -1,5 +1,5 @@
 <?php
-// $Id: functions.php,v 1.3 2005/07/25 12:55:32 mauriciodelima Exp $
+// $Id: functions.php,v 1.4 2005/07/31 18:23:50 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //
@@ -1157,7 +1157,7 @@ function newbb_welcome( $user = -1 )
 	}
 	ksort($categories);
     
-	$message = sprintf(_MD_WELCOME_MESSAGE, $user->getVar('name'))."\n\n";
+	$message = sprintf(_MD_WELCOME_MESSAGE, $user->getVar('uname'))."\n\n";
 	$message .= _PROFILE.": <a href='".XOOPS_URL . "/userinfo.php?uid=" . $user->getVar('uid')."'><strong>".$user->getVar('uname')."</strong></a> ";
 	$message .= " | <a href='".XOOPS_URL . "/pmlite.php?send2=1&amp;to_userid=" . $user->getVar('uid')."'>"._MD_PM."</a>\n";
 	foreach($categories as $category){
