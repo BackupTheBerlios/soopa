@@ -1,5 +1,5 @@
 <?php
-// $Id: main.php,v 1.5 2005/07/23 01:52:16 mauriciodelima Exp $
+// $Id: main.php,v 1.6 2005/08/01 03:45:45 mauriciodelima Exp $
 define("_PROFILE_MA_ERRORDURINGSAVE", "Error during save");
 define('_PROFILE_MA_USERREG','Cadastro de Usuários');
 define('_PROFILE_MA_NICKNAME','Nome do usuário');
@@ -23,7 +23,7 @@ define('_PROFILE_MA_NOREGISTER','Sorry, we are currently closed for new user reg
 define('_PROFILE_MA_USERKEYFOR','Link de ativação de %s');
 define('_PROFILE_MA_ACTLOGIN','Your account has been activated. Please login with the registered password.');
 
-define('_PROFILE_MA_YOURREGISTERED','An email containing an user activation key has been sent to the email account you provided. Please follow the instructions in the mail to activate your account. ');
+define('_PROFILE_MA_YOURREGISTERED','AO link de ativação do cadastro de novo usuário foi enviado para o e-mail fornecido por você no formulário de registro. Acesse a sua caixa postal e leia atentamente a mensagem deste e-mail, pois ela contém todas as intruções para a ativação do usuário. <br> <br>OBS: caso o e-mail não tenha sido enviado imediatamente, aguarde alguns minutos e tente novamente baixar as mensagens em sua caixa postal. ');
 define('_PROFILE_MA_YOURREGMAILNG','You are now registered. However, we were unable to send the activation mail to your email account due to an internal error that had occurred on our server. We are sorry for the inconvenience, please send the webmaster an email notifying him/her of the situation.');
 define('_PROFILE_MA_YOURREGISTERED2','You are now registered.  Please wait for your account to be activated by the adminstrators.  You will receive an email once you are activated.  This could take a while so please be patient.');
 
@@ -70,7 +70,7 @@ define('_PROFILE_MA_YIM','YIM');
 define('_PROFILE_MA_MSNM','MSNM');
 define('_PROFILE_MA_LOCATION','Localização');
 define('_PROFILE_MA_OCCUPATION','Ocupação');
-define('_PROFILE_MA_INTEREST','Interesse');
+define('_PROFILE_MA_INTEREST','Interesses');
 define('_PROFILE_MA_SIGNATURE','Assinatura');
 define('_PROFILE_MA_EXTRAINFO','Informações extras');
 define('_PROFILE_MA_EDITPROFILE','Editar Perfil');
@@ -78,13 +78,13 @@ define('_PROFILE_MA_LOGOUT','Sair');
 define('_PROFILE_MA_INBOX','Mensagens');
 define('_PROFILE_MA_MEMBERSINCE','Member Since');
 define('_PROFILE_MA_RANK','Rank');
-define('_PROFILE_MA_POSTS','Comments/Posts');
-define('_PROFILE_MA_LASTLOGIN','Last Login');
-define('_PROFILE_MA_ALLABOUT','All about %s');
-define('_PROFILE_MA_STATISTICS','Statistics');
-define('_PROFILE_MA_MYINFO','My Info');
-define('_PROFILE_MA_BASICINFO','Basic information');
-define('_PROFILE_MA_MOREABOUT','More About Me');
+define('_PROFILE_MA_POSTS','Participações');
+define('_PROFILE_MA_LASTLOGIN','Último acesso');
+define('_PROFILE_MA_ALLABOUT','Tudo Sobre %s');
+define('_PROFILE_MA_STATISTICS','Estatísticas');
+define('_PROFILE_MA_MYINFO','Minhas Informações');
+define('_PROFILE_MA_BASICINFO','Informações Básicas');
+define('_PROFILE_MA_MOREABOUT','Mais sobre mim');
 define('_PROFILE_MA_SHOWALL','Exibir tudo');
 
 //%%%%%%		File Name edituser.php 		%%%%%
@@ -110,7 +110,6 @@ define('_PROFILE_MA_MAXIMGSZ','Tamanho máx. (Bytes)');
 define('_PROFILE_MA_SELFILE','Selecionar arquivo');
 define('_PROFILE_MA_OLDDELETED','Seu outro avatar será deletado!');
 define('_PROFILE_MA_CHOOSEAVT', 'Escolha um avatar na lista.');
-define('_PROFILE_MA_CHOOSEAVT', 'Choose avatar from the available list');
 
 define('_PROFILE_MA_PRESSLOGIN', 'Press the button below to login');
 

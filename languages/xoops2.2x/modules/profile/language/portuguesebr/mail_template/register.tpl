@@ -1,21 +1,23 @@
-Hello {X_UNAME},
+Ola! {X_UNAME},
 
-Thanks for subscribing to {SITENAME}. As a registered member your can:
-- Send private messages among members
-- Participate in discussion boards
-- Get the latest news
-- Submit content
-- Much, much more....
+Agradecemos seu registro no site {SITENAME}.
 
-The email address ({X_UEMAIL}) has been used to register an account.
+Como usuário registrado do site {SITENAME}, você poderá
+- Enviar mensagens particulares (MP) a outros usuários do portal
+- Participar das discussões dos fóruns
+- Receber as últimas notícias publicadas
+- Comentar as publicações
+- E muito mais....
 
-To become a member of {SITENAME}, please confirm your
-request by clicking on the link below:
 
-{X_UACTLINK}
+CONFIRMAÇÃO DO REGISTRO
+-----------------------
+
+O email ({X_UEMAIL}) foi utilizado para registrar a sua conta.
+
+Para confirmar seu registro em {SITENAME}, por favor clique em {X_UACTLINK}
 
 -----------
-Best Regards
-{SITENAME}
-({SITEURL}) 
-{ADMINMAIL}
+{X_SITENAME} ({X_SITEURL})
+Administrador
+{X_ADMINMAIL}
