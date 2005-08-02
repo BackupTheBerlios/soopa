@@ -10,7 +10,7 @@
 //                  multiMenu v1.4								//
 //  ------------------------------------------------------------------------	//
 
-define("_AD_MULTIMENU_ADMIN", 	"Administração: multiMenu ");
+define("_AD_MULTIMENU_ADMIN", 	"Administração : ");
 define("_AD_MULTIMENU_EDITIMENU", 	"Editar");
 define("_AD_MULTIMENU_NEWIMENU", 	"Novo Link");
 define("_AD_MULTIMENU_NEW",		"Novo Link");
@@ -20,52 +20,52 @@ define("_AD_MULTIMENU_ONLINE",	"Online");
 define("_AD_MULTIMENU_OFFLINE",	"Offline");
 define("_AD_MULTIMENU_SUBMENU",	"Sublink");
 define("_AD_MULTIMENU_SUBMENUEXP",	"<br /><i><font color='red'>The sublink <u>must have</u><br />the same directory<br />as the main link</font></i>");
-define("_AD_MULTIMENU_SUBYES",	"Si");
+define("_AD_MULTIMENU_SUBYES",	"Sim");
 define("_AD_MULTIMENU_SUBNO",		"Nao");
-define("_AD_MULTIMENU_MAINLINK",	"<b>Mainlink</b>");
-define("_AD_MULTIMENU_SUBLINK",	"<i>Sublink</i>");
+define("_AD_MULTIMENU_MAINLINK",	"Menu");
+define("_AD_MULTIMENU_SUBLINK",	"Submenu dinâmico");
+define("_AD_MULTIMENU_PERMSUBLINK",	"Submenu Fixo");
+define("_AD_MULTIMENU_NOTE",		"Nota");
 define("_AD_MULTIMENU_TARGET",	"Target");
 define("_AD_MULTIMENU_GROUPS",	"Grupos");
-define("_AD_MULTIMENU_LINK",		"Link");
+define("_AD_MULTIMENU_LINK",		"Link <font color='red'>*</font>");
 define("_AD_MULTIMENU_OPERATION",	"Funções");
-define("_AD_MULTIMENU_UP",		"Cima");
-define("_AD_MULTIMENU_DOWN",		"Baixo");
+define("_AD_MULTIMENU_UP",		"Acima");
+define("_AD_MULTIMENU_DOWN",		"Abaixo");
 define("_AD_MULTIMENU_TARG_SELF",	"self");
 define("_AD_MULTIMENU_TARG_BLANK",	"blank");
 define("_AD_MULTIMENU_TARG_PARENT",	"parent");
 define("_AD_MULTIMENU_TARG_TOP",	"top");
-define("_AD_MULTIMENU_SUREDELETE",	"Tem certeza que deseja apagar este link?");
+define("_AD_MULTIMENU_SUREDELETE",	"Você deseja realmente excluir este link?");
 define("_AD_MULTIMENU_UPDATED",	"Banco de dados atualizado com sucesso!");
 define("_AD_MULTIMENU_NOTUPDATED",	"Não foi possível atualizar o banco de dados!");
-define("_AD_MULTIMENU_SUBMIT", 	"Enviar");
-define("_AD_MULTIMENU_IMAGE", 	"Imagem");
 define("_AD_MULTIMENU_SUBMIT", 	"Incluir");
-define("_AD_MULTIMENU_CATEGORY",	"Categoria");
+define("_AD_MULTIMENU_IMAGE", 	"Imagem <font color='red'>*</font>");
 
-define("_AD_MULTIMENU_CATEGORY",	"Category");
-define("_AD_MULTIMENU_NOTES",		"<font color='red'>*</font> multiMenu supports absolutes and relatives urls.<br /><br />
-<b><u>Exemples</u> :</b><br /><br />
-<u>Absolute URL</u> : <i>".XOOPS_URL."/modules/multiMenu/index.php</i><br />
-<u>Relative URL</u> : <i>modules/multiMenu/</i><br /><br />
-<table><tr><td><img src='../images/attention.png' /></td><td>To make the dynamic links to work,<br />it is necessary to add ' / ' (trailin slash)<br />at the end of links linking to directory!</td><tr></table><br />
+define("_AD_MULTIMENU_CATEGORY",	"Categoria");
+define("_AD_MULTIMENU_NOTES",		"<font color='red'>*</font> multiMenu suporta links absolutos e relativos.<br /><br />
+<b><u>Exemplos</u> :</b><br /><br />
+<u>Link Absoluto</u> : <i>".XOOPS_URL."/modules/multiMenu/index.php</i><br />
+<u>Link Relativo</u> : <i>modules/multiMenu/</i><br /><br />
+<table><tr><td><img src='../images/attention.png' /></td><td>Para incluir links dinâmicos nos menus, é necessário a '/' no final dos endereços dos diretórios!</td><tr></table><br />
 <br />
 You can use the following tag in your picture path:<br />
 - {theme} which would display the current used theme.<br />
 - {module} which would display the current used module.");
 
-define("_AD_MULTIMENU_PREFERENCES", "Preferences");
-define("_AD_MULTIMENU_HELP",		"Guide");
+define("_AD_MULTIMENU_PREFERENCES", "Preferências");
+define("_AD_MULTIMENU_HELP",		"Ajuda");
 
 define("_AD_MULTIMENU_FATHER_INDEX","Parent Index");
 define("_AD_MULTIMENU_CANTPARENT",	"An entry can't link to itself or to a child!");
 define("_AD_MULTIMENU_ID",		"Id");
 define("_AD_MULTIMENU_PID",		"Pid");
-define("_AD_MULTIMENU_BLOCK_LINK",	"Visible Block list");
+define("_AD_MULTIMENU_BLOCK_LINK",	"Lista de blocos");
 
 define("_AD_MULTIMENU_GUIDET_GENERAL",	"General");
-define("_AD_MULTIMENU_GUIDET_PREF",		"Preferences");
-define("_AD_MULTIMENU_GUIDET_INDEX",	"Index");
-define("_AD_MULTIMENU_GUIDET_BLOCKS",	"Blocks");
+define("_AD_MULTIMENU_GUIDET_PREF",		"Preferências");
+define("_AD_MULTIMENU_GUIDET_INDEX",	"Índice");
+define("_AD_MULTIMENU_GUIDET_BLOCKS",	"Blocos");
 
 define("_AD_MULTIMENU_GUIDE_GENERAL",	"
 <p align='center'><strong><font size='5'>How to use multiMenu ?</font>
