@@ -1,7 +1,7 @@
 <?php
 
 /**
-* $Id: main.php,v 1.1 2005/07/05 05:34:13 mauriciodelima Exp $
+* $Id: main.php,v 1.2 2005/08/02 03:47:52 mauriciodelima Exp $
 * Module: SmartSection
 * Author: The SmartFactory <www.smartfactory.ca>
 * Licence: GNU
@@ -40,7 +40,8 @@ define("_MD_SS_CANCEL", "Cancel");
 define("_MD_SS_CATEGORY", "Category");
 define("_MD_SS_CATEGORY_DSC", "Category to which belong this article.");
 define("_MD_SS_CATEGORY_EDIT", "Edit category");
-define("_MD_SS_CATEGORY_SUMMARY", "Summary of %s");
+define("_MD_SS_CATEGORY_SUMMARY", "Articles within category %s");
+define("_MD_SS_CATEGORY_SUMMARY_DESC", "Here is a list of all articles within this category. Simply click on a title to see the entire article.");
 define("_MD_SS_CATEGORY_SUMMARY_INFO", "Sub-categories within %s.");
 define("_MD_SS_CLEAR", "Clear");
 define("_MD_SS_COMMENTS", "Comment(s)");

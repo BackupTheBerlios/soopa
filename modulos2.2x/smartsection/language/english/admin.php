@@ -1,7 +1,7 @@
 <?php
 
 /**
-* $Id: admin.php,v 1.2 2005/07/30 01:47:33 mauriciodelima Exp $
+* $Id: admin.php,v 1.3 2005/08/02 03:47:52 mauriciodelima Exp $
 * Module: SmartSection
 * Author: The SmartFactory <www.smartfactory.ca>
 * Licence: GNU
@@ -77,7 +77,7 @@ define("_AM_SS_COLPOSIT", "Category position");
 define("_AM_SS_CREATE", "Create");
 define("_AM_SS_CREATECATEGORY", "Create a new category");
 define("_AM_SS_CREATED", "Created");
-define("_AM_SS_CREATEITEM", "Incluir artigo");
+define("_AM_SS_CREATEITEM", "Create article");
 define("_AM_SS_CREATESMARTITEM", "Create a new article");
 define("_AM_SS_CREATETHEDIR", "Create the folder");
 define("_AM_SS_CREATINGNEW", "Creating new");

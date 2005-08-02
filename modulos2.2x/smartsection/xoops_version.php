@@ -1,7 +1,7 @@
 <?php
 
 /**
-* $Id: xoops_version.php,v 1.1 2005/07/05 05:34:13 mauriciodelima Exp $
+* $Id: xoops_version.php,v 1.2 2005/08/02 03:47:51 mauriciodelima Exp $
 * Module: SmartSection
 * Author: The SmartFactory <www.smartfactory.ca>
 * Licence: GNU
@@ -176,6 +176,13 @@ $modversion['blocks'][4]['name'] = _MI_SS_ITEMSRANDOM_ITEM;
 $modversion['blocks'][4]['description'] = "Shows a random 'item' item";
 $modversion['blocks'][4]['show_func'] = "b_items_random_item_show";
 $modversion['blocks'][4]['template'] = "items_random_item.html";
+
+$modversion['blocks'][5]['file'] = "items_menu.php";
+$modversion['blocks'][5]['name'] = _MI_SS_ITEMSMENU;
+$modversion['blocks'][5]['description'] = "Display a menu";
+$modversion['blocks'][5]['show_func'] = "b_items_menu_show";
+$modversion['blocks'][5]['edit_func'] = "b_items_menu_edit";
+$modversion['blocks'][5]['template'] = "items_menu.html";
 
 // Templates
 $modversion['templates'][1]['file'] = 'smartsection_header.html';
@@ -377,12 +384,13 @@ $modversion['config'][23]['formtype'] = 'yesno';
 $modversion['config'][23]['valuetype'] = 'int';
 $modversion['config'][23]['default'] = 1;
 
-$modversion['config'][24]['name'] = 'orderbydate';
+$modversion['config'][24]['name'] = 'orderby';
 $modversion['config'][24]['title'] = '_MI_SS_ORDERBYDATE';
 $modversion['config'][24]['description'] = '_MI_SS_ORDERBYDATEDSC';
-$modversion['config'][24]['formtype'] = 'yesno';
-$modversion['config'][24]['valuetype'] = 'int';
-$modversion['config'][24]['default'] = 1;
+$modversion['config'][24]['formtype'] = 'select';
+$modversion['config'][24]['valuetype'] = 'text';
+$modversion['config'][24]['options'] = array(_MI_SS_ORDERBY_TITLE => 'title', _MI_SS_ORDERBY_DATE => 'date',_MI_SS_ORDERBY_WEIGHT => 'weight');
+$modversion['config'][24]['default'] = 'date';
 
 $modversion['config'][25]['name'] = 'useimagenavpage';
 $modversion['config'][25]['title'] = '_MI_SS_USEIMAGENAVPAGE';

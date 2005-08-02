@@ -1,7 +1,7 @@
 <?php
 
 /**
-* $Id: 0_8_x_to_0_9_2.php,v 1.1 2005/07/05 05:34:14 mauriciodelima Exp $
+* $Id: 0_8_x_to_0_9_2.php,v 1.2 2005/08/02 03:47:52 mauriciodelima Exp $
 * Module: SmartSection
 * Author: The SmartFactory <www.smartfactory.ca>
 * Licence: GNU

@@ -1,7 +1,7 @@
 <?php
 
 /**
-* $Id: category.php,v 1.1 2005/07/05 05:34:13 mauriciodelima Exp $
+* $Id: category.php,v 1.2 2005/08/02 03:47:51 mauriciodelima Exp $
 * Module: SmartSection
 * Author: The SmartFactory <www.smartfactory.ca>
 * Licence: GNU
@@ -168,10 +168,12 @@ $xoopsTpl->assign('category', $category);
 // MetaTag Generator
 smartsection_createMetaTags($categoryObj->name(), '', $categoryObj->description());
 
+//code to include smartie
 if (file_exists(XOOPS_ROOT_PATH . '/modules/smarttie/smarttie_links.php')) {
 	include_once XOOPS_ROOT_PATH . '/modules/smarttie/smarttie_links.php';
-	$xoopsTpl->assign('smarttie',1);
 }
+//end code for smarttie
+
 include_once(XOOPS_ROOT_PATH . "/footer.php");
 
 ?>

@@ -1,7 +1,7 @@
 <?php
 
 /**
-* $Id: upgrade.php,v 1.1 2005/07/05 05:34:13 mauriciodelima Exp $
+* $Id: upgrade.php,v 1.2 2005/08/02 03:47:51 mauriciodelima Exp $
 * Module: SmartClient
 * Author: The SmartFactory <www.smartfactory.ca>
 * Credit : Thanks to the xHelp development team :-)
@@ -99,7 +99,7 @@ function upgradeDB()
     $ret = true;
     //2. Do All Upgrades necessary to make current
     //   Break statements are omitted on purpose
-    
+
     switch($ver) {      
     case '0.93':
         set_time_limit(60);
@@ -140,8 +140,8 @@ function upgradeDB()
         unset($table);         
         echo "</ul>";
         
-    case '1.01':
-        set_time_limit(60);
+    case '1.0':
+    set_time_limit(60);
         printf("<h3>". _AM_SS_DB_UPDATE_TO."</h3>", '1.01' );
         echo "<ul>";
         

@@ -1,5 +1,5 @@
 <?php
-// $Id: admin.php,v 1.1 2005/07/05 05:34:13 mauriciodelima Exp $
+// $Id: admin.php,v 1.2 2005/08/02 03:47:51 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //
@@ -29,18 +29,17 @@
 // Project: The XOOPS Project                                                //
 // ------------------------------------------------------------------------- //
 
-if (isset($HTTP_POST_VARS['fct'])) {
-	$fct = trim($HTTP_POST_VARS['fct']);
+if (isset($_POST['fct'])) {
+	$fct = trim($_POST['fct']);
 }
-if (isset($HTTP_GET_VARS['fct'])) {
-	$fct = trim($HTTP_GET_VARS['fct']);
+if (isset($_GET['fct'])) {
+	$fct = trim($_GET['fct']);
 }
 if (empty($fct)) $fct = 'preferences' ;
 include_once "../../../mainfile.php";
 include_once XOOPS_ROOT_PATH."/include/cp_functions.php";
 
 include_once XOOPS_ROOT_PATH."/class/xoopsmodule.php";
-
 $admintest = 0;
 
 if (is_object($xoopsUser)) {

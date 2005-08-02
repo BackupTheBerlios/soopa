@@ -1,7 +1,7 @@
 <?php
 
 /**
-* $Id: print.php,v 1.1 2005/07/05 05:34:13 mauriciodelima Exp $
+* $Id: print.php,v 1.2 2005/08/02 03:47:51 mauriciodelima Exp $
 * Module: SmartSection
 * Author: The SmartFactory <www.smartfactory.ca>
 * Licence: GNU
@@ -41,7 +41,7 @@ global $xoopsConfig, $xoopsDB, $xoopsModule, $myts;
 
 $item=  $itemObj->toArray(null, $categoryObj, false);
 $printtitle = $xoopsConfig['sitename']." - ".smartsection_metagen_html2text($categoryObj->getCategoryPath())." > ".$myts->displayTarea($item['title']);
-$printheader = $myts->displayTarea(ss_getCOnfig('headerprint'));
+$printheader = $myts->displayTarea(ss_getConfig('headerprint'));
 $who_where = sprintf(_MD_SS_WHO_WHEN, $itemObj->posterName(), $itemObj->datesub());
 $item['categoryname'] = $myts->displayTarea($categoryObj->name());
 
@@ -51,11 +51,11 @@ $xoopsTpl->assign('printheader', $printheader);
 $xoopsTpl->assign('lang_category', _MD_SS_CATEGORY);
 $xoopsTpl->assign('lang_author_date', $who_where);
 $xoopsTpl->assign('item', $item);
-if(ss_getCOnfig('footerprint')== 'item footer' || ss_getCOnfig('footerprint')== 'both'){
-	$xoopsTpl->assign('itemfooter', $myts->displayTarea( ss_getCOnfig('itemfooter')));
+if(ss_getConfig('footerprint')== 'item footer' || ss_getConfig('footerprint')== 'both'){
+	$xoopsTpl->assign('itemfooter', $myts->displayTarea( ss_getConfig('itemfooter')));
 }
-if(ss_getCOnfig('footerprint')== 'index footer' || ss_getCOnfig('footerprint')== 'both'){
-	$xoopsTpl->assign('indexfooter', $myts->displayTarea( ss_getCOnfig('indexfooter')));
+if(ss_getConfig('footerprint')== 'index footer' || ss_getConfig('footerprint')== 'both'){
+	$xoopsTpl->assign('indexfooter', $myts->displayTarea( ss_getConfig('indexfooter')));
 }
 
 $xoopsTpl->assign('display_whowhen_link', $xoopsModuleConfig['display_whowhen_link']);

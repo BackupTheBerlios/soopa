@@ -78,9 +78,10 @@
 	</table>
 	<br />
 <{/if}>
-<{if $smarttie==1}>
+<!--next line is to include smarttie -->
 	<{include file='db:smarttie_links.html'}>
-<{/if}>
+<!--end smarttie -->
+
 <{if $other_items == "previous_next"}>
   <{if $previous_item_link || $next_item_link}>
     <table class="outer">

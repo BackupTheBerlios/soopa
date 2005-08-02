@@ -5,7 +5,7 @@
  * 
  * @license GNU
  * @author marcan <marcan@smartfactory.ca> 
- * @version $Id: dbupdater.php,v 1.1 2005/07/05 05:34:13 mauriciodelima Exp $
+ * @version $Id: dbupdater.php,v 1.2 2005/08/02 03:47:51 mauriciodelima Exp $
  * @link http://www.smartfactory.ca The SmartFactory
  * @package SmartSection
  * @subpackage dbUpdater

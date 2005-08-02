@@ -1,7 +1,7 @@
 <?php
 
 /**
-* $Id: functions.php,v 1.1 2005/07/05 05:34:13 mauriciodelima Exp $
+* $Id: functions.php,v 1.2 2005/08/02 03:47:51 mauriciodelima Exp $
 * Module: SmartSection
 * Author: The SmartFactory <www.smartfactory.ca>
 * Licence: GNU
@@ -224,7 +224,7 @@ function ss_copyr($source, $dest)
     return true;
 }
 
-function ss_getEditor($caption, $name, $value)
+function ss_getEditor($caption, $name, $value, $dhtml = true)
 {
 	$smartConfig =& ss_getModuleConfig();
 	if ($smartConfig['use_wysiwyg'] == 1) {
@@ -234,14 +234,22 @@ function ss_getEditor($caption, $name, $value)
 			(
 			"fontname","fontsize","formatblock","forecolor","hilitecolor","bold","italic","underline","strikethrough","newline",
 			"justifyleft","justifycenter","justifyright","justifyfull","separator","insertorderedlist","insertunorderedlist","indent","outdent","separator",
-			"quote","code","separator","createlink","unlink","separator","inserthorizontalrule","createtable","insertimage","imagemanager","imageproperties","togglemode"
+			"quote","code","separator","createlink","unlink","separator","inserthorizontalrule","createtable","insertimage","imageproperties","togglemode"
 			);
 			$editor = new XoopsFormWysiwygTextArea($caption, $name, $value, '100%', '400px', $options);
 		} else {
-			$editor = new XoopsFormDhtmlTextArea($caption, $name, $value, 20, 60);
+			if ($dhtml) {
+				$editor = new XoopsFormDhtmlTextArea($caption, $name, $value, 20, 60);	
+			} else {
+				$editor = new XoopsFormTextArea($caption, $name, $value, 7, 60);	
+			}
 		}
 	} else {
-		$editor = new XoopsFormDhtmlTextArea($caption, $name, $value, 20, 60);	
+		if ($dhtml) {
+			$editor = new XoopsFormDhtmlTextArea($caption, $name, $value, 20, 60);	
+		} else {
+			$editor = new XoopsFormTextArea($caption, $name, $value, 7, 60);	
+		}
 	}
 	return $editor;
 }

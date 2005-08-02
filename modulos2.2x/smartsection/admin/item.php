@@ -1,7 +1,7 @@
 <?php
 
 /**
-* $Id: item.php,v 1.1 2005/07/05 05:34:13 mauriciodelima Exp $
+* $Id: item.php,v 1.2 2005/08/02 03:47:51 mauriciodelima Exp $
 * Module: SmartSection
 * Author: The SmartFactory <www.smartfactory.ca>
 * Licence: GNU
@@ -76,10 +76,11 @@ function edititem($showmenu = false, $itemid = 0)
 {
 	
 	global $smartsection_file_handler, $smartsection_item_handler, $smartsection_category_handler, $xoopsUser, $xoopsModule, $xoopsConfig, $xoopsDB;
-	
+
 	include_once XOOPS_ROOT_PATH . '/class/xoopsformloader.php';
 	// If there is a parameter, and the id exists, retrieve data: we're editing a item
 	if ($itemid != 0) {
+		
 		// Creating the ITEM object
 		$itemObj = new ssItem($itemid);
 		
@@ -132,6 +133,7 @@ function edititem($showmenu = false, $itemid = 0)
 		ss_collapsableBar('edititemtable', 'edititemicon', $page_title, $page_info);
 	} else {
 		// there's no parameter, so we're adding an item
+		
 		$itemObj =& $smartsection_item_handler->create();
 		$categoryObj =& $smartsection_category_handler->create();
 		$breadcrumb_action1 = _AM_SS_ITEMS;
@@ -169,7 +171,7 @@ function edititem($showmenu = false, $itemid = 0)
 	$sform->addElement($title_text, true);
 	
 	// SUMMARY
-	$summary_text = new XoopsFormTextArea(_AM_SS_SUMMARY, 'summary', $itemObj->summary(0, 'e'), 7, 60);
+	$summary_text = ss_getEditor(_AM_SS_SUMMARY, 'summary', $itemObj->summary(0, 'e'));
 	$summary_text->setDescription(_AM_SS_SUMMARY_DSC);
 	$sform->addElement($summary_text, false);
 
@@ -342,7 +344,6 @@ switch ($op) {
 	
 	ss_xoops_cp_header();
 	include_once XOOPS_ROOT_PATH . "/class/xoopsformloader.php";
-	
 	edititem(true, $itemid);
 	break;
 	
@@ -470,7 +471,7 @@ switch ($op) {
 		$itemObj->sendNotifications($notifToDo);
 	}
 	
-	redirect_header("javascript:history.go(-2)", 2, $redirect_msg);
+	redirect_header("item.php", 2, $redirect_msg);
 	
 	exit();
 	break;
@@ -531,19 +532,25 @@ switch ($op) {
 	$totalitems = $smartsection_item_handler->getItemsCount(-1, array(_SS_STATUS_PUBLISHED));
 	
 	// creating the item objects that are published
-	if($xoopsModuleConfig['orderbydate'] == 1){
-		$orderBy = 'categoryid, datesub';
-		$ascOrDesc = 'DESC';
-	}
-	else{
-		$orderBy = 'categoryid, weight';
-		$ascOrDesc = 'ASC';
+	switch ($xoopsModuleConfig['orderby']) {
+		case 'title' :
+			$orderBy = 'categoryid, title';
+			$ascOrDesc = 'ASC';
+		break;	
+		
+		case 'weight' :
+			$orderBy = 'categoryid, weight';
+			$ascOrDesc = 'ASC';		
+		break;
+		
+		default :
+			$orderBy = 'categoryid, datesub';
+			$ascOrDesc = 'DESC';			
+		break;
 	}
 
 	$itemsObj = $smartsection_item_handler->getAllPublished($xoopsModuleConfig['perpage'], $startitem, -1, $orderBy, $ascOrDesc);
 
-	
-	
 	//$itemsObj = $smartsection_item_handler->getAllPublished($xoopsModuleConfig['perpage'], $startitem);
 	$totalItemsOnPage = count($itemsObj);
 	

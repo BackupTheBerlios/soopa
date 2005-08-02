@@ -1,16 +1,13 @@
 <?php
 
 /**
-* $Id: displaysubcats.php,v 1.1 2005/07/05 05:34:13 mauriciodelima Exp $
+* $Id: displaysubcats.php,v 1.2 2005/08/02 03:47:51 mauriciodelima Exp $
 * Module: SmartSection
 * Author: The SmartFactory <www.smartfactory.ca>
 * Licence: GNU
 */
 
 global $xoopsUser, $xoopsUser, $xoopsConfig, $xoopsDB, $xoopsModuleConfig, $xoopsModule;
-
-
-echo "<br />\n";
 
 $sc_title = _AM_SS_SUBCAT_CAT;
 $sc_info = _AM_SS_SUBCAT_CAT_DSC;

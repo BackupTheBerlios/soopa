@@ -1,7 +1,7 @@
 <?php
 
 /**
-* $Id: displayitems.php,v 1.1 2005/07/05 05:34:13 mauriciodelima Exp $
+* $Id: displayitems.php,v 1.2 2005/08/02 03:47:51 mauriciodelima Exp $
 * Module: SmartSection
 * Author: The SmartFactory <www.smartfactory.ca>
 * Licence: GNU
@@ -9,12 +9,9 @@
 global $xoopsUser, $xoopsUser, $xoopsConfig, $xoopsDB, $xoopsModuleConfig, $xoopsModule, $smartsection_item_handler;
 $startitem = isset($_GET['startitem']) ? intval($_GET['startitem']) : 0;
 
-echo "<br />\n";
-
-	$items_title = _AM_SS_CAT_ITEMS;
-	$items_info = _AM_SS_CAT_ITEMS_DSC;	
-	$sel_cat = $categoryid;
-
+$items_title = _AM_SS_CAT_ITEMS;
+$items_info = _AM_SS_CAT_ITEMS_DSC;	
+$sel_cat = $categoryid;
 
 ss_collapsableBar('bottomtable', 'bottomtableicon', $items_title, $items_info);
 

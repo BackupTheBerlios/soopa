@@ -1,7 +1,7 @@
 <?php
 
 /**
-* $Id: preferences.php,v 1.1 2005/07/05 05:34:13 mauriciodelima Exp $
+* $Id: preferences.php,v 1.2 2005/08/02 03:47:51 mauriciodelima Exp $
 * Module: SmartPartner
 * Author: Xavier JIMENEZ
 * Licence: GNU
@@ -56,9 +56,9 @@ function addAdminMenu($buf) {
 * Display and capture preferences screen
 */
 
-if (!isset($HTTP_POST_VARS['fct'])) $HTTP_GET_VARS['fct'] = $_GET['fct'] = "preferences";
-if (!isset($HTTP_POST_VARS['op'])) $HTTP_GET_VARS['op' ] = $_GET['op' ] = "showmod";
-if (!isset($HTTP_POST_VARS['mod'])) $HTTP_GET_VARS['mod'] = $_GET['mod'] = $xoopsModule->getVar('mid');
+if (!isset($_POST['fct'])) $_GET['fct'] = $_GET['fct'] = "preferences";
+if (!isset($_POST['op'])) $_GET['op' ] = $_GET['op' ] = "showmod";
+if (!isset($_POST['mod'])) $_GET['mod'] = $_GET['mod'] = $xoopsModule->getVar('mid');
 chdir(XOOPS_ROOT_PATH."/modules/system/");
 ob_start("addAdminMenu");
 include XOOPS_ROOT_PATH."/modules/system/admin.php";

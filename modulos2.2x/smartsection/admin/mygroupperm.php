@@ -1,7 +1,7 @@
 <?php
 
 /**
-* $Id: mygroupperm.php,v 1.1 2005/07/05 05:34:13 mauriciodelima Exp $
+* $Id: mygroupperm.php,v 1.2 2005/08/02 03:47:51 mauriciodelima Exp $
 * Module: SmartSection
 * Author: The SmartFactory <www.smartfactory.ca>
 * Licence: GNU
@@ -29,7 +29,7 @@ function myDeleteByModule($DB, $gperm_modid, $gperm_name = null, $gperm_itemid =
 
 
 // include_once '../.include_onceclude/cp_header.php'; GIJ
-$modid = isset($HTTP_POST_VARS['modid']) ? intval($HTTP_POST_VARS['modid']) : 1;
+$modid = isset($_POST['modid']) ? intval($_POST['modid']) : 1;
 // we dont want system module permissions to be changed here ( 1 -> 0 GIJ)
 if ($modid <= 0 || !is_object($xoopsUser) || !$xoopsUser->isAdmin($modid)) {
 	redirect_header(XOOPS_URL.'/user.php', 1, _NOPERM);
@@ -43,13 +43,13 @@ if (!is_object($module) || !$module->getVar('isactive')) {
 }
 $member_handler =& xoops_gethandler('member');
 $group_list =& $member_handler->getGroupList();
-if (is_array($HTTP_POST_VARS['perms']) && !empty($HTTP_POST_VARS['perms'])) {
+if (is_array($_POST['perms']) && !empty($_POST['perms'])) {
 	$gperm_handler = xoops_gethandler('groupperm');
-	foreach ($HTTP_POST_VARS['perms'] as $perm_name => $perm_data) {
+	foreach ($_POST['perms'] as $perm_name => $perm_data) {
 		foreach( $perm_data['itemname' ] as $item_id => $item_name ) {
 			// checking code
 			// echo "<pre>" ;
-			// var_dump( $HTTP_POST_VARS['perms'] ) ;
+			// var_dump( $_POST['perms'] ) ;
 			// exit ;
 			if (false != myDeleteByModule($gperm_handler->db,$modid,$perm_name,$item_id)) {
 				if( empty( $perm_data['groups'] ) ) continue ;

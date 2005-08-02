@@ -1,7 +1,7 @@
 <?php
 
 /**
-* $Id: item.php,v 1.1 2005/07/05 05:34:13 mauriciodelima Exp $
+* $Id: item.php,v 1.2 2005/08/02 03:47:51 mauriciodelima Exp $
 * Module: SmartSection
 * Author: The SmartFactory <www.smartfactory.ca>
 * Licence: GNU
@@ -52,7 +52,7 @@ class ssItem extends XoopsObject
 		$this->initVar("categoryid", XOBJ_DTYPE_INT, 0, false);
 		$this->initVar("title", XOBJ_DTYPE_TXTBOX, null, true, 255);
 		$this->initVar("summary", XOBJ_DTYPE_TXTAREA, null, false);
-		$this->initVar("display_summary", XOBJ_DTYPE_INT, 0, false);
+		$this->initVar("display_summary", XOBJ_DTYPE_INT, 1, false);
 		$this->initVar("body", XOBJ_DTYPE_TXTAREA, null, true);
 		$this->initVar("uid", XOBJ_DTYPE_INT, 0, false);
 		$this->initVar("datesub", XOBJ_DTYPE_INT, null, false);
@@ -79,6 +79,24 @@ class ssItem extends XoopsObject
 				$this->assignVar($k, $v['value']);
 			}
 			$this->assignOtherProperties();
+		} else {
+			// it's a new item	
+			// Check to see if $smartlanguage_tag_handler is available
+			
+			// Hack by marcan for condolegal.smartfactory.ca
+		/*	$this->setVar('title', "[fr]entrez le texte en français[/fr][en]entrez le texte en anglais[/en]");
+			$this->setVar('summary', "[fr]entrez le texte en français[/fr][en]entrez le texte en anglais[/en]");
+			$this->setVar('body', "[fr]entrez le texte en français[/fr][en]entrez le texte en anglais[/en]");
+			// End of Hack by marcan for condolegal.smartfactory.ca
+				
+			global $smartlanguage_tag_handler;
+			if (isset($smartlanguage_tag_handler)) {
+				$theLanguageTags = $smartlanguage_tag_handler->getAllTagsForInput();
+				$this->setVar('title', $theLanguageTags);
+				$this->setVar('summary', $theLanguageTags);
+				$this->setVar('body', $theLanguageTags);
+			}
+			*/	
 		}
 	}
 	
@@ -402,9 +420,13 @@ class ssItem extends XoopsObject
 		return SMARTSECTION_URL . 'item.php?itemid=' . $this->itemid();	
 	}
 	
-	function getItemLink()
+	function getItemLink($class=false)
 	{
-		return '<a href="' . $this->getItemUrl() . '">' . $this->title() . '</a>';
+		if ($class) {
+			return '<a class=' . $class . ' href="' . $this->getItemUrl() . '">' . $this->title() . '</a>';			
+		} else {
+			return '<a href="' . $this->getItemUrl() . '">' . $this->title() . '</a>';
+		}
 	}
 	
 	function getWhoAndWhen($users = array())
@@ -571,7 +593,7 @@ class SmartsectionItemHandler extends XoopsObjectHandler
 	function insert(&$item, $force = false)
 	{
 
-        if (get_class($item) != 'ssitem') {
+        if (strtolower(get_class($item)) != 'ssitem') {
             return false;
         }
 
@@ -594,7 +616,7 @@ class SmartsectionItemHandler extends XoopsObjectHandler
 		}
 
 		//echo "<br />" . $sql . "<br />";
-		
+
 		if (false != $force) {
 			$result = $this->db->queryF($sql);
 		} else {
@@ -628,7 +650,7 @@ class SmartsectionItemHandler extends XoopsObjectHandler
     	$smartModule =& $hModule->getByDirname('smartsection');
     	$module_id = $smartModule->getVar('mid');
 		
-		if (get_class($item) != 'ssitem') {
+		if (strtolower(get_class($item)) != 'ssitem') {
 			return false;
 		}
 		
@@ -658,10 +680,10 @@ class SmartsectionItemHandler extends XoopsObjectHandler
 	* retrieve items from the database
 	*
 	* @param object $criteria {@link CriteriaElement} conditions to be met
-	* @param bool $id_as_key use the itemid as key for the array?
+	* @param bool $id_key what shall we use as array key ? none, itemid, categoryid
 	* @return array array of {@link ssItem} objects
 	*/
-	function &getObjects($criteria = null, $id_as_key = false, $notNullFields='')
+	function &getObjects($criteria = null, $id_key = 'none', $notNullFields='')
 	{
 		$ret = false;
 		$limit = $start = 0;
@@ -688,6 +710,7 @@ class SmartsectionItemHandler extends XoopsObjectHandler
 		}
 		
 		//echo "<br />" . $sql . "<br />";
+		
 		$result = $this->db->query($sql, $limit, $start);
 		if (!$result) {
 			return $ret;
@@ -702,10 +725,14 @@ class SmartsectionItemHandler extends XoopsObjectHandler
 			$item->assignVars($myrow);
 			$item->assignOtherProperties();
 			
-			if (!$id_as_key) {
+			if ($id_key == 'none') {
 				$ret[] =& $item;
-			} else {
+			} elseif ($id_key == 'itemid') {
 				$ret[$myrow['itemid']] =& $item;
+			} else {
+				if (isset($myrow[$id_key])) {
+					$ret[$myrow[$id_key]][$myrow['itemid']] =& $item;
+				}
 			}
 			unset($item);
 		}
@@ -814,12 +841,12 @@ class SmartsectionItemHandler extends XoopsObjectHandler
 		return $this->getCount($criteria, $notNullFields);
 	}	
 
-	function getAllPublished($limit=0, $start=0, $categoryid=-1, $sort='datesub', $order='DESC', $notNullFields='', $asobject=true, $id_as_key=false)
+	function getAllPublished($limit=0, $start=0, $categoryid=-1, $sort='datesub', $order='DESC', $notNullFields='', $asobject=true, $id_key='none')
 	{
-		return $this->getItems($limit, $start, array(_SS_STATUS_PUBLISHED), $categoryid, $sort, $order, $notNullFields, $asobject, null, $id_as_key);
+		return $this->getItems($limit, $start, array(_SS_STATUS_PUBLISHED), $categoryid, $sort, $order, $notNullFields, $asobject, null, $id_key);
 	}
 	
-	function getItems($limit=0, $start=0, $status='', $categoryid=-1, $sort='datesub', $order='DESC', $notNullFields='', $asobject=true, $otherCriteria=null, $id_as_key=false)
+	function getItems($limit=0, $start=0, $status='', $categoryid=-1, $sort='datesub', $order='DESC', $notNullFields='', $asobject=true, $otherCriteria=null, $id_key='none')
 	{
 		include_once XOOPS_ROOT_PATH.'/modules/smartsection/include/functions.php';
 		
@@ -892,7 +919,7 @@ class SmartsectionItemHandler extends XoopsObjectHandler
 		$criteria->setStart($start);
 		$criteria->setSort($sort);
 		$criteria->setOrder($order);
-		$ret =& $this->getObjects($criteria, $id_as_key, $notNullFields);
+		$ret =& $this->getObjects($criteria, $id_key, $notNullFields);
 		
 		return $ret;
 	}		

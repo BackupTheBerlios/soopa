@@ -1,7 +1,7 @@
 <?php
 
 /**
-* $Id: category.php,v 1.1 2005/07/05 05:34:13 mauriciodelima Exp $
+* $Id: category.php,v 1.2 2005/08/02 03:47:51 mauriciodelima Exp $
 * Module: SmartSection
 * Author: The SmartFactory <www.smartfactory.ca>
 * Licence: GNU
@@ -46,6 +46,8 @@ class ssCategory extends XoopsObject
 		$this->initVar("itemcount", XOBJ_DTYPE_INT, 0, false);
 		$this->initVar('last_itemid', XOBJ_DTYPE_INT);
 		$this->initVar('last_title_link', XOBJ_DTYPE_TXTBOX);	
+		
+		$this->initVar("dohtml", XOBJ_DTYPE_INT, 1, false);
 		
 		if (isset($id)) {
 			if (is_array($id)) {
@@ -252,9 +254,13 @@ class ssCategory extends XoopsObject
 		return SMARTSECTION_URL  . "category.php?categoryid=" . $this->categoryid();	
 	}
 	
-	function getCategoryLink()
+	function getCategoryLink($class = false)
 	{
-	  return "<a href='" . $this->getCategoryUrl() . "'>" . $this->name() . "</a>";
+	 	if ($class) {
+	 		return "<a class='$class' href='" . $this->getCategoryUrl() . "'>" . $this->name() . "</a>";
+	 	} else {
+			return "<a href='" . $this->getCategoryUrl() . "'>" . $this->name() . "</a>";
+	 	}
 	}
 	
 	function store($sendNotifications = true, $force = true )
@@ -368,9 +374,11 @@ class SmartsectionCategoryHandler extends XoopsObjectHandler
 	*/
 	function insert(&$category, $force = false)
 	{
-		if (get_class($category) != 'sscategory') {
+
+		if (strtolower(get_class($category)) != 'sscategory') {
 			return false;
 		}
+
 		if (!$category->isDirty()) {
 			return true;
 		}
@@ -431,7 +439,6 @@ class SmartsectionCategoryHandler extends XoopsObjectHandler
 		}
 		
 		//echo "<br />" . $sql . "<br />";
-		
 		if (false != $force) {
 			$result = $this->db->queryF($sql);
 		} else {
@@ -459,7 +466,7 @@ class SmartsectionCategoryHandler extends XoopsObjectHandler
 	function delete(&$category, $force = false)
 	{
 		
-		if (get_class($category) != 'sscategory') {
+		if (strtolower(get_class($category)) != 'sscategory') {
 			return false;
 		}
 		

@@ -1,7 +1,7 @@
 <?php
 
 /**
-* $Id: file.php,v 1.1 2005/07/05 05:34:13 mauriciodelima Exp $
+* $Id: file.php,v 1.2 2005/08/02 03:47:51 mauriciodelima Exp $
 * Module: SmartSection
 * Author: The SmartFactory <www.smartfactory.ca>
 * Licence: GNU
@@ -199,7 +199,7 @@ class SmartsectionFileHandler extends XoopsObjectHandler
 	*/
 	function insert(&$fileObj, $force = false)
 	{
-		if (get_class($fileObj) != 'ssfile') {
+		if (strtolower(get_class($fileObj)) != 'ssfile') {
             return false;
         }
         if (!$fileObj->isDirty()) {
@@ -249,7 +249,7 @@ class SmartsectionFileHandler extends XoopsObjectHandler
 	*/
 	function delete(&$file, $force = false)
 	{
-		if (get_class($file) != 'ssfile') {
+		if (strtolower(get_class($file)) != 'ssfile') {
 			
 			return false;
 		}
@@ -282,7 +282,7 @@ class SmartsectionFileHandler extends XoopsObjectHandler
 	*/
 	function deleteItemFiles(&$itemObj)
 	{
-		if (get_class($itemObj) != 'ssitem') {
+		if (strtolower(get_class($itemObj)) != 'ssitem') {
 			return false;
 		}
 		$files =& $this->getAllFiles($itemObj->itemid());

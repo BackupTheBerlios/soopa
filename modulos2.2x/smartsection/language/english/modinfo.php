@@ -1,7 +1,7 @@
 <?php
 
 /**
-* $Id: modinfo.php,v 1.1 2005/07/05 05:34:13 mauriciodelima Exp $
+* $Id: modinfo.php,v 1.2 2005/08/02 03:47:52 mauriciodelima Exp $
 * Module: SmartSection
 * Author: The SmartFactory <www.smartfactory.ca>
 * Licence: GNU
@@ -117,8 +117,11 @@ define('_MI_SS_LAST_ITEM_SIZE', '[FORMAT OPTIONS] Last item size :');
 define('_MI_SS_LAST_ITEM_SIZEDSC', "Set the maximum size of the title in the Last item column.");
 define('_MI_SS_LINKED_PATH', '[FORMAT OPTIONS] Enable links on the current path:');
 define('_MI_SS_LINKED_PATHDSC', "This option allows the user climb back up by clicking on a element of the current path displayed on the top of the page");
-define('_MI_SS_ORDERBYDATE', '[FORMAT OPTIONS] Order the items by date :');
-define('_MI_SS_ORDERBYDATEDSC', 'If you set this option to "Yes", the items inside a category will be ordered by decending date, otherwise, they will be ordered by their weight.');
+define('_MI_SS_ORDERBYDATE', '[FORMAT OPTIONS] Sort order of the items');
+define('_MI_SS_ORDERBYDATEDSC', 'Select the way items will be sorted.');
+define('_MI_SS_ORDERBY_DATE', 'Date DESC');
+define('_MI_SS_ORDERBY_TITLE', 'Title ASC');
+define('_MI_SS_ORDERBY_WEIGHT', 'Weight ASC');
 define('_MI_SS_OTHER_ITEMS_TYPE', '[FORMAT OPTIONS] Other articles display type');
 define('_MI_SS_OTHER_ITEMS_TYPE_ALL', "All articles");
 define('_MI_SS_OTHER_ITEMS_TYPE_DSC', 'Select how you would like to display the other articles of the category in the article page.');
@@ -162,6 +165,7 @@ define("_MI_SS_ITEMSNEW", "Recent items List");
 define("_MI_SS_ITEMSPOT", "In the Spotlight !");
 define("_MI_SS_ITEMSRANDOM_ITEM", "Random item !");
 define("_MI_SS_RECENTITEMS", "Recent items (Detail)");
+define("_MI_SS_ITEMSMENU", "Menu block");
 
 // Text for notifications
 define('_MI_SS_CATEGORY_ITEM_NOTIFY', 'Category Items');

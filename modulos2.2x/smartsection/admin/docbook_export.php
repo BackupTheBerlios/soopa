@@ -1,7 +1,7 @@
 <?php
 
 /**
-* $Id: docbook_export.php,v 1.1 2005/07/05 05:34:13 mauriciodelima Exp $
+* $Id: docbook_export.php,v 1.2 2005/08/02 03:47:51 mauriciodelima Exp $
 * Module: SmartSection
 * Author: mariuss
 * Licence: GNU
@@ -11,9 +11,9 @@ include_once '../../../include/cp_header.php';
 
 $op = 'go';//'start';
 
-if (isset($HTTP_POST_VARS['op']) && ($HTTP_POST_VARS['op'] == 'go'))
+if (isset($_POST['op']) && ($_POST['op'] == 'go'))
 {
-    $op = $HTTP_POST_VARS['op'];
+    $op = $_POST['op'];
 }
 
 if ($op == 'start')

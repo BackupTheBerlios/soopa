@@ -1,7 +1,7 @@
 <?php
 
 /**
-* $Id: item.php,v 1.1 2005/07/05 05:34:13 mauriciodelima Exp $
+* $Id: item.php,v 1.2 2005/08/02 03:47:51 mauriciodelima Exp $
 * Module: SmartSection
 * Author: The SmartFactory <www.smartfactory.ca>
 * Licence: GNU
@@ -170,10 +170,13 @@ smartsection_createMetaTags($itemObj->title(), $categoryObj->name(), $itemObj->s
 if (($itemObj->cancomment() == 1) || (!$xoopsModuleConfig['commentatarticlelevel'] && ss_getConfig('com_rule') <> 0)) {
 	include_once XOOPS_ROOT_PATH . "/include/comment_view.php";
 }
+
+//code to include smartie
 if (file_exists(XOOPS_ROOT_PATH . '/modules/smarttie/smarttie_links.php')) {
 	include_once XOOPS_ROOT_PATH . '/modules/smarttie/smarttie_links.php';
-	$xoopsTpl->assign('smarttie',1);
 }
+
+//end code for smarttie
 include_once XOOPS_ROOT_PATH . '/footer.php';
 
 ?>

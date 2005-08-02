@@ -1,7 +1,7 @@
 <?php
 
 /**
-* $Id: category.php,v 1.1 2005/07/05 05:34:13 mauriciodelima Exp $
+* $Id: category.php,v 1.2 2005/08/02 03:47:51 mauriciodelima Exp $
 * Module: SmartSection
 * Author: The SmartFactory <www.smartfactory.ca>
 * Licence: GNU
@@ -293,7 +293,6 @@ switch ($op) {
 		$categoryObj = $smartsection_category_handler->create();
 	}
 	
-	
 	// Uploading the image, if any
 	// Retreive the filename to be uploaded
 	if (isset ($_FILES['image_file']['name']) && $_FILES['image_file']['name'] != "" ) {
@@ -330,8 +329,7 @@ switch ($op) {
 		}
 	}
 	$categoryObj->setVar('parentid', (isset($_POST['parentid'])) ? intval($_POST['parentid']) : 0);
-	
-	
+
 	$applyall = (isset($_POST['applyall'])) ? intval($_POST['applyall']) : 0;
 	$categoryObj->setVar('weight', (isset($_POST['weight'])) ? intval($_POST['weight']) : 1);
 	
@@ -353,14 +351,13 @@ switch ($op) {
 		$redirect_to = 'category.php?op=mod';
 	} else {
 		$redirect_msg = _AM_SS_COLMODIFIED;
-		$redirect_to = 'javascript:history.go(-2)';
+		$redirect_to = 'category.php';
 	}
 	
 	If ( !$categoryObj->store() ) {
 		redirect_header("javascript:history.go(-1)", 3, _AM_SS_CATEGORY_SAVE_ERROR . ss_formatErrors($categoryObj->getErrors()));
 		exit;
 	}
-	
 	// TODO : put this function in the category class
 	ss_saveCategory_Permissions($categoryObj->getGroups_read(), $categoryObj->categoryid(), 'category_read');
 	//ss_saveCategory_Permissions($groups_admin, $categoriesObj->categoryid(), 'category_admin');
@@ -373,31 +370,31 @@ switch ($op) {
 //Added by fx2024
 	$parentCat = $categoryObj->categoryid();
 	
-		for($i=0;$i<sizeof($_POST['scname']);$i++) {
+	for($i=0;$i<sizeof($_POST['scname']);$i++) {
+		
+		if($_POST['scname'][$i]!=''){
+		$categoryObj = $smartsection_category_handler->create();
+		$categoryObj->setVar('name', $_POST['scname'][$i]);
+		$categoryObj->setVar('parentid', $parentCat);
+		$categoryObj->setGroups_read($grpread);
 			
-			if($_POST['scname'][$i]!=''){
-			$categoryObj = $smartsection_category_handler->create();
-			$categoryObj->setVar('name', $_POST['scname'][$i]);
-			$categoryObj->setVar('parentid', $parentCat);
-			$categoryObj->setGroups_read($grpread);
-				
-				If ( !$categoryObj->store() ) {
-					redirect_header("javascript:history.go(-1)", 3, _AM_SS_SUBCATEGORY_SAVE_ERROR . ss_formatErrors($categoryObj->getErrors()));
-					exit;
-				}
-				// TODO : put this function in the category class
-				ss_saveCategory_Permissions($categoryObj->getGroups_read(), $categoryObj->categoryid(), 'category_read');
-				//ss_saveCategory_Permissions($groups_admin, $categoriesObj->categoryid(), 'category_admin');
-	
-	
-				if ($applyall) {
-					// TODO : put this function in the category class
-					ss_overrideItemsPermissions($categoryObj->getGroups_read(), $categoryObj->categoryid());
-				}
-
+			If ( !$categoryObj->store() ) {
+				redirect_header("javascript:history.go(-1)", 3, _AM_SS_SUBCATEGORY_SAVE_ERROR . ss_formatErrors($categoryObj->getErrors()));
+				exit;
 			}
+			// TODO : put this function in the category class
+			ss_saveCategory_Permissions($categoryObj->getGroups_read(), $categoryObj->categoryid(), 'category_read');
+			//ss_saveCategory_Permissions($groups_admin, $categoriesObj->categoryid(), 'category_admin');
+
+
+			if ($applyall) {
+				// TODO : put this function in the category class
+				ss_overrideItemsPermissions($categoryObj->getGroups_read(), $categoryObj->categoryid());
+			}
+
 		}
-	
+	}
+
 //end of fx2024 code	
 	redirect_header($redirect_to, 2, $redirect_msg);
 	
