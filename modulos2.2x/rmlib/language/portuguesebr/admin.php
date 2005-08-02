@@ -1,5 +1,5 @@
 <?php
-// $Id: admin.php,v 1.1 2005/07/10 02:32:18 mauriciodelima Exp $
+// $Id: admin.php,v 1.2 2005/08/02 04:07:07 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //              RM+SOFT - Systema de Ayuda y Manuales en Línea               //
 //                Copyright RM+SOFT © 2005. (Eduardo Cortés)                 //
@@ -34,7 +34,7 @@
 define("_RH_THEMES_TITLE", "Livros existentes em: %s");
 define("_RH_THEMES_NOTFOUND", "Não existem livros na base de dados");
 define("_RH_THEMES_TITLET", "Título do livro");
-define("_RH_THEMES_DATE", "Criado");
+define("_RH_THEMES_DATE", "Incluído");
 define("_RH_THEMES_TYPE", "Tipo");
 define("_RH_THEMES_ORDER", "Posição");
 define("_RH_THEMES_OPTIONS", "Opções");
