@@ -1,6 +1,6 @@
 <?php
 ///////////////////////////////////////////////////////////////////////////////
-// $Id: categos.php,v 1.1 2005/07/23 16:52:00 mauriciodelima Exp $                 //
+// $Id: categos.php,v 1.2 2005/08/02 05:41:20 mauriciodelima Exp $                 //
 // ------------------------------------------------------------------------  //
 //                         RM+SOFT.Download.Plus                             //
 //                    Copyright © 2005. Red Mexico Soft                      //
@@ -32,6 +32,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 $location = 'categorias';
+
 include '../../../include/cp_header.php';
 if (!file_exists("../language/".$xoopsConfig['language']."/admin.php") ) {
 	include "../language/spanish/admin.php";
@@ -294,9 +295,9 @@ function View(){
 	while ($row=$xoopsDB->fetchArray($result)){
 		if ($class=='even'){ $class='odd'; } else { $class='even'; }
 		echo "<tr class='$class'><td align='left'>
-			<a href='downs.php?op=view&amp;ids=$row[id_soft]'>$row[nombre]</a><br>
-			<span style='font-size: 10px;'>".substr($row['longdesc'], 0, 160)." [...]</span></td>
-			<td align='center'>
+			<a href='../down.php?id=$row[id_soft]'>$row[nombre]</a>
+			</td>
+			<td align='center' style='font-size: 10px;'>
 			<a href='downs.php?op=os&amp;ids=$row[id_soft]'>"._AM_RMDP_SOFTOS."</a> |
 			<a href='downs.php?op=shots&amp;ids=$row[id_soft]'>"._AM_RMDP_SOFTSHOTS."</a> |
 			<a href='downs.php?op=mod&amp;ids=$row[id_soft]'>"._AM_RMDP_MODIFY."</a> |
@@ -310,6 +311,7 @@ function View(){
 /**
  * Seleccionamos las opciones para ejecutar
  */
+$op = isset($_GET['op']) ? $_GET['op'] : (isset($_POST['op']) ? $_POST['op'] : '');
 
 switch ($op){
 	case 'new':

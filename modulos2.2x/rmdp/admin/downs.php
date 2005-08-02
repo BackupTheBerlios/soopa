@@ -1,6 +1,6 @@
 <?php
 ///////////////////////////////////////////////////////////////////////////////
-// $Id: downs.php,v 1.1 2005/07/23 16:52:00 mauriciodelima Exp $                   //
+// $Id: downs.php,v 1.2 2005/08/02 05:41:20 mauriciodelima Exp $                   //
 // ------------------------------------------------------------------------  //
 //                         RM+SOFT.Download.Plus                             //
 //                    Copyright © 2005. Red Mexico Soft                      //
@@ -80,7 +80,7 @@ function ShowDowns(){
 	while ($row=$xoopsDB->fetchArray($result)){
 		if ($class=='even'){ $class='odd'; } else { $class='even'; }
 		echo "<tr class='$class'><td align='left'>
-			<a href='downs.php?op=view&amp;ids=$row[id_soft]'>$row[nombre]</a><br>
+			<a href='../down.php?id=$row[id_soft]'>$row[nombre]</a><br>
 			</td>
 			<td align='center'>";
 			if ($row['anonimo']){

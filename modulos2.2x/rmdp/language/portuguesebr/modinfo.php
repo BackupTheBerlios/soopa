@@ -1,6 +1,6 @@
 <?php
 ///////////////////////////////////////////////////////////////////////////////
-// $Id: modinfo.php,v 1.2 2005/08/02 05:30:59 mauriciodelima Exp $                 //
+// $Id: modinfo.php,v 1.3 2005/08/02 05:41:21 mauriciodelima Exp $                 //
 //  ------------------------------------------------------------------------ //
 //                         RM+SOFT.Download.Plus                             //
 //                    Copyright © 2005. Red Mexico Soft                      //
@@ -90,6 +90,7 @@ define('_MI_RMDP_TOPFAV','Mostrar número de downloads favoritos');
 define('_MI_RMDP_TOPRATE','Mostrar número de download melhor avaliado');
 define('_MI_RMDP_SENDMAIL','Notificar por e-mail quando for enviado um download');
 define('_MI_RMDP_BODYMAIL','Corpo da mensagem para usuários');
+define('_MI_RMDP_BODYMAIL','Cuerpo del mensaje a usuarios');
 
 // Bloques
 define('_MI_RMDP_RECENT_TITLE','Downloads Recentes');

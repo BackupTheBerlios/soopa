@@ -1,6 +1,6 @@
 <?php
 ///////////////////////////////////////////////////////////////////////////////
-// $Id: rmdp_functions.php,v 1.1 2005/07/23 16:52:00 mauriciodelima Exp $               //
+// $Id: rmdp_functions.php,v 1.2 2005/08/02 05:41:21 mauriciodelima Exp $               //
 // ------------------------------------------------------------------------  //
 //                         RM+SOFT.Download.Plus                             //
 //                    Copyright © 2005. Red Mexico Soft                      //
@@ -64,6 +64,11 @@ function get_categos_list($idc = 0){
 	global $xoopsDB, $xoopsTpl, $xoopsModuleConfig;
 	$result = $xoopsDB->query("SELECT * FROM ".$xoopsDB->prefix("rmdp_categos")." WHERE parent='$idc'");
 	$num = $xoopsDB->getRowsNum($result);
+	
+	// Amplitud de la imágen (29/07/2005)
+	$xoopsTpl->assign('catego_img_width', $xoopsModuleConfig['imgcategow']);
+	$xoopsTpl->assign('catego_show_images', $xoopsModuleConfig['showimgcat']);
+	
 	while ($row=$xoopsDB->fetchArray($result)){
 		$new = rmdp_element_isnew($row['fecha'], $xoopsModuleConfig['categonew']);
 		$xoopsTpl->append('categos', array('id'=>$row['id_cat'], 'nombre'=>$row['nombre'], 'img'=>$row['img'], 'fecha'=>$row['fecha'],'isnew'=>$new,'subcats'=>rmdp_subcategos($row['id_cat'])));

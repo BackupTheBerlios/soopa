@@ -1,6 +1,6 @@
 <?php
 ///////////////////////////////////////////////////////////////////////////////
-// $Id: modified.php,v 1.1 2005/07/23 16:52:00 mauriciodelima Exp $                  //
+// $Id: modified.php,v 1.2 2005/08/02 05:41:21 mauriciodelima Exp $                  //
 // ------------------------------------------------------------------------  //
 //                         RM+SOFT.Download.Plus                             //
 //                    Copyright © 2005. Red Mexico Soft                      //
@@ -248,7 +248,7 @@ function Save(){
 	$body = str_replace('{URL}',XOOPS_URL, $body);
 	$xoopsMailer->setBody($body);
 	$xoopsMailer->send();
-	redirect_header('sended.php', 2, _AM_RMDP_SENDOK);
+	redirect_header('modified.php', 2, _AM_RMDP_SENDOK);
 }
 
 function Delete(){

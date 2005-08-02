@@ -1,6 +1,6 @@
 <?php
 ///////////////////////////////////////////////////////////////////////////////
-// $Id: sended.php,v 1.1 2005/07/23 16:52:00 mauriciodelima Exp $                  //
+// $Id: sended.php,v 1.2 2005/08/02 05:41:21 mauriciodelima Exp $                  //
 // ------------------------------------------------------------------------  //
 //                         RM+SOFT.Download.Plus                             //
 //                    Copyright © 2005. Red Mexico Soft                      //
@@ -259,6 +259,36 @@ function Save(){
 	redirect_header('sended.php', 2, _AM_RMDP_SENDOK);
 }
 
+function Delete(){
+	global $xoopsDB;
+	
+	$ok = isset($_POST['ok']) ? $_POST['ok'] : 0;
+	
+	if ($ok){
+		$ids = isset($_POST['ids']) ? $_POST['ids'] : 0;
+		if ($ids<=0){ header("location: sended.php"); die(); }
+		$tbl = $xoopsDB->prefix("rmdp_sended");
+		$xoopsDB->query("DELETE FROM $tbl WHERE id_send='$ids'");
+		redirect_header('sended.php', 1, _AM_RMDP_DELOK);
+		die();
+	} else {
+		include 'functions.php';
+		$ids = isset($_GET['ids']) ? $_GET['ids'] : 0;
+		xoops_cp_header();
+		DP_ShowNav();
+		echo "<table width='60%' align='center' class='outer' cellspacing='1'>
+				<tr><td align='center' class='even'><form name='frmDel' action='sended.php' method='post'>
+				<br />"._AM_RMDP_DELCONFIRM."<br /><br />
+				<input type='submit' value='"._AM_RMDP_DELETE."' name='sbt'> 
+				<input type='button' value='"._AM_RMDP_CANCEL."' name='cancel' onclick='history.go(-1);'>
+				<input type='hidden' name='op' value='del'>
+				<input type='hidden' name='ok' value='1'>
+				<input type='hidden' name='ids' value='$ids'>
+				</form></td></tr></table>";
+		xoops_cp_footer();
+	}
+}
+
 /**
 * Seleccionamos la opcion
 **/
@@ -268,6 +298,9 @@ switch ($op){
 		break;
 	case 'save':
 		Save();
+		break;
+	case "del":
+		Delete();
 		break;
 	default:
 		ShowSended();

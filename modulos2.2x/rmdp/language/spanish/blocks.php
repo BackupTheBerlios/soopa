@@ -1,6 +1,6 @@
 <?php
 ///////////////////////////////////////////////////////////////////////////////
-// $Id: rmdp_recent_downs.php,v 1.2 2005/08/02 05:41:21 mauriciodelima Exp $       //
+// $Id: blocks.php,v 1.1 2005/08/02 05:41:21 mauriciodelima Exp $                  //
 // ------------------------------------------------------------------------  //
 //                         RM+SOFT.Download.Plus                             //
 //                    Copyright © 2005. Red Mexico Soft                      //
@@ -31,24 +31,5 @@
 //                                                                           //
 ///////////////////////////////////////////////////////////////////////////////
 
-function rmdp_b_show_recent($options){
-	global $xoopsDB, $xoopsTpl;
-	
-	$result = $xoopsDB->query("SELECT id_soft, nombre, descargas FROM ".$xoopsDB->prefix('rmdp_software')." ORDER BY id_soft DESC LIMIT 0, $options[0]");
-	$block = array();
-	while ($row=$xoopsDB->fetchArray($result)){
-		$rtn = array();
-		$rtn['id'] = $row['id_soft'];
-		$rtn['nombre'] = $row['nombre'];
-		$rtn['descargas'] = $row['descargas'];
-		$block['recentdowns'][] = $rtn;
-	}
-	
-	return $block;
-}
-
-function rmdp_b_show_recent_edit($options){
-	$form = _BK_RMDP_RECENTNUM."<br><input type='text' name='options[]' value='$options[0]'>";
-	return $form;
-}
+define('_BK_RMDP_RECENTNUM','Núemero de descargas recientes');
 ?>
