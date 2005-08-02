@@ -1,5 +1,5 @@
 <?php
-// $Id: main.php,v 1.6 2005/07/31 18:23:50 mauriciodelima Exp $
+// $Id: main.php,v 1.7 2005/08/02 05:14:36 mauriciodelima Exp $
 if(defined('MAIN_DEFINED')) return;
 define('MAIN_DEFINED',true);
 
@@ -37,7 +37,7 @@ define('_MD_MODERATOR','Moderador');
 define('_MD_NEWPOSTS','Novas mensagens');
 define('_MD_NONEWPOSTS','Sem novas mensagens');
 define('_MD_PRIVATEFORUM','Fórum privativo');
-define('_MD_BY','by'); // Posted by
+define('_MD_BY','por'); // Posted by
 define('_MD_TOSTART','Para acessar as mensagens, selecione abaixo o fórum que deseja visitar.');
 define('_MD_TOTALTOPICSC','Tópicos: ');
 define('_MD_TOTALPOSTSC','Mensagens: ');
@@ -195,7 +195,7 @@ define('_MD_ADDPOLL','Incluir uma votação');
 
 define('_MD_QUICKREPLY_EMPTY','Digite uma resposta rápida aqui');
 
-define('_MD_LEVEL','Level :');
+define('_MD_LEVEL','Nível :');
 define('_MD_HP','HP :');
 define('_MD_MP','MP :');
 define('_MD_EXP','EXP :');
@@ -415,7 +415,7 @@ define("_MD_WELCOME_MESSAGE","Olá, %s é novo no fórum.");
 
 // !!IMPORTANT!! insert '\' to any char among reserved chars: "a", "A","B","c","d","D","F","g","G","h","H","i","I","j","l","L","m","M","n","O","r","s","S","t","T","U","w","W","Y","y","z","Z"
 // insert additional '\' to 't', 'r', 'n'
-define("_MD_TODAY", "\Ho\je\ G:i:s");
+define("_MD_TODAY", "Hoje G:i:s");
 define("_MD_YESTERDAY","j/n G:i:s");
 define("_MD_MONTHDAY", "j/n G:i:s");
 define("_MD_YEARMONTHDAY", "j/n/Y G:i");
