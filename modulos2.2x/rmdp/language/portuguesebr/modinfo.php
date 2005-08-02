@@ -1,6 +1,6 @@
 <?php
 ///////////////////////////////////////////////////////////////////////////////
-// $Id: modinfo.php,v 1.1 2005/07/23 16:52:00 mauriciodelima Exp $                 //
+// $Id: modinfo.php,v 1.2 2005/08/02 05:30:59 mauriciodelima Exp $                 //
 //  ------------------------------------------------------------------------ //
 //                         RM+SOFT.Download.Plus                             //
 //                    Copyright © 2005. Red Mexico Soft                      //
@@ -30,67 +30,67 @@
 //  ------------------------------------------------------------------------ //
 ///////////////////////////////////////////////////////////////////////////////
 define("_MI_RMDP_NAME", "RM+Soft.Download.Plus");
-define("_MI_RMDP_DESC", "Modulo para la administraci&oacute;n avanzada de software");
+define("_MI_RMDP_DESC", "Modulo para administração avançada de software");
 
 /**
  * Menus del administrador
  */
-define('_MI_RMDP_AM1','Categor&iacute;as Existentes');
-define('_MI_RMDP_AM2','Nueva Categor&iacute;a');
-define('_MI_RMDP_AM3','Descargas Existentes');
-define('_MI_RMDP_AM4','Nueva Descarga');
-define('_MI_RMDP_AM5','Descargas Patrocinadas');
-define('_MI_RMDP_AM6','Nueva Compa&ntilde;&iacute;a');
+define('_MI_RMDP_AM1','Categorias Existentes');
+define('_MI_RMDP_AM2','Nova Categoria');
+define('_MI_RMDP_AM3','Downloads Existentes');
+define('_MI_RMDP_AM4','Novo Download');
+define('_MI_RMDP_AM5','Downloads');
+define('_MI_RMDP_AM6','Nova Compatibilidade');
 define('_MI_RMDP_AM8','Plataformas');
-define('_MI_RMDP_AM9','Licencias');
-define('_MI_RMDP_AM10','Descargas Enviadas');
-define('_MI_RMDP_AM11','Modificaciones');
+define('_MI_RMDP_AM9','Licenças');
+define('_MI_RMDP_AM10','Downloads Enviados');
+define('_MI_RMDP_AM11','Modificações');
 
 /**
  * SubMenu
  */
 define('_MI_SEND_DOWNLOAD','Enviar');
-define('_MI_SENDED_DOWNS','Mis Descargas');
+define('_MI_SENDED_DOWNS','Meus Downloads');
 
 /**
  * Opciones de Configuraci&oacute;n
  */
-define('_MI_RMDP_MODTITLE','T&iacute;tulo del M&oacute;dulo:');
-define('_MI_RMDP_CATGOIMGW','Tama&ntilde;o de las im&aacute;genes de categor&iacute;as:');
-define('_MI_RMDP_DOWNIMGW','Tama&ntilde;o de las im&aacute;genes de descargas:');
-define('_MI_RMDP_SHOTIMGW','Tama&ntilde;o de las im&aacute;genes peque&ntilde;as de pantallas:');
-define('_MI_RMDP_SHOTIMGBIGW','Tama&ntilde;o de las im&aacute;genes grandes de pantallas:');
-define('_MI_RMDP_SHOTIMGBIGD','&Uacute;til solo cuando no se vincula directamente a las im&aacute;genes');
-define('_MI_RMDP_SHOTLINK','Vincular pantallas directamente a las im&aacute;genes:');
-define('_MI_RMDP_CATEGODAYSNEW','D&iacute;as para mostrar una categor&iacute;a como nueva:');
-define('_MI_RMDP_CARACTDAYSNEW','D&iacute;as para mostrar una carcter&iacute;stica como nueva:');
-define('_MI_RMDP_SHOTDAYSNEW','D&iacute;as para mostrar una pantalla como nueva:');
-define('_MI_RMDP_SENDDOWN','Activar el env&iacute;o de descargas:');
-define('_MI_RMDP_SENDANONIMO','Usuarios an&oacute;nimos pueden enviar descargas:');
-define('_MI_RMDP_CATWITHNEWS','Número de Categor&iacute;as con novedades en la p&aacute;gina principal:');
-define('_MI_RMDP_SPONSORNUM','Número de descargas patrocinadas a mostrar:');
-define('_MI_RMDP_FAVORITESNUM','Número de descargas a mostrar en Favoritos:');
-define('_MI_RMDP_POPULARNUM','Número de descargas a mostrar en Populares:');
-define('_MI_RMDP_LENDESC','Longitud en car&aacute;cteres de la descripci&oacute;n<br>de descargas patrocinadas:');
-define('_MI_RMDP_SHOTLIMIT','Limite de pantallas por descarga:');
-define('_MI_RMDP_SUBCATLIMIT','Número de subcategor&iacute;as para mostrar:');
-define('_MI_RMDP_RESALTEBG','Color de Fondo para descargas resaltadas (HEX):');
-define('_MI_RMDP_LIMITRESULT','L&iacute;mite de resultados por p&aacute;gina:');
-define('_MI_RMDP_UPDATEDAYS','D&iacute;as para considerar un elemento como actualizado:');
-define('_MI_RMDP_DOWNNEW','D&iacute;as para considerar una descarga como nueva:');
-define('_MI_RMDP_DATEFORMAT','Formato de Fecha:');
-define('_MI_RMDP_POPULARNEEDS','Descargas para considerar como popular<br>un elemento:');
-define('_MI_RMDP_USERVOTE','Permitir votos de usuarios an&oacute;nimos');
-define('_MI_RMDP_OPENWINDOW','Comportamiento de descargas:');
-define('_MI_RMDP_OPENSAME','Abrir en la misma ventana');
-define('_MI_RMDP_OPENNEW','Abrir en otra ventana');
-define('_MI_RMDP_SHOTCOLS','Número de columnas para tablas de pantallas:');
-define('_MI_RMDP_TOPPOP','Número de descargas populares a mostrar');
-define('_MI_RMDP_TOPFAV','Número de descargas favoritas a mostrar');
-define('_MI_RMDP_TOPRATE','Número de descargas mejor valoradas a mostrar');
-define('_MI_RMDP_SENDMAIL','Notificar por email cuando se envia una descarga');
-define('_MI_RMDP_BODYMAIL','Cuerpo del mensaje a usuarios');
+define('_MI_RMDP_MODTITLE','Título do Módulo:');
+define('_MI_RMDP_CATGOIMGW','Tamanho das imagens das categorias:');
+define('_MI_RMDP_DOWNIMGW',' Tamanho das imagens dos downloads:');
+define('_MI_RMDP_SHOTIMGW','Tamanho das imagens pequenas:');
+define('_MI_RMDP_SHOTIMGBIGW','Tamanho das imagens grandes:');
+define('_MI_RMDP_SHOTIMGBIGD','Útil só quando não for vincula diretamente às imagens');
+define('_MI_RMDP_SHOTLINK','Vincular imagens diretamente:');
+define('_MI_RMDP_CATEGODAYSNEW','Dias para mostrar uma categorias como nova:');
+define('_MI_RMDP_CARACTDAYSNEW','Dias para mostrar uma característica como nova:');
+define('_MI_RMDP_SHOTDAYSNEW','Dias para mostrar uma tela como nova:');
+define('_MI_RMDP_SENDDOWN','Ativar o envio de downloads:');
+define('_MI_RMDP_SENDANONIMO','Usuários anônimos podem enviar downloads:');
+define('_MI_RMDP_CATWITHNEWS','Número de categorias com novidades na página principal:');
+define('_MI_RMDP_SPONSORNUM','Mostrar número de downloads:');
+define('_MI_RMDP_FAVORITESNUM','Mostrar número de downloads nos Favoritos:');
+define('_MI_RMDP_POPULARNUM','Mostrar número de downloads nos Populares:');
+define('_MI_RMDP_LENDESC','Tamanho em caracteres na descrição<br>dos downloads:');
+define('_MI_RMDP_SHOTLIMIT','Limite de imagens por downloads:');
+define('_MI_RMDP_SUBCATLIMIT','Número de subcategorias a mostrar:');
+define('_MI_RMDP_RESALTEBG','Cor de Fundo para downloads em destaque (HEX):');
+define('_MI_RMDP_LIMITRESULT','Limite de resultados por página:');
+define('_MI_RMDP_UPDATEDAYS','Dias para considerar um elemento como atualizado:');
+define('_MI_RMDP_DOWNNEW','Dias para considerar uma download como novo:');
+define('_MI_RMDP_DATEFORMAT','Formato da Data:');
+define('_MI_RMDP_POPULARNEEDS','Numero de downloads para considerar como popular<br>um arquivo:');
+define('_MI_RMDP_USERVOTE','Permitir votos de usuários anônimos');
+define('_MI_RMDP_OPENWINDOW','Comportamento dos downloads:');
+define('_MI_RMDP_OPENSAME','Abrir na mesma janela');
+define('_MI_RMDP_OPENNEW','Abrir em outra janela');
+define('_MI_RMDP_SHOTCOLS','Número de colunas:');
+define('_MI_RMDP_TOPPOP','Mostrar número de downloads populares');
+define('_MI_RMDP_TOPFAV','Mostrar número de downloads favoritos');
+define('_MI_RMDP_TOPRATE','Mostrar número de download melhor avaliado');
+define('_MI_RMDP_SENDMAIL','Notificar por e-mail quando for enviado um download');
+define('_MI_RMDP_BODYMAIL','Corpo da mensagem para usuários');
 
 // Bloques
-define('_MI_RMDP_RECENT_TITLE','Descargas Recientes');
+define('_MI_RMDP_RECENT_TITLE','Downloads Recentes');
 ?>

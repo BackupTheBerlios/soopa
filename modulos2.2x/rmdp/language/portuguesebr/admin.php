@@ -1,6 +1,6 @@
 <?
 ///////////////////////////////////////////////////////////////////////////////
-// $Id: admin.php,v 1.1 2005/07/23 16:52:00 mauriciodelima Exp $                   //
+// $Id: admin.php,v 1.2 2005/08/02 05:30:59 mauriciodelima Exp $                   //
 // ------------------------------------------------------------------------  //
 //                         RM+SOFT.Download.Plus                             //
 //                    Copyright © 2005. Red Mexico Soft                      //
@@ -34,216 +34,216 @@
 define('_AM_RMDP_SEND','Enviar');
 define('_AM_RMDP_CANCEL','Cancelar');
 define('_AM_RMDP_MODIFY','Modificar');
-define('_AM_RMDP_DELETE','Eliminar');
-define('_AM_RMDP_NEWCATEGO','Nueva Categor&iacute;a');
-define('_AM_RMDP_YES','S&iacute;');
-define('_AM_RMDP_NO','No');
-define('_AM_RMDP_CATEGOFAIL','Ocurrio el siguiente error:<br>');
+define('_AM_RMDP_DELETE','Excluir');
+define('_AM_RMDP_NEWCATEGO','Nova Categoria');
+define('_AM_RMDP_YES','Sim;');
+define('_AM_RMDP_NO','Não');
+define('_AM_RMDP_CATEGOFAIL','Ocorreu o seguinte erro:<br>');
 
 /**
  * Declaraciones para la barra de navegación
  */
-define('_AM_RMDP_CATEGOS','Categor&iacute;as');
-define('_AM_RMDP_DOWNLOADS','Descargas');
-define('_AM_RMDP_CARACTS','Caracter&iacute;sticas');
-define('_AM_RMDP_DSPONSOR','Patrocinadas');
+define('_AM_RMDP_CATEGOS','Número das Categorias:');
+define('_AM_RMDP_DOWNLOADS','Downloads');
+define('_AM_RMDP_CARACTS','Características');
+define('_AM_RMDP_DSPONSOR','Patrocínio');
 define('_AM_RMDP_OS','Plataformas');
-define('_AM_RMDP_OPTIONS','Opciones');
-define('_AM_RMDP_SLICS','Licencias');
+define('_AM_RMDP_OPTIONS','Opções');
+define('_AM_RMDP_SLICS','Licenças');
 define('_AM_RMDP_SNSENDED','Enviadas');
-define('_AM_RMDP_SMODIFIED','Modificadas');
+define('_AM_RMDP_SMODIFIED','Alteradas');
 define('_AM_RMDP_GOPAGE','Página: ');
-define('_AM_RMDP_HELP','Ayuda');
+define('_AM_RMDP_HELP','Ajuda');
 
-if ($location=='indice'){
+if ($location=='Índice'){
 
-	define('_AM_RMDP_ACTUALSTATUS','Estado Actual del M&oacute;dulo');
-	define('_AM_RMDP_CATEGOS','N&uacute;mero de Categor&iacute;as:');
+	define('_AM_RMDP_ACTUALSTATUS','Estado Atual do Módulo');
+	define('_AM_RMDP_CATEGOS','Número das Categorias:');
 	define('_AM_RMDP_SEE','Ver');
-	define('_AM_RMDP_DOWNS','N&uacute;mero de Descargas:');
-	define('_AM_RMDP_SPONSOR','Descargas Patrocinadas:');
-	define('_AM_RMDP_CARS','Caracter&iacute;sticas:');
-	define('_AM_RMDP_LICS','N&uacute;mero de Licencias:');
-	define('_AM_RMDP_OSNUM','N&uacute;mero de Plataformas:');
-	define('_AM_RMDP_DSEND','Descargas Enviadas:');
-	define('_AM_RMDP_NSHOTS','Capturas de Pantallas:');
+	define('_AM_RMDP_DOWNS','Número de Downloads:');
+	define('_AM_RMDP_SPONSOR','Downloads:');
+	define('_AM_RMDP_CARS','Características:');
+	define('_AM_RMDP_LICS','Número de Licenças:');
+	define('_AM_RMDP_OSNUM','Número de Plataformas:');
+	define('_AM_RMDP_DSEND','Downloads Enviados:');
+	define('_AM_RMDP_NSHOTS','Captura de telas:');
 
-} elseif ($location=='categorias'){
-	define('_AM_RMDP_FNAME','Nombre:');
-	define('_AM_RMDP_FACCESS','Acceso:');
-	define('_AM_RMDP_REGISTERED','Solo Registrados');
+} elseif ($location=='Categorias'){
+	define('_AM_RMDP_FNAME','Nome:');
+	define('_AM_RMDP_FACCESS','Acesso:');
+	define('_AM_RMDP_REGISTERED','Só Registrados');
 	define('_AM_RMDP_EVERYBODY','Todos');
-	define('_AM_RMDP_FPARENT','Categor&iacute;a Padre:');
-	define('_AM_RMDP_FIMG','Im&aacute;gen:');
-	define('_AM_RMDP_SELECT','Seleccionar...');
+	define('_AM_RMDP_FPARENT','Categoria Pai:');
+	define('_AM_RMDP_FIMG','Imagem:');
+	define('_AM_RMDP_SELECT','Selecionar...');
 	
-	define('_AM_RMDP_ERRNAME','Error: No especificaste el nombre de la categor&iacute;a.');
-	define('_AM_RMDP_ERREXIST','Error: Ya existe una categoría con el mismo nombre.');
-	define('_AM_RMDP_ERRNOEXIST','Error: No existe la categoría especificada.');
-	define('_AM_RMDP_CATEGOOK','Categor&iacute;a creada correctamente');
-	define('_AM_RMDP_CATEGOMODOK','Categor&iacute;a modificada correctamente');
-	define('_AM_RMDP_CATEGOLIST','Lista de Categor&iacute;as');
-	define('_AM_RMDP_LNAME','Nombre');
-	define('_AM_RMDP_LACCESS','Acceso');
-	define('_AM_RMDP_MODCATEGO','Modificar Categor&iacute;a');
-	define('_AM_RMDP_DELOK','Categor&iacute;a eliminada correctamente');
-	define('_AM_RMDP_CONFIRM','¿Realmente deseas eliminar esta categor&iacute;a?');
+	define('_AM_RMDP_ERRNAME','O nome do download não foi especificado');
+	define('_AM_RMDP_ERREXIST','Já existe um download com o mesmo nome');
+	define('_AM_RMDP_ERRNOEXIST','Não existe o download especificado');
+	define('_AM_RMDP_CATEGOOK','Categoria criada corretamente');
+	define('_AM_RMDP_CATEGOMODOK','Categoria modificada corretamente');
+	define('_AM_RMDP_CATEGOLIST','Lista de Categorias');
+	define('_AM_RMDP_LNAME','Nome');
+	define('_AM_RMDP_LACCESS','Acesso');
+	define('_AM_RMDP_MODCATEGO','Modificar Categoria');
+	define('_AM_RMDP_DELOK','Plataforma excluída corretamente');
+	define('_AM_RMDP_CONFIRM','Realmente deseja excluir este download ?');
 	
-	define('_AM_RMDP_DOWNSLIST','Lista de Descargas en "%s"');
-	define('_AM_RMDP_SOFTCARS','Caracter&iacute;sticas');
+	define('_AM_RMDP_DOWNSLIST','Lista de Downloads');
+	define('_AM_RMDP_SOFTCARS','Características');
 	define('_AM_RMDP_SOFTOS','Plataformas');
-	define('_AM_RMDP_SOFTSHOTS','Pantallas');
-	define('_AM_RMDP_NEWDOWN','Nueva Descarga');
-	define('_AM_RMDP_SHOWNEWS','Mostrar novedades en la página principal:');
+	define('_AM_RMDP_SOFTSHOTS','Imagens');
+	define('_AM_RMDP_NEWDOWN','Novo Download');
+	define('_AM_RMDP_SHOWNEWS','Mostrar novidades na página principal:');
 	
-} elseif ($location=='descargas'){
+} elseif ($location=='downloads'){
 	
-	define('_AM_RMDP_DOWNSLIST','Lista de Descargas');
-	define('_AM_RMDP_SOFTCARS','Caracter&iacute;sticas');
+	define('_AM_RMDP_DOWNSLIST','Lista de Downloads');
+	define('_AM_RMDP_SOFTCARS','Características');
 	define('_AM_RMDP_SOFTOS','Plataformas');
-	define('_AM_RMDP_SOFTSHOTS','Pantallas');
-	define('_AM_RMDP_NEWDOWN','Nueva Descarga');
-	define('_AM_RMDP_MODDOWN','Modificar Descarga');
-	define('_AM_RMDP_FNAME','Nombre:');
+	define('_AM_RMDP_SOFTSHOTS','Imagens');
+	define('_AM_RMDP_NEWDOWN','Novo Download');
+	define('_AM_RMDP_MODDOWN','Modificar Download');
+	define('_AM_RMDP_FNAME','Nome:');
 	define('_AM_RMDP_SENDBY','Enviado por:');
-	define('_AM_RMDP_FVERSION','Versi&oacute;n:');
-	define('_AM_RMDP_FLICENSE','Licencia:');
-	define('_AM_RMDP_FFILE','Archivo:');
-	define('_AM_RMDP_RATING','Calificaci&oacute;n:');
-	define('_AM_RMDP_FIMG','Im&aacute;gen:');
-	define('_AM_RMDP_FCATEGO','Categor&iacute;a:');
-	define('_AM_RMDP_SELECT','Seleccionar...');
-	define('_AM_RMDP_FLONG','Descripci&oacute;n:');
-	define('_AM_RMDP_FSIZE','Tama&ntilde;o (en bytes):');
-	define('_AM_RMDP_FFAVS','Agregar a Favoritos:');
-	define('_AM_RMDP_FALLOWANONIM','Permitir descargas an&oacute;nimas:');
-	define('_AM_RMDP_FRESALTE','Resaltar:');
-	define('_AM_RMDP_FURLTITLE','T&iacute;tulo del Web del autor:');
-	define('_AM_RMDP_FURL','URL del Autor:');
-	define('_AM_RMDP_ERRNAME','No especificaste el nombre de la descarga');
-	define('_AM_RMDP_ERRNAMECAR','No especificaste el nombre de la caracter&iacute;stica');
-	define('_AM_RMDP_ERRVERSION','Por favor indica la versión del archivo');
-	define('_AM_RMDP_ERRVFILE','Indica el archivo a descargar');
-	define('_AM_RMDP_ERRCATEGO','Selecciona una categoría para esta descarga');
-	define('_AM_RMDP_ERRDESC','Debes proporcionar al menos una descripción corta para esta descarga');
-	define('_AM_RMDP_ERREXIST','Ya existe una descarga con el mismo nombre');
-	define('_AM_RMDP_ERRCAREXIST','Ya existe una caracter&iacute;stica con el mismo nombre');
-	define('_AM_RMDP_DOWNOK','Descarga a&ntilde;adida correctamente');
-	define('_AM_RMDP_CAROK','Caracter&iacute;stica creada correctamente');
-	define('_AM_RMDP_CARMODOK','Caracter&iacute;stica modificada correctamente');
-	define('_AM_RMDP_DOWNMODOK','Descarga Modificada Correctamente');
-	define('_AM_RMDP_ERRNOEXIST','No existe la descarga especificada');
-	define('_AM_RMDP_ERRCARNOEXIST','No existe la caracter&iacute;stica especificada');
-	define('_AM_RMDP_CONFIRM','¿Realmente deseas eliminar esta descarga?<br><br>Serán eliminadas todas las pantallas de esta descarga.');
-	define('_AM_RMDP_CONFIRMCAR','¿Realmente deseas eliminar esta caracter&iacute;stica?');
-	define('_AM_RMDP_DELOK','Descarga eliminada correctamente');
-	define('_AM_RMDP_DELCAROK','Caracter&iacute;stica eliminada correctamente');
-	define('_AM_RMDP_ALLCARS','Todas las Caracter&iacute;sticas');
-	define('_AM_RMDP_ASSIGNEDCARS','Caracter&iacute;sticas asignadas a "%s"');
-	define('_AM_RMDP_ADD','Asignar');
-	define('_AM_RMDP_NEWCAR','Nueva Caracter&iacute;stica');
-	define('_AM_RMDP_MODCAR','Modificar Caracter&iacute;stica');
-	define('_AM_RMDP_CARINFO','Las im&aacute;genes deben estar localizadas en "modules/rmdp/images/caracts"');
+	define('_AM_RMDP_FVERSION','Versão:');
+	define('_AM_RMDP_FLICENSE','Licença:');
+	define('_AM_RMDP_FFILE','Arquivo:');
+	define('_AM_RMDP_RATING','Calcificação:');
+	define('_AM_RMDP_FIMG','Imagem:');
+	define('_AM_RMDP_FCATEGO','Categoria:');
+	define('_AM_RMDP_SELECT','Selecionar...');
+	define('_AM_RMDP_FLONG','Descrição:');
+	define('_AM_RMDP_FSIZE','Tamanho (em bytes):');
+	define('_AM_RMDP_FFAVS','Adicionar aos Favoritos:');
+	define('_AM_RMDP_FALLOWANONIM','Permitir downloads anônimos:');
+	define('_AM_RMDP_FRESALTE','Ressaltar:');
+	define('_AM_RMDP_FURLTITLE','Título do Site do Autor:');
+	define('_AM_RMDP_FURL','URL do Autor:');
+	define('_AM_RMDP_ERRNAME','O nome do download não foi especificado');
+	define('_AM_RMDP_ERRNAMECAR','O nome da característica não foi especificado');
+	define('_AM_RMDP_ERRVERSION','Por favor indique versão do arquivo');
+	define('_AM_RMDP_ERRVFILE','Indique o arquivo para download');
+	define('_AM_RMDP_ERRCATEGO','Selecione uma categoria para este download');
+	define('_AM_RMDP_ERRDESC','Você deve adiciona ao menos uma descrição curta para este download');
+	define('_AM_RMDP_ERREXIST','Já existe um download com este nome');
+	define('_AM_RMDP_ERRCAREXIST','Já existe uma característica com este nome');
+	define('_AM_RMDP_DOWNOK','Download enviado corretamente');
+	define('_AM_RMDP_CAROK','Característica criada corretamente');
+	define('_AM_RMDP_CARMODOK','Característica alterada corretamente');
+	define('_AM_RMDP_DOWNMODOK','Download Modificado Corretamente');
+	define('_AM_RMDP_ERRNOEXIST','Não existe o download especificado');
+	define('_AM_RMDP_ERRCARNOEXIST','Não existe a característica especificada');
+	define('_AM_RMDP_CONFIRM','Realmente deseja excluir este download ?');
+	define('_AM_RMDP_CONFIRMCAR','Realmente deseja excluir esta característica?');
+	define('_AM_RMDP_DELOK','Plataforma eliminada corretamente');
+	define('_AM_RMDP_DELCAROK','Característica excluída corretamente');
+	define('_AM_RMDP_ALLCARS','Todas as Características');
+	define('_AM_RMDP_ASSIGNEDCARS','Características atribuídas a "%s"');
+	define('_AM_RMDP_ADD','Adicionar');
+	define('_AM_RMDP_NEWCAR','Nova Característica');
+	define('_AM_RMDP_MODCAR','Modificar Características');
+	define('_AM_RMDP_CARINFO','As imagens devem estar localizadas em "modules/rmdp/images/caracts"');
 	define('_AM_RMDP_OSALL','Plataformas Existentes');
-	define('_AM_RMDP_OSASSIGN','Plataformas Asignadas'); 
-	define('_AM_RMDP_OSEXIST','Esta Plataforma ya ha sido asignada previamente');
-	define('_AM_RMDP_LISTNAME','Nombre');
-	define('_AM_RMDP_LISTACCESS','Acceso');
-	define('_AM_RMDP_REGISTERED','Solo Registrados');
+	define('_AM_RMDP_OSASSIGN','Plataformas Adicionadas'); 
+	define('_AM_RMDP_OSEXIST','Esta Plataforma já foi atribuída previamente');
+	define('_AM_RMDP_LISTNAME','Nome');
+	define('_AM_RMDP_LISTACCESS','Acesso');
+	define('_AM_RMDP_REGISTERED','Só Registrados');
 	define('_AM_RMDP_EVERYBODY','Todos');
 	
 	// Sección para las capturas de pantalla
-	define('_AM_RMDP_SHOTLIST','Pantallas existentes para "%s"');
-	define('_AM_RMDP_SHOTNEW','Nueva Pantalla');
-	define('_AM_RMDP_SHOTMOD','Modificar Pantalla');
-	define('_AM_RMDP_SHOTDOWN','Descarga:');
-	define('_AM_RMDP_SHOTSMALL','Im&aacute;gen Peque&ntilde;a:');
-	define('_AM_RMDP_SHOTBIG','Im&aacute;gen Grande:');
-	define('_AM_RMDP_SHOTDESC','Descripci&oacute;n:');
-	define('_AM_RMDP_SHOTERRSB','Error: Especifica la imágen pequeña y la imágen grande');
-	define('_AM_RMDP_SHOTNOEXIST','No existe la pantalla especificada');
-	define('_AM_RMDP_SHOTCONFIRM','¿Relamente deseas eliminar esta pantalla?');
-	define('_AM_RMDP_SHOTDEL','Pantalla eliminada correctamente');
+	define('_AM_RMDP_SHOTLIST','Imagens existentes para "%s"');
+	define('_AM_RMDP_SHOTNEW','Nova Imagem');
+	define('_AM_RMDP_SHOTMOD','Modificar Imagem');
+	define('_AM_RMDP_SHOTDOWN','Download:');
+	define('_AM_RMDP_SHOTSMALL','Imagem pequena:');
+	define('_AM_RMDP_SHOTBIG','Imagem Grande:');
+	define('_AM_RMDP_SHOTDESC','Descrição:');
+	define('_AM_RMDP_SHOTERRSB','Erro: Especifique a imagem pequena e a imagem grande');
+	define('_AM_RMDP_SHOTNOEXIST','Não existe a imagem especificada');
+	define('_AM_RMDP_SHOTCONFIRM','Desejas excluir esta imagem?');
+	define('_AM_RMDP_SHOTDEL','Imagem excluída corretamente');
 	
 	// Sección de Reviews
-	define('_AM_RMDP_REVIEWTITLE','Comentarios del Editor');
-	define('_AM_RMDP_REVIEW','Comentario:');
-	define('_AM_RMDP_REVIEWOK','Tu comentario ha sido agregado correctamente');	
+	define('_AM_RMDP_REVIEWTITLE','Comentários do Editor');
+	define('_AM_RMDP_REVIEW','Comentário:');
+	define('_AM_RMDP_REVIEWOK','Seu comentário foi adicionado corretamente');	
 	
-} elseif ($location=='licencias'){
-	define('_AM_RMDP_LICEXISTS','Licencias Existentes');
-	define('_AM_RMDP_NEWLIC','Nueva Licencia');
-	define('_AM_RMDP_MODLIC','Modificar Licencia');
-	define('_AM_RMDP_FNAME','Nombre:');
-	define('_AM_RMDP_FURL','URL para Consulta:');
-	define('_AM_RMDP_ERRNAME','No has especificado el nombre para esta licencia');
-	define('_AM_RMDP_ERREXIST','Ya existe una licencia con el mismo nombre');
-	define('_AM_RMDP_LICOK','Licencia creada correctamente');
-	define('_AM_RMDP_LICMODOK','Licencia modificada correctamente');
-	define('_AM_RMDP_ERRNOEXIST','No existe la licencia especificada');
-	define('_AM_RMDP_DELOK','Licencia eliminada correctamente');
-	define('_AM_RMDP_CONFIRM','¿Realmente deseas eliminar esta licencia?');
+} elseif ($location=='licenças'){
+	define('_AM_RMDP_LICEXISTS','Licenças Existentes');
+	define('_AM_RMDP_NEWLIC','Nova Licença');
+	define('_AM_RMDP_MODLIC','Modificar Licença');
+	define('_AM_RMDP_FNAME','Nome:');
+	define('_AM_RMDP_FURL','URL do Autor:');
+	define('_AM_RMDP_ERRNAME','O nome do download não foi especificado');
+	define('_AM_RMDP_ERREXIST','Já existe um download com o mesmo nome');
+	define('_AM_RMDP_LICOK','Licença criada corretamente');
+	define('_AM_RMDP_LICMODOK','Licença modificada corretamente');
+	define('_AM_RMDP_ERRNOEXIST','O download especificado não existe');
+	define('_AM_RMDP_DELOK','Plataforma excluída corretamente');
+	define('_AM_RMDP_CONFIRM','Realmente deseja excluir este download?');
 } elseif ($location=='plataformas'){
 	
 	define('_AM_RMDP_OSEXISTS','Plataformas Existentes');
-	define('_AM_RMDP_NEWOS','Nueva Plataforma');
-	define('_AM_RMDP_FNAME','Nombre:');
-	define('_AM_RMDP_FIMG','URL de la Imágen:');
-	define('_AM_RMDP_ERRNAME','No especificaste el nombre de la plataforma');
-	define('_AM_RMDP_ERREXIST','Ya existe una plataforma con el mismo nombre');
-	define('_AM_RMDP_OSOK','Plataforma creada correctamente');
-	define('_AM_RMDP_CONFIRM','¿Realmente deseas eliminar esta plataforma?');
-	define('_AM_RMDP_DELOK','Plataforma eliminada correctamente');
+	define('_AM_RMDP_NEWOS','Nova Plataforma');
+	define('_AM_RMDP_FNAME','Nome:');
+	define('_AM_RMDP_FIMG','Imagem:');
+	define('_AM_RMDP_ERRNAME','O nome do download não foi especificado');
+	define('_AM_RMDP_ERREXIST','Já existe um download com o mesmo nome');
+	define('_AM_RMDP_OSOK','Plataforma criada corretamente');
+	define('_AM_RMDP_CONFIRM','Realmente deseja excluir este download?');
+	define('_AM_RMDP_DELOK','Plataforma excluída corretamente');
 	
 } elseif ($location=='sponsor'){
 
-	define('_AM_RMDP_SPONSORLIST','Lista de Descargas Patrocinadas');
-	define('_AM_RMDP_SNAME','Nombre');
-	define('_AM_RMDP_SOPTIONS','Opciones');
-	define('_AM_RMDP_NEWSPONSOR','Nueva Descarga Patrocinada');
-	define('_AM_RMDP_FDOWN','Seleccionar Descarga:');
+	define('_AM_RMDP_SPONSORLIST','Lista de Downloads');
+	define('_AM_RMDP_SNAME','Nome');
+	define('_AM_RMDP_SOPTIONS','Opções');
+	define('_AM_RMDP_NEWSPONSOR','Novo Download');
+	define('_AM_RMDP_FDOWN','Selecionar Download:');
 	define('_AM_RMDP_FTEXT','Texto:');
-	define('_AM_RMDP_ERRDOWN','Error: No especificaste una descarga');
-	define('_AM_RMDP_ERRTEXT','Error: No especificaste el texto para esta descarga patrocinada');
-	define('_AM_RMDPO_SPONNOEXIST','No existe la descarga especificada');
-	define('_AM_RMDP_CONFIRM','¿Realmente deseas eliminar esta descarga patrocinada?');
+	define('_AM_RMDP_ERRDOWN','Erro: Nenhum download especificado');
+	define('_AM_RMDP_ERRTEXT','Erro: Nenhum o texto para este download');
+	define('_AM_RMDPO_SPONNOEXIST','O download especificado não existe');
+	define('_AM_RMDP_CONFIRM','Realmente deseja excluir este download ?');
 
 } elseif ($location=='sended'){
 	
-	define('_RMDP_SENDED_TITLE','Descargas Enviadas por Usuarios');
-	define('_RMDP_NAME','Nombre');
-	define('_RMDP_SENDBY','Envió');
-	define('_RMDP_DATE','Fecha');
-	define('_AM_RMDP_ERRNOEXIST','No existe la descarga especificada');
-	define('_AM_RMDP_FNAME','Nombre:');
+	define('_RMDP_SENDED_TITLE','Downloads Enviados por Usuários');
+	define('_RMDP_NAME','Nome');
+	define('_RMDP_SENDBY','Enviou');
+	define('_RMDP_DATE','Data');
+	define('_AM_RMDP_ERRNOEXIST','O download especificado não existe');
+	define('_AM_RMDP_FNAME','Nome:');
 	define('_AM_RMDP_SENDBY','Enviado por:');
-	define('_AM_RMDP_FVERSION','Versi&oacute;n:');
-	define('_AM_RMDP_FLICENSE','Licencia:');
-	define('_AM_RMDP_FFILE','Archivo:');
-	define('_AM_RMDP_RATING','Calificaci&oacute;n:');
-	define('_AM_RMDP_FIMG','Im&aacute;gen:');
-	define('_AM_RMDP_FCATEGO','Categor&iacute;a:');
-	define('_AM_RMDP_SELECT','Seleccionar...');
-	define('_AM_RMDP_FLONG','Descripci&oacute;n:');
-	define('_AM_RMDP_FSIZE','Tama&ntilde;o (en bytes):');
-	define('_AM_RMDP_FFAVS','Agregar a Favoritos:');
-	define('_AM_RMDP_FALLOWANONIM','Permitir descargas an&oacute;nimas:');
-	define('_AM_RMDP_FRESALTE','Resaltar:');
-	define('_AM_RMDP_FURLTITLE','T&iacute;tulo del Web del autor:');
-	define('_AM_RMDP_FURL','URL del Autor:');
-	define('_AM_RMDP_SAVE','Guardar');
-	define('_AM_RMDP_ACEPT','Aceptar Descarga');
-	define('_AM_RMDP_ERRNAME','No especificaste el nombre de la descarga');
-	define('_AM_RMDP_ERREXIST','Ya existe una descarga con el mismo nombre');
-	define('_AM_RMDP_ERRVERSION','Por favor indica la versión del archivo');
-	define('_AM_RMDP_ERRVFILE','Indica el archivo a descargar');
-	define('_AM_RMDP_ERRCATEGO','Selecciona una categoría para esta descarga');
-	define('_AM_RMDP_SENDOK','Descarga aceptada correctamente');
-	define('_RMDP_MAIL_SUBJECT','Tu descarga ha sido aceptada');
+	define('_AM_RMDP_FVERSION','Versão:');
+	define('_AM_RMDP_FLICENSE','Licença:');
+	define('_AM_RMDP_FFILE','Arquivo:');
+	define('_AM_RMDP_RATING','Qualificação:');
+	define('_AM_RMDP_FIMG','Imagem:');
+	define('_AM_RMDP_FCATEGO','Categoria:');
+	define('_AM_RMDP_SELECT','Selecionar...');
+	define('_AM_RMDP_FLONG','Descrição:');
+	define('_AM_RMDP_FSIZE','Tamanho (em bytes):');
+	define('_AM_RMDP_FFAVS','Adicionar aos Favoritos:');
+	define('_AM_RMDP_FALLOWANONIM','Permitir downloads anônimos:');
+	define('_AM_RMDP_FRESALTE','Ressaltar:');
+	define('_AM_RMDP_FURLTITLE','Título do Site do Autor:');
+	define('_AM_RMDP_FURL','URL do Autor:');
+	define('_AM_RMDP_SAVE','Salvar');
+	define('_AM_RMDP_ACEPT','Aceitar Download');
+	define('_AM_RMDP_ERRNAME','O nome do download não foi especificado');
+	define('_AM_RMDP_ERREXIST','Já existe um download com o mesmo nome');
+	define('_AM_RMDP_ERRVERSION','Por favor indique a versão do arquivo');
+	define('_AM_RMDP_ERRVFILE','Indique o arquivo para download');
+	define('_AM_RMDP_ERRCATEGO','Selecione uma categoria para este download');
+	define('_AM_RMDP_SENDOK','Download enviado corretamente');
+	define('_RMDP_MAIL_SUBJECT','Seu download foi enviado');
 	define('_AM_RMDP_OSS','Plataformas:');
 	
 	// Mensajes y redirecciones
-	define('_AM_RMDP_DELCONFIRM', '¿Realmente deseas eliminar este elemento?');
+	define('_AM_RMDP_DELCONFIRM', 'Realmente deseja excluir ?');
 
 }
 ?>

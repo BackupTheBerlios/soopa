@@ -1,6 +1,6 @@
 <?php
 ///////////////////////////////////////////////////////////////////////////////
-// $Id: main.php,v 1.1 2005/07/23 16:52:00 mauriciodelima Exp $                    //
+// $Id: main.php,v 1.2 2005/08/02 05:30:59 mauriciodelima Exp $                    //
 // ------------------------------------------------------------------------  //
 //                         RM+SOFT.Download.Plus                             //
 //                    Copyright © 2005. Red Mexico Soft                      //
@@ -32,205 +32,205 @@
 //                                                                           //
 ///////////////////////////////////////////////////////////////////////////////
 
-define('_RMDP_DOWNLOAD_NOW','Descargar Ahora');
-define('_RMDP_DOWNLOAD_TODAY','Descarga de Hoy');
-define('_RMDP_THENEW_INCAT','Lo nuevo en: %s');
-define('_RMDP_SEALL_INCAT','Ver Todo');
-define('_RMDP_MORE_DOWNLOADS','Mas Descargas');
+define('_RMDP_DOWNLOAD_NOW','Iniciar Download');
+define('_RMDP_DOWNLOAD_TODAY','Download de Hoje');
+define('_RMDP_THENEW_INCAT','Novo em: %s');
+define('_RMDP_SEALL_INCAT','Ver Tudo');
+define('_RMDP_MORE_DOWNLOADS','Mais Downloads');
 define('_RMDP_POPULAR','Popular');
-define('_RMDP_BEST_RATED','Mejor Valorado');
-define('_RMDP_FORUMS','Foros');
-define('_RMDP_OUR_FAVORITES','Nuestros Favoritos');
+define('_RMDP_BEST_RATED','Melhor Avaliado');
+define('_RMDP_FORUMS','Fóruns');
+define('_RMDP_OUR_FAVORITES','Favoritos');
 define('_RMDP_POPULAR_SOFT','Software Popular');
-define('_RMDP_FAVORITE_TEXT','Aqui te mostramos %s descargas gratuitas que te gustar&aacute;n');
-define('_RMDP_SPONSOR_NEWS','Novedades Destacadas');
+define('_RMDP_FAVORITE_TEXT','Downloads gratuitos %s serão mostrados aqui');
+define('_RMDP_SPONSOR_NEWS','Novidades em destaque');
 define('_RMDP_TOTAL_RESULTS','%s - %s de %s');
-define('_RMDP_RESULT_PAGES','P&aacute;gina: ');
+define('_RMDP_RESULT_PAGES','Página: ');
 define('_RMDP_VOTES','(%s votos)');
-define('_RMDP_NEW_DOWN','Nuevo');
-define('_RMDP_UPDATE_DOWN','Actualizado');
-define('_RMDP_ERR_ACCESS','Lo sentimos, no tiene acceso a esta categor&iacute;a');
+define('_RMDP_NEW_DOWN','Novo');
+define('_RMDP_UPDATE_DOWN','Atualizado');
+define('_RMDP_ERR_ACCESS','Você não tem acesso a esta categoria');
 
 /**
  * Cadenas para la barra de busqueda
  */
-define('_RMDP_ALL_WEB','Buscar en todo %s');
-define('_RMDP_SEARCH_BUTTON','Buscar');
+define('_RMDP_ALL_WEB','Pesquisar em toda web %s');
+define('_RMDP_SEARCH_BUTTON','Pesquisar');
 define('_RMDP_VIEW_FAV','Ver Favoritos');
 define('_RMDP_VIEW_POP','Ver Popular');
-define('_RMDP_VIEW_RATED','Ver Mejor Valorado');
-define('_RMDP_SUBMIT_DOWN','Enviar Descargas');
+define('_RMDP_VIEW_RATED','Ver Melhor avaliado');
+define('_RMDP_SUBMIT_DOWN','Enviar Downloads');
 
 /**
 * Cadenas para los resultados
 **/
-define('_RMDP_SUBCATEGOS_IN','Subcategor&iacute;as en "%s"');
-define('_RMDP_DOWNS_INCATEGO','Descargas en %s');
+define('_RMDP_SUBCATEGOS_IN','Subcategorias em "%s"');
+define('_RMDP_DOWNS_INCATEGO','Download em %s');
 define('_RMDP_RESORT_BY','Ordenar por:');
-define('_RMDP_ORDER_NAME','Nombre');
-define('_RMDP_ORDER_DATE','Fecha');
-define('_RMDP_ORDER_RATING','Rating');
-define('_RMDP_ORDER_OURRATING','Nuestro Rating');
-define('_RMDP_ORDER_DOWNLOADS','Descargas');
-define('_RMDP_ORDER_SUBMITTER','Envi&oacute;');
-define('_RMDP_OS','SO:');
-define('_RMDP_VERSION','Versi&oacute;n:');
-define('_RMDP_FILE_SIZE','Tama&ntilde;o:');
-define('_RMDP_LICENCE','Licencia:');
+define('_RMDP_ORDER_NAME','Nome');
+define('_RMDP_ORDER_DATE','Data');
+define('_RMDP_ORDER_RATING','Avaliação');
+define('_RMDP_ORDER_OURRATING','Nosso avaliado');
+define('_RMDP_ORDER_DOWNLOADS','Downloads');
+define('_RMDP_ORDER_SUBMITTER','Enviar');
+define('_RMDP_OS','Plataformas:');
+define('_RMDP_VERSION','Versão:');
+define('_RMDP_FILE_SIZE','Tamanho:');
+define('_RMDP_LICENCE','Licença:');
 define('_RMDP_SPONSORED','DESTACADO');
-define('_RMDP_VIEW_SHOT','Ver Pantallas');
+define('_RMDP_VIEW_SHOT','Ver imagens');
 	
 if($rmdp_location=='downloads'){
 
-	define('_RMDP_DOWNLOADS','Descargas:');
-	define('_RMDP_WEB_SITE','Sitio Web:');
-	define('_RMDP_DATE','Fecha:');
-	define('_RMDP_LICENCE','Licencia:');
+	define('_RMDP_DOWNLOADS','Downloads:');
+	define('_RMDP_WEB_SITE','Site:');
+	define('_RMDP_DATE','Data:');
+	define('_RMDP_LICENCE','Licença:');
 	define('_RMDP_OS','Plataformas:');
-	define('_RMDP_SCREEN_SHOT','Capturas de Pantalla');
+	define('_RMDP_SCREEN_SHOT','Capturas de Tela');
 	define('_RMDP_SEND_BY','Enviado por:');
-	define('_RMDP_USER_RATING','Rating de Usuarios:');
+	define('_RMDP_USER_RATING','Avaliação dos Usuários:');
 	define('_RMDP_VOTE','Votar');
-	define('_RMDP_OUR_RATING','Nuestro Rating:');
-	define('_RMDP_SIZE','Tama&ntilde;o:');
-	define('_RMDP_USER_COMMENTS','Comentarios de Usuarios');
-	define('_RMDP_EDITOR_COM','Comentario de %s');
-	define('_RMDP_PUBLISHER_DESC','Descripci&oacute;n de %s');
-	define('_RMDP_REPORT_BROKEN','Reportar enlace roto');
+	define('_RMDP_OUR_RATING','Nosso Avaliado:');
+	define('_RMDP_SIZE','Tamanho:');
+	define('_RMDP_USER_COMMENTS','Comentários dos Usuários');
+	define('_RMDP_EDITOR_COM','Comentário de %s');
+	define('_RMDP_PUBLISHER_DESC','Descrição de %s');
+	define('_RMDP_REPORT_BROKEN','Reportar Link quebrado');
 	
-	define('_RMDP_ERR_NOTFOUND','No se encontr&oacute; el archivo solicitado');
-	define('_RMDP_ERR_NOACCESS','Lo sentimos, debes registrarte para poder descargar este archivo');
+	define('_RMDP_ERR_NOTFOUND','O download especificado não foi encontrado');
+	define('_RMDP_ERR_NOACCESS','Registrar-se para fazer download desse arquivo');
 
-	define('_DOWNLOAD_IN_PROGRESS','DESCARGA EN PROGRESO');
-	define('_RMDP_CLICK_HERE','Si la descarga no inicia autom&aacute;ticamente haz <a href="%s" target="_blank">click aqu&iacute;</a>');
-	define('_RMDP_WHILE_DOWN','La descarga se abrir&aacute; en una nueva ventana. Puedes seguir navegando mientras tu descarga termina');
+	define('_DOWNLOAD_IN_PROGRESS','DOWNLOAD EM ANDAMENTO');
+	define('_RMDP_CLICK_HERE','Se o download não iniciar automaticamente <a href="%s" target="_blank">click aqui.</a>');
+	define('_RMDP_WHILE_DOWN','O download abriu em uma nova janela. Continue navegando enquanto seu download termina');
 
 } elseif ($rmdp_location=='votos'){
 
-	define('_RMDP_NO_ACCESS','Lo sentimos, debes registrarte para poder votar');
-	define('_RMDP_IS_PUBLISHER','Lo sentimos, no puedes votar por tus propias descargas');
-	define('_RMDP_VOTE_ONEDAY','Solo puedes votar una vez por dia por el mismo recurso');
-	define('_RMDP_VOTE_THX','Gracias por tu voto. Por favor agrega un comentario acerca de este recurso');
-	define('_RMDP_VOTE_ERR','Ocurrio un error al registrar tu voto, por favor vuelve a intentarlo');
-	define('_RMDP_NOVOTE_TWICE','No puedes votar dos veces por el mismo recurso');
+	define('_RMDP_NO_ACCESS','Registre-se para poder votar');
+	define('_RMDP_IS_PUBLISHER','Você não pode votar nos seus próprios downloads');
+	define('_RMDP_VOTE_ONEDAY','Só é permitido votar uma vez por dia no mesmo arquivo');
+	define('_RMDP_VOTE_THX','Obrigado por seu voto. Por favor adicione um comentário a respeito desse arquivo');
+	define('_RMDP_VOTE_ERR','Ocorreu um erro ao registrar seu voto, por favor tente novamente');
+	define('_RMDP_NOVOTE_TWICE','Não é permitido votar duas vezes no mesmo arquivo');
 
 } elseif ($rmdp_location=='shots'){
 
-	define('_RMDP_LOCATION_SHOT','Pantallas');
-	define('_RMDP_DOWN_SHOTS','Pantallas de %s');
-	define('_RMDP_ERR_NOTFOUND','No se encontr&oacute; la pantalla especificada');
+	define('_RMDP_LOCATION_SHOT','Imagens');
+	define('_RMDP_DOWN_SHOTS','Imagens de %s');
+	define('_RMDP_ERR_NOTFOUND','O download especificado não foi encontrado');
 
 } elseif ($rmdp_location=='popular'){
-	define('_RMDP_POPULAR_TITLE','Descargas Populares');
-	define('_RMDP_TOP_POP','Nuestras <strong>%s</strong> descargas mas populares');
+	define('_RMDP_POPULAR_TITLE','Downloads Populares');
+	define('_RMDP_TOP_POP','Nossos <strong>%s</strong> downloads mais populares');
 } elseif ($rmdp_location=='favoritos'){
-	define('_RMDP_TOP_FAVS','Nuestro Software Favorito');
-	define('_RMDP_FAVORITE_TITLE','Nuestros Favoritos');
+	define('_RMDP_TOP_FAVS','Nosso Software Favorito');
+	define('_RMDP_FAVORITE_TITLE','Nossos Favoritos');
 }  elseif ($rmdp_location=='mejorval'){
 
-	define('_RMDP_RATED_TITLE','Descargas Mejor Valoradas');
-	define('_RMDP_TOP_RATE','Las <strong>%s</strong> Descargas mejor valoradas');
+	define('_RMDP_RATED_TITLE','Downloads Melhores Avaliados');
+	define('_RMDP_TOP_RATE','Os <strong>%s</strong> Downloads melhores avaliados');
 	
 } elseif ($rmdp_location=='submit'){
 	
-	define('_RMDP_SUBMIT_INACTIVE','Lo sentimos, el env&iacute;o de descargas esta deshabilitado por el momento');
-	define('_RMDP_REGISTER_FORSUBMIT','Para poder enviar descargas necesitas estar registrado');
-	define('_RMDP_FNAME','Nombre:');
-	define('_RMDP_FVERSION','Versi&oacute;n:');
-	define('_RMDP_FLIC','Licencia:');
-	define('_RMDP_FFILE','Archivo:');
-	define('_RMDP_FIMAGE','Im&aacute;gen:');
-	define('_RMDP_FIMAGETIP','La im&aacute;gen debe tener %s pix. de ancho');
-	define('_RMDP_FCATEGO','Categor&iacute;a:');
-	define('_RMDP_FDESC','Descripci&oacute;n:');
-	define('_RMDP_FDESCTIP','Por favor incluye los detalles de tu descarga (caracter&iacute;sticas, diferencias, etc)');
-	define('_RMDP_FSIZE','Tama&ntilde;o en bytes:');
-	define('_RMDP_FANONIM','Permitir descargas an&oacute;nimas:');
-	define('_RMDP_FWEB','T&iacute;tulo del Sitio del Autor:');
-	define('_RMDP_FURL','URL del autor:');
-	define('_RMDP_SEND','Enviar Descarga');
+	define('_RMDP_SUBMIT_INACTIVE','O envio de downloads está desabilitado no momento');
+	define('_RMDP_REGISTER_FORSUBMIT','Para enviar downloads é necessário estar registrado');
+	define('_RMDP_FNAME','Nome:');
+	define('_RMDP_FVERSION','Versão:');
+	define('_RMDP_FLIC','Licença:');
+	define('_RMDP_FFILE','Arquivo:');
+	define('_RMDP_FIMAGE','imagem:');
+	define('_RMDP_FIMAGETIP','A imagem deve ter %s pixel. de largura');
+	define('_RMDP_FCATEGO','Categoria');
+	define('_RMDP_FDESC','Descrição:');
+	define('_RMDP_FDESCTIP','Por favor inclua os detalhes do seu download (características, diferenças, tamanho etc.)');
+	define('_RMDP_FSIZE','Tamanho em bytes:');
+	define('_RMDP_FANONIM','Permitir downloads anônimos:');
+	define('_RMDP_FWEB','Título do Site do Autor:');
+	define('_RMDP_FURL','URL do autor:');
+	define('_RMDP_SEND','Enviar Download');
 	define('_RMDP_OSS','Plataformas:');
-	define('_RMDP_YES','S&iacute;');
-	define('_RMDP_NO','No');
-	define('_RMDP_FORM_TITLE','Enviar Descarga');
-	define('_RMDP_SUBMIT_INFO','Todas las descargas son sujetas a aprobaci&oacute;n por parte del equipo de <strong>%s</strong>.');
-	define('_RMDP_SUBMIT_INFO2','Cuado tu descarga sea aprobada recibir&aacute;s un email de confirmaci&oacute;n con un enlace para que puedes editar los par&aacute;metros de tu descarga');
+	define('_RMDP_YES','Sim');
+	define('_RMDP_NO','Não');
+	define('_RMDP_FORM_TITLE','Alterar download');
+	define('_RMDP_SUBMIT_INFO','As alterações estão sujeitas a aprovação. Por favor completa todos os campos requeridos (*).<br /><br />');
+	define('_RMDP_SUBMIT_INFO2','Quando seu download for aprovado, você receberá um e-mail de confirmação com um Link para poder editar os dados do seu download');
 	
 	// Cadenas de Errores y redirecciones
-	define('_RMDP_ERRORS_HAPPEND','Ocurrieron los siguientes errores:');
-	define('_RMDP_MUSTBE_NUM','debe contener un n&uacute;mero');
-	define('_RMDP_IS_EMPTY','no ha sido completado');
-	define('_RMDP_PLEASE_FILL', 'Por favor completa los campos requeridos');
-	define('_RMDP_NAME_EXIST', 'Ya existe una descarga con un el mismo nombre');
-	define('_RMDP_SENDOK','Tu descarga ha sido enviada correctamente, gracias');
-	define('_RMDP_SENDFAIL','Ocurrio un error al enviar tu descarga. Por favor vuelve a intentarlo.');
-	define('_RMDP_MAIL_SUBJECT','Envio de nueva descarga');
-	define('_RMDP_MAIL_BODY','Un usuario ha enviado una nueva descarga.\n\nPara revisar los detalles de esta descarga:\n\n%s');
+	define('_RMDP_ERRORS_HAPPEND','Ocorreram os seguintes erros:');
+	define('_RMDP_MUSTBE_NUM','deve conter um número');
+	define('_RMDP_IS_EMPTY','não foi completado');
+	define('_RMDP_PLEASE_FILL', 'Por favor complete os campos requeridos');
+	define('_RMDP_NAME_EXIST', 'Já existe um download com um o mesmo nome');
+	define('_RMDP_SENDOK','Sua solicitação de alteração foi enviada corretamente, obrigado.');
+	define('_RMDP_SENDFAIL','Ocorreu um erro ao enviar sua solicitação. Por favor, tente novamente.');
+	define('_RMDP_MAIL_SUBJECT','Enviar novo download');
+	define('_RMDP_MAIL_BODY','Um usuário solicitou a modificação de um download. Para revisar os detalhes desse download: %s');
 
 } elseif ($rmdp_location=='mysends'){
 	
-	define('_RMDP_FIRST_LOGIN','Ingresa con tu nombre de usuario y contrase&ntilde;a para poder ver tus descargas');
-	define('_RMDP_NOHAVE_DOWNS','No has enviado ninguna descarga');
-	define('_RMDP_MY_SENDS','Mis descargas');
-	define('_RMDP_MODIFY_DOWN','Modificar');
-	define('_RMDP_DELETE_DOWN','Eliminar');
-	define('_RMDP_NAME_DOWN','Nombre');
-	define('_RMDP_DATE_DOWN','Fecha');
-	define('_RMDP_DOWNS_DOWN','Descargas');
-	define('_RMDP_OPTIONS_DOWN','Opciones');
-	define('_RMDP_ERR_NOTFOUND','No se encontr&oacute; la descarga especificada');
-	define('_RMDP_NOT_OWNER','Lo siento, tu no eres el publicador de esta descarga');
-	define('_RMDP_FORM_TITLE', 'Modificar Descarga');
-	define('_RMDP_FNAME','Nombre:');
-	define('_RMDP_FVERSION','Versi&oacute;n:');
-	define('_RMDP_FLIC','Licencia:');
-	define('_RMDP_FFILE','Archivo:');
-	define('_RMDP_FIMAGE','Im&aacute;gen:');
-	define('_RMDP_FIMAGETIP','La im&aacute;gen debe tener %s pix. de ancho');
-	define('_RMDP_FCATEGO','Categor&iacute;a:');
-	define('_RMDP_FDESC','Descripci&oacute;n:');
-	define('_RMDP_FDESCTIP','Por favor incluye los detalles de tu descarga (caracter&iacute;sticas, diferencias, etc)');
-	define('_RMDP_FSIZE','Tama&ntilde;o en bytes:');
-	define('_RMDP_FANONIM','Permitir descargas an&oacute;nimas:');
-	define('_RMDP_FWEB','T&iacute;tulo del Sitio del Autor:');
-	define('_RMDP_FURL','URL del autor:');
-	define('_RMDP_SEND','Enviar Descarga');
+	define('_RMDP_FIRST_LOGIN','Entre com o nome de usuário e senha para ver seus downloads');
+	define('_RMDP_NOHAVE_DOWNS','Não enviou nenhum download');
+	define('_RMDP_MY_SENDS','Meus downloads');
+	define('_RMDP_MODIFY_DOWN','Alterar');
+	define('_RMDP_DELETE_DOWN','Excluir');
+	define('_RMDP_NAME_DOWN','Nome');
+	define('_RMDP_DATE_DOWN','Data');
+	define('_RMDP_DOWNS_DOWN','Downloads');
+	define('_RMDP_OPTIONS_DOWN','Opções');
+	define('_RMDP_ERR_NOTFOUND','O download especificado não foi encontrado');
+	define('_RMDP_NOT_OWNER','Você não é o publica-dor desse download');
+	define('_RMDP_FORM_TITLE', 'Alterar download');
+	define('_RMDP_FNAME','Nome:');
+	define('_RMDP_FVERSION','Versão:');
+	define('_RMDP_FLIC','Licença:');
+	define('_RMDP_FFILE','Arquivo:');
+	define('_RMDP_FIMAGE','imagem:');
+	define('_RMDP_FIMAGETIP','A imagem deve ter %s pixel. de largura');
+	define('_RMDP_FCATEGO','Categoria');
+	define('_RMDP_FDESC','Descrição:');
+	define('_RMDP_FDESCTIP','Inclua os detalhes do seu download (caracteristicas, diferenças, tamanho etc)');
+	define('_RMDP_FSIZE','Tamanho em bytes:');
+	define('_RMDP_FANONIM','Permitir downloads anônimos');
+	define('_RMDP_FWEB','Título do Site do Autor:');
+	define('_RMDP_FURL','URL do autor:');
+	define('_RMDP_SEND','Enviar download');
 	define('_RMDP_OSS','Plataformas:');
-	define('_RMDP_YES','S&iacute;');
-	define('_RMDP_NO','No');
-	define('_RMDP_SUBMIT_INFO','Las modificaciones son sujetas a aprobaci&oacute;n. Por favor copleta todos los campos requeridos (*).<br /><br />');
-	define('_RMDP_MAIL_BODY','Un usuario ha solicitado la modificaci&oacute;n de una descarga. Para revisar los detalles de esta descarga: %s');
-	define('_RMDP_SENDOK','Tu solicitud de modificaci&oacute;n ha sido enviada correctamente, gracias');
-	define('_RMDP_SENDFAIL','Ocurrio un error al enviar tu solicitud. Por favor vuelve a intentarlo.');
-	define('_RMDP_PLEASE_FILL', 'Por favor completa los campos requeridos');
-	define('_RMDP_NAME_EXIST', 'Ya existe una descarga con un el mismo nombre');
-	define('_RMDP_SEND_SHOTS','Pantallas');
-	define('_RMDP_SHOTS_TITLE','Capturas de Pantalla de "%s"');
-	define('_RMDP_SEND_HITS','Hits:');
-	define('_RMDP_SEND_DATE','Fecha:');
-	define('_RMDP_NEW_SHOT','Nueva Pantalla');
-	define('_RMDP_MOD_SHOT','Modificar Pantalla');
-	define('_RMDP_NEW_SMALLIMG','URL de Im&aacute;gen Peque&ntilde;a:');
-	define('_RMDP_NEW_BIGIMG','URL de Im&aacute;gen Normal:');
-	define('_RMDP_NEW_TEXT','Texto Descriptivo:');
+	define('_RMDP_YES','Sim');
+	define('_RMDP_NO','Não');
+	define('_RMDP_SUBMIT_INFO','As alterações estão sujeitas a aprovação. Por favor complete todos os campos requeridos (*).<br /><br />');
+	define('_RMDP_MAIL_BODY','Um usuário solicitou a alteração de um download. Para revisar os detalhes deste download: %s');
+	define('_RMDP_SENDOK','Sua solicitação de alteração foi enviada corretamente, obrigado.');
+	define('_RMDP_SENDFAIL','Ocorreu um erro ao enviar sua solicitação. Por favor, tente novamente.');
+	define('_RMDP_PLEASE_FILL', 'Por favor, complete os campos requeridos');
+	define('_RMDP_NAME_EXIST', 'Já existe um download com o mesmo nome');
+	define('_RMDP_SEND_SHOTS','Telas');
+	define('_RMDP_SHOTS_TITLE','Capturas de Tela de "%s"');
+	define('_RMDP_SEND_HITS','Pontos:');
+	define('_RMDP_SEND_DATE','Data:');
+	define('_RMDP_NEW_SHOT','Nova Tela');
+	define('_RMDP_MOD_SHOT','Alterar Tela');
+	define('_RMDP_NEW_SMALLIMG','URL do imagem Pequena:');
+	define('_RMDP_NEW_BIGIMG','URL do imagem Normal:');
+	define('_RMDP_NEW_TEXT','Texto Descritivo:');
 	define('_RMDP_NEW_SEND','Enviar');
-	define('_RMDP_SHOT_LIMIT','Lo sentimos, has llegado al l&iacute;mite de pantallas para tu descarga');
+	define('_RMDP_SHOT_LIMIT','Você chegou ao limite de imagens para o seu download');
 	
-	define('_RMDP_ERR_IMAGES','Por favor especifica la url para la im&aacute;gen peque&ntilde;a y la im&aacute;gen normal');
+	define('_RMDP_ERR_IMAGES','Por favor especifique a URL para a imagem pequena e imagem normal');
 	
 } elseif ($rmdp_location=='search'){
 
 	define('_RMDP_SEARCH_RESULTS','Resultados para "%s"');
-	define('_RMDP_NOSEARCH_KEY','No especificaste una cadena de b&uacute;squeda');
+	define('_RMDP_NOSEARCH_KEY','Não foi especificado uma palavra para busca');
 
 }	elseif ($rmdp_location=='broken'){
 	
-	define('_RMDP_ERR_NOTFOUND','No se encontró la descarga especificada');
-	define('_RMDP_NO_USER','Para poder reportar un enlace roto debes ser un usuario registrado');
-	define('_RMDP_BROKEN_BODY',"Hola %s:\n\nUna descarga tuya ha sido reportada como errónea. Te suplicamos comprobar los datos cuanto antes. Para hacerlo puedes ingresar a:\n\n%s\n\nTambien puedes comprobar todas tus descargas en ".XOOPS_URL."/modules/rmdp/mysend.php \n\nAtentamente:\nEl equipo de Xoops México\nwww.xoops-mexico.net");
-	define('_RMDP_BROKEN_BODYADMIN',"El usuario %s ha reportado una descarga como errónea. Puedes revisar los datos en:\n\n%s\n\n O puedes ver la descarga en\n\n%s");
-	define('_RMDP_BROKEN_SEND','Tu reporte ha sido enviado. Gracias');
-	define('_RMDP_BROKEN_SUBJECT','Reporte de descarga errónea');
+	define('_RMDP_ERR_NOTFOUND','O download especificado não foi encontrado');
+	define('_RMDP_NO_USER','Para reportar um Link quebrado, você deve ser um usuário registrado.');
+	define('_RMDP_BROKEN_BODY',"Olá! %s:\n\n Um dos seus downloads foi reportado com erro. Verifique os dados o mais rápido possível. Entre em:\n\n%s\n\n Também pode comprovar todos seus downloads em ".XOOPS_URL."/modules/rmdp/mysend.php \n\n Atenciosamente:\n XoopsBR.org\nwww.xoopsbr.org");
+	define('_RMDP_BROKEN_BODYADMIN',"O usuário %s reportou um download com erro. Pode revisar os dados em:\n\n%s\n\n Ou pode ver o download em\n\n%s");
+	define('_RMDP_BROKEN_SEND','Sua confirmação foi enviada. Obrigado.');
+	define('_RMDP_BROKEN_SUBJECT','Confirmação de download com erro.');
 
 }
 ?>

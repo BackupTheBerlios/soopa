@@ -1,6 +1,6 @@
 <?php
 ///////////////////////////////////////////////////////////////////////////////
-// $Id: blocks.php,v 1.1 2005/07/23 16:52:00 mauriciodelima Exp $                  //
+// $Id: blocks.php,v 1.2 2005/08/02 05:30:59 mauriciodelima Exp $                  //
 // ------------------------------------------------------------------------  //
 //                         RM+SOFT.Download.Plus                             //
 //                    Copyright © 2005. Red Mexico Soft                      //
@@ -31,5 +31,5 @@
 //                                                                           //
 ///////////////////////////////////////////////////////////////////////////////
 
-define('_BK_RMDP_RECENTNUM','Núemero de descargas recientes');
+define('_BK_RMDP_RECENTNUM','Número de downloads recentes');
 ?>
