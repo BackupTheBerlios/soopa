@@ -1,7 +1,7 @@
 <?php
 
 /**
-* $Id: modinfo.php,v 1.1 2005/07/05 05:34:14 mauriciodelima Exp $
+* $Id: modinfo.php,v 1.2 2005/08/03 21:53:00 mauriciodelima Exp $
 * Module: SmartSection
 * Author: The SmartFactory <www.smartfactory.ca>
 * Licence: GNU
@@ -119,6 +119,9 @@ define('_MI_SS_LINKED_PATH', '[FORMAT OPTIONS] Enable links on the current path:
 define('_MI_SS_LINKED_PATHDSC', "This option allows the user climb back up by clicking on a element of the current path displayed on the top of the page");
 define('_MI_SS_ORDERBYDATE', '[FORMAT OPTIONS] Order the items by date :');
 define('_MI_SS_ORDERBYDATEDSC', 'If you set this option to "Yes", the items inside a category will be ordered by decending date, otherwise, they will be ordered by their weight.');
+define('_MI_SS_ORDERBY_DATE', 'Date DESC');
+define('_MI_SS_ORDERBY_TITLE', 'Title ASC');
+define('_MI_SS_ORDERBY_WEIGHT', 'Weight ASC');
 define('_MI_SS_OTHER_ITEMS_TYPE', '[FORMAT OPTIONS] Other articles display type');
 define('_MI_SS_OTHER_ITEMS_TYPE_ALL', "All articles");
 define('_MI_SS_OTHER_ITEMS_TYPE_DSC', 'Select how you would like to display the other articles of the category in the article page.');
@@ -150,18 +153,19 @@ define('_MI_SS_USEREALNAME', '[FORMAT OPTIONS] Use the Real Name of users');
 define('_MI_SS_USEREALNAMEDSC', 'When displaying a username, use the real name of that user if he has a set his real name.');
 
 // Names of admin menu items
-define("_MI_SS_ADMENU1", "Index");
-define("_MI_SS_ADMENU2", "Categories");
-define("_MI_SS_ADMENU3", "Articles");
-define("_MI_SS_ADMENU4", "Permissions");
-define("_MI_SS_ADMENU5", "Blocks and Groups");
-define("_MI_SS_ADMENU6", "Go to module");
+define("_MI_SS_ADMENU1", "Início");
+define("_MI_SS_ADMENU2", "Categorias");
+define("_MI_SS_ADMENU3", "Artigos");
+define("_MI_SS_ADMENU4", "Permissões");
+define("_MI_SS_ADMENU5", "Blocos & Grupos");
+define("_MI_SS_ADMENU6", "Acessar Módulo");
 
 //Names of Blocks and Block information
 define("_MI_SS_ITEMSNEW", "Recent items List");
 define("_MI_SS_ITEMSPOT", "In the Spotlight !");
 define("_MI_SS_ITEMSRANDOM_ITEM", "Random item !");
 define("_MI_SS_RECENTITEMS", "Recent items (Detail)");
+define("_MI_SS_ITEMSMENU", "Menu block");
 
 // Text for notifications
 define('_MI_SS_CATEGORY_ITEM_NOTIFY', 'Category Items');

@@ -1,7 +1,7 @@
 <?php
 
 /**
-* $Id: modinfo.php,v 1.2 2005/08/02 03:47:52 mauriciodelima Exp $
+* $Id: modinfo.php,v 1.3 2005/08/03 21:53:00 mauriciodelima Exp $
 * Module: SmartSection
 * Author: The SmartFactory <www.smartfactory.ca>
 * Licence: GNU
@@ -153,9 +153,9 @@ define('_MI_SS_USEREALNAME', '[FORMAT OPTIONS] Use the Real Name of users');
 define('_MI_SS_USEREALNAMEDSC', 'When displaying a username, use the real name of that user if he has a set his real name.');
 
 // Names of admin menu items
-define("_MI_SS_ADMENU1", "Index");
-define("_MI_SS_ADMENU2", "Categories");
-define("_MI_SS_ADMENU3", "Articles");
+define("_MI_SS_ADMENU1", "Índice");
+define("_MI_SS_ADMENU2", "Categorias");
+define("_MI_SS_ADMENU3", "Arti");
 define("_MI_SS_ADMENU4", "Permissions");
 define("_MI_SS_ADMENU5", "Blocks and Groups");
 define("_MI_SS_ADMENU6", "Go to module");
