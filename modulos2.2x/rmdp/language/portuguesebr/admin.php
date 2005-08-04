@@ -1,6 +1,6 @@
 <?
 ///////////////////////////////////////////////////////////////////////////////
-// $Id: admin.php,v 1.3 2005/08/02 05:41:21 mauriciodelima Exp $                   //
+// $Id: admin.php,v 1.4 2005/08/04 05:18:21 mauriciodelima Exp $                   //
 // ------------------------------------------------------------------------  //
 //                         RM+SOFT.Download.Plus                             //
 //                    Copyright © 2005. Red Mexico Soft                      //
@@ -30,7 +30,7 @@
 //  ------------------------------------------------------------------------ //
 //                                                                           //
 ///////////////////////////////////////////////////////////////////////////////
-global $location;
+//global $location;
 
 define('_AM_RMDP_SEND','Enviar');
 define('_AM_RMDP_CANCEL','Cancelar');
@@ -56,7 +56,7 @@ define('_AM_RMDP_SMODIFIED','Alteradas');
 define('_AM_RMDP_GOPAGE','Página: ');
 define('_AM_RMDP_HELP','Ajuda');
 
-if ($location=='Índice'){
+//if ($location=='Índice'){
 
 	define('_AM_RMDP_ACTUALSTATUS','Estado Atual do Módulo');
 	define('_AM_RMDP_CATEGOS','Número das Categorias:');
@@ -69,7 +69,7 @@ if ($location=='Índice'){
 	define('_AM_RMDP_DSEND','Downloads Enviados:');
 	define('_AM_RMDP_NSHOTS','Captura de telas:');
 
-} elseif ($location=='Categorias'){
+//} elseif ($location=='Categorias'){
 	define('_AM_RMDP_FNAME','Nome:');
 	define('_AM_RMDP_FACCESS','Acesso:');
 	define('_AM_RMDP_REGISTERED','Só Registrados');
@@ -97,7 +97,7 @@ if ($location=='Índice'){
 	define('_AM_RMDP_NEWDOWN','Novo Download');
 	define('_AM_RMDP_SHOWNEWS','Mostrar novidades na página principal:');
 	
-} elseif ($location=='downloads'){
+//} elseif ($location=='downloads'){
 	
 	define('_AM_RMDP_DOWNSLIST','Lista de Downloads');
 	define('_AM_RMDP_SOFTCARS','Características');
@@ -171,7 +171,7 @@ if ($location=='Índice'){
 	define('_AM_RMDP_REVIEW','Comentário:');
 	define('_AM_RMDP_REVIEWOK','Seu comentário foi adicionado corretamente');	
 	
-} elseif ($location=='licenças'){
+//} elseif ($location=='licenças'){
 	define('_AM_RMDP_LICEXISTS','Licenças Existentes');
 	define('_AM_RMDP_NEWLIC','Nova Licença');
 	define('_AM_RMDP_MODLIC','Modificar Licença');
@@ -184,7 +184,7 @@ if ($location=='Índice'){
 	define('_AM_RMDP_ERRNOEXIST','O download especificado não existe');
 	define('_AM_RMDP_DELOK','Plataforma excluída corretamente');
 	define('_AM_RMDP_CONFIRM','Realmente deseja excluir este download?');
-} elseif ($location=='plataformas'){
+//} elseif ($location=='plataformas'){
 	
 	define('_AM_RMDP_OSEXISTS','Plataformas Existentes');
 	define('_AM_RMDP_NEWOS','Nova Plataforma');
@@ -196,7 +196,7 @@ if ($location=='Índice'){
 	define('_AM_RMDP_CONFIRM','Realmente deseja excluir este download?');
 	define('_AM_RMDP_DELOK','Plataforma excluída corretamente');
 	
-} elseif ($location=='sponsor'){
+//} elseif ($location=='sponsor'){
 
 	define('_AM_RMDP_SPONSORLIST','Lista de Downloads');
 	define('_AM_RMDP_SNAME','Nome');
@@ -209,7 +209,7 @@ if ($location=='Índice'){
 	define('_AM_RMDPO_SPONNOEXIST','O download especificado não existe');
 	define('_AM_RMDP_CONFIRM','Realmente deseja excluir este download ?');
 
-} elseif ($location=='sended'){
+//} elseif ($location=='sended'){
 	
 	define('_RMDP_SENDED_TITLE','Downloads Enviados por Usuários');
 	define('_RMDP_NAME','Nome');
@@ -246,5 +246,5 @@ if ($location=='Índice'){
 	// Mensajes y redirecciones
 	define('_AM_RMDP_DELCONFIRM', 'Realmente deseja excluir ?');
 
-}
+//}
 ?>

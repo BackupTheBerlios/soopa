@@ -1,6 +1,6 @@
 <?php
 ///////////////////////////////////////////////////////////////////////////////
-// $Id: main.php,v 1.2 2005/08/02 05:30:59 mauriciodelima Exp $                    //
+// $Id: main.php,v 1.3 2005/08/04 05:20:00 mauriciodelima Exp $                    //
 // ------------------------------------------------------------------------  //
 //                         RM+SOFT.Download.Plus                             //
 //                    Copyright © 2005. Red Mexico Soft                      //
@@ -80,7 +80,7 @@ define('_RMDP_LICENCE','Licença:');
 define('_RMDP_SPONSORED','DESTACADO');
 define('_RMDP_VIEW_SHOT','Ver imagens');
 	
-if($rmdp_location=='downloads'){
+//if($rmdp_location=='downloads'){
 
 	define('_RMDP_DOWNLOADS','Downloads:');
 	define('_RMDP_WEB_SITE','Site:');
@@ -105,7 +105,7 @@ if($rmdp_location=='downloads'){
 	define('_RMDP_CLICK_HERE','Se o download não iniciar automaticamente <a href="%s" target="_blank">click aqui.</a>');
 	define('_RMDP_WHILE_DOWN','O download abriu em uma nova janela. Continue navegando enquanto seu download termina');
 
-} elseif ($rmdp_location=='votos'){
+//} elseif ($rmdp_location=='votos'){
 
 	define('_RMDP_NO_ACCESS','Registre-se para poder votar');
 	define('_RMDP_IS_PUBLISHER','Você não pode votar nos seus próprios downloads');
@@ -114,24 +114,24 @@ if($rmdp_location=='downloads'){
 	define('_RMDP_VOTE_ERR','Ocorreu um erro ao registrar seu voto, por favor tente novamente');
 	define('_RMDP_NOVOTE_TWICE','Não é permitido votar duas vezes no mesmo arquivo');
 
-} elseif ($rmdp_location=='shots'){
+//} elseif ($rmdp_location=='shots'){
 
 	define('_RMDP_LOCATION_SHOT','Imagens');
 	define('_RMDP_DOWN_SHOTS','Imagens de %s');
 	define('_RMDP_ERR_NOTFOUND','O download especificado não foi encontrado');
 
-} elseif ($rmdp_location=='popular'){
+//} elseif ($rmdp_location=='popular'){
 	define('_RMDP_POPULAR_TITLE','Downloads Populares');
 	define('_RMDP_TOP_POP','Nossos <strong>%s</strong> downloads mais populares');
-} elseif ($rmdp_location=='favoritos'){
+//} elseif ($rmdp_location=='favoritos'){
 	define('_RMDP_TOP_FAVS','Nosso Software Favorito');
 	define('_RMDP_FAVORITE_TITLE','Nossos Favoritos');
-}  elseif ($rmdp_location=='mejorval'){
+//}  elseif ($rmdp_location=='mejorval'){
 
 	define('_RMDP_RATED_TITLE','Downloads Melhores Avaliados');
 	define('_RMDP_TOP_RATE','Os <strong>%s</strong> Downloads melhores avaliados');
 	
-} elseif ($rmdp_location=='submit'){
+//} elseif ($rmdp_location=='submit'){
 	
 	define('_RMDP_SUBMIT_INACTIVE','O envio de downloads está desabilitado no momento');
 	define('_RMDP_REGISTER_FORSUBMIT','Para enviar downloads é necessário estar registrado');
@@ -167,7 +167,7 @@ if($rmdp_location=='downloads'){
 	define('_RMDP_MAIL_SUBJECT','Enviar novo download');
 	define('_RMDP_MAIL_BODY','Um usuário solicitou a modificação de um download. Para revisar os detalhes desse download: %s');
 
-} elseif ($rmdp_location=='mysends'){
+//} elseif ($rmdp_location=='mysends'){
 	
 	define('_RMDP_FIRST_LOGIN','Entre com o nome de usuário e senha para ver seus downloads');
 	define('_RMDP_NOHAVE_DOWNS','Não enviou nenhum download');
@@ -218,12 +218,12 @@ if($rmdp_location=='downloads'){
 	
 	define('_RMDP_ERR_IMAGES','Por favor especifique a URL para a imagem pequena e imagem normal');
 	
-} elseif ($rmdp_location=='search'){
+//} elseif ($rmdp_location=='search'){
 
 	define('_RMDP_SEARCH_RESULTS','Resultados para "%s"');
 	define('_RMDP_NOSEARCH_KEY','Não foi especificado uma palavra para busca');
 
-}	elseif ($rmdp_location=='broken'){
+//}	elseif ($rmdp_location=='broken'){
 	
 	define('_RMDP_ERR_NOTFOUND','O download especificado não foi encontrado');
 	define('_RMDP_NO_USER','Para reportar um Link quebrado, você deve ser um usuário registrado.');
@@ -232,5 +232,5 @@ if($rmdp_location=='downloads'){
 	define('_RMDP_BROKEN_SEND','Sua confirmação foi enviada. Obrigado.');
 	define('_RMDP_BROKEN_SUBJECT','Confirmação de download com erro.');
 
-}
+//}
 ?>
