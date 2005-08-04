@@ -1,6 +1,6 @@
 <?php
 //////////////////////////////////////////////////////////////////////////////
-// $Id: admin.php,v 1.1 2005/07/23 22:30:38 mauriciodelima Exp $                  //
+// $Id: admin.php,v 1.2 2005/08/04 05:43:10 mauriciodelima Exp $                  //
 // ------------------------------------------------------------------------ //
 //                 RM+SOFT - Control de Servicios                           //
 //        Copyright Red México Soft © 2005. (Eduardo Cortés)                //
@@ -41,7 +41,7 @@ define('_AM_PANEL','Painél de Controle');
 define('_AM_SEND','OK');
 define('_AM_CANCEL','Cancelar');
 define('_AM_DELETE','Eliminar');
-define('_AM_MODIFY','Modificar');
+define('_AM_MODIFY','Editar');
 define('_AM_OPTIONS','Opções');
 define('_AM_FORMNAME','Nome:');
 define('_AM_FORMCODE','Código:');
@@ -52,9 +52,9 @@ define('_AM_VIEW','Ver');
 define('_AM_SRV_TERMS','Términos');
 define('_AM_HELP','Ajuda');
 
-if ($location=='categos'){
+//if ($location=='categos'){
 	define('_AM_NEWFORM','Criar uma categoría');
-	define('_AM_MODIFYFORM','Modificar Categoría');
+	define('_AM_MODIFYFORM','Editar Categoría');
 	define('_AM_FORMIMG','Imagem da Categoría:');
 	define('_AM_DESC','Descrição:');
 	define('_AM_NOCATEGOS','Não existem categorias ainda. Por favor, crie uma agora.');
@@ -62,7 +62,7 @@ if ($location=='categos'){
 	define('_AM_ERRDESC','ERROR: Não foi digitado uma descrição para esta categoría');
 	define('_AM_ERREXIST','ERROR: Já existe uma categoria com o mesmo nome');
 	define('_AM_ERRNEXT','Ocorreu o seguinte erro:<br>');
-	define('_AM_CATEGOOK','Categoria criada corretamente');
+	define('_AM_CATEGOOK','Categoria incluída com sucesso!');
 	define('_AM_INFOIMG','As imagens devem existir em '.XOOPS_ROOT_PATH.'/modules/rmservices/images/categos/');
 	define('_AM_CATEGOLIST','Lista de Categorias');
 	define('_AM_NOEXIST','Não existe a categoría especificada');
@@ -121,7 +121,7 @@ if ($location=='services'){
 	define('_AM_ALLCARACT','Características Existentes');
 	define('_AM_ADD','Agregar');
 	define('_AM_NEWCAR','Nova Característica');
-	define('_AM_MODCAR','Modificar Característica');
+	define('_AM_MODCAR','Editar Característica');
 	define('_AM_ERRNAMECAR','ERROR: Não foi informado o nome para esta categoria');
 	define('_AM_ERRSDESCCAR','ERROR: Não foi informado uma descrição curta para esta caracteristica');
 	define('_AM_ERRLDESCCAR','ERROR: Não foi informado uma descrição completa para esta caracteristica');
@@ -177,9 +177,9 @@ if ($location=='promos'){
 	define('_AM_RELATION_EXIST','Este produto já foi incluído para esta promoção');
 }
 
-if ($location=='banners'){
+//if ($location=='banners'){
 	define('_AM_NEWBANN','Criar Novo Banner');
-	define('_AM_MODBANN','Modificar Banner');
+	define('_AM_MODBANN','Editar Banner');
 	define('_AM_FORMSERV','Serviço:');
 	define('_AM_SELECTSRV','Seleciona um serviço...');
 	define('_AM_FORMIMG','Imagem:');
@@ -201,7 +201,7 @@ if ($location=='sales'){
 	define('_AM_SERVS_LIST','Venda de Serviços');
 }
 
-if ($location=='terminos'){
+//if ($location=='terminos'){
 	define('_AM_ERROR_NOTITLE','ERROR: NÃO especificou um título');
 	define('_AM_ERROR_NOTEXT','ERROR: Não foi escrito um texto para os términos');
 	define('_AM_ERROR_EXIST','ERROR: Já existem términos con este mesmo título');
@@ -210,10 +210,10 @@ if ($location=='terminos'){
 	define('_AM_TERMS_MODOK','Términos modificados corretamente');
 	define('_AM_TERM_LIST','Términos Existentes');
 	define('_AM_TERMS_NEW','Criar Novos Términos');
-	define('_AM_TERMS_MOD','Modificar Términos');
+	define('_AM_TERMS_MOD','Editar Términos');
 	define('_AM_TERM_TITLE','Título descritivo:');
 	define('_AM_TERMS_TEXT','Texto Completo:');
 	define('_AM_TERM_CONFIRMDEL','Realmente desejas eliminar estes términos?');
 	define('_AM_TERMS_DELETED','Términos eliminados');
-}
+//}
 ?>

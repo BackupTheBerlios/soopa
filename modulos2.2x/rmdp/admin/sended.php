@@ -1,6 +1,6 @@
 <?php
 ///////////////////////////////////////////////////////////////////////////////
-// $Id: sended.php,v 1.2 2005/08/02 05:41:21 mauriciodelima Exp $                  //
+// $Id: sended.php,v 1.3 2005/08/04 05:42:39 mauriciodelima Exp $                  //
 // ------------------------------------------------------------------------  //
 //                         RM+SOFT.Download.Plus                             //
 //                    Copyright © 2005. Red Mexico Soft                      //
@@ -99,7 +99,7 @@ function Aceptar(){
   			<tr>
     		<td class='even'>"._AM_RMDP_FLICENSE."</td>
     		<td class='odd'><select name='licencia' id='licencia'>
-			<option value='0'>Ninguna</option>";
+			<option value='0'>Nenhuma</option>";
 			$result = $xoopsDB->query("SELECT * FROM ".$xoopsDB->prefix('rmdp_licences')." ORDER BY nombre");
 			while ($rw=$xoopsDB->fetchArray($result)){
 				echo "<option value='$rw[id_lic]'"; 

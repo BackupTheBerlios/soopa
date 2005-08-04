@@ -141,7 +141,7 @@ define("_ALBM_ONEPOST","1 publicação");
 define("_ALBM_NUMPOSTS","%s publicações");
 define("_ALBM_COMMENTSC","Comentários: ");
 define("_ALBM_RATETHISPHOTO","Rankiar esta foto");
-define("_ALBM_MODIFY","Modificar");
+define("_ALBM_MODIFY","Editar");
 define("_ALBM_VSCOMMENTS","Exibir/Incluir Comentários");
 
 define("_ALBM_THEREARE","Existem <b>%s</b> imagens no banco de dados.");

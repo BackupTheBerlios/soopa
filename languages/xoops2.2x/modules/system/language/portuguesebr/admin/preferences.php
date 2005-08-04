@@ -1,5 +1,5 @@
 <?php
-// $Id: preferences.php,v 1.3 2005/07/23 16:28:08 mauriciodelima Exp $
+// $Id: preferences.php,v 1.4 2005/08/04 05:43:41 mauriciodelima Exp $
 //%%%%%%	Admin Module Name  AdminGroup 	%%%%%
 // dont change
 
@@ -47,7 +47,7 @@ define("_MD_AM_ALLOWHTML","Permitir o uso de tags html nos comentários dos usuár
 define("_MD_AM_DEBUGMODE","Ligar o modo de teste (debug)? (para exibir todos os erros de SQL apenas enquanto estiver a fazer debug. Um site que estiver presente, deve ter esta opção desligada.)");
 define("_MD_AM_DEBUGMODEDSC","Várias opções de debug. Um site em produção normal deve ter esta opção desativada.");
 define("_MD_AM_AVATARCONF","Configurações personalizadas dos avatares");
-define("_MD_AM_CHNGUTHEME","Modificar o tema de todos os usuários");
+define("_MD_AM_CHNGUTHEME","Editar o tema de todos os usuários");
 define("_MD_AM_NOTIFYTO","Avisar os grupos:");
 define("_MD_AM_ALLOWTHEME","Permitir que usuários selecionem temas?");
 define("_MD_AM_ALLOWIMAGE","Permitir o uso de imagens nas mensagens");

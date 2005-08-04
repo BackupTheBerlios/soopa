@@ -1,6 +1,6 @@
 <?
 ///////////////////////////////////////////////////////////////////////////////
-// $Id: admin.php,v 1.4 2005/08/04 05:18:21 mauriciodelima Exp $                   //
+// $Id: admin.php,v 1.5 2005/08/04 05:42:39 mauriciodelima Exp $                   //
 // ------------------------------------------------------------------------  //
 //                         RM+SOFT.Download.Plus                             //
 //                    Copyright © 2005. Red Mexico Soft                      //
@@ -34,7 +34,7 @@
 
 define('_AM_RMDP_SEND','Enviar');
 define('_AM_RMDP_CANCEL','Cancelar');
-define('_AM_RMDP_MODIFY','Modificar');
+define('_AM_RMDP_MODIFY','Editar');
 define('_AM_RMDP_DELETE','Excluir');
 define('_AM_RMDP_NEWCATEGO','Nova Categoria');
 define('_AM_RMDP_YES','Sim;');
@@ -81,12 +81,12 @@ define('_AM_RMDP_HELP','Ajuda');
 	define('_AM_RMDP_ERRNAME','O nome do download não foi especificado');
 	define('_AM_RMDP_ERREXIST','Já existe um download com o mesmo nome');
 	define('_AM_RMDP_ERRNOEXIST','Não existe o download especificado');
-	define('_AM_RMDP_CATEGOOK','Categoria criada corretamente');
+	define('_AM_RMDP_CATEGOOK','Categoria incluída com sucesso!');
 	define('_AM_RMDP_CATEGOMODOK','Categoria modificada corretamente');
 	define('_AM_RMDP_CATEGOLIST','Lista de Categorias');
 	define('_AM_RMDP_LNAME','Nome');
 	define('_AM_RMDP_LACCESS','Acesso');
-	define('_AM_RMDP_MODCATEGO','Modificar Categoria');
+	define('_AM_RMDP_MODCATEGO','Editar Categoria');
 	define('_AM_RMDP_DELOK','Plataforma excluída corretamente');
 	define('_AM_RMDP_CONFIRM','Realmente deseja excluir este download ?');
 	
@@ -104,7 +104,7 @@ define('_AM_RMDP_HELP','Ajuda');
 	define('_AM_RMDP_SOFTOS','Plataformas');
 	define('_AM_RMDP_SOFTSHOTS','Imagens');
 	define('_AM_RMDP_NEWDOWN','Novo Download');
-	define('_AM_RMDP_MODDOWN','Modificar Download');
+	define('_AM_RMDP_MODDOWN','Editar Download');
 	define('_AM_RMDP_FNAME','Nome:');
 	define('_AM_RMDP_SENDBY','Enviado por:');
 	define('_AM_RMDP_FVERSION','Versão:');
@@ -143,7 +143,7 @@ define('_AM_RMDP_HELP','Ajuda');
 	define('_AM_RMDP_ASSIGNEDCARS','Características atribuídas a "%s"');
 	define('_AM_RMDP_ADD','Adicionar');
 	define('_AM_RMDP_NEWCAR','Nova Característica');
-	define('_AM_RMDP_MODCAR','Modificar Características');
+	define('_AM_RMDP_MODCAR','Editar Características');
 	define('_AM_RMDP_CARINFO','As imagens devem estar localizadas em "modules/rmdp/images/caracts"');
 	define('_AM_RMDP_OSALL','Plataformas Existentes');
 	define('_AM_RMDP_OSASSIGN','Plataformas Adicionadas'); 
@@ -156,7 +156,7 @@ define('_AM_RMDP_HELP','Ajuda');
 	// Sección para las capturas de pantalla
 	define('_AM_RMDP_SHOTLIST','Imagens existentes para "%s"');
 	define('_AM_RMDP_SHOTNEW','Nova Imagem');
-	define('_AM_RMDP_SHOTMOD','Modificar Imagem');
+	define('_AM_RMDP_SHOTMOD','Editar Imagem');
 	define('_AM_RMDP_SHOTDOWN','Download:');
 	define('_AM_RMDP_SHOTSMALL','Imagem pequena:');
 	define('_AM_RMDP_SHOTBIG','Imagem Grande:');
@@ -174,7 +174,7 @@ define('_AM_RMDP_HELP','Ajuda');
 //} elseif ($location=='licenças'){
 	define('_AM_RMDP_LICEXISTS','Licenças Existentes');
 	define('_AM_RMDP_NEWLIC','Nova Licença');
-	define('_AM_RMDP_MODLIC','Modificar Licença');
+	define('_AM_RMDP_MODLIC','Editar Licença');
 	define('_AM_RMDP_FNAME','Nome:');
 	define('_AM_RMDP_FURL','URL do Autor:');
 	define('_AM_RMDP_ERRNAME','O nome do download não foi especificado');
