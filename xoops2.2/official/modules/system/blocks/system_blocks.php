@@ -1,5 +1,5 @@
 <?php
-// $Id: system_blocks.php,v 1.1 2005/08/02 18:47:09 mauriciodelima Exp $
+// $Id: system_blocks.php,v 1.2 2005/08/05 03:42:01 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //
@@ -191,6 +191,17 @@ function b_system_user_show()
         $block['lang_logout'] = _MB_SYSTEM_LOUT;
         $block['lang_adminmenu'] = _MB_SYSTEM_ADMENU;
         $block['admin'] = $xoopsUser->isAdmin(0);
+        $pm_module =& $GLOBALS["module_handler"]->getByDirname("pm");
+		if ($pm_module && $pm_module->getVar('isactive')) {
+			$block['lang_inbox'] = _MB_SYSTEM_INBOX;
+    		$pm_handler =& xoops_getmodulehandler('privmessage', 'pm');
+	        $criteria =	new CriteriaCompo(new Criteria('read_msg',0));
+	        $criteria->add(new Criteria('to_userid',$xoopsUser->getVar('uid')));
+	        $count_pm = $pm_handler->getCount($criteria);
+	        if($count_pm>0){
+		        $block['lang_inbox'] .= " (<span style=\"color:#ff0000; font-weight: bold;\">".$count_pm."</span>)";
+	        }
+		}
         return $block;
     }
     return false;
@@ -374,7 +385,7 @@ function b_system_comments_show($options)
         $com['id'] = $i;
         $com['title'] = '<a href="'.XOOPS_URL.'/modules/'.$modules[$mid]->getVar('dirname').'/'.$comment_config[$mid]['pageName'].'?'.$comment_config[$mid]['itemName'].'='.$comments[$i]->getVar('com_itemid').'&amp;com_id='.$i.'&amp;com_rootid='.$comments[$i]->getVar('com_rootid').'&amp;'.$comments[$i]->getVar('com_exparams').'#comment'.$i.'">'.$comments[$i]->getVar('com_title').'</a>';
         $com['icon'] = $comments[$i]->getVar('com_icon');
-        $com['icon'] = ($com['icon'] != '') ? "subject/".$com['icon'] : 'icons/icon1.gif';
+        $com['icon'] = ($com['icon'] != '') ? "subject/".$com['icon'] : 'subject/icon1.gif';
         $com['time'] = formatTimestamp($comments[$i]->getVar('com_created'),'m');
         if ($comments[$i]->getVar('com_uid') > 0) {
             $poster =& $member_handler->getUser($comments[$i]->getVar('com_uid'));

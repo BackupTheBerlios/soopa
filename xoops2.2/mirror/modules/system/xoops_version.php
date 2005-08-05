@@ -1,5 +1,5 @@
 <?php
-// $Id: xoops_version.php,v 1.1 2005/08/02 18:19:34 mauriciodelima Exp $
+// $Id: xoops_version.php,v 1.2 2005/08/05 03:44:04 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //
@@ -120,13 +120,13 @@ $modversion['blocks'][5]['description'] = "Shows the main navigation menu of the
 $modversion['blocks'][5]['show_func'] = "b_system_main_show";
 $modversion['blocks'][5]['template'] = 'system_block_mainmenu.html';
 
-//$modversion['blocks'][6]['file'] = "system_blocks.php";
-//$modversion['blocks'][6]['name'] = _MI_SYSTEM_BNAME7;
-//$modversion['blocks'][6]['description'] = "Shows basic info about the site and a link to Recommend Us pop up window";
-//$modversion['blocks'][6]['show_func'] = "b_system_info_show";
-//$modversion['blocks'][6]['edit_func'] = "b_system_info_edit";
-//$modversion['blocks'][6]['options'] = "320|190|s_poweredby.gif|1";
-//$modversion['blocks'][6]['template'] = 'system_block_siteinfo.html';
+$modversion['blocks'][6]['file'] = "system_blocks.php";
+$modversion['blocks'][6]['name'] = _MI_SYSTEM_BNAME7;
+$modversion['blocks'][6]['description'] = "Shows basic info about the site and a link to Recommend Us pop up window";
+$modversion['blocks'][6]['show_func'] = "b_system_info_show";
+$modversion['blocks'][6]['edit_func'] = "b_system_info_edit";
+$modversion['blocks'][6]['options'] = "320|190|s_poweredby.gif|1";
+$modversion['blocks'][6]['template'] = 'system_block_siteinfo.html';
 
 $modversion['blocks'][7]['file'] = "system_blocks.php";
 $modversion['blocks'][7]['name'] = _MI_SYSTEM_BNAME8;
@@ -650,7 +650,7 @@ $modversion['config'][34]['title'] = '_MD_AM_FOOTER';
 $modversion['config'][34]['description'] = '_MD_AM_FOOTERDSC';
 $modversion['config'][34]['formtype'] = 'textarea';
 $modversion['config'][34]['valuetype'] = 'text';
-$modversion['config'][34]['default'] = 'Powered by '.XOOPS_VERSION.' &copy; 2001-'.date("Y").' <a href="http://www.xoops.org/" target="_blank">The XOOPS Project</a>';
+$modversion['config'][34]['default'] = 'Powered by <a href="http://xoops.org.cn/" target="_blank">'.XOOPS_VERSION.'</a> &copy; 2001-'.date("Y").' <a href="http://www.xoops.org/" target="_blank">The XOOPS Project</a>';
 $modversion['config'][34]['category'] = 'meta';
 
 $modversion['config'][35]['name'] = 'censor_enable';

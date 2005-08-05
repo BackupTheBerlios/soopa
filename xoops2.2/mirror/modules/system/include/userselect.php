@@ -1,5 +1,5 @@
 <?php
-// $Id: userselect.php,v 1.1 2005/08/02 18:19:34 mauriciodelima Exp $
+// $Id: userselect.php,v 1.2 2005/08/05 03:44:04 mauriciodelima Exp $
 // ------------------------------------------------------------------------ //
 // XOOPS - PHP Content Management System                      //
 // Copyright (c) 2000 XOOPS.org                           //
@@ -43,7 +43,7 @@ $_REQUEST['rank'] = empty($_REQUEST['rank'])?0:$_REQUEST['rank'];
 $_REQUEST['searchText'] = isset($_REQUEST['searchText'])?trim($_REQUEST['searchText']):"";
 $limit = 200;
 $size = isset($_REQUEST['multiple']) && $_REQUEST['multiple'] ? 20 : 1;
-$valid_subjects = array("name"=>_MA_SEARCH_NAME, "email"=>_MA_SEARCH_EMAIL, "uid"=> _MA_SEARCH_UID);
+$valid_subjects = array("uname"=>_MA_SEARCH_NAME, "email"=>_MA_SEARCH_EMAIL, "uid"=> _MA_SEARCH_UID);
 
 $name_parent = $_REQUEST["target"];
 $name_current = 'users';
@@ -121,7 +121,7 @@ if(!empty($_REQUEST["action"])||!empty($_REQUEST["search"])){
    
 	if(!empty($_REQUEST['search'])){
 	    $text = empty($_REQUEST['searchText'])?"%":$myts->addSlashes(trim($_REQUEST['searchText']));
-	    $subject = in_array($_REQUEST['subject'], array_keys($valid_subjects))?trim($_REQUEST['subject']):"name";
+	    $subject = in_array($_REQUEST['subject'], array_keys($valid_subjects))?trim($_REQUEST['subject']):"uname";
 	    $crit = new Criteria($subject, $text, 'LIKE');
 		$criteria->add($crit);
 	    $sort = $subject;

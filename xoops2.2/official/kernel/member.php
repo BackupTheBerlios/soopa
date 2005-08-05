@@ -1,5 +1,5 @@
 <?php
-// $Id: member.php,v 1.1 2005/08/02 18:46:11 mauriciodelima Exp $
+// $Id: member.php,v 1.2 2005/08/05 03:41:08 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //
@@ -331,7 +331,7 @@ class XoopsMemberHandler{
      */
     function &loginUserMd5($uname, $md5pwd)
     {
-        return $this->_uHandler->loginUser($uname, $pwd, true);
+        return $this->_uHandler->loginUser($uname, $md5pwd, true);
     }
 
     /**

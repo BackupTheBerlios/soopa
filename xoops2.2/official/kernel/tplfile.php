@@ -1,5 +1,5 @@
 <?php
-// $Id: tplfile.php,v 1.1 2005/08/02 18:46:15 mauriciodelima Exp $
+// $Id: tplfile.php,v 1.2 2005/08/05 03:41:08 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //

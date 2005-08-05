@@ -1,5 +1,5 @@
 <?php
-// $Id: admin.php,v 1.1 2005/08/02 18:19:34 mauriciodelima Exp $
+// $Id: admin.php,v 1.2 2005/08/05 03:44:04 mauriciodelima Exp $
 //%%%%%%	File Name  admin.php 	%%%%%
 define('_MD_AM_DBUPDATED','Database Updated Successfully!');
 

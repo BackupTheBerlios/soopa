@@ -1,5 +1,5 @@
 <?php
-// $Id: auth.php,v 1.1 2005/08/02 18:46:06 mauriciodelima Exp $
+// $Id: auth.php,v 1.2 2005/08/05 03:41:04 mauriciodelima Exp $
 // auth.php - defines abstract authentification wrapper class 
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
@@ -25,6 +25,11 @@
 //  along with this program; if not, write to the Free Software              //
 //  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA //
 //  ------------------------------------------------------------------------ //
+if ( file_exists(XOOPS_ROOT_PATH."/language/".$GLOBALS['xoopsConfig']['language']."/error.php") ) {
+    include_once XOOPS_ROOT_PATH."/language/".$GLOBALS['xoopsConfig']['language']."/error.php";
+} else {
+    include_once XOOPS_ROOT_PATH."/language/english/error.php";
+}
 /**
  * @package     kernel
  * @subpackage  auth
@@ -83,16 +88,18 @@ class XoopsAuth {
      */
     function getHtmlErrors()
     {
+	    /*
         if ( file_exists(XOOPS_ROOT_PATH."/language/".$GLOBALS['xoopsConfig']['language']."/error.php") ) {
             include_once XOOPS_ROOT_PATH."/language/".$GLOBALS['xoopsConfig']['language']."/error.php";
         } else {
             include_once XOOPS_ROOT_PATH."/language/english/error.php";
         }
+        */
         //$ret = '<h4>'._ERRORS.'</h4>';
         $ret = '<br>';
         if (!empty($this->_errors)) {
             foreach ($this->_errors as $errno => $errstr) {
-            	$msg = (function_exists(ldap_err2str) ? ldap_err2str ($errno) : ''); 
+            	$msg = (function_exists("ldap_err2str") ? ldap_err2str ($errno) : ''); 
                 $ret .=  $msg . ' <br> ' . $errstr .'<br />';
             }
         } else {

@@ -1,5 +1,5 @@
 <?php
-// $Id: saxparser.php,v 1.1 2005/08/02 18:46:09 mauriciodelima Exp $
+// $Id: saxparser.php,v 1.2 2005/08/05 03:41:05 mauriciodelima Exp $
 /*******************************************************************************
     Location: <b>xml/SaxParser.class</b><br>
      <br>

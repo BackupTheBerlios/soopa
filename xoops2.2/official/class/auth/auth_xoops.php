@@ -1,5 +1,5 @@
 <?php
-// $Id: auth_xoops.php,v 1.1 2005/08/02 18:46:07 mauriciodelima Exp $
+// $Id: auth_xoops.php,v 1.2 2005/08/05 03:41:04 mauriciodelima Exp $
 // auth_xoops.php - XOOPS authentification class 
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
@@ -53,7 +53,12 @@ class XoopsAuthXoops extends XoopsAuth {
     function authenticate($uname, $pwd = null) {
 		$member_handler =& xoops_gethandler('member');
       	$user =& $member_handler->loginUser($uname, $pwd);
-      	return is_object($user);
+      	if(!is_object($user)){
+      		$this->setErrors(0,_ER_US_SORRYNOTFOUND);
+      		return false;
+  		}
+  		return true;
+      	//return is_object($user);
 	}     
 
 }

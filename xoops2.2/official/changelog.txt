@@ -1,0 +1,129 @@
+The first version of Changelog on Aug 4th, 2005
+
+
+Update of /cvsroot/xoops/xoops2/themes/default/theme_adminnav.html 
+Log Message:
+move module-admin item to the top so easier to find
+
+
+Update of /cvsroot/xoops/xoops2/error.php 
+Log Message:
+fix typo for constant variable check
+
+
+Update of /cvsroot/xoops/xoops2/include/functions.php 
+Log Message:
+comment out the "showrblock" -- do not know why it was there
+
+
+Update of /cvsroot/xoops/xoops2/class/auth/auth_xoops.php 
+Log Message:
+add error message
+
+
+Update of /cvsroot/xoops/xoops2/install/install_tpl.php 
+Log Message:
+Header set Charset
+
+
+Update of /cvsroot/xoops/xoops2/class/auth/auth.php 
+Log Message:
+move language defination to its right place
+
+
+Update of /cvsroot/xoops/xoops2/kernel/block.php 
+Log Message:
+fix for typo in XoopsLogger->addblock
+
+
+Update of /cvsroot/xoops/xoops2/install/class/textsanitizer.php 
+Log Message:
+minor fix on reference
+
+
+Update of /cvsroot/xoops/xoops2/kernel/user.php 
+Log Message:
+change defult config for use-realname to false
+
+
+Update of /cvsroot/xoops/xoops2/kernel/member.php 
+Log Message:
+fix typo for password 
+
+
+Update of /cvsroot/xoops/xoops2/kernel/module.php 
+Log Message:
+change reference to make it work when calling another module's install on a
+module's update 
+
+
+Update of /cvsroot/xoops/xoops2/modules/system/xoops_version.php 
+Log Message:
+rolling back system-info block
+
+
+Update of /cvsroot/xoops/xoops2/modules/system/blocks/system_blocks.php 
+Log Message:
+fix for icon url in comment block; add new PM prompt to user-menu block
+
+
+Update of /cvsroot/xoops/xoops2/modules/system/templates/blocks/system_block_user.html 
+Log Message:
+add new PM prompt to user-menu block
+
+
+Update of /cvsroot/xoops/xoops2/modules/system/include/userselect.php 
+Log Message:
+change user name (which is not always available and not much infomative) to user
+uname
+
+
+Update of /cvsroot/xoops/xoops2/modules/pm/include/install.php 
+Log Message:
+inserting PM link to existing users' profile
+
+
+Update of /cvsroot/xoops/xoops2/modules/pm/xoops_version.php 
+Log Message:
+add install function for inserting PM link to existing users' profile
+
+
+Update of /cvsroot/xoops/xoops2/modules/pm/pmlite.php 
+Log Message:
+minor change: ensure to use username not real name
+
+
+Update of /cvsroot/xoops/xoops2/modules/pm/readpmsg.php 
+Log Message:
+bugfix for setting message as "read"
+
+
+Update of /cvsroot/xoops/xoops2/modules/pm/templates/pm_readpmsg.html 
+Log Message:
+bugfix for icon url
+
+
+Update of /cvsroot/xoops/xoops2/modules/profile/userinfo.php 
+Log Message:
+display profile items with value only
+
+
+Update of /cvsroot/xoops/xoops2/modules/profile/activate.php 
+Log Message:
+including language file
+
+
+Update of /cvsroot/xoops/xoops2/modules/profile/changemail.php 
+Log Message:
+fix for error message
+
+
+Update of /cvsroot/xoops/xoops2/modules/profile/edituser.php 
+Log Message:
+some changes related to use with Admin right -- need some cleaning
+
+
+Update of /cvsroot/xoops/xoops2/modules/profile/include/forms.php 
+Log Message:
+let admin have right to change email
+

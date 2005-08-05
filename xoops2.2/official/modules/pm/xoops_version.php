@@ -1,5 +1,5 @@
 <?php
-// $Id: xoops_version.php,v 1.1 2005/08/02 18:47:09 mauriciodelima Exp $
+// $Id: xoops_version.php,v 1.2 2005/08/05 03:42:00 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //
@@ -51,6 +51,8 @@ $modversion['tables'][0] = "priv_msgs";
 
 //install
 $modversion['onInstall'] = 'include/install.php';
+//update
+$modversion['onUpdate'] = 'include/update.php';
 
 // Templates
 $modversion['templates'][1]['file'] = 'pm_pmlite.html';

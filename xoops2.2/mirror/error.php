@@ -1,5 +1,5 @@
 <?php
-// $Id: error.php,v 1.1 2005/08/02 18:18:27 mauriciodelima Exp $
+// $Id: error.php,v 1.2 2005/08/05 03:44:02 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //
@@ -37,7 +37,7 @@ else {
 }
 $error_arr =& $module->loadErrorMessages();
 $constant_name = $module->getVar('dirname')."_ERROR";
-$errormessage = (isset($_REQUEST['c']) && defined($_REQUEST['c'])) ? constant(strtoupper($constant_name).intval($_REQUEST['c'])) : _NOERRORMESSAGE;
+$errormessage = (isset($_REQUEST['c']) && defined(strtoupper($constant_name).intval($_REQUEST['c']))) ? constant(strtoupper($constant_name).intval($_REQUEST['c'])) : _NOERRORMESSAGE;
 
 $errormessage = str_replace("{SITE_NAME}", $xoopsConfig['sitename'], $errormessage );
 $errormessage = str_replace("{SITE_URL}", XOOPS_URL, $errormessage );

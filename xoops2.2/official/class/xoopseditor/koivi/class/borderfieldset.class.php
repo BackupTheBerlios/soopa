@@ -1,5 +1,5 @@
 <?php
-// $Id: borderfieldset.class.php,v 1.1 2005/08/02 18:46:09 mauriciodelima Exp $
+// $Id: borderfieldset.class.php,v 1.2 2005/08/05 03:41:06 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //

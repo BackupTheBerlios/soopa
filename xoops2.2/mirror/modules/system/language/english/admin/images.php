@@ -1,5 +1,5 @@
 <?php
-// $Id: images.php,v 1.1 2005/08/02 18:19:35 mauriciodelima Exp $
+// $Id: images.php,v 1.2 2005/08/05 03:44:04 mauriciodelima Exp $
 //%%%%%% Image Manager %%%%%
 
 

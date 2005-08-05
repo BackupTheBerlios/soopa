@@ -1,5 +1,5 @@
 <?php
-// $Id: textsanitizer.php,v 1.1 2005/08/02 18:18:29 mauriciodelima Exp $
+// $Id: textsanitizer.php,v 1.2 2005/08/05 03:44:03 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //
@@ -83,7 +83,7 @@ class TextSanitizer
 	function &stripSlashesGPC($text)
 	{
 		if (get_magic_quotes_gpc()) {
-			$text =& stripslashes($text);
+			$text = stripslashes($text);
 		}
 		return $text;
 	}

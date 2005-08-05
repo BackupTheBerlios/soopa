@@ -1,5 +1,5 @@
 <?php
-// $Id: modinfo.php,v 1.1 2005/08/02 18:47:09 mauriciodelima Exp $
+// $Id: modinfo.php,v 1.2 2005/08/05 03:42:01 mauriciodelima Exp $
 // Module Info
 
 // The name of this module

@@ -1,5 +1,5 @@
 <?php
-// $Id: install2.php,v 1.1 2005/08/02 18:46:11 mauriciodelima Exp $
+// $Id: install2.php,v 1.2 2005/08/05 03:41:07 mauriciodelima Exp $
 define("_INSTALL_WEBMASTER","Webmasters");
 define("_INSTALL_WEBMASTERD","Webmasters of this site");
 define("_INSTALL_REGUSERS","Registered Users");

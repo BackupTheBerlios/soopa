@@ -1,5 +1,5 @@
 <?php
-// $Id: welcome.php,v 1.1 2005/08/02 18:46:11 mauriciodelima Exp $
+// $Id: welcome.php,v 1.2 2005/08/05 03:41:08 mauriciodelima Exp $
 $content .=
 "<u><b>What is it?</b></u>
 <p>

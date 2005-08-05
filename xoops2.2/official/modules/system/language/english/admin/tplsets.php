@@ -1,5 +1,5 @@
 <?php
-// $Id: tplsets.php,v 1.1 2005/08/02 18:47:09 mauriciodelima Exp $
+// $Id: tplsets.php,v 1.2 2005/08/05 03:42:01 mauriciodelima Exp $
 //%%%%%% Template Manager %%%%%
 define('_MD_TPLMAIN','Template Set Manager');
 define('_MD_INSTALL','Install');

@@ -1,5 +1,5 @@
 <?php
-// $Id: theme.php,v 1.1 2005/08/02 18:46:08 mauriciodelima Exp $
+// $Id: theme.php,v 1.2 2005/08/05 03:41:05 mauriciodelima Exp $
 /**
 * xoops.theme service definition
 *

@@ -1,5 +1,5 @@
 <?php
-// $Id: local.php,v 1.1 2005/08/02 18:18:29 mauriciodelima Exp $
+// $Id: local.php,v 1.2 2005/08/05 03:44:04 mauriciodelima Exp $
 
 // Local handler for string and encoding
 class XoopsLocal

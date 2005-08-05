@@ -12,7 +12,7 @@
  * Read the entire license text here: http://www.gnu.org/licenses/lgpl.html
  */
 
-// $Id: calendar.js,v 1.1 2005/08/02 18:18:27 mauriciodelima Exp $
+// $Id: calendar.js,v 1.2 2005/08/05 03:44:02 mauriciodelima Exp $
 
 /** The Calendar object constructor. */
 Calendar = function (firstDayOfWeek, dateStr, onSelected, onClose) {

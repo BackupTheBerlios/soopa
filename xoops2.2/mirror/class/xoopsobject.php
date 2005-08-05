@@ -1,5 +1,5 @@
 <?php
-// $Id: xoopsobject.php,v 1.1 2005/08/02 18:18:27 mauriciodelima Exp $
+// $Id: xoopsobject.php,v 1.2 2005/08/05 03:44:02 mauriciodelima Exp $
 if (!defined('XOOPS_ROOT_PATH')) {
 	exit();
 }

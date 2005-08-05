@@ -1,5 +1,5 @@
 <?php 
-// $Id: cp_header.php,v 1.1 2005/08/02 18:46:10 mauriciodelima Exp $
+// $Id: cp_header.php,v 1.2 2005/08/05 03:41:07 mauriciodelima Exp $
 /**
  * module files can include this file for admin authorization
  * the file that will include this file must be located under xoops_url/modules/module_directory_name/admin_directory_name/

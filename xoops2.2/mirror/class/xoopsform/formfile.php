@@ -1,5 +1,5 @@
 <?php
-// $Id: formfile.php,v 1.1 2005/08/02 18:18:28 mauriciodelima Exp $
+// $Id: formfile.php,v 1.2 2005/08/05 03:44:03 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //

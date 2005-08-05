@@ -2,7 +2,7 @@
 *   Samuels [Xoops Project] 
 *
 *
-// $Id: cntextmenu.js,v 1.1 2005/08/02 18:18:28 mauriciodelima Exp $
+// $Id: cntextmenu.js,v 1.2 2005/08/05 03:44:03 mauriciodelima Exp $
 *
 */
 //Simple class to handle context menus

@@ -28,7 +28,7 @@
 * cache_manager for XOOPS installer
 *
 * @author Haruki Setoyama  <haruki@planewave.org>
-* @version $Id: cachemanager.php,v 1.1 2005/08/02 18:18:29 mauriciodelima Exp $
+* @version $Id: cachemanager.php,v 1.2 2005/08/05 03:44:03 mauriciodelima Exp $
 * @access public
 **/
 class cache_manager {

@@ -1,5 +1,5 @@
 <?php
-// $Id: block.php,v 1.1 2005/08/02 18:46:11 mauriciodelima Exp $
+// $Id: block.php,v 1.2 2005/08/05 03:41:08 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //
@@ -227,7 +227,7 @@ class XoopsBlockHandler extends XoopsPersistableObjectHandler
                 $querycount = count($xoopsLogger->queries[$xoopsLogger->context]) - $querycountbefore;
                 $xoopsLogger->addBlock($block_arr[$i]->block->getVar('name'), false, 0, $querycount);
             } else {
-                $xoopsLogger->addBlock($block_arr[$i]->getVar('name'), true, $bcachetime);
+                $xoopsLogger->addBlock($block_arr[$i]->block->getVar('name'), true, $bcachetime);
                 $bcontent =& $xoopsTpl->fetch('db:'.$btpl, 'blk_'.$block_arr[$i]->getVar('instanceid'));
             }
 

@@ -1,5 +1,5 @@
 <?php
-// $Id: blocksadmin.php,v 1.1 2005/08/02 18:47:09 mauriciodelima Exp $
+// $Id: blocksadmin.php,v 1.2 2005/08/05 03:42:01 mauriciodelima Exp $
 
 //%%%%%%	blocks.php 	%%%%%
 define("_AM_BADMIN","Blocks Administration");

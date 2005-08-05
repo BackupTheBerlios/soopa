@@ -1,5 +1,5 @@
 <?php
-// $Id: finish.php,v 1.1 2005/08/02 18:18:29 mauriciodelima Exp $
+// $Id: finish.php,v 1.2 2005/08/05 03:44:03 mauriciodelima Exp $
 $content .=
 "<u><b>Your site</b></u>
 <p>Click <a href='../user.php'>HERE</a> to see the home page of your site.</p>

@@ -7,7 +7,7 @@
 *                      For WebFX (http://webfx.eae.net/) 
 *
 *
-// $Id: xhtml.js,v 1.1 2005/08/02 18:18:28 mauriciodelima Exp $
+// $Id: xhtml.js,v 1.2 2005/08/05 03:44:03 mauriciodelima Exp $
 *
 * Some Functions for cleaning code and make it as xhtml compilant as possible
 */

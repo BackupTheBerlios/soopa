@@ -1,5 +1,5 @@
 <?php
-// $Id: userinfo.php,v 1.1 2005/08/02 18:19:34 mauriciodelima Exp $
+// $Id: userinfo.php,v 1.2 2005/08/05 03:44:04 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //
@@ -101,10 +101,14 @@ $fieldcats =& $fieldcat_handler->getObjects(null, true, false);
 
 // Add core fields
 $categories[0]['cat_title'] = sprintf(_PROFILE_MA_ALLABOUT, $thisUser->getVar('uname'));
-$categories[0]['fields'][] = array('title' => _PROFILE_MA_REALNAME, 'value' => $thisUser->getVar('name'));
-$weights[0][] = 0;
-$categories[0]['fields'][] = array('title' => _PROFILE_MA_AVATAR, 'value' => "<img src='".XOOPS_UPLOAD_URL."/".$thisUser->getVar('user_avatar')."' alt='".$thisUser->getVar('uname')."' />");
-$weights[0][] = 0;
+if($thisUser->getVar('name')){
+	$categories[0]['fields'][] = array('title' => _PROFILE_MA_REALNAME, 'value' => $thisUser->getVar('name'));
+	$weights[0][] = 0;
+}
+if($thisUser->getVar('user_avatar') && "blank.gif" != $thisUser->getVar('user_avatar')){
+	$categories[0]['fields'][] = array('title' => _PROFILE_MA_AVATAR, 'value' => "<img src='".XOOPS_UPLOAD_URL."/".$thisUser->getVar('user_avatar')."' alt='".$thisUser->getVar('uname')."' />");
+	$weights[0][] = 0;
+}
 $userrank =& $thisUser->rank();
 $user_rankimage = "";
 if (isset($userrank['image']) && $userrank['image'] != "") {
@@ -139,8 +143,10 @@ foreach (array_keys($fields) as $i) {
         if (is_array($value)) {
             $value = implode('<br />', array_values($value));
         }
-        $categories[$catid]['fields'][] = array('title' => $fields[$i]->getVar('field_title'), 'value' => $value);
-        $weights[$catid][] = isset($fieldcats[$fields[$i]->getVar('fieldid')]) ? intval($fieldcats[$fields[$i]->getVar('fieldid')]['field_weight']) : 1;
+        if($value){
+	        $categories[$catid]['fields'][] = array('title' => $fields[$i]->getVar('field_title'), 'value' => $value);
+	        $weights[$catid][] = isset($fieldcats[$fields[$i]->getVar('fieldid')]) ? intval($fieldcats[$fields[$i]->getVar('fieldid')]['field_weight']) : 1;
+        }
     }
 }
 

@@ -1,5 +1,5 @@
 <?php
-// $Id: pmlite.php,v 1.1 2005/08/02 18:19:34 mauriciodelima Exp $
+// $Id: pmlite.php,v 1.2 2005/08/05 03:44:04 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //
@@ -109,12 +109,12 @@ if ($xoopsUser) {
         elseif($sendmod == 1){
             $xoopsTpl->assign('to_username', XoopsUser::getUnameFromId($_POST["to_userid"]));
             $pmform->addElement(new XoopsFormHidden('to_userid', $_POST["to_userid"]));
-            $subject = $_POST["subject"];
-            $message = $_POST["message"];
+			$subject = $myts->htmlSpecialChars($myts->stripSlashesGPC($_POST['subject']));
+			$message = $myts->htmlSpecialChars($myts->stripSlashesGPC($_POST['message']));
         }
         else {
             if ($send2 == 1) {
-                $xoopsTpl->assign('to_username', XoopsUser::getUnameFromId($to_userid));
+                $xoopsTpl->assign('to_username', XoopsUser::getUnameFromId($to_userid, false));
                 $pmform->addElement(new XoopsFormHidden('to_userid', $to_userid));
             }
             else {

@@ -1,5 +1,5 @@
 <?php
-// $Id: user.php,v 1.1 2005/08/02 18:18:29 mauriciodelima Exp $
+// $Id: user.php,v 1.2 2005/08/05 03:44:03 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //
@@ -192,7 +192,7 @@ class XoopsUser extends XoopsObject
 	 * @param int $usereal switch for usename or realname
 	 * @return string name of the user. name for "anonymous" if not found.
      */
-    function getUnameFromId( $userid, $usereal = 1 )
+    function getUnameFromId( $userid, $usereal = 0 )
     {
         $userid = intval($userid);
         $usereal = intval($usereal);

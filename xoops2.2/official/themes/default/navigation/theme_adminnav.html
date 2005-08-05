@@ -30,7 +30,11 @@
                 				<td>
                     				<a class="button" href="javascript:void(0)"><{$smarty.const._AD_NAV_MODULES}></a>
                     					<div class="section">
-    											<{foreach item=module from=$adminmenu key=counter}>
+     										<{if isset($systemmenu.links.4)}>
+        									    <a class="item" href="<{$systemmenu.links.4.link}>"><{$smarty.const._AD_NAV_MODADMIN}></a>
+        										<hr />
+    									    <{/if}>
+   											<{foreach item=module from=$adminmenu key=counter}>
     												<a class="item" href="javascript:void(0)"><{$module.name}><img class="arrow" src="<{$xoops_imageurl}>images/menuarrow1.gif" width="4" height="7" alt="" /></a>
     										<div class="section">
     											<{foreach item=menuitem from=$module.links}>
@@ -38,10 +42,6 @@
     											<{/foreach}>
     										</div>
     										<{/foreach}>
-    										<{if isset($systemmenu.links.4)}>
-        										<hr />
-        									    <a class="item" href="<{$systemmenu.links.4.link}>"><{$smarty.const._AD_NAV_MODADMIN}></a>
-    									    <{/if}>
                     					</div>
                 				</td>
             				<{/if}>

@@ -1,5 +1,5 @@
 <?php
-// $Id: functions.php,v 1.1 2005/08/02 18:18:29 mauriciodelima Exp $
+// $Id: functions.php,v 1.2 2005/08/05 03:44:03 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //
@@ -386,7 +386,7 @@ function redirect_header($url, $time = 3, $message = '', $addredirect = true)
             $url = XOOPS_URL;
         }
     }
-    $xTheme->tplEngine->assign('xoops_showrblock', 1);
+    //$xTheme->tplEngine->assign('xoops_showrblock', 1);
 
     $xTheme->tplEngine->assign('time', intval($time));
     if ($addredirect && strstr($url, 'user.php')) {

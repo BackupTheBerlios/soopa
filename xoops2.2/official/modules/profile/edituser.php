@@ -1,5 +1,5 @@
 <?php
-// $Id: edituser.php,v 1.1 2005/08/02 18:47:09 mauriciodelima Exp $
+// $Id: edituser.php,v 1.2 2005/08/05 03:42:00 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //
@@ -46,13 +46,13 @@ if ($op == 'save') {
     if (!empty($_POST['uid'])) {
         $uid = intval($_POST['uid']);
     }
-    if (empty($uid) || $xoopsUser->getVar('uid') != $uid) {
+    if (empty($uid) || ($xoopsUser->getVar('uid') != $uid && !$xoopsUser->isAdmin())) {
         redirect_header(XOOPS_URL,3,_PROFILE_MA_NOEDITRIGHT);
         exit();
     }
     $errors = array();
     $myts =& MyTextSanitizer::getInstance();
-    if ($xoopsModuleConfig['allow_chgmail'] == 1) {
+    if ($xoopsUser->isAdmin() || $xoopsModuleConfig['allow_chgmail'] == 1) {
         $email = '';
         if (!empty($_POST['email'])) {
             $email = $myts->stripSlashesGPC(trim($_POST['email']));
@@ -76,11 +76,17 @@ if ($op == 'save') {
             $edituser->setVar('email', $email);
         }
         $edituser->setVar('name', $myts->stripSlashesGPC(trim($_POST['name'])));
+        $edituser->setVar('uname', $myts->stripSlashesGPC(trim($_POST['uname'])));
         if ($xoopsUser->isAdmin()) {
             $edituser->setVar('rank', intval($_POST['rank']));
-            $edituser->setVar('uname', $myts->stripSlashesGPC(trim($_POST['uname'])));
+            $edituser->setVar('loginname', $myts->stripSlashesGPC(trim($_POST['loginname'])));
         }
-
+	    $stop = userCheck($edituser);
+	    if (!empty($stop)) {
+        	echo "<span style='color:#ff0000;'>$stop</span>";
+            redirect_header('userinfo.php?uid='.$uid, 2);
+    	}
+        
         // Dynamic fields
         $profile_handler =& xoops_gethandler('profile');
         // Get fields

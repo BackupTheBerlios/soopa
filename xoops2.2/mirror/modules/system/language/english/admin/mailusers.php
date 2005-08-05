@@ -1,5 +1,5 @@
 <?php
-// $Id: mailusers.php,v 1.1 2005/08/02 18:19:35 mauriciodelima Exp $
+// $Id: mailusers.php,v 1.2 2005/08/05 03:44:04 mauriciodelima Exp $
 //%%%%%%	Admin Module Name  MailUsers	%%%%%
 
 //%%%%%%	mailusers.php 	%%%%%

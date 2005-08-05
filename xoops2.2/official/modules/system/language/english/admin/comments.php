@@ -1,5 +1,5 @@
 <?php
-// $Id: comments.php,v 1.1 2005/08/02 18:47:09 mauriciodelima Exp $
+// $Id: comments.php,v 1.2 2005/08/05 03:42:01 mauriciodelima Exp $
 //%%%%%% Comment Manager %%%%%
 define('_MD_AM_COMMMAN','Comment Manager');
 

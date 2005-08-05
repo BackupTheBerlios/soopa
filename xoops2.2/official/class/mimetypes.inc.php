@@ -1,5 +1,5 @@
 <?php
-// $Id: mimetypes.inc.php,v 1.1 2005/08/02 18:46:08 mauriciodelima Exp $
+// $Id: mimetypes.inc.php,v 1.2 2005/08/05 03:41:05 mauriciodelima Exp $
 /**
 
 * Extension to mimetype lookup table

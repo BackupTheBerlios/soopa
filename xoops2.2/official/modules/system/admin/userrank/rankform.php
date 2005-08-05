@@ -1,5 +1,5 @@
 <?php
-// $Id: rankform.php,v 1.1 2005/08/02 18:47:09 mauriciodelima Exp $
+// $Id: rankform.php,v 1.2 2005/08/05 03:42:01 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //

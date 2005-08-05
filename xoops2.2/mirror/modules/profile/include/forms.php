@@ -368,7 +368,7 @@ function getUserForm(&$user, $action = false) {
     $weights[0][] = 0;
     
     $email_tray = new XoopsFormElementTray(_PROFILE_MA_EMAIL, '<br />');
-    if ($user->isNew() || $xoopsModuleConfig['allow_chgmail'] == 1) {
+    if ($user->isNew() || $xoopsModuleConfig['allow_chgmail'] == 1 || $xoopsUser->isAdmin()) {
         $email_text = new XoopsFormText('', 'email', 30, 60, $user->getVar('email'));
     } else {
         $email_text = new XoopsFormLabel('', $user->getVar('email'));

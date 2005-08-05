@@ -32,7 +32,7 @@ include_once XOOPS_ROOT_PATH.'/class/database/sqlutility.php';
 * database manager for XOOPS installer
 *
 * @author Haruki Setoyama  <haruki@planewave.org>
-* @version $Id: dbmanager.php,v 1.1 2005/08/02 18:46:11 mauriciodelima Exp $
+* @version $Id: dbmanager.php,v 1.2 2005/08/05 03:41:07 mauriciodelima Exp $
 * @access public
 **/
 class db_manager {

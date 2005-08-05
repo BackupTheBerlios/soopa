@@ -1,5 +1,5 @@
 <?php
-// $Id: activate.php,v 1.1 2005/08/02 18:47:09 mauriciodelima Exp $
+// $Id: activate.php,v 1.2 2005/08/05 03:42:00 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //
@@ -27,10 +27,16 @@
 //  Patch made by XoopsTotal - Fernando Santos, fernando@zend.com.br         //
 //  www.xoopstotal.com.br                                                    //
 //  ------------------------------------------------------------------------ //
+//$xoopsOption['pagetype'] = "user";
 include "../../mainfile.php";
 include XOOPS_ROOT_PATH.'/header.php';
 
 if (isset($_REQUEST['op']) && $_REQUEST['op'] == "actv") {
+	if ( file_exists(XOOPS_ROOT_PATH."/language/".$GLOBALS['xoopsConfig']['language']."/user.php") ) {
+	    include_once XOOPS_ROOT_PATH."/language/".$GLOBALS['xoopsConfig']['language']."/user.php";
+	} else {
+	    include_once XOOPS_ROOT_PATH."/language/english/user.php";
+	}
     $id = intval($_GET['id']);
     $actkey = trim($_GET['actkey']);
     if (empty($id)) {

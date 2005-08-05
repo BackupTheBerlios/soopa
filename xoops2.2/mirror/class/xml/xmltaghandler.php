@@ -1,5 +1,5 @@
 <?php
-// $Id: xmltaghandler.php,v 1.1 2005/08/02 18:18:27 mauriciodelima Exp $
+// $Id: xmltaghandler.php,v 1.2 2005/08/05 03:44:03 mauriciodelima Exp $
 /*******************************************************************************
     Location: <b>xml/XmlTagHandler</b><br>
      <br>
