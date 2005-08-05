@@ -1,6 +1,6 @@
 <?php
 //////////////////////////////////////////////////////////////////////////////
-// $Id: admin.php,v 1.2 2005/08/04 05:43:10 mauriciodelima Exp $                  //
+// $Id: admin.php,v 1.3 2005/08/05 21:34:10 mauriciodelima Exp $                  //
 // ------------------------------------------------------------------------ //
 //                 RM+SOFT - Control de Servicios                           //
 //        Copyright Red México Soft © 2005. (Eduardo Cortés)                //
@@ -95,7 +95,7 @@ if ($location=='services'){
 	define('_AM_ERRCAT','ERROR: Não foi selecionado uma categoría para este serviço');
 	define('_AM_ERRPRICE','ERROR: O preço deste serviço não pode ser menor que zero');
 	define('_AM_ERRCODE','ERROR: Não foi digitado o código do serviço');
-	define('_AM_ERRFORM','ERROR: Não foi especificado elementos para o formulário de compra');
+	define('_AM_ERRFORM','Não foi especificado ítens no formulário de compra');
 	define('_AM_ERRSDESC','ERROR: Não foi informado a descrição simplificada para este serviço');
 	define('_AM_ERRLDESC','ERROR: Não foi informado a descrição completa para este serviço');
 	define('_AM_ERREXIST','Já existe um serviço com o mesmo nome dentro desta mesma categoría');

@@ -32,9 +32,9 @@ define('_MI_PROTECTOR_LOG_LEVEL','Nível de logging');
 define('_MI_PROTECTOR_LOG_LEVELDSC','');
 
 define('_MI_PROTECTOR_LOGLEVEL0','Não gerar log');
-define('_MI_PROTECTOR_LOGLEVEL15','Fazer log apenas de elementos de alto risco');
-define('_MI_PROTECTOR_LOGLEVEL63','Não fazer log de elementos de baixo risco');
-define('_MI_PROTECTOR_LOGLEVEL255','Ativar logging de tudo');
+define('_MI_PROTECTOR_LOGLEVEL15','Gerar log somente de alto risco');
+define('_MI_PROTECTOR_LOGLEVEL63','Não gerar log de de baixo risco');
+define('_MI_PROTECTOR_LOGLEVEL255','Gerar log de tudo');
 
 define("_MI_PROTECTOR_HIJACK_DENYGP","Grupos cujos IPs serão banidos por mudança de endereço");
 define("_MI_PROTECTOR_HIJACK_DENYGPDSC","Prevenção contra session hi-jacking:<br />Escolha os grupos cujo IP será banido se durante uma sessão o endereço mudar.<br />(Recomendado: Administradores)");

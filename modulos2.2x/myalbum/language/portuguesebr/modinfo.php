@@ -124,12 +124,12 @@ define('_MI_MYALBUM_PHOTO_NOTIFY', 'Foto');
 define('_MI_MYALBUM_PHOTO_NOTIFYDSC', 'Opções de notificação que é aplicada a foto atual');
 
 define('_MI_MYALBUM_GLOBAL_NEWPHOTO_NOTIFY', 'Nova Foto');
-define('_MI_MYALBUM_GLOBAL_NEWPHOTO_NOTIFYCAP', 'Avise-me quando uma foto for incluída');
+define('_MI_MYALBUM_GLOBAL_NEWPHOTO_NOTIFYCAP', 'Quando houver nova imagem');
 define('_MI_MYALBUM_GLOBAL_NEWPHOTO_NOTIFYDSC', 'Receber notificação quando qualquer nova foto for enviada');
 define('_MI_MYALBUM_GLOBAL_NEWPHOTO_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE}: notificação automática: Nova Foto');
 
 define('_MI_MYALBUM_CATEGORY_NEWPHOTO_NOTIFY', 'Nova Foto');
-define('_MI_MYALBUM_CATEGORY_NEWPHOTO_NOTIFYCAP', 'Notificar-me quando qualquer nova foto for enviada nesta categoria');
+define('_MI_MYALBUM_CATEGORY_NEWPHOTO_NOTIFYCAP', 'Quando houver nova imagem nesta categoria');
 define('_MI_MYALBUM_CATEGORY_NEWPHOTO_NOTIFYDSC', 'Receber notificação quando qualquer nova foto for enviada nesta categoria');
 define('_MI_MYALBUM_CATEGORY_NEWPHOTO_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE}: notificação automática: Nova Foto');
 

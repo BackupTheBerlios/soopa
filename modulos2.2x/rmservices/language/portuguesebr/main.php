@@ -1,6 +1,6 @@
 <?php
 //////////////////////////////////////////////////////////////////////////////
-// $Id: main.php,v 1.1 2005/07/23 22:30:38 mauriciodelima Exp $                   //
+// $Id: main.php,v 1.2 2005/08/05 21:34:10 mauriciodelima Exp $                   //
 // ------------------------------------------------------------------------ //
 //                 RM+SOFT - Control de Servicios                           //
 //        Copyright Red México Soft © 2005. (Eduardo Cortés)                //
@@ -44,7 +44,7 @@ if ($location=='index'){
 	define('_MM_INCLUDED','Serviços Incluidos');
 	define('_MM_LIST','Lista de Promoções');
 }elseif($location=='order'){
-	define('_MM_NOT_FOUND','Não encontrou o elemento selecionado');
+	define('_MM_NOT_FOUND','´Ítem selecionado não encontrado');
 	define('_MM_SRV_NAME','Nome do Serviço:');
 	define('_MM_PROMO_NAME','Nome da Promoção:');
 	define('_MM_ITEM_CODE','Código:');
