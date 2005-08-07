@@ -1,5 +1,5 @@
 <?php
-// $Id: print.php,v 1.1 2005/07/25 15:18:12 mauriciodelima Exp $
+// $Id: print.php,v 1.2 2005/08/07 06:58:39 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //  Author: Andrew Mills                                                     //
 //  Email:  ajmills@sirium.net                                         //

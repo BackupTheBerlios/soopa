@@ -1,5 +1,5 @@
 <?php
-// $Id: main.php,v 1.2 2005/07/25 15:48:20 mauriciodelima Exp $
+// $Id: main.php,v 1.3 2005/08/07 06:58:42 mauriciodelima Exp $
 
 // English version.
 
@@ -39,7 +39,7 @@ define("_MD_EMAILMESSAGE",		"Your message:");
 define("_MD_EMAILMESSAGEDESC",	"This will be included in the e-mail.");
 define("_MD_EMAILSEND",			"send");
 define("_MD_EMAILSET",			"reset");
-define("_MD_EMAILSECNOTE",		"<strong>Por Favor note:</strong> Some security information will be sent along with the e-mail to help trace anyone who abuses this service."); 
+define("_MD_EMAILSECNOTE",		"<strong>Please note:</strong> Some security information will be sent along with the e-mail to help trace anyone who abuses this service."); 
 
 // Print page
 define("_MD_ARTPRINTTITLE",		"Article title:");
@@ -69,10 +69,10 @@ define("_MD_EMLMAXCHARS",	"You have entered more than the maximum allowed charac
 define("_MD_NOTALLOWED",	"You don't have access to this page.");
 
 // Submit page
-define("_MD_ART_SUBINTRO",		"You can use the following form to submit your article. Por Favor be aware that it will have to be approved by an administrator before it is published.");
+define("_MD_ART_SUBINTRO",		"You can use the following form to submit your article. Please be aware that it will have to be approved by an administrator before it is published.");
 define("_MD_SUBMIT_PAGE_TITLE", "Submit an article");
-define("_MD_ART_SUBALERTTITLE",	"Por Favor enter at least 3 characters for a title.");
-define("_MD_ART_SUBALERTCAT",	"Por Favor select a category from the drop down list.");
+define("_MD_ART_SUBALERTTITLE",	"Please enter at least 3 characters for a title.");
+define("_MD_ART_SUBALERTCAT",	"Please select a category from the drop down list.");
 define("_MD_ART_SUBTITLE",		"Title:");
 define("_MD_ART_SUBCAT",		"Category:");
 define("_MD_ART_SUBDESC",		"Description:");
@@ -90,7 +90,7 @@ define("_MD_FORMCAPTIONNOSMILEY",	"Disable Smiley icons");
 define("_MD_FORMCAPTIONNOXCODE",	"Disable XOOPS codes");
 define("_MD_FORMCAPTIONNOIMAGE",	"Disable images (using XOOPS codes)");
 define("_MD_FORMCAPTIONNOBR",		"Disable auto line breaks");
-define("_MD_FORMCAPTIONSELECT",		"Por Favor select a category");
+define("_MD_FORMCAPTIONSELECT",		"Please select a category");
 
 
 ?>

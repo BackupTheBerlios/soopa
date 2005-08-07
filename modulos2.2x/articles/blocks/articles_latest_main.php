@@ -1,5 +1,5 @@
 <?php
-// $Id: articles_latest_main.php,v 1.1 2005/07/25 15:18:12 mauriciodelima Exp $
+// $Id: articles_latest_main.php,v 1.2 2005/08/07 06:58:41 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //

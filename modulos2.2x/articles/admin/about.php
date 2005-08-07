@@ -1,5 +1,5 @@
 <?php
-// $Id: about.php,v 1.2 2005/07/25 15:48:20 mauriciodelima Exp $
+// $Id: about.php,v 1.3 2005/08/07 06:58:39 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //  Author: Andrew Mills                                                     //
 //  Email:  ajmills@sirium.net                                         //
@@ -109,7 +109,7 @@ admin_header("", "<a href=\"". XOOPS_URL ."/modules/". $xoopsModule->getVar('dir
   <tr>
     <td class="head" width="100">General:</td>
 	<td class="odd">
-	  Por Favor also check the forums, FAQs and Article pages to see if your problem
+	  Please also check the forums, FAQs and Article pages to see if your problem
 	  and/or question has already been answered. 
 	</td>
   </tr>
@@ -147,7 +147,7 @@ xoops_cp_footer();
 if(isset($_REQUEST['op']) AND $_REQUEST['op'] == "updates") {
 
 	if(!@include('http://support.sirium.net/files/xoopsarticles/version.txt')) {
-		echo "Sorry, I was unable to get version info!<br /> The server could be unavailable, or your host does not allow remote file fetching.<br />Por Favor visit the main web site <a href=\"http://support.sirium.net/modules/mydownloads/\" target=\"_blank\">here</a>. ";
+		echo "Sorry, I was unable to get version info!<br /> The server could be unavailable, or your host does not allow remote file fetching.<br />Please visit the main web site <a href=\"http://support.sirium.net/modules/mydownloads/\" target=\"_blank\">here</a>. ";
 		exit;
 	}
 /*	

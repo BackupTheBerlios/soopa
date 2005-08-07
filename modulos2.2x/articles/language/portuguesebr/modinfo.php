@@ -29,15 +29,15 @@ define('_MI_ARTICLE_SUBMENU1',	'Enviar artigo');
 define('_MI_ARTICLE_GLOBAL_NOTIFY',     'Global');
 define('_MI_ARTICLE_GLOBAL_NOTIFYDSC',  ' opções globais de links de notificação.');
 
-define('_MI_ARTICLE_USERSUBNOTIFY',		'Admin');
-define('_MI_ARTICLE_USERSUBNOTIFYDSC',	'Notificar os administradores quando um usuário enviar artigo.');
+define('_MI_ARTICLE_USERSUBNOTIFY',		'Administração');
+define('_MI_ARTICLE_USERSUBNOTIFYDSC',	'Quando um usuário enviar artigo.');
 
 define('_MI_ARTICLE_GLOBAL_NEWARTICLE_NOTIFY',      'Novo artigo adicionado.');
-define('_MI_ARTICLE_GLOBAL_NEWARTICLE_NOTIFYCAP',   'Notificar quando um novo artigo for adicionado.');
+define('_MI_ARTICLE_GLOBAL_NEWARTICLE_NOTIFYCAP',   'Quando um artigo for incluído.');
 define('_MI_ARTICLE_GLOBAL_NEWARTICLE_NOTIFYDSC',   'Receber notificação quando um novo artigo for adicionado.');
 define('_MI_ARTICLE_GLOBAL_NEWARTICLE_NOTIFYSBJ',   '[{X_SITENAME}] Novo artigo adicionado.');
 
-define('_MI_ARTICLE_GLOBAL_NEWCATEGORY_NOTIFY',      'Nova categoria adicionada.');
+define('_MI_ARTICLE_GLOBAL_NEWCATEGORY_NOTIFY',      'Quando uma categoria for incluída.');
 define('_MI_ARTICLE_GLOBAL_NEWCATEGORY_NOTIFYCAP',   'Notificar quando novas categorias forem adicionadas.');
 define('_MI_ARTICLE_GLOBAL_NEWCATEGORY_NOTIFYDSC',   'Receber notificação quando uma nova categoria é adicionada.');
 define('_MI_ARTICLE_GLOBAL_NEWCATEGORY_NOTIFYSBJ',   '[{X_SITENAME}]  Nova categoria adicionada.');

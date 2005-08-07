@@ -1,5 +1,5 @@
 <?php
-// $Id: index.php,v 1.1 2005/07/25 15:18:12 mauriciodelima Exp $
+// $Id: index.php,v 1.2 2005/08/07 06:58:39 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //  Author: Andrew Mills                                                     //
 //  Email:  ajmills@sirium.net                                         //
@@ -139,7 +139,7 @@ if (isset($_GET['cat_id'])) {
 				$s = 0;
 
 				// get results - ".=" adds following ling to original sql query above
-				$sql .= " LIMIT $start,$limit";
+				$sql .= " ORDER BY art_weight ASC, art_posted_datetime DESC LIMIT $start,$limit";
 				
 				// begin to show results set (for pagination)
     			$count = 1 + $s ;

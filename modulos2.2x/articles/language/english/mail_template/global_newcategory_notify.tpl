@@ -5,7 +5,7 @@ A new article category "{CAT_TITLE}" has been added at {X_SITENAME}.
 You can view this category here:
 {CAT_URL}
 
-(Por Favor note that this is just a category, and may not yet contain any
+(Please note that this is just a category, and may not yet contain any
 new articles).
 
 -----------
@@ -14,11 +14,11 @@ You are receiving this message because you selected to be notified when
 new categories are added to our site.
 
 If this is an error or you wish not to receive further such 
-notifications, por favor update your subscriptions by visiting the link 
+notifications, please update your subscriptions by visiting the link 
 below:
 {X_UNSUBSCRIBE_URL}
 
-Por Favor do not reply to this message.
+Please do not reply to this message.
 
 -----------
 

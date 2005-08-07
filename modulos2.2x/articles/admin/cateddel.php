@@ -1,5 +1,5 @@
 <?php
-// $Id: cateddel.php,v 1.1 2005/07/25 15:18:12 mauriciodelima Exp $
+// $Id: cateddel.php,v 1.2 2005/08/07 06:58:40 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //  Author: Andrew Mills                                                     //
 //  Email:  ajmills@sirium.net                                               //

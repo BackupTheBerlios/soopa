@@ -1,5 +1,5 @@
 <?php
-// $Id: xoops_version.php,v 1.1 2005/07/25 15:18:12 mauriciodelima Exp $
+// $Id: xoops_version.php,v 1.2 2005/08/07 06:58:39 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //
@@ -28,7 +28,7 @@
 
 // Any copyright notice, instructions, etc...
 $modversion['name'] = _MI_ARTICLES_NAME;
-$modversion['version'] = 0.26;
+$modversion['version'] = 0.27;
 $modversion['description'] = _MI_ARTICLES_DESC;
 $modversion['credits'] = '';
 $modversion['author'] = 'Andrew Mills';

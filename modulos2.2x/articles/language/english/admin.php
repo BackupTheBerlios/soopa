@@ -1,5 +1,5 @@
 <?php
-// $Id: admin.php,v 1.2 2005/07/25 15:48:20 mauriciodelima Exp $
+// $Id: admin.php,v 1.3 2005/08/07 06:58:41 mauriciodelima Exp $
 
 // English version.
 
@@ -51,16 +51,16 @@ define("_AM_ART_FRMCAPSLCTNOXIMG",	"Select to disable images displayed with XOOP
 define("_AM_ART_FRMCAPSLCTNOXCDE",	"Select to disable XOOPS codes.");
 define("_AM_ART_FRMCAPSLCTCATSHW",	"Select/tick to show category and its related articles.");
 // Misc
-define("_AM_ART_FRMCAPSLCT",	"Por Favor select a category");
+define("_AM_ART_FRMCAPSLCT",	"Please select a category");
 define("_AM_ART_FRMCAPNOVAL",	"There are no articles to validate");
 define("_AM_ART_FRMCAPSTTSPUB",	"Status: published");
 define("_AM_ART_FRMCAPSTTSHDN",	"Status: hidden");
 define("_AM_ART_FRMCAPPGBRK",	"Use <strong>[pagebreak]</strong> to break article into pages.");
 // Javascript messages
-define("_AM_ART_JVSRPTADDTTL",	"Por Favor enter a title");
-define("_AM_ART_JVSRPTSLTCAT",	"Por Favor select a category from the dropdown list");
+define("_AM_ART_JVSRPTADDTTL",	"Please enter a title");
+define("_AM_ART_JVSRPTSLTCAT",	"Please select a category from the dropdown list");
 // Confirmation messages
-define("_AM_ART_ERRORNOCATS",	"Por Favor <a href=\"". XOOPS_URL ."/modules/". $xoopsModule->getVar('dirname') ."/admin/catadd.php\">add a category</a> before an article.");
+define("_AM_ART_ERRORNOCATS",	"Please <a href=\"catadd.php\">add a category</a> before an article.");
 
 // Navigation/breadcrumbs/info bar
 // Navigation bar
@@ -101,17 +101,17 @@ define("_AM_ART_FRMCAPNOCATS",	"There are no categories to edit.");
 // index.php
 define("_AM_ART_TTLGENSTATS",		"General stats");
 define("_AM_ART_TTLGENVLDT",		"Validation:");
-define("_AM_ART_TTLGENVLDTDSC",		"articles are waiting to <a href=\"". XOOPS_URL ."/modules/". $xoopsModule->getVar('dirname') ."/admin/validate.php\">be validated</a>.");
+define("_AM_ART_TTLGENVLDTDSC",		"articles are waiting to <a href=\"validate.php\">be validated</a>.");
 define("_AM_ART_TTLGENNUMARTS",		"No. articles:");
-define("_AM_ART_TTLGENNUMARTSDSC",	"<a href=\"". XOOPS_URL ."/modules/". $xoopsModule->getVar('dirname') ."/admin/arteddel.php\">articles</a>.");
+define("_AM_ART_TTLGENNUMARTSDSC",	"<a href=\"arteddel.php\">articles</a>.");
 define("_AM_ART_TTLGENNUMCATS",		"No. categories:");
-define("_AM_ART_TTLGENNUMCATSDSC",	"<a href=\"". XOOPS_URL ."/modules/". $xoopsModule->getVar('dirname') ."/admin/cateddel.php\">categories</a>.");
+define("_AM_ART_TTLGENNUMCATSDSC",	"<a href=\"cateddel.php\">categories</a>.");
 define("_AM_ART_TTLGENNUMVIEWS",	"No. views:");
-define("_AM_ART_TTLGENNUMVIEWSDSC",	"total <a href=\"". XOOPS_URL ."/modules/". $xoopsModule->getVar('dirname') ."/admin/arteddel.php\">article</a> views.");
+define("_AM_ART_TTLGENNUMVIEWSDSC",	"total <a href=\"arteddel.php\">article</a> views.");
 define("_AM_ART_TTLGENNUMPUB",		"Published:");
-define("_AM_ART_TTLGENNUMPUBDSC",	"<a href=\"". XOOPS_URL ."/modules/". $xoopsModule->getVar('dirname') ."/admin/arteddel.php\">articles</a> have been published.");
+define("_AM_ART_TTLGENNUMPUBDSC",	"<a href=\"arteddel.php\">articles</a> have been published.");
 define("_AM_ART_TTLGENNUMHIDDN",	"Hidden:");
-define("_AM_ART_TTLGENNUMHIDDNDSC",	"articles are hidden (includes unvalidated <a href=\"". XOOPS_URL ."/modules/". $xoopsModule->getVar('dirname') ."/admin/arteddel.php\">articles</a>).");
+define("_AM_ART_TTLGENNUMHIDDNDSC",	"articles are hidden (includes unvalidated <a href=\"arteddel.php\">articles</a>).");
 
 
 // about.php

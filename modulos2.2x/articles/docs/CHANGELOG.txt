@@ -7,6 +7,21 @@ Key:
  o General comment.
 
 
+Articles v1.0 rc2 (0.27)
+======================== 
+
+ ! I forgot to include the sql code for article ordering in when I did the 
+   pagination, so this has been added again.
+ ! Changed links in admin language file to relative links, removing some code
+   that broke the Articles admin area in XOOPS 2.2.
+ 
+
+Articles v1.0 rc1 (0.26)
+======================== 
+
+ + Added pagination to collapsed index view.
+ 
+
 Articles v0.25:
 =============== 
 

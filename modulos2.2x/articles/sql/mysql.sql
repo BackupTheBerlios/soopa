@@ -1,4 +1,4 @@
-# $Id: mysql.sql,v 1.1 2005/07/25 15:18:13 mauriciodelima Exp $
+# $Id: mysql.sql,v 1.2 2005/08/07 06:58:42 mauriciodelima Exp $
 #
 #//  ------------------------------------------------------------------------ //
 #//  Author: Andrew Mills                                                     //

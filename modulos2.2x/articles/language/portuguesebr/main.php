@@ -1,7 +1,7 @@
 <?php
-// $Id: main.php,v 1.2 2005/07/25 15:48:20 mauriciodelima Exp $
+// $Id: main.php,v 1.3 2005/08/07 06:54:57 mauriciodelima Exp $
 
-// Versão em Portuguesebr por agamen0n (Hugo Christiano)
+// Versão em Portuguesebr por agamen0n (Hugo Christiano), Maurício de Lima
 
 
 // Cat/Article listing index.
@@ -9,6 +9,12 @@ define("_MD_CATLIST_CAPTION",	"Artigos");			// Caption of category/article list
 define("_MD_INDEX_PAGE_TITLE",	"Título da página inicial");	// Title of category/article list page (not used in shipped package)
 define("_MD_ARTICLE_VIEW_CAP",	"leituras");				// Caption for number of views
 define("_MD_NUM_ARTICLE_CAP",	"artigos");			// Caption for number of articles for category
+define("_MD_NUM_ARTICLE_NUM",	"Artigos");
+define("_MD_NUM_ARTICLE_OF",	"of");
+define("_MD_NUM_ARTICLE_TO",	"to");
+define("_MD_NUM_ARTICLE_PREV",	"&#171;anterior");
+define("_MD_NUM_ARTICLE_NEXT",	"próximo&#187;");
+define("_MD_NUM_ARTICLE_SEP",	"::");
 
 // Article page
 define("_MD_INDEXLINKTEXT",		"Índice");		// Text for return to index page

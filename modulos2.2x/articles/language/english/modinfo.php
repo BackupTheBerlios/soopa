@@ -101,7 +101,7 @@ Their message below:
 **
 
 Security information:
-If this e-mail has been sent inappropriately, por favor forward the complete e-mail to {ADMIN_EMAIL}.
+If this e-mail has been sent inappropriately, please forward the complete e-mail to {ADMIN_EMAIL}.
 User\'s IP address: {USER_IP}
 User\'s Browser: {USER_BROWSER}
 Time sent: {USER_TIME}

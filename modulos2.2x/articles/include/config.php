@@ -1,5 +1,5 @@
 <?php
-// $Id: config.php,v 1.1 2005/07/25 15:18:12 mauriciodelima Exp $
+// $Id: config.php,v 1.2 2005/08/07 06:58:41 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //  This file is part of {NAME/DESCRIPTION}.                                 //
 //  Copyright (C) 2003 Andrew Mills <ajmills@sirium.net>               //
@@ -22,7 +22,7 @@
 
 
 // Set version stuff
-define("_ARTICLESVERSION",	"0.26");
+define("_ARTICLESVERSION",	"0.27");
 
 //echo "Hi";
 
