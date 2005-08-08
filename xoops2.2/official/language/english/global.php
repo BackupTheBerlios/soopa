@@ -1,5 +1,5 @@
 <?php
-// $Id: global.php,v 1.2 2005/08/05 03:42:00 mauriciodelima Exp $
+// $Id: global.php,v 1.3 2005/08/08 23:44:48 mauriciodelima Exp $
 //%%%%%%	File Name mainfile.php 	%%%%%
 define("_PLEASEWAIT","Please Wait");
 define("_FETCHING","Loading...");

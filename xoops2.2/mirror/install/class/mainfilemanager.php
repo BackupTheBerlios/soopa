@@ -28,7 +28,7 @@
 * mainfile manager for XOOPS installer
 *
 * @author Haruki Setoyama  <haruki@planewave.org>
-* @version $Id: mainfilemanager.php,v 1.2 2005/08/05 03:44:03 mauriciodelima Exp $
+* @version $Id: mainfilemanager.php,v 1.3 2005/08/08 23:43:17 mauriciodelima Exp $
 * @access public
 **/
 class mainfile_manager {
@@ -58,7 +58,8 @@ class mainfile_manager {
         return true;
     }
 
-    function doRewrite(){
+    function doRewrite() {
+    	clearstatcache();
         if ( ! $file = fopen($this->path,"r") ) {
             $this->error = true;
             return false;

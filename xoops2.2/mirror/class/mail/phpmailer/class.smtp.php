@@ -314,6 +314,11 @@ class SMTP
             # smaller lines
             while(strlen($line) > $max_line_length) {
                 $pos = strrpos(substr($line,0,$max_line_length)," ");
+                // @XOOPS: Manual fix from PHPMailer 1.73 to prevent endless loops
+                // @XOOPS: We must update to 1.73 and fix its multibyte related issues instead of keeping this
+				if ( !$pos ) {
+					$pos = $max_line_length - 1;
+				}
                 $lines_out[] = substr($line,0,$pos);
                 $line = substr($line,$pos + 1);
                 # if we are processing headers we need to

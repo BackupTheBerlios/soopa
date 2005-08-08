@@ -1,5 +1,5 @@
 <?php
-// $Id: auth_xoops.php,v 1.2 2005/08/05 03:44:02 mauriciodelima Exp $
+// $Id: auth_xoops.php,v 1.3 2005/08/08 23:43:16 mauriciodelima Exp $
 // auth_xoops.php - XOOPS authentification class 
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //

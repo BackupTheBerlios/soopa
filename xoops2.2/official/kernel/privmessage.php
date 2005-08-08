@@ -1,5 +1,5 @@
 <?php
-// $Id: privmessage.php,v 1.2 2005/08/05 03:41:08 mauriciodelima Exp $
+// $Id: privmessage.php,v 1.3 2005/08/08 23:44:48 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //
@@ -39,7 +39,7 @@ if (!defined('XOOPS_ROOT_PATH')) {
  * @author		Kazumi Ono	<onokazu@xoops.org>
  * @copyright	copyright (c) 2000-2003 The XOOPS Project (http://www.xoops.org)
  *
- * @version		$Revision: 1.2 $ - $Date: 2005/08/05 03:41:08 $
+ * @version		$Revision: 1.3 $ - $Date: 2005/08/08 23:44:48 $
  */
 class XoopsPrivmessage extends XoopsObject
 {
@@ -72,7 +72,7 @@ class XoopsPrivmessage extends XoopsObject
  * @author		Kazumi Ono	<onokazu@xoops.org>
  * @copyright	copyright (c) 2000-2003 The XOOPS Project (http://www.xoops.org)
  *
- * @version		$Revision: 1.2 $ - $Date: 2005/08/05 03:41:08 $
+ * @version		$Revision: 1.3 $ - $Date: 2005/08/08 23:44:48 $
  */
 class XoopsPrivmessageHandler extends XoopsObjectHandler
 {

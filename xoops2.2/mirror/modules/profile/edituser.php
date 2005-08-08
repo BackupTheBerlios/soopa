@@ -1,5 +1,5 @@
 <?php
-// $Id: edituser.php,v 1.2 2005/08/05 03:44:04 mauriciodelima Exp $
+// $Id: edituser.php,v 1.3 2005/08/08 23:43:18 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //
@@ -27,6 +27,7 @@
 
 include '../../mainfile.php';
 include_once XOOPS_ROOT_PATH.'/class/xoopsformloader.php';
+include_once XOOPS_ROOT_PATH.'/modules/profile/include/functions.php';
 
 // If not a user, redirect
 if (!is_object($xoopsUser)) {

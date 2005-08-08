@@ -1,5 +1,5 @@
 <?php
-// $Id: xoopsmultimailer.php,v 1.2 2005/08/05 03:44:03 mauriciodelima Exp $
+// $Id: xoopsmultimailer.php,v 1.3 2005/08/08 23:43:17 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //
@@ -37,7 +37,7 @@
  * @author		Jochen Büînagel	<jb@buennagel.com>
  * @copyright	copyright (c) 2000-2003 The XOOPS Project (http://www.xoops.org)
  *
- * @version		$Revision: 1.2 $ - $Date: 2005/08/05 03:44:03 $
+ * @version		$Revision: 1.3 $ - $Date: 2005/08/08 23:43:17 $
  */
 
 /**
@@ -61,7 +61,7 @@ require_once(XOOPS_ROOT_PATH.'/class/mail/phpmailer/class.phpmailer.php');
  *
  * @author		Jochen Buennagel	<job@buennagel.com>
  * @copyright	(c) 2000-2003 The Xoops Project - www.xoops.org
- * @version		$Revision: 1.2 $ - changed by $Author: mauriciodelima $ on $Date: 2005/08/05 03:44:03 $
+ * @version		$Revision: 1.3 $ - changed by $Author: mauriciodelima $ on $Date: 2005/08/08 23:43:17 $
  */
 class XoopsMultiMailer extends phpmailer {
 

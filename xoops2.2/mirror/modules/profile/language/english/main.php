@@ -1,5 +1,5 @@
 <?php
-// $Id: main.php,v 1.2 2005/08/05 03:44:04 mauriciodelima Exp $
+// $Id: main.php,v 1.3 2005/08/08 23:43:18 mauriciodelima Exp $
 define("_PROFILE_MA_ERRORDURINGSAVE", "Error during save");
 define('_PROFILE_MA_USERREG','User Registration');
 define('_PROFILE_MA_NICKNAME','Username');

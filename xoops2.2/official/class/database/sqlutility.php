@@ -1,5 +1,5 @@
 <?php
-// $Id: sqlutility.php,v 1.2 2005/08/05 03:41:05 mauriciodelima Exp $
+// $Id: sqlutility.php,v 1.3 2005/08/08 23:44:46 mauriciodelima Exp $
 // sqlutility.php - defines utility class for MySQL database
 /**
  * @package     kernel

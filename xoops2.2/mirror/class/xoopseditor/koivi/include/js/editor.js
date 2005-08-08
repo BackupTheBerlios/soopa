@@ -3,7 +3,7 @@
 *   Based on Justin Koivisto [W.A. Fisher Interactive] Koivi editor
 *
 *
-// $Id: editor.js,v 1.2 2005/08/05 03:44:03 mauriciodelima Exp $
+// $Id: editor.js,v 1.3 2005/08/08 23:43:17 mauriciodelima Exp $
 *
 */
 

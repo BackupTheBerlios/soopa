@@ -1,5 +1,5 @@
 <?php
-// $Id: pmlite.php,v 1.2 2005/08/05 03:44:02 mauriciodelima Exp $
+// $Id: pmlite.php,v 1.3 2005/08/08 23:44:45 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //

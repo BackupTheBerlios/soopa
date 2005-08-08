@@ -1,5 +1,5 @@
 <?php
-// $Id: comment.php,v 1.2 2005/08/05 03:42:00 mauriciodelima Exp $
+// $Id: comment.php,v 1.3 2005/08/08 23:44:48 mauriciodelima Exp $
 define('_CM_TITLE','Title');
 define('_CM_MESSAGE','Message');
 define('_CM_DOSMILEY','Enable Smiley Icons');

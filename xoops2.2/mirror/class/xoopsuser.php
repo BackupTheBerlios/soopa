@@ -1,5 +1,5 @@
 <?php
-// $Id: xoopsuser.php,v 1.2 2005/08/05 03:44:03 mauriciodelima Exp $
+// $Id: xoopsuser.php,v 1.3 2005/08/08 23:43:17 mauriciodelima Exp $
 // this file is for backward compatibility only
 if (!defined('XOOPS_ROOT_PATH')) {
 	exit();

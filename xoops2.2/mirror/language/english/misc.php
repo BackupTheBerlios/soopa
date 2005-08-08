@@ -1,5 +1,5 @@
 <?php
-// $Id: misc.php,v 1.2 2005/08/05 03:44:04 mauriciodelima Exp $
+// $Id: misc.php,v 1.3 2005/08/08 23:43:18 mauriciodelima Exp $
 define("_MSC_YOURNAMEC","Your Name: ");
 define("_MSC_YOUREMAILC","Your Email: ");
 define("_MSC_FRIENDNAMEC","Friend Name: ");

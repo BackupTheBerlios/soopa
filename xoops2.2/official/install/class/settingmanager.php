@@ -29,7 +29,7 @@ include_once './class/textsanitizer.php';
 * setting manager for XOOPS installer
 *
 * @author Haruki Setoyama  <haruki@planewave.org>
-* @version $Id: settingmanager.php,v 1.2 2005/08/05 03:41:07 mauriciodelima Exp $
+* @version $Id: settingmanager.php,v 1.3 2005/08/08 23:44:47 mauriciodelima Exp $
 * @access public
 **/
 class setting_manager {

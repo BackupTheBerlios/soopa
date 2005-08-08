@@ -1,5 +1,5 @@
 <?php
-// $Id: modinfo.php,v 1.2 2005/08/05 03:42:00 mauriciodelima Exp $
+// $Id: modinfo.php,v 1.3 2005/08/08 23:45:41 mauriciodelima Exp $
 define("_PROFILE_MI_NAME", "Extended Profiles");
 define("_PROFILE_MI_DESC", "Module for managing custom user profile fields");
 

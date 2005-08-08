@@ -1,5 +1,5 @@
 <?php
-// $Id: database.php,v 1.2 2005/08/05 03:44:03 mauriciodelima Exp $
+// $Id: database.php,v 1.3 2005/08/08 23:43:17 mauriciodelima Exp $
 // database.php - defines abstract database wrapper class 
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //

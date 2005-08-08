@@ -1,5 +1,5 @@
 <?php
-// $Id: admin.php,v 1.2 2005/08/05 03:44:04 mauriciodelima Exp $
+// $Id: admin.php,v 1.3 2005/08/08 23:43:18 mauriciodelima Exp $
 define("_PROFILE_AM_FIELD", "Field");
 define("_PROFILE_AM_FIELDS", "Fields");
 define("_PROFILE_AM_CATEGORY", "Category");

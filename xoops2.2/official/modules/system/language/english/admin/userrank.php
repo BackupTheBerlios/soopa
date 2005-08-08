@@ -1,5 +1,5 @@
 <?php
-// $Id: userrank.php,v 1.2 2005/08/05 03:42:01 mauriciodelima Exp $
+// $Id: userrank.php,v 1.3 2005/08/08 23:45:41 mauriciodelima Exp $
 //%%%%%%	Admin Module Name  UserRank 	%%%%%
 define("_AM_RANKSSETTINGS","User Ranks Settings");
 define("_AM_TITLE","Title");

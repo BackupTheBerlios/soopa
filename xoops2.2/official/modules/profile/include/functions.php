@@ -56,11 +56,12 @@ function userCheck($user)
         $stop .= sprintf(_PROFILE_MA_DISPLAYNAMETOOSHORT, $xoopsModuleConfig['min_uname'])."<br />";
     }
     foreach ($xoopsModuleConfig['bad_unames'] as $bu) {
-        if (!empty($bu) && preg_match("/".$bu."/i", $user->getVar('loginname'))) {
+	    if(empty($bu) ||$user->isAdmin()) continue;
+        if (preg_match("/".$bu."/i", $user->getVar('loginname'))) {
             $stop .= _PROFILE_MA_NAMERESERVED."<br />";
             break;
         }
-        if (!empty($bu) && preg_match("/".$bu."/i", $user->getVar('uname'))) {
+        if (preg_match("/".$bu."/i", $user->getVar('uname'))) {
             $stop .= _PROFILE_MA_DISPLAYNAMERESERVED."<br />";
             break;
         }

@@ -1,5 +1,5 @@
 <?php
-// $Id: class.tar.php,v 1.2 2005/08/05 03:41:05 mauriciodelima Exp $
+// $Id: class.tar.php,v 1.3 2005/08/08 23:44:45 mauriciodelima Exp $
 /*
 	package::i.tools
 

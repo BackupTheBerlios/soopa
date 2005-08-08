@@ -1,5 +1,5 @@
 <?php
-// $Id: groupperm.php,v 1.2 2005/08/05 03:42:00 mauriciodelima Exp $
+// $Id: groupperm.php,v 1.3 2005/08/08 23:45:41 mauriciodelima Exp $
 $xoopsOption['pagetype'] = 'admin';
 include '../../../include/cp_header.php';
 $modid = isset($_POST['modid']) ? intval($_POST['modid']) : 0;

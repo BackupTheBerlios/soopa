@@ -1,5 +1,5 @@
 <?php
-// $Id: smilies.php,v 1.2 2005/08/05 03:42:01 mauriciodelima Exp $
+// $Id: smilies.php,v 1.3 2005/08/08 23:45:41 mauriciodelima Exp $
 //%%%%%%	Admin Module Name  Smilies 	%%%%%
 
 define('_AM_SMILESCONTROL','Smilies Control');

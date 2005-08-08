@@ -1,5 +1,5 @@
 <?php
-// $Id: formselecteditor.php,v 1.2 2005/08/05 03:41:07 mauriciodelima Exp $
+// $Id: formselecteditor.php,v 1.3 2005/08/08 23:44:47 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //

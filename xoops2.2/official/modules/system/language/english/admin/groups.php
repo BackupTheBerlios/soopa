@@ -1,5 +1,5 @@
 <?php
-// $Id: groups.php,v 1.2 2005/08/05 03:42:01 mauriciodelima Exp $
+// $Id: groups.php,v 1.3 2005/08/08 23:45:41 mauriciodelima Exp $
 //%%%%%%	Admin Module Name  AdminGroup 	%%%%%
 define("_AM_EDITADG","Edit Groups");
 define("_AM_MODIFY","Modify");
