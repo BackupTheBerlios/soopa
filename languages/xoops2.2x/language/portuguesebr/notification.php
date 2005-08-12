@@ -1,5 +1,5 @@
 <?php
-// $Id: notification.php,v 1.3 2005/07/23 16:26:22 mauriciodelima Exp $
+// $Id: notification.php,v 1.4 2005/08/12 01:29:40 mauriciodelima Exp $
 
 // RMV-NOTIFY
 
@@ -55,12 +55,12 @@ define ('_NOT_CONFIG_ENABLEBOTH', 'Ativar ambos os estilos');
 // For notification about comment events
 
 define ('_NOT_COMMENT_NOTIFY', 'Novo comentário');
-define ('_NOT_COMMENT_NOTIFYCAP', 'Avise-me quando um novo comentário for publicado neste item.');
+define ('_NOT_COMMENT_NOTIFYCAP', 'Quando houver um novo comentário.');
 define ('_NOT_COMMENT_NOTIFYDSC', 'Receba aviso quando um novo comentário for publicado neste item.');
 define ('_NOT_COMMENT_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} Aviso: Comentário incluído para {X_ITEM_TYPE}');
 
 define ('_NOT_COMMENTSUBMIT_NOTIFY', 'Novo comentário para análise');
-define ('_NOT_COMMENTSUBMIT_NOTIFYCAP', 'Avise-me quando um novo comentário for enviado para análise');
+define ('_NOT_COMMENTSUBMIT_NOTIFYCAP', 'Quando um novo comentário for enviado para análise');
 define ('_NOT_COMMENTSUBMIT_NOTIFYDSC', 'Receba aviso quando um novo comentário, neste item, for enviado para análise');
 define ('_NOT_COMMENTSUBMIT_NOTIFYSBJ', '[{X_SITENAME}] {X_MODULE} Aviso: Comentário enviado para {X_ITEM_TYPE}');
 

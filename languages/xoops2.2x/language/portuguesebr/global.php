@@ -1,5 +1,5 @@
 <?php
-// $Id: global.php,v 1.4 2005/07/30 01:48:22 mauriciodelima Exp $
+// $Id: global.php,v 1.5 2005/08/12 01:29:40 mauriciodelima Exp $
 //%%%%%%	File Name mainfile.php 	%%%%%
 define("_POR FAVORWAIT","Aguarde...");
 define("_FETCHING","Carregando...");
@@ -162,8 +162,8 @@ define("_MEDIUMDATESTRING","d/m/Y H:i");
 define("_SHORTDATESTRING","d/n/Y");
 // !!IMPORTANT!! insert '\' before any char among reserved chars: "a", "A","B","c","d","D","F","g","G","h","H","i","I","j","l","L","m","M","n","O","r","s","S","t","T","U","w","W","Y","y","z","Z"	
 // insert double '\' before 't', 'r', 'n'
-define("_TODAY", "\To\d\a\y G:i:s");
-define("_YESTERDAY", "\Ye\s\\te\\r\d\a\y G:i:s");
+define("_TODAY", "Hoje G:i:s");
+define("_YESTERDAY", "Ontem G:i:s");
 define("_MONTHDAY", "n/j G:i:s");
 define("_YEARMONTHDAY", "Y/n/j G:i");
 /*
