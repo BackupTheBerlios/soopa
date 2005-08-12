@@ -12,7 +12,7 @@
 			<td><div class="itemBody"><{$story.imglink}><p class="itemText"><{$story.text}></p></div></td>
 		</tr>
 		<tr>
-			<td class="itemFoot"><span class="itemAdminLink"><{$story.adminlink}></span><{if $rates}><b><{$lang_ratingc}></b> <{$story.rating}> (<{$story.votes}>) - <a href="<{$xoops_url}>/modules/news/ratenews.php?storyid=<{$story.id}>"><{$lang_ratethisnews}></a> - <{/if}><span class="itemPermaLink"><{$story.morelink}></span></td>
+			<td class="itemFoot"><span class="itemAdminLink"><{$story.adminlink}></span><{if $rates}><b><{$lang_ratingc}></b> <{$story.rating}> (<{$story.votes}>) - <a href="<{$xoops_url}>/modules/news/ratenews.php?storyid=<{$story.id}>" rel="nofollow"><{$lang_ratethisnews}></a> - <{/if}><span class="itemPermaLink"><{$story.morelink}></span></td>
 		</tr>
 		</table>
 	</td>

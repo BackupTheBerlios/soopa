@@ -1,5 +1,5 @@
 <?php
-// $Id: modinfo.php,v 1.4 2005/07/31 07:28:03 mauriciodelima Exp $
+// $Id: modinfo.php,v 1.5 2005/08/12 00:03:54 mauriciodelima Exp $
 // Module Info
 
 // The name of this module
@@ -112,7 +112,7 @@ define('_MI_NEWS_RATE_NEWS','Enable users to rate news ?');
 define('_MI_NEWS_TOPICS_RSS','Enable RSS feeds per topics ?');
 define('_MI_NEWS_TOPICS_RSS_DESC',"If you set this option to 'Yes' then the topics content will be available as RSS feeds");
 define('_MI_NEWS_DATEFORMAT', "Date's format");
-define('_MI_NEWS_DATEFORMAT_DESC',"Por Favor refer to the Php documentation (http://fr.php.net/manual/en/function.date.php) for more information on how to select the format. Note, if you don't type anything then the default date's format will be used");
+define('_MI_NEWS_DATEFORMAT_DESC',"Please refer to the Php documentation (http://fr.php.net/manual/en/function.date.php) for more information on how to select the format. Note, if you don't type anything then the default date's format will be used");
 define('_MI_NEWS_META_DATA', "Enable meta datas (keywords and description) to be entered ?");
 define('_MI_NEWS_META_DATA_DESC', "If you set this option to 'yes' then the approvers will be able to enter the following meta datas : keywords and description");
 define('_MI_NEWS_BNAME8','Random news');

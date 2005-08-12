@@ -1,5 +1,5 @@
 <?php
-// $Id: makepdf_class.php,v 1.4 2005/07/31 07:28:03 mauriciodelima Exp $
+// $Id: makepdf_class.php,v 1.5 2005/08/12 00:03:54 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //
@@ -305,7 +305,7 @@ class PDF extends PDF_language
 			}
 			//uups, if the scaling factor of resized image is < 0.33
 			//remark: without(!) the global factor $scale!
-			//that's hard -> on the next page por favor...
+			//that's hard -> on the next page please...
 			$yhflag=0;
 			if($yscale<0.33 and ($xsflag==1 or $ysflag==1))	{
 				$nw=$xscale * $iw;

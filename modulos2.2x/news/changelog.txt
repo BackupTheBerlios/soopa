@@ -1,6 +1,13 @@
 Changelog
 
 *******
+v1.312
+*******
+Modifications :
+> The module is now capable to use the editors provided with Xoops 2.2 (The module is also runing with older Xoops versions)
+> I have modified the templates so that the news printable version, the pdf version and the rating pages are not indexed by robots (thanks to tl for the tip)
+
+*******
 v1.311
 *******
 Corrections :

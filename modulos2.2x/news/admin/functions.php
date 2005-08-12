@@ -1,5 +1,5 @@
 <?php
-// $Id: functions.php,v 1.3 2005/07/23 03:00:18 mauriciodelima Exp $
+// $Id: functions.php,v 1.4 2005/08/12 00:03:53 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //
@@ -84,7 +84,7 @@ function adminmenu($currentoption = 0, $breadcrumb = '')
 	echo "<li id='" . $tblColors[4] . "'><a href=\"index.php?op=export\"><span>" . _MI_NEWS_EXPORT . "</span></a></li>\n";
 	echo "<li id='" . $tblColors[5] . "'><a href=\"index.php?op=configurenewsletter\"><span>" . _MI_NEWS_NEWSLETTER . "</span></a></li>\n";
 	echo "<li id='" . $tblColors[6] . "'><a href=\"index.php?op=stats\"><span>" . _MI_NEWS_STATS . "</span></a></li>\n";
-	if ($xoopsModule->getVar('version') != 131) {
+	if ($xoopsModule->getVar('version') != 132) {
 		echo "<li id='" . $tblColors[7] . "'><a href=\"upgrade.php\"><span>" . _AM_NEWS_UPGRADE . "</span></a></li>\n";
 	}
 	echo "</ul></div>";

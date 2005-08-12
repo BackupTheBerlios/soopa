@@ -1,5 +1,5 @@
 <?php
-// $Id: functions.php,v 1.4 2005/07/23 05:24:05 mauriciodelima Exp $
+// $Id: functions.php,v 1.5 2005/08/12 00:03:54 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //
@@ -155,31 +155,61 @@ function news_html2text($document)
 function &news_getWysiwygForm($caption, $name, $value = "", $width = '100%', $height = '400px', $supplemental='')
 {
 	$editor = false;
+	$x22=false;
+	$xv=str_replace('XOOPS ','',XOOPS_VERSION);
+	if(substr($xv,2,1)=='2') {
+		$x22=true;
+	}
+	$editor_configs=array();
+	$editor_configs["name"] =$name;
+	$editor_configs["value"] = $value;
+	$editor_configs["rows"] = 35;
+	$editor_configs["cols"] = 60;
+	$editor_configs["width"] = "100%";
+	$editor_configs["height"] = "400px";
+
+
 	switch(strtolower(getmoduleoption('form_options'))){
 	case "spaw":
-		if (is_readable(XOOPS_ROOT_PATH . "/class/xoopseditor/spaw/formspaw.php"))	{
-			$myts =& MyTextSanitizer::getInstance();
-			include_once(XOOPS_ROOT_PATH . "/class/xoopseditor/spaw/formspaw.php");
-			$editor = new XoopsFormSpaw($caption, $name, $value);
+		if(!$x22) {
+			if (is_readable(XOOPS_ROOT_PATH . "/class/spaw/formspaw.php"))	{
+				$myts =& MyTextSanitizer::getInstance();
+				include_once(XOOPS_ROOT_PATH . "/class/spaw/formspaw.php");
+				$editor = new XoopsFormSpaw($caption, $name, $value);
+			}
+		} else {
+			$editor = new XoopsFormEditor($caption, "spaw", $editor_configs);
 		}
 		break;
 
 	case "fck":
-		if ( is_readable(XOOPS_ROOT_PATH . "/class/xoopseditor/fckeditor/formfckeditor.php"))	{
-			include_once(XOOPS_ROOT_PATH . "/class/xoopseditor/fckeditor/formfckeditor.php");
-			$editor = new XoopsFormFckeditor($caption, $name, $value);
+		if(!$x22) {
+			if ( is_readable(XOOPS_ROOT_PATH . "/class/fckeditor/formfckeditor.php"))	{
+				include_once(XOOPS_ROOT_PATH . "/class/fckeditor/formfckeditor.php");
+				$editor = new XoopsFormFckeditor($caption, $name, $value);
+			}
+		} else {
+			$editor = new XoopsFormEditor($caption, "fckeditor", $editor_configs);
 		}
 		break;
 
 	case "htmlarea":
-		if ( is_readable(XOOPS_ROOT_PATH . "/class/xoopseditor/htmlarea/formhtmlarea.php"))	{
-			include_once(XOOPS_ROOT_PATH . "/class/xoopseditor/htmlarea/formhtmlarea.php");
-			$editor = new XoopsFormHtmlarea($caption, $name, $value);
+		if(!$x22) {
+			if ( is_readable(XOOPS_ROOT_PATH . "/class/htmlarea/formhtmlarea.php"))	{
+				include_once(XOOPS_ROOT_PATH . "/class/htmlarea/formhtmlarea.php");
+				$editor = new XoopsFormHtmlarea($caption, $name, $value);
+			}
+		} else {
+			$editor = new XoopsFormEditor($caption, "htmlarea", $editor_configs);
 		}
 		break;
 
 	case "dhtml":
-		$editor = new XoopsFormDhtmlTextArea($caption, $name, $value, 10, 50, $supplemental);
+		if(!$x22) {
+			$editor = new XoopsFormDhtmlTextArea($caption, $name, $value, 10, 50, $supplemental);
+		} else {
+			$editor = new XoopsFormEditor($caption, "dhtmltextarea", $editor_configs);
+		}
 		break;
 
 	case "textarea":
@@ -187,9 +217,13 @@ function &news_getWysiwygForm($caption, $name, $value = "", $width = '100%', $he
 		break;
 
 	case "koivi":
-		if ( is_readable(XOOPS_ROOT_PATH . "/class/xoopseditor/koivi/formwysiwygtextarea.php"))	{
-			include_once(XOOPS_ROOT_PATH . "/class/xoopseditor/koivi/formwysiwygtextarea.php");
-			$editor = new XoopsFormWysiwygTextArea($caption, $name, $value, '100%', '400px', '');
+		if(!$x22) {
+			if ( is_readable(XOOPS_ROOT_PATH . "/class/wysiwyg/formwysiwygtextarea.php"))	{
+				include_once(XOOPS_ROOT_PATH . "/class/wysiwyg/formwysiwygtextarea.php");
+				$editor = new XoopsFormWysiwygTextArea($caption, $name, $value, '100%', '400px', '');
+			}
+		} else {
+			$editor = new XoopsFormEditor($caption, "koivi", $editor_configs);
 		}
 		break;
 	}

@@ -1,5 +1,5 @@
 <?php
-// $Id: upgrade.php,v 1.3 2005/07/23 03:00:18 mauriciodelima Exp $
+// $Id: upgrade.php,v 1.4 2005/08/12 00:03:54 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //

@@ -1,5 +1,5 @@
 <?php
-// $Id: xoops_version.php,v 1.3 2005/07/23 03:00:18 mauriciodelima Exp $
+// $Id: xoops_version.php,v 1.4 2005/08/12 00:03:54 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //
@@ -26,7 +26,7 @@
 //  ------------------------------------------------------------------------ //
 
 $modversion['name'] = _MI_NEWS_NAME;
-$modversion['version'] = 1.31;
+$modversion['version'] = 1.32;
 $modversion['description'] = _MI_NEWS_DESC;
 $modversion['credits'] = "The XOOPS Project, Christian, Pilou, Marco, ALL the members of the Newbb Team, GIJOE, Zoullou, Mithrandir, Setec Astronomy, Marcan, Anne";
 $modversion['author'] = "The XOOPS Project Module Dev Team";

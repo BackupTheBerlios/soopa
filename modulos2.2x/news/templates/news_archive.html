@@ -18,7 +18,7 @@
 </tr>
 <{foreach item=story from=$stories}>
 <tr class="<{cycle values="even,odd"}>">
-	<td><{$story.title}></td><td align="center"><a href="<{$story.print_link}>"><img src="<{$xoops_url}>/modules/news/images/print.gif" alt="<{$lang_printer}>" /></a> <a href="<{$story.mail_link}>" target="_top" /><img src="<{$xoops_url}>/modules/news/images/friend.gif" alt="<{$lang_sendstory}>" /></td><td align="center"><{$story.counter}></td><td align="center"><{$story.date}></td>
+	<td><{$story.title}></td><td align="center"><a href="<{$story.print_link}>" rel="nofollow"><img src="<{$xoops_url}>/modules/news/images/print.gif" alt="<{$lang_printer}>" /></a> <a href="<{$story.mail_link}>" target="_top" /><img src="<{$xoops_url}>/modules/news/images/friend.gif" alt="<{$lang_sendstory}>" /></td><td align="center"><{$story.counter}></td><td align="center"><{$story.date}></td>
 </tr>
 <{/foreach}>
 </table>
