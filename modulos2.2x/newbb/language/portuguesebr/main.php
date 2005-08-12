@@ -1,5 +1,5 @@
 <?php
-// $Id: main.php,v 1.7 2005/08/02 05:14:36 mauriciodelima Exp $
+// $Id: main.php,v 1.8 2005/08/12 01:39:21 mauriciodelima Exp $
 if(defined('MAIN_DEFINED')) return;
 define('MAIN_DEFINED',true);
 
@@ -384,7 +384,7 @@ define("_MD_POLL_RESTART", "Reativar esta votação");
 define("_MD_POLL_ADDMORE", "Incluir mais opções");
 define("_MD_POLL_RUSUREDEL", "Você tem certeza que quer excluir esta votação e todo seu conteúdo?");
 define("_MD_POLL_RESTARTPOLL", "Reativar votação");
-define("_MD_POLL_RESET", "Apagar todos os registros para esta votação?");
+define("_MD_POLL_RESET", "Excluir todos os registros desta votação?");
 define("_MD_POLL_ADDPOLL","Incluir votação");
 define("_MD_POLLMODULE_ERROR","Módulo Enquetes não está disponível");
 

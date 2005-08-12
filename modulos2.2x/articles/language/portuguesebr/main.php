@@ -1,5 +1,5 @@
 <?php
-// $Id: main.php,v 1.3 2005/08/07 06:54:57 mauriciodelima Exp $
+// $Id: main.php,v 1.4 2005/08/12 01:36:36 mauriciodelima Exp $
 
 // Versão em Portuguesebr por agamen0n (Hugo Christiano), Maurício de Lima
 
@@ -59,7 +59,7 @@ define("_MD_DBNOTUPDATED",				"Banco de Datos não Atualizado!");
 define("_MD_ITEMDELETED",				"Eliminado Corretamente!");
 define("_MD_ITEMNOTDELETED",			"Não foi Eliminado");
 define("_MD_ITEM_DELETED_CANCELLED",	"Cancelado!");
-define("_MD_CONFIRMDELETE",             "Quer Apagar Realmente?");
+define("_MD_CONFIRMDELETE",             "Deseja realmente excluir?");
 define("_MD_DBSUBMITTED",				"Thank you for your submission, we will review it for publication as soon as possible.");
 
 // Errors
@@ -80,7 +80,7 @@ define("_MD_ART_SUBTART",		"Artigo:");
 define("_MD_ART_SUBTNOTIFY",	"Notificar:");
 define("_MD_ART_SUBTNOTIFYDES",	"Notificar quando o artigo for publicado?");
 define("_MD_ART_SUBMIT",		" Enviar artigo");
-define("_MD_ART_SUBRESET",		" Apagar");
+define("_MD_ART_SUBRESET",		" Excluir");
 define("_MD_ART_PREVIEW",		" Exibir");
 define("_MD_SUBMITTEDMSG",		"Artigo enviado");
 define("_MD_SUBMITTEDMSGDESC",	"Obrigado pelo seu envio, estaremos avaliando seu material antes de publicá-lo.");

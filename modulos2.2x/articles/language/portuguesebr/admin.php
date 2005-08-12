@@ -1,5 +1,5 @@
 <?php
-// $Id: admin.php,v 1.2 2005/07/25 15:48:20 mauriciodelima Exp $
+// $Id: admin.php,v 1.3 2005/08/12 01:36:36 mauriciodelima Exp $
 
 //Versão Portuguesebr por agamen0n (Hugo Christiano)
 
@@ -32,14 +32,14 @@ define("_AM_ART_FRMCAPSDARTCL",		"Texto do Artigo");
 // Link captions
 define("_AM_ART_FRMCAPLNKPRVW",		"Clique para exibir");
 define("_AM_ART_FRMCAPLNKEDT",		"Clique para editar");
-define("_AM_ART_FRMCAPLNKDLT",		"Clique para apagar");
+define("_AM_ART_FRMCAPLNKDLT",		"Clique para excluir");
 define("_AM_ART_FRMCAPLNKGTFRM",	"Formulário");
 define("_AM_ART_FRMCAPLNKVLTSHW",	"Clique para aprovar e publicar");
 define("_AM_ART_FRMCAPLNKVLTHDE",	"Clique para aprovar e não publicar");
 // Button caption
 define("_AM_ART_FRMBTTNCLS",	"Fechar janela");
 define("_AM_ART_FRMBTTNSAVE",	"Salvar");
-define("_AM_ART_FRMBTTNRST",	"Apagar");
+define("_AM_ART_FRMBTTNRST",	"Excluir");
 define("_AM_ART_FRMBTTNCNCL",	"Cancelar");
 define("_AM_ART_FRMBTTNPRVW",	"Exibir");
 // Form Element captions

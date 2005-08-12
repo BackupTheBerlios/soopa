@@ -12,8 +12,8 @@ define( "_AM_TH_BADIPS","Lista de IPs banidos");
 define( "_AM_TH_ENABLEIPBANS","Ativar banimento por IP?");
 
 define("_AM_LABEL_REMOVE","");
-define("_AM_BUTTON_REMOVE","Apagar");
-define("_AM_JS_REMOVECONFIRM","Você tem certeza de que deseja apagar os itens selecionados?");
+define("_AM_BUTTON_REMOVE","Excluir");
+define("_AM_JS_REMOVECONFIRM","Você realmente deseja excluir os itens selecionados?");
 define( "_AM_MSG_PRUPDATED","As configurações foram atualizadas com sucesso.");
 define("_AM_MSG_REMOVED","Os itens selecionados foram apagados com sucesso.");
 
@@ -21,7 +21,7 @@ define("_AM_MSG_REMOVED","Os itens selecionados foram apagados com sucesso.");
 // prefix_manager.php
 define("_AM_H3_PREFIXMAN","Gerenciador de PREFIX");
 define("_AM_MSG_DBUPDATED","O banco de dados foi atualizado com sucesso.");
-define("_AM_CONFIRM_DELETE","Tem certeza de que deseja apagar todas as tabelas?");
+define("_AM_CONFIRM_DELETE","Você realmente deseja excluir todas as tabelas?");
 define("_AM_TXT_HOWTOCHANGEDB","Quando você mudar o prefix, altere o conteúdo abaixo em seu %s/mainfile.php.<br /><br />define('XOOPS_DB_PREFIX', '<b>%s</b>');");
 
 

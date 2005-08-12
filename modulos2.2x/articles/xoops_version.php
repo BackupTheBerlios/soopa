@@ -1,5 +1,5 @@
 <?php
-// $Id: xoops_version.php,v 1.2 2005/08/07 06:58:39 mauriciodelima Exp $
+// $Id: xoops_version.php,v 1.3 2005/08/12 01:36:36 mauriciodelima Exp $
 //  ------------------------------------------------------------------------ //
 //                XOOPS - PHP Content Management System                      //
 //                    Copyright (c) 2000 XOOPS.org                           //
@@ -193,7 +193,7 @@ $modversion['config'][4]['description']	= '_MI_ART_OPTION_EDITADMINDSC';
 $modversion['config'][4]['formtype']	= 'select';
 $modversion['config'][4]['valuetype']	= 'int';
 $modversion['config'][4]['default']		= '0';
-$modversion['config'][4]['options']		= array('XOOPS' => '0', 'SPAW' => '1', 'FCK Editor' => '2', 'HTML Area' => '3');
+$modversion['config'][4]['options']		= array('XOOPS' => '0', 'SPAW' => '1', 'FCK Editor' => '2', 'HTML Area' => '3', 'Koivi' => '4');
 
 // user (visitor) editor
 $modversion['config'][5]['name']		= 'articleedituser';
@@ -202,7 +202,7 @@ $modversion['config'][5]['description']	= '_MI_ART_OPTION_EDITUSERDSC';
 $modversion['config'][5]['formtype']	= 'select';
 $modversion['config'][5]['valuetype']	= 'int';
 $modversion['config'][5]['default']		= '0';
-$modversion['config'][5]['options']		= array('XOOPS' => '0', 'SPAW' => '1', 'FCK Editor' => '2', 'HTML Area' => '3');
+$modversion['config'][5]['options']		= array('XOOPS' => '0', 'SPAW' => '1', 'FCK Editor' => '2', 'HTML Area' => '3', 'Koivi' => '4');
 
 // Index view type
 $modversion['config'][6]['name']		= 'indexviewtype';
