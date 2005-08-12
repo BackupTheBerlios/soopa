@@ -198,7 +198,7 @@ define("_ALBM_GENERALSET","Preferências sobre myAlbum-P");
 define("_ALBM_REDOTHUMBS2","Refazer Thumbnails");
 
 define("_ALBM_SUBMITTER","Enviado por");
-define("_ALBM_DELETE","Apagar");
+define("_ALBM_DELETE","Excluir");
 define("_ALBM_NOSUBMITTED","Não há novas fotos enviadas.");
 define("_ALBM_ADDMAIN","Incluir uma categoria geral");
 define("_ALBM_IMGURL","URL da Imagem(OPCIONAL A altura da imagem será reajustada par 50): ");
