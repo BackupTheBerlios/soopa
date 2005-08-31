@@ -1,5 +1,5 @@
 <?php
-// $Id: main.php,v 1.6 2005/08/01 03:45:45 mauriciodelima Exp $
+// $Id: main.php,v 1.7 2005/08/31 11:22:00 mauriciodelima Exp $
 define("_PROFILE_MA_ERRORDURINGSAVE", "Error during save");
 define('_PROFILE_MA_USERREG','Cadastro de Usuários');
 define('_PROFILE_MA_NICKNAME','Nome do usuário');
@@ -123,16 +123,16 @@ define("_PROFILE_MA_OLDPASSWORD", "Senha atual");
 define("_PROFILE_MA_NEWPASSWORD", "Nova senha");
 
 //search.php
-define("_PROFILE_MA_SORTBY", "Sort By");
-define("_PROFILE_MA_ORDER", "Order");
-define("_PROFILE_MA_PERPAGE", "Items per page");
+define("_PROFILE_MA_SORTBY", "Classificar por");
+define("_PROFILE_MA_ORDER", "Ordenar");
+define("_PROFILE_MA_PERPAGE", "Resultados por página");
 define("_PROFILE_MA_LATERTHAN", "%s is later than");
 define("_PROFILE_MA_EARLIERTHAN", "%s is earlier than");
 define("_PROFILE_MA_LARGERTHAN", "%s is larger than");
 define("_PROFILE_MA_SMALLERTHAN", "%s is smaller than");
 
-define("_PROFILE_MA_NOUSERSFOUND", "No users found");
-define("_PROFILE_MA_RESULTS", "Search Results");
+define("_PROFILE_MA_NOUSERSFOUND", "Não foram encontrados usuários na pesquisa");
+define("_PROFILE_MA_RESULTS", "Resultado da pesquisa");
 
 //changemail.php
 define("_PROFILE_MA_CHANGEMAIL", "Change Email");
